@@ -1,0 +1,9 @@
+.loader {
+    background: url(../../assets/ajax-loader.gif) 50% 50% no-repeat;
+    background-size: contain;
+
+    max-width: 128px;
+    width: 100%;
+    margin: 2rem auto;
+    min-height: 50vh;
+}

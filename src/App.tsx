@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
+
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { getGamePageRoute, getHomeRoute, getPolicyRoute, getRulesPageRoute } from './routes';
+import { Loader } from './molecules/loader/loader';
+import GameRouter from './routes/game/router';
+
+
+const HomePage = React.lazy(() => import('./routes/home'));
+const GamePage = React.lazy(() => import('./routes/game'));
+const RulesPage = React.lazy(() => import('./routes/rules'));
+const PolicyPage = React.lazy(() => import('./routes/policy'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <BrowserRouter>
+                {/* <CookiesInfoComponent /> */}
+                <main aria-live="polite">
+                    <Suspense fallback={<Loader />}>
+                        <Routes>
+                            <Route path={getHomeRoute()} element={<HomePage />} />
+                            <Route path={getRulesPageRoute()} element={<RulesPage />} />
+                            <Route path={getPolicyRoute()} element={<PolicyPage />} />
+                            <Route element={<HomePage />} />
+                            {GameRouter()}
+                        </Routes>
+                    </Suspense>
+                    {/* <PageFooter/> */}
+                </main>
+            </BrowserRouter>
+   </>
   );
 }
 
