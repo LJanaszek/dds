@@ -18,7 +18,5 @@ type Props = {
 
 function CharacterSwitcher({id}: Props) {
 
-    const {gameState} = useGame();
-
-    return <GamePage id={id} character={gameState.character} />
+    return <GamePage id={id} />
 }

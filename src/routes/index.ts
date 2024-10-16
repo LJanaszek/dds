@@ -24,8 +24,11 @@ export function getRide(){
 export const PAGES: { [key: string]: string } = (() => {
     const result: { [key: string]: string } = {};
 
-    for (let i = 3; i <= 95; i++) {
-        result['p' + i] = `${i}`;
+    for (let i = 1; i <= 30; i++) {
+        result['pa' + i] = `${i}`;
+    }
+    for (let i = 1; i <= 30; i++) {
+        result['pb' + i] = `${i}`;
     }
     return{
         ...result,

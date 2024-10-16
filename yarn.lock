@@ -1717,6 +1717,11 @@
   resolved "https://registry.yarnpkg.com/@mborecki/react-create-store/-/react-create-store-0.0.4.tgz#19438f478a3ff27ee81193d410bb44a48de08fd5"
   integrity sha512-G63vwBSLPJf7BJnKiqwjzvBbHw4UdQhh1XYBtzZWO1vXGGtN2ILpCuHImpBXqEOVB3HAHNGUNUGQ9+2DlYUSkg==
 
+"@mborecki/react-scroll-to-me@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@mborecki/react-scroll-to-me/-/react-scroll-to-me-0.2.1.tgz#8d08eecb6d4ff3ecfa194bea52a63937d3cac76b"
+  integrity sha512-rhnhAyO7+z1SdP0qmVbj/YrB+zMrJr8UXQTxXsKYrEDUm2qkXsly1Bbu07JfbYFL4hVkGQcUwbo5pumL0fzzYg==
+
 "@mdx-js/react@^3.0.0":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-3.0.1.tgz#997a19b3a5b783d936c75ae7c47cfe62f967f746"
