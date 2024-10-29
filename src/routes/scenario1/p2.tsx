@@ -18,10 +18,18 @@ export default function P2() {
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [
             {
-                id: '1',
+                id: 'pa3',
                 position: {
                     x: 240,
                     y: 140,
+                },
+                pointId: '8.1',
+               
+            },{
+                id: 'pa4',
+                position: {
+                    x: 440,
+                    y: 240,
                 },
                 pointId: '8.1',
                
@@ -35,8 +43,9 @@ export default function P2() {
         console.log(`KTOS KLIKNAL ${id} `);
         // alert(`KTOS KLIKNAL ${id} `);
         setSelectedPoint(id);
-        
-        window.location.href = PAGES.pa3
+        console.log(selectedPoint);
+        console.log(typeof(PAGES[id]), "--------------")
+        window.location.href = PAGES[id]
 
     }, []);
 
