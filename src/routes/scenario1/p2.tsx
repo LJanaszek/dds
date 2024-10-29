@@ -2,18 +2,19 @@ import { useCallback, useMemo, useState } from "react";
 import { MapComponent } from "../../components/map/map-component";
 import { PointData } from "../../components/map/pixi-app/types";
 import { PAGES } from "..";
+import Notepad from "../../components/notepad";
 
-
+import "../../style.scss";
 
 export interface GameMapPoint extends PointData {
     pointId: string
 }
-
+let textList: string[] = [];
 export default function P2() {
     const [selectedPoint, setSelectedPoint] = useState<string>();
-    const [showPopup, setShowPopup] = useState<boolean>(false);
-    const [showTime, setShowTime] = useState<boolean>(false);
-
+    if (localStorage.getItem('textList')) {
+        textList = (JSON.parse(localStorage.getItem('textList')!));
+    }
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [
             {
@@ -34,19 +35,19 @@ export default function P2() {
         console.log(`KTOS KLIKNAL ${id} `);
         // alert(`KTOS KLIKNAL ${id} `);
         setSelectedPoint(id);
-        setShowPopup(true);
-        setTimeout(() => { setShowTime(true) }, 300)
+        
         window.location.href = PAGES.pa3
 
     }, []);
 
     return (
-        <div>
+        <div className="mapPageInfo">
             <MapComponent
                 onPointerClicked={onPointerClicked}
                 mapPointsData={mapPointsData}
                 selectedPoint={selectedPoint}
             /> 
+            <Notepad wordsList={textList} />
              {/* {showPopup && } */}
         </div>
     );

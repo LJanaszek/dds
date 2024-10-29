@@ -7,14 +7,18 @@ span{
 .clicked{
     cursor: text !important;
 }
-.textList {
-  li {
-    // background-color: aqua;
-    width: fit-content;
-    
-  }
-  li:hover {
-    text-decoration: line-through;
-    cursor: pointer !important;
-  }
+a{
+  position: relative;
+  top: 5em;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+section{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  
 }
