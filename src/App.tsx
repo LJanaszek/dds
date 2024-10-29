@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 
-import './App.css';
+import './style.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { getGamePageRoute, getHomeRoute, getPolicyRoute, getRulesPageRoute } from './routes';
 import { Loader } from './molecules/loader/loader';

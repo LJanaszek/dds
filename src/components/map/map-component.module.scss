@@ -1,0 +1,28 @@
+.mapComponent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    canvas {
+        /* outline: 1px red solid; */
+        object-fit: contain;
+
+        @media (orientation: landscape) {
+            max-width: 100%;
+            height: auto;
+            max-height: 92%;
+        }
+
+        @media (orientation: portrait) {
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+span{
+    cursor: pointer;
+    &:hover{
+        
+    }
+}
+.clicked{
+    cursor: text !important;
+}
+.textList {
+  li {
+    // background-color: aqua;
+    width: fit-content;
+    
+  }
+  li:hover {
+    text-decoration: line-through;
+    cursor: pointer !important;
+  }
+}
