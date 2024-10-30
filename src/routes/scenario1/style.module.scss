@@ -22,3 +22,7 @@ section{
   grid-template-columns: 80% 20%;
   
 }
+.radioContainer{
+  display: grid;
+  grid-template-columns: 30vw 1fr;
+}

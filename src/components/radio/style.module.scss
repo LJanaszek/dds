@@ -1,0 +1,20 @@
+.radioContainer{
+    display: flex;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid #ccc;
+        border-radius: 1em;
+    }
+    form{
+        display: flex;
+        label{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}

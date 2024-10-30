@@ -1,20 +1,29 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapComponent } from "../../components/map/map-component";
 import { PointData } from "../../components/map/pixi-app/types";
-import { PAGES } from "..";
+import { getGameRoute, PAGES } from "..";
 import Notepad from "../../components/notepad";
 
 import "../../style.scss";
+import { Link } from "react-router-dom";
 
 export interface GameMapPoint extends PointData {
     pointId: string
 }
 let textList: string[] = [];
 export default function P2() {
+    const [showButton, setShowButton] = useState(false);
     const [selectedPoint, setSelectedPoint] = useState<string>();
     if (localStorage.getItem('textList')) {
         textList = (JSON.parse(localStorage.getItem('textList')!));
+       
     }
+    useEffect(() => {
+        if (textList.length === 5) {
+            setShowButton(true);
+        }
+    })
+    
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [
             {
@@ -57,7 +66,7 @@ export default function P2() {
                 selectedPoint={selectedPoint}
             /> 
             <Notepad wordsList={textList} />
-             {/* {showPopup && } */}
+             {showButton && <Link to={getGameRoute(PAGES.pa8)}>Przejdź dalej</Link>}
         </div>
     );
 }
