@@ -4,28 +4,28 @@ import style from "./style.module.scss"
 import { string } from "prop-types";
 
 export default function P8() {
-    const popUpContent = [{
-        points1:["qwertyuiop", "asdfghjkl", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],
+    const popUpContent: any = [{
+        points0:["qwertyuiop", "asdfghjkl", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],
     },
 
     {
-        points2:["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
+        points1:["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
     },  
 
     {
-        points3:["qwertyuiop", "asdfghjkl", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],    
+        points2:["qwertyuiop", "1", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],    
     },
 
     {
-        points4:["qwertyuiop", "asdfghjkl", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],
+        points3:["qwertyuiop", "2", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],
     },  
 
     {
-        points5:["qwertyuiop", "asdfghjkl", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],
+        points4:["qwertyuiop", "3", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],
     },  
 
     {   
-        points6:["qwertyuiop", "asdfghjkl", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],    
+        points5:["qwertyuiop", "4", "zxcvbnm", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"],    
     }
 ]
     
@@ -48,14 +48,15 @@ export default function P8() {
         <div>
             <p>{points}</p>
             {description!.map((e: any, index: any) => {
-                let name = 'points' + index
+                let name = 'points' + index.toString();
                 return <div className={style.radioContainer}>
                     <p>{e}</p>
 
                     <Radio onOKClick={(e) => {
-
-                        setContent(popUpContent[0].'${name}');
+                        // console.log(popUpContent[index][name][e.currentTarget.children[0].value]);
+                        // setContent(popUpContent[0]!);
                         setPoints(points - e.currentTarget.children[0].value);
+                        setContent(popUpContent[index][name][e.currentTarget.children[0].value]);
 
                         document.querySelectorAll("input").forEach((element: any) => {
                             if (element.name === (e.currentTarget.children[0].name)) {
@@ -67,7 +68,7 @@ export default function P8() {
                     </Radio>
                 </div>
             })}
-            <p>{content} 123</p>
+            <p>{content}</p>
         </div>
     );
 }
