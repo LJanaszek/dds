@@ -64,13 +64,13 @@ export default function P3() {
                     </span>
                     Nobis sit aspernatur autem tempore! </p>
             </PageText>
-            <div>
+            <ul>
                 {textList.map((text, index) =>
                     <li key={index}
                         onClick={(e) => removeTextFromList(e.currentTarget.innerText)}>
                         {text}
                     </li>)}
-            </div>
+            </ul>
         </section>
         <Link onClick={() => {
             localStorage.setItem('textList', JSON.stringify(textList));
