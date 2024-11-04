@@ -15,7 +15,14 @@ a{
   align-items: center;
   margin: 0 auto;
 }
-
+li {
+  // background-color: aqua;
+  width: fit-content;
+}
+li:hover {
+  text-decoration: line-through;
+  cursor: pointer !important;
+}
 
 section{
   display: grid;
