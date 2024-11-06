@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { PointData } from "../../components/map/pixi-app/types";
 import { getGameRoute, PAGES } from "..";
 import PageText from "../../components/pageText";
-import './style.module.scss'
+import style from './style.module.scss'
 import { Link } from "react-router-dom";
 
 export interface GameMapPoint extends PointData {
@@ -66,7 +66,9 @@ export default function P3() {
             </PageText>
             <ul>
                 {textList.map((text, index) =>
-                    <li key={index}
+                    <li 
+                    className={style.textList} 
+                    key={index}
                         onClick={(e) => removeTextFromList(e.currentTarget.innerText)}>
                         {text}
                     </li>)}

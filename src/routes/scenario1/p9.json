@@ -1,0 +1,52 @@
+{
+    "checkbox1" : {
+        "case1": "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.",
+        "case2": "Informujesz rodziców o wnioskach z rozpoznania sprawy.",
+        "case3": "Planujesz spotkanie z psychologiem sportu dla całej drużyny.",
+        "case4": "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
+        "case5": "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
+        "case6": "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+        "case7": "Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.",
+        "case8": "Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera i dajesz jasny sygnał, że nie jest dopuszczalne."
+    },
+    "checkbox2" : {
+        "case1": "",
+        "case2": "",
+        "case3": "",
+        "case4": "",
+        "case5": "",
+        "case6": "",
+        "case7": "",
+        "case8": ""
+    },
+    "checkbox3" : {
+        "case1": "",
+        "case2": "",
+        "case3": "",
+        "case4": "",
+        "case5": "",
+        "case6": "",
+        "case7": "",
+        "case8": ""
+    },
+    "checkbox4" : {
+        "case1": "",
+        "case2": "",
+        "case3": "",
+        "case4": "",
+        "case5": "",
+        "case6": "",
+        "case7": "",
+        "case8": ""
+    },
+    "checkbox5" : {
+        "case1": "",
+        "case2": "",
+        "case3": "",
+        "case4": "",
+        "case5": "",
+        "case6": "",
+        "case7": "",
+        "case8": ""
+    }
+}

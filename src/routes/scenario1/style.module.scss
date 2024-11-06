@@ -15,11 +15,11 @@ a{
   align-items: center;
   margin: 0 auto;
 }
-li {
+.textList {
   // background-color: aqua;
   width: fit-content;
 }
-li:hover {
+.textList:hover {
   text-decoration: line-through;
   cursor: pointer !important;
 }
