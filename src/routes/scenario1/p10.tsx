@@ -1,7 +1,9 @@
 export default function P10() {
+    const points = localStorage.getItem('points')
     return (
         <div>
-            <h1>P2</h1>
+            twój wynik to:
+            <h1>{points}</h1>
         </div>
     );
 }
