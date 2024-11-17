@@ -15,7 +15,7 @@ export default class GameScreen extends Container implements IScreen {
     pointsMarkers: Container[] = [];
     mapPoints: PointData[] = [];
     selectedPointId: string | null = null;
-
+    selectMap: string = 'przychodnia';
     events = new PIXI.utils.EventEmitter()
 
     constructor(private app: Application) {
@@ -27,7 +27,7 @@ export default class GameScreen extends Container implements IScreen {
     }
 
     private initMap() {
-        const bg = Sprite.from('map');
+        const bg = Sprite.from(this.selectMap!);
         this.addChild(bg);
         this.updatePoints();
     }
@@ -100,5 +100,9 @@ export default class GameScreen extends Container implements IScreen {
     setSelectedPoint(id: string | null) {
         this.selectedPointId = id;
         this.updatePoints();
+    }
+    setSelectMap(map: string) {
+        this.selectMap = map;
+        this.initMap();
     }
 }

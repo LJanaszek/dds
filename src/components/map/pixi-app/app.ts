@@ -12,10 +12,10 @@ type AppConfig = {
 }
 
 // Szerokość grafiki mapy
-export const MAP_WIDTH = 1323;
+export const MAP_WIDTH = 2812;
 
 // Wysokość grafiki mapy
-export const MAP_HEIGHT = 665;
+export const MAP_HEIGHT = 2076;
 
 export default class PixiApp extends PIXI.Application {
 
@@ -35,8 +35,9 @@ export default class PixiApp extends PIXI.Application {
         }
 
         loadSprites([
-            ['map', `${config.assetsPath}map.png`],
+            ['przychodnia', `${config.assetsPath}przychodnia.png`],
             ['pinezka', `${config.assetsPath}pinezka.png`],
+            ['klub', `${config.assetsPath}klub.png`],
         ]).then(() => {
             this.initApp();
         });
@@ -80,6 +81,9 @@ export default class PixiApp extends PIXI.Application {
 
     setMapPointsData(points: PointData[]) {
         this.gameScreen?.setMapPointData(points);
+    }
+    setSelectMap(map: string) {
+        this.gameScreen?.setSelectMap(map);
     }
 }
 

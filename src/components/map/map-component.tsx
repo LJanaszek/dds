@@ -12,13 +12,15 @@ type Props = {
 
     // ID zaznaczonego punktus
     selectedPoint?: string,
+
+    selectMap?: string
 }
 
 /**
  * To jest podstawowy komponent mapy.
  * Style są tak skonstruowane aby zajmował całą dostepną przestrzeń rodzica.
  */
-export function MapComponent({ onPointerClicked, selectedPoint, mapPointsData }: PropsWithChildren<Props>) {
+export function MapComponent({ onPointerClicked, selectedPoint, mapPointsData, selectMap }: PropsWithChildren<Props>) {
     // Ref do kontenera w którym umieścimy Widget PIXI
     const widgetContainerRef = useRef<HTMLDivElement>(null);
 
@@ -63,6 +65,11 @@ export function MapComponent({ onPointerClicked, selectedPoint, mapPointsData }:
         }
     }, [selectedPoint, appReady]);
 
+    useEffect(() => {
+        if (appRef.current && appReady) {
+            appRef.current.setSelectMap(selectMap || 'map');
+        }
+    })
     // Jak zmienią sie dane punktów (nie powinny) to jest przesyłamy do widgetu
     useEffect(() => {
         if (appRef.current && appReady) {

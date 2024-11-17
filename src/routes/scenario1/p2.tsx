@@ -64,6 +64,7 @@ export default function P2() {
                 onPointerClicked={onPointerClicked}
                 mapPointsData={mapPointsData}
                 selectedPoint={selectedPoint}
+                selectMap="klub"
             /> 
             <Notepad wordsList={textList} />
              {showButton && <Link to={getGameRoute(PAGES.pa8)}>Przejdź dalej</Link>}
