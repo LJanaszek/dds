@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
-import Radio from "../../components/radio";
+
 import style from "./style.module.scss"
 import { Link } from "react-router-dom";
-import { getGameRoute, PAGES } from "..";
+import Radio from "../../../../components/radio";
+import { getGameRoute, PAGES } from "../../../../routes";
+
 
 export default function P8() {
     const [showButton, setShowButton] = useState(false);
@@ -72,7 +74,7 @@ export default function P8() {
                 return <div className={style.radioContainer}>
                     <p>{e}</p>
 
-                    <Radio onOKClick={(e) => {
+                    <Radio onOKClick={(e:any) => {
                         setContent(popUpContent[index][name][e.currentTarget.children[0].value]);
                         setSelectedPoint(selectedPoint + 1);
                         radioPoints[name as keyof typeof radioPoints] = e.currentTarget.children[0].value;

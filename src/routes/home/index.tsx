@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { getGameRoute, PAGES } from "..";
+
 import style from "./style.module.scss"
+import { getGameRoute, PAGES } from "..";
 
 export default function HomePage() {
     return (

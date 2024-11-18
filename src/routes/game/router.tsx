@@ -4,6 +4,7 @@ import useGame from "../../modules/main/hooks/use-game";
 import { getGameRoute, PAGES } from "..";
 
 
+
 export default function GameRouter() {
     return <>
         {Object.keys(PAGES).map(id => {

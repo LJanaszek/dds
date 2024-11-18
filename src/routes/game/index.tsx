@@ -1,19 +1,19 @@
 import { useMemo } from "react";
 import { CHARACTER_GENDER, MAIN_MODULE_ACTION, useMainModuleDispatch } from "../../modules/main"
-import P1a from "../scenario1/p1"; 
-import P2a from "../scenario1/p2";
-import P3a from "../scenario1/p3";
-import P4a from "../scenario1/p4";
-import P5a from "../scenario1/p5";
-import P6a from "../scenario1/p6";
-import P7a from "../scenario1/p7";
-import P8a from "../scenario1/p8";
-import P9a from "../scenario1/p9";
-import P10a from "../scenario1/p10";
-import P11a from "../scenario1/p11";
-import P12a from "../scenario1/p12";
-import P13a from "../scenario1/p13";    
-import P14a from "../scenario1/p14";
+import P1a from "../../modules/main/game/scenario1/p1"; 
+import P2a from "../../modules/main/game/scenario1/p2";
+import P3a from "../../modules/main/game/scenario1/p3";
+import P4a from "../../modules/main/game/scenario1/p4";
+import P5a from "../../modules/main/game/scenario1/p5";
+import P6a from "../../modules/main/game/scenario1/p6";
+import P7a from "../../modules/main/game/scenario1/p7";
+import P8a from "../../modules/main/game/scenario1/p8";
+import P9a from "../../modules/main/game/scenario1/p9";
+import P10a from "../../modules/main/game/scenario1/p10";
+import P11a from "../../modules/main/game/scenario1/p11";
+import P12a from "../../modules/main/game/scenario1/p12";
+import P13a from "../../modules/main/game/scenario1/p13";    
+import P14a from "../../modules/main/game/scenario1/p14";
 import { PAGES } from "..";
 import ScrollToMe from "@mborecki/react-scroll-to-me";
 

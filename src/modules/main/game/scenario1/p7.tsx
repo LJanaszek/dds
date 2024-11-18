@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { PointData } from "../../components/map/pixi-app/types";
-import { getGameRoute, PAGES } from "..";
-import PageText from "../../components/pageText";
+
+import { getGameRoute, PAGES } from "../../../../routes";
+
 import './style.module.scss'
 import { Link } from "react-router-dom";
-import Notepad from "../../components/notepad";
+import Notepad from "../../../../components/notepad";
+import PageText from "../../../../components/pageText";
+import { PointData } from "../../../../components/map/pixi-app/types";
 
 export interface GameMapPoint extends PointData {
     pointId: string

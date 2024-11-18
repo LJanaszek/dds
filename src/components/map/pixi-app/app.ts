@@ -37,7 +37,8 @@ export default class PixiApp extends PIXI.Application {
         loadSprites([
             ['przychodnia', `${config.assetsPath}przychodnia.png`],
             ['pinezka', `${config.assetsPath}pinezka.png`],
-            ['klub', `${config.assetsPath}klub.png`],
+            ['klub', `${config.assetsPath}klub/klub.png`],
+            ['bieznia', `${config.assetsPath}klub/bieznia.png`],
         ]).then(() => {
             this.initApp();
         });

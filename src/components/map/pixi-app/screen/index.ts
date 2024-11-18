@@ -15,7 +15,7 @@ export default class GameScreen extends Container implements IScreen {
     pointsMarkers: Container[] = [];
     mapPoints: PointData[] = [];
     selectedPointId: string | null = null;
-    selectMap: string = 'przychodnia';
+    selectMap: string = 'klub';
     events = new PIXI.utils.EventEmitter()
 
     constructor(private app: Application) {
@@ -39,10 +39,14 @@ export default class GameScreen extends Container implements IScreen {
 
         this.mapPoints
             .forEach((p) => {
-                const point = Sprite.from('pinezka');
+                let point = Sprite.from(p.pointer.name);
+                if (this.inactivePoints.includes(p.id)) {
+                    point = Sprite.from(p.pointer.visited);
+                }
+
                 point.anchor.set(.5, 1);
-                point.width = 60;
-                point.height = 90
+                point.width = p.pointer.width;
+                point.height = p.pointer.height;
                 point.position.set(p.position.x, p.position.y);
 
                 this.addChild(point);
@@ -50,7 +54,7 @@ export default class GameScreen extends Container implements IScreen {
                 point.eventMode = 'static';
                 point.cursor = 'pointer';
 
-                const hisBoxSize = point.height * 2;
+                const hisBoxSize = point.height;
 
                 const rect = new Rectangle(-hisBoxSize / 2, -hisBoxSize, hisBoxSize, hisBoxSize);
 
@@ -58,6 +62,7 @@ export default class GameScreen extends Container implements IScreen {
 
                 point.on('pointerdown', () => {
                     this.events.emit('pointer-clicked', p.id);
+
                     
                 });
 
@@ -69,6 +74,8 @@ export default class GameScreen extends Container implements IScreen {
                 }
 
                 if (this.inactivePoints.includes(p.id)) {
+                    point = Sprite.from(p.pointer.visited);
+                    this.addChild(point);
                     point.filters = [
                         ...(point.filters || []),
                         greyscaleFilter
@@ -77,6 +84,18 @@ export default class GameScreen extends Container implements IScreen {
 
                 this.pointsMarkers.push(point);
             });
+            console.log(this.inactivePoints)
+            this.mapPoints
+                .filter((p) => this.inactivePoints.includes(p.id))
+                .forEach((p) => {
+                    console.log(p, "inactive")
+                    const point = Sprite.from(p.pointer.visited);
+                    point.anchor.set(.5, 1);
+                    point.width = p.pointer.width;
+                    point.height = p.pointer.height;
+                    point.position.set(p.position.x, p.position.y);
+                    this.addChild(point);
+                });
     }
 
     isValid(): boolean {

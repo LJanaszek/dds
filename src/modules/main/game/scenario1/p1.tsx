@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { getGameRoute, PAGES } from "..";
+import { getGameRoute, PAGES } from "../../../../routes";
 
 export default function P1() {
     return (

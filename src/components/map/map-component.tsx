@@ -9,7 +9,7 @@ type Props = {
 
     // Lista wszsytkich punktów w grze
     mapPointsData: PointData[],
-
+    inactivePointsId: string[],
     // ID zaznaczonego punktus
     selectedPoint?: string,
 
