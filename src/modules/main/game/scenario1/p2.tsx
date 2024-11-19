@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 
-import "../../style.scss";
+import "../../../../style.scss";
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
 import { getGameRoute, PAGES } from "../../../../routes";
@@ -12,10 +12,19 @@ export interface GameMapPoint extends PointData {
     pointId: string
 }
 let textList: string[] = [];
+let inactivePoints: string[] = [];
 export default function P2() {
+    if(!localStorage.getItem('inactivePoints')) {
+        localStorage.setItem("inactivePoints", JSON.stringify([]));
+    }
+    else{
+        inactivePoints = JSON.parse(localStorage.getItem('inactivePoints')!);
+    }
+
+
     const [showButton, setShowButton] = useState(false);
     const [selectedPoint, setSelectedPoint] = useState<string>();
-    const [inactivePoints, setInactivePoints] = useState<string[]>([]);
+    console.log(inactivePoints);
     if (localStorage.getItem('textList')) {
         textList = (JSON.parse(localStorage.getItem('textList')!));
        
@@ -64,9 +73,15 @@ export default function P2() {
     const onPointerClicked = useCallback((id: string) => {
 
         console.log(`KTOS KLIKNAL ${id} `);
-        inactivePoints.push(id);
+        if(!inactivePoints.includes(id)){
+             inactivePoints.push(id);
+        }
+       
         alert(`KTOS KLIKNAL ${id} `);
+
         setSelectedPoint(id);
+     
+        localStorage.setItem("inactivePoints", JSON.stringify(inactivePoints));
         console.log(selectedPoint);
         console.log(typeof(PAGES[id]), "--------------")
         window.location.href = PAGES[id]

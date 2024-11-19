@@ -39,6 +39,7 @@ export default class PixiApp extends PIXI.Application {
             ['pinezka', `${config.assetsPath}pinezka.png`],
             ['klub', `${config.assetsPath}klub/klub.png`],
             ['bieznia', `${config.assetsPath}klub/bieznia.png`],
+            ['biezniaVisited', `${config.assetsPath}klub/bieznia_done.png`],
         ]).then(() => {
             this.initApp();
         });

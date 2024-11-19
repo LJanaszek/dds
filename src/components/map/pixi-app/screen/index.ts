@@ -9,9 +9,10 @@ const glowFilter = new GlowFilter({ distance: 15, outerStrength: 3 })
 const greyscaleFilter = new GrayscaleFilter();
 
 export default class GameScreen extends Container implements IScreen {
+    inactivePoints: string[] = [];
+
 
     activePoints: string[] = [];
-    inactivePoints: string[] = [];
     pointsMarkers: Container[] = [];
     mapPoints: PointData[] = [];
     selectedPointId: string | null = null;
@@ -33,17 +34,20 @@ export default class GameScreen extends Container implements IScreen {
     }
 
     private updatePoints() {
-
+        if (!localStorage.getItem('inactivePoints') && this.inactivePoints.length === 0) {
+            this.inactivePoints = [];
+        }
+        else if (localStorage.getItem('inactivePoints') && this.inactivePoints.length === 0) {
+            this.inactivePoints = JSON.parse(localStorage.getItem('inactivePoints')!);
+            console.log(this.inactivePoints, "------------------")
+        }
         this.pointsMarkers.forEach(p => p.destroy());
         this.pointsMarkers.length = 0;
 
         this.mapPoints
+           
             .forEach((p) => {
                 let point = Sprite.from(p.pointer.name);
-                if (this.inactivePoints.includes(p.id)) {
-                    point = Sprite.from(p.pointer.visited);
-                }
-
                 point.anchor.set(.5, 1);
                 point.width = p.pointer.width;
                 point.height = p.pointer.height;
@@ -63,7 +67,7 @@ export default class GameScreen extends Container implements IScreen {
                 point.on('pointerdown', () => {
                     this.events.emit('pointer-clicked', p.id);
 
-                    
+
                 });
 
                 if (p.id === this.selectedPointId) {
@@ -73,29 +77,43 @@ export default class GameScreen extends Container implements IScreen {
                     ]
                 }
 
-                if (this.inactivePoints.includes(p.id)) {
-                    point = Sprite.from(p.pointer.visited);
-                    this.addChild(point);
+                this.pointsMarkers.push(point);
+            });
+            this.mapPoints
+            .filter((p) => this.inactivePoints.includes(p.id))
+            .forEach((p) => {
+                let point = Sprite.from(p.pointer.visited);
+                console.log(this.inactivePoints, "------------------")
+                point.anchor.set(.5, 1);
+                point.width = p.pointer.width;
+                point.height = p.pointer.height;
+                point.position.set(p.position.x, p.position.y);
+
+                this.addChild(point);
+                point.eventMode = 'static';
+                point.cursor = 'pointer';
+
+                const hisBoxSize = point.height;
+
+                const rect = new Rectangle(-hisBoxSize / 2, -hisBoxSize, hisBoxSize, hisBoxSize);
+
+                point.hitArea = rect;
+
+                point.on('pointerdown', () => {
+                    this.events.emit('pointer-clicked', p.id);
+
+
+                });
+
+                if (p.id === this.selectedPointId) {
                     point.filters = [
                         ...(point.filters || []),
-                        greyscaleFilter
+                        glowFilter
                     ]
                 }
 
                 this.pointsMarkers.push(point);
             });
-            console.log(this.inactivePoints)
-            this.mapPoints
-                .filter((p) => this.inactivePoints.includes(p.id))
-                .forEach((p) => {
-                    console.log(p, "inactive")
-                    const point = Sprite.from(p.pointer.visited);
-                    point.anchor.set(.5, 1);
-                    point.width = p.pointer.width;
-                    point.height = p.pointer.height;
-                    point.position.set(p.position.x, p.position.y);
-                    this.addChild(point);
-                });
     }
 
     isValid(): boolean {
