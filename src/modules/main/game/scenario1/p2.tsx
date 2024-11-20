@@ -54,14 +54,75 @@ export default function P2() {
             },{
                 id: 'pa4',
                 pointer:{
-                    name: 'bieznia',
-                    visited: 'biezniaVisited',
-                    height: 90,
-                    width: 60
+                    name: 'boisko1',
+                    visited: 'boisko1Visited',
+                    width: 870,
+                    height: 474,
+                   
                 },
                 position: {
-                    x: 440,
-                    y: 240,
+                    x: 714,
+                    y: 770,
+                },
+                pointId: '8.1',
+               
+            },{
+                id: 'pa5',
+                pointer:{
+                    name: 'boisko2',
+                    visited: 'boisko2Visited',
+                    width: 421,
+                    height: 662,
+                   
+                },
+                position: {
+                    x: 2430,
+                    y: 850,
+                },
+                pointId: '8.1',
+               
+            },{
+                id: 'pa6',
+                pointer:{
+                    name: 'szkol',
+                    visited: 'szkolVisited',
+                    width: 1636,
+                    height: 979,
+                   
+                },
+                position: {
+                    x: 1025,
+                    y: 1785,
+                },
+                pointId: '8.1',
+               
+            },{
+                id: 'pa7',
+                pointer:{
+                    name: 'szatnie',
+                    visited: 'szatnieVisited',
+                    width: 570,
+                    height: 622,
+                   
+                },
+                position: {
+                    x: 2245,
+                    y: 1586,
+                },
+                pointId: '8.1',
+               
+            },{
+                id: 'pa8',
+                pointer:{
+                    name: 'parking',
+                    visited: 'parkingVisited',
+                    width: 1684,
+                    height: 221,
+                   
+                },
+                position: {
+                    x: 1065,
+                    y: 2069,
                 },
                 pointId: '8.1',
                

@@ -40,6 +40,16 @@ export default class PixiApp extends PIXI.Application {
             ['klub', `${config.assetsPath}klub/klub.png`],
             ['bieznia', `${config.assetsPath}klub/bieznia.png`],
             ['biezniaVisited', `${config.assetsPath}klub/bieznia_done.png`],
+            ['boisko1' , `${config.assetsPath}klub/boisko1.png`],
+            ['boisko1Visited' , `${config.assetsPath}klub/boisko1_done.png`],
+            ['boisko2' , `${config.assetsPath}klub/boisko2.png`],
+            ['boisko2Visited' , `${config.assetsPath}klub/boisko2_done.png`],
+            ['szkol', `${config.assetsPath}klub/bud_glow.png`],
+            ['szkolVisited', `${config.assetsPath}klub/bud_glow_done.png`],
+            ['szatnie', `${config.assetsPath}klub/szatnie.png`],
+            ['szatnieVisited', `${config.assetsPath}klub/szatnie_done.png`],
+            ['parking', `${config.assetsPath}klub/parking.png`],
+            ['parkingVisited', `${config.assetsPath}klub/parking_done.png`],
         ]).then(() => {
             this.initApp();
         });

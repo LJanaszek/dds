@@ -59,8 +59,9 @@ export default class GameScreen extends Container implements IScreen {
                 point.cursor = 'pointer';
 
                 const hisBoxSize = point.height;
+                const hisBoxSizeWidth = point.width
 
-                const rect = new Rectangle(-hisBoxSize / 2, -hisBoxSize, hisBoxSize, hisBoxSize);
+                const rect = new Rectangle(-hisBoxSizeWidth / 2, -hisBoxSize, hisBoxSizeWidth, hisBoxSize);
 
                 point.hitArea = rect;
 
