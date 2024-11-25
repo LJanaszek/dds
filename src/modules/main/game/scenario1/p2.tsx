@@ -29,7 +29,7 @@ export default function P2() {
 
     }
     useEffect(() => {
-        if (textList.length === 5) {
+        if (textList.length === 6) {
             setShowButton(true);
         }
     })

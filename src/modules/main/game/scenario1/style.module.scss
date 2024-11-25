@@ -15,11 +15,6 @@ span {
   cursor: pointer !important;
 }
 
-.radioContainer {
-  display: grid;
-  grid-template-columns: 30vw 1fr;
-}
-
 .mapPage {
   h3 {
     display: flex;
@@ -91,5 +86,23 @@ span {
   font-size: 1.4em;
   &::after {
     content: " >";
+  }
+}
+.checkbox{
+  display: flex;
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+  }
+    ;
+  .radioContainer{
+  
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
   }
 }

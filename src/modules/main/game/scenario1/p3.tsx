@@ -20,12 +20,13 @@ export default function P3() {
     const words: { [key: string]: string } = {
         Lorem: 'dupa dupa',
         ipsum: 'ipsum dolor',
+        ipsum2: 'ipsum dolor2',
         dolor: 'dolor sit',
         sit: 'sit amet',
         12345678: '1234',
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 5) {
+        if (!textList.includes(words[text]) && textList.length < 6) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -47,6 +48,10 @@ export default function P3() {
                     <span onClick={(e) =>
                         addTextToList(e.currentTarget.innerText)}>
                         Lorem
+                    </span>
+                    <span onClick={(e) =>
+                        addTextToList(e.currentTarget.innerText)}>
+                        ipsum2
                     </span>
                     <span onClick={(e) =>
                         addTextToList(e.currentTarget.innerText)}>

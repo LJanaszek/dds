@@ -7,9 +7,9 @@ export type RadioProps = {
 export default function Radio(
     { onOKClick, children, name }: RadioProps) {
     return <div className={style.radioContainer}>
-        <div>
+        <p>
             {children}
-        </div>
+        </p>
         <form>
             <label onClick={(e)=>{onOKClick(e)}}>
                 0

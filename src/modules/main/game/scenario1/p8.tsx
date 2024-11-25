@@ -44,7 +44,7 @@ export default function P8() {
     }), []);
     let description = [];
 
-    
+
 
     if (localStorage.getItem('textList')) {
         description = (JSON.parse(localStorage.getItem('textList')!));
@@ -61,37 +61,45 @@ export default function P8() {
             setShowButton(true)
         }
         Object.values(radioPoints).forEach((key: any) => {
-            a+=parseInt(key)
+            a += parseInt(key)
         })
-        setPoints(8-a)
+        setPoints(8 - a)
     }, [popUpContent.length, selectedPoint])
     console.log(radioPoints)
     return (
-        <div>
-            <p>{points}</p>
-            {description!.map((e: any, index: any) => {
-                let name = 'points' + index.toString();
-                return <div className={style.radioContainer}>
-                    <p>{e}</p>
+        <div className={style.checkbox}>
+           
+            <div className={style.gridContainer}>
+                {description!.map((e: any, index: any) => {
+                    let name = 'points' + index.toString();
 
-                    <Radio onOKClick={(e:any) => {
-                        setContent(popUpContent[index][name][e.currentTarget.children[0].value]);
-                        setSelectedPoint(selectedPoint + 1);
-                        radioPoints[name as keyof typeof radioPoints] = e.currentTarget.children[0].value;
-                        document.querySelectorAll("input").forEach((element: any) => {
-                            if (element.name === (e.currentTarget.children[0].name) && e.currentTarget.children[0].value > element.value) {
-                                element.setAttribute("disabled", "true");
-                            }
-                            if(element.name === (e.currentTarget.children[0].name) &&points === 0){
-                                element.setAttribute("disabled", "true");
-                            }
-                        })
-                    }}
-                        name={name} >
-                    </Radio>
-                </div>
-            })}
-            <p>{content}</p>
+                    return <div className={style.radioContainer}>
+
+
+                        <Radio onOKClick={(e: any) => {
+                            setContent(popUpContent[index][name][e.currentTarget.children[0].value]);
+                            setSelectedPoint(selectedPoint + 1);
+                            radioPoints[name as keyof typeof radioPoints] = e.currentTarget.children[0].value;
+                            document.querySelectorAll("input").forEach((element: any) => {
+                                if (element.name === (e.currentTarget.children[0].name) && e.currentTarget.children[0].value > element.value) {
+                                    element.setAttribute("disabled", "true");
+                                }
+                                if (element.name === (e.currentTarget.children[0].name) && points === 0) {
+                                    element.setAttribute("disabled", "true");
+                                }
+                            })
+                        }}
+                            name={name} >
+                            <p>{e}</p>
+                        </Radio>
+                    </div>
+
+                })}
+            </div>
+            <div>
+                <p>{content}</p>
+            </div>
+            
             {
                 showButton &&
                 <Link onClick={() => {
