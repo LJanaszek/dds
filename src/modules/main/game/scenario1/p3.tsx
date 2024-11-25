@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-
+import taskImg from "../../../../assets/locations/klub/sport_wpis_bglow.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
 import PageText from "../../../../components/pageText";
+import Notepad from "../../../../components/notepad";
 
 export interface GameMapPoint extends PointData {
     pointId: string
@@ -38,10 +39,13 @@ export default function P3() {
             localStorage.removeItem('textList')
         }
     }, [textList])
-    return (<div>
-        <section>
+    return (<div className={style.page}>
+        <h3>Nazwa gry &gt; klub sportowy &gt; budynek główny</h3>
+        <section className={style.task}>
+            <img src={taskImg} alt="" />
             <PageText
-                image="">
+                image={""}>
+                <h2>Budynek główny</h2>
                 <p>
                     <span onClick={(e) =>
                         addTextToList(e.currentTarget.innerText)}>
@@ -66,16 +70,11 @@ export default function P3() {
                     </span>
                     Nobis sit aspernatur autem tempore! </p>
             </PageText>
-            <ul>
-                {textList.map((text, index) =>
-                    <li 
-                    className={style.textList} 
-                    key={index}
-                        onClick={(e) => removeTextFromList(e.currentTarget.innerText)}>
-                        {text}
-                    </li>)}
-            </ul>
+            
         </section>
+        <Notepad 
+            wordsList={textList}
+        />
         <Link onClick={() => {
             localStorage.setItem('textList', JSON.stringify(textList));
         }} to={getGameRoute(PAGES.pa2)}>Wróć do mapy</Link>
