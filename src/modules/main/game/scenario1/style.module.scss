@@ -1,11 +1,10 @@
-span{
-    cursor: pointer;
-    &:hover{
-        
-    }
+span {
+  cursor: pointer;
+  &:hover {
+  }
 }
-.clicked{
-    cursor: text !important;
+.clicked {
+  cursor: text !important;
 }
 .textList {
   // background-color: aqua;
@@ -16,13 +15,13 @@ span{
   cursor: pointer !important;
 }
 
-.radioContainer{
+.radioContainer {
   display: grid;
   grid-template-columns: 30vw 1fr;
 }
 
-.mapPage{
-  h3{
+.mapPage {
+  h3 {
     display: flex;
     width: 75%;
     margin: 0 auto;
@@ -30,17 +29,67 @@ span{
   }
 }
 
-.page{
-  h3{
-    
+.page {
+  h3 {
+    display: flex;
+    width: 90%;
+    margin: 1em auto;
+    color: var(--secondColor);
+    span {
+      color: var(--thirdColor);
+    }
   }
-  .task{
+  .task {
+    max-width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    justify-items: center;
+
+    img {
+      width: 80%;
+    }
+    h1 {
+      color: var(--thirdColor);
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.4em;
+      text-align: justify;
+      margin-right: 1em;
+    }
+  }
+  .back {
     max-width: 70vw;
     display: flex;
-    align-items: center;
-    img{
-      width: 40%;
+    justify-content: flex-end;
+    a {
+      font-family: Oswald;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--thirdColor);
+      font-size: 1.4em;
+      margin-right: 1em;
+      &::after {
+        content: " >";
+      }
     }
-    // display: ;
+  }
+}
+
+.button {
+  z-index: 4;
+  position: absolute;
+  bottom: 5vh;
+  right: 25vw;
+  transform: translateX(-50%);
+
+  text-decoration: none;
+  color: var(--secondColor);
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 1.4em;
+  &::after {
+    content: " >";
   }
 }

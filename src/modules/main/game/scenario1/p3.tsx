@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_bglow.png"
+import taskImg from "../../../../assets/locations/klub/sport_wpis_bieznia.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -15,37 +15,34 @@ export interface GameMapPoint extends PointData {
 export default function P3() {
 
     const [textList, setTextList] = useState<string[]>([])
+    const [stateAdd, setStateAdd] = useState(0)
 
-    const words :{[key: string]: string} = {
-        Lorem : 'dupa dupa',
-        ipsum : 'ipsum dolor',
-        dolor : 'dolor sit',
-        sit : 'sit amet',
+    const words: { [key: string]: string } = {
+        Lorem: 'dupa dupa',
+        ipsum: 'ipsum dolor',
+        dolor: 'dolor sit',
+        sit: 'sit amet',
+        12345678: '1234',
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 5) {
             setTextList([...textList, words[text]])
         }
-    }
-    const removeTextFromList = (text: any) => {
-        //adding elements to list according to words keys
-        if (textList.includes(text)) {   
-            setTextList(textList.filter(item => item !== text))
-        }
+        localStorage.setItem('textList', JSON.stringify(textList));
+        setStateAdd(stateAdd + 1)
     }
     useEffect(() => {
-        if (localStorage.getItem('textList')) {
-            setTextList(JSON.parse(localStorage.getItem('textList')!));
-            localStorage.removeItem('textList')
+        if (localStorage.getItem('textList') && textList.length === 0) {
+           setTextList(JSON.parse(localStorage.getItem('textList')!));
         }
-    }, [textList])
+    }, [stateAdd])
     return (<div className={style.page}>
-        <h3>Nazwa gry &gt; klub sportowy &gt; budynek główny</h3>
+        <h3><span>Nazwa gry  &gt; </span> klub sportowy <span> &gt; </span>bieznia</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h2>Budynek główny</h2>
+                <h1>Bieznia</h1>
                 <p>
                     <span onClick={(e) =>
                         addTextToList(e.currentTarget.innerText)}>
@@ -68,16 +65,19 @@ export default function P3() {
                         addTextToList(e.currentTarget.innerText)}>
                         12345678
                     </span>
-                    Nobis sit aspernatur autem tempore! </p>
+                    Nobis sit aspernatur autem tempore!
+                </p>
             </PageText>
-            
+
         </section>
-        <Notepad 
+        <Notepad
             wordsList={textList}
         />
-        <Link onClick={() => {
-            localStorage.setItem('textList', JSON.stringify(textList));
-        }} to={getGameRoute(PAGES.pa2)}>Wróć do mapy</Link>
+        <nav className={style.back}>
+            <Link to={getGameRoute(PAGES.pa2)}
+                onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
+            >Wróć do mapy</Link>
+        </nav>
     </div>
     );
 }

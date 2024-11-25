@@ -111,7 +111,7 @@ export default function P2() {
                 pointId: '8.1',
 
             }, {
-                id: 'pa8',
+                id: 'pa10',
                 pointer: {
                     name: 'parking',
                     visited: 'parkingVisited',
@@ -163,7 +163,7 @@ export default function P2() {
                     selectMap="klub"
                 />
                
-                {showButton && <Link to={getGameRoute(PAGES.pa8)}>Przejdź dalej</Link>}
+                {showButton && <Link to={getGameRoute(PAGES.pa8)} className={style.button}>Przejdź dalej</Link>}
             </div>
              <Notepad wordsList={textList} />
         </div>
