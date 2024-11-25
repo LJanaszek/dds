@@ -1,7 +1,58 @@
-.textList {
+.notepad {
+  position: absolute;
+  right: 0;
+  top: 0;
   margin: 0;
-  border-left: 3px solid black;
-  height: 100%;
+  max-height: 100%;
+  height: -webkit-fill-available;
+  min-width: 20vw;
+  border-top-left-radius: 3em;
+  padding: 2em 4em;
+  background-color: var(--baseBackgroundColor);
+  background-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 20vw;
+  align-items: center;
+  justify-content: center;
+  p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+    color: white;
+  }
+  img {
+    width: auto;
+    max-width: 3em;
+    margin-bottom: 5px;
+  }
+}
 
-  
+.textList {
+  list-style-type: none;
+  padding: 0;
+  li {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    b{
+      color: white;
+    }
+  }
+  li::before {
+    content: "";
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
+    background-image: url("../../assets/notepad/pen_blue.png");
+    background-repeat: no-repeat;
+    margin-right: 5px;
+  }
 }

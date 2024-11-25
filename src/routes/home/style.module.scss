@@ -1,20 +1,108 @@
-.homePageView{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    a{
-        margin: 10px;
-        padding: 1em;
-        text-decoration: none;
-        color: #fff;
-        background-color: #000;
-        border-radius: 5px;
-        transition: 0.3s;
-        width: 20vw;
-        text-align: center;
-        &:hover{
-            background-color: #444;
+.homePageView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--baseBackgroundColor);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 90vw;
+    height: 40vh;
+    gap: 2em;
+    .link {
+      font-family: "Oswald", sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      color: white;
+      display: grid;
+      grid-template-rows: 60% 20% 20%;
+      align-items: center;
+      flex-direction: column;
+      border: 4px solid white;
+      border-radius: 1em;
+      
+      background-color: var(--baseBackgroundColor);
+      &:hover {
+        background-color: white;
+        .lekarz {
+          background-image: url("../../assets/scenarios/scen_przych2.png");
         }
+        .oboz {
+          background-image: url("../../assets/scenarios/scen_oboz2.png");
+        }
+        .trening {
+          background-image: url("../../assets/scenarios/scen_sport2.png");
+        }
+        .lesson {
+          background-image: url("../../assets/scenarios/scen_szkola2.png");
+        }
+        .teacher {
+          background-image: url("../../assets/scenarios/scen_online2.png");
+        }
+        span{
+            color: var(--secondColor);
+        }
+        p {
+          color: var(--baseBackgroundColor);
+        }
+      }
     }
+    span {
+      margin: 0 auto;
+      &:hover {
+        color: var(--secondColor);
+      }
+    }
+    p{
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+    }
+    div {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .lekarz {
+      background-image: url("../../assets/scenarios/scen_przych.png");
+      &:hover {
+        background-image: url("../../assets/scenarios/scen_przych2.png");
+      }
+    }
+    .oboz {
+      background-image: url("../../assets/scenarios/scen_oboz.png");
+      &:hover {
+        background-image: url("../../assets/scenarios/scen_oboz2.png");
+      }
+    }
+    .trening {
+      background-image: url("../../assets/scenarios/scen_sport.png");
+      &:hover {
+        background-image: url("../../assets/scenarios/scen_sport2.png");
+      }
+    }
+    .lesson {
+      background-image: url("../../assets/scenarios/scen_szkola.png");
+      &:hover {
+        background-image: url("../../assets/scenarios/scen_szkola2.png");
+      }
+    }
+    .teacher {
+      background-image: url("../../assets/scenarios/scen_online.png");
+      &:hover {
+        background-image: url("../../assets/scenarios/scen_online2.png");
+      }
+    }
+  }
 }

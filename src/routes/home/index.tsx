@@ -7,11 +7,55 @@ export default function HomePage() {
     return (
         <div className={style.homePageView}>
             <h1>Wybierz scenariusz</h1>
-            <Link to={getGameRoute(PAGES.pa1)}>Wizyta u lekarza</Link>
-            <Link to={getGameRoute(PAGES.pb2)}>Obóz wakacyjny</Link>
-            <Link to={getGameRoute(PAGES.pb3)}>Trening piłkarski</Link>
-            <Link to={getGameRoute(PAGES.pb4)}>Lekcja w szkole</Link>
-            <Link to={getGameRoute(PAGES.pb5)}>Kontakt z nauczycielem poza szkołą, online</Link>
+            <nav className={style.nav}>
+                <Link to={getGameRoute(PAGES.pa1)} className={style.link}>
+                    <div className={style.lekarz}></div>
+                    <p>
+                        Wizyta u lekarza w przychodni
+                    </p>
+                    <span>
+                        Sprawdź &gt;
+                    </span>
+                </Link>
+                <Link to={getGameRoute(PAGES.pb2)} className={style.link}>
+                    <div className={style.oboz}></div>
+                    <p>
+                        Obóz wakacyjny
+                    </p>
+                    <span>
+                        Sprawdź &gt;
+                    </span>
+                </Link>
+                <Link to={getGameRoute(PAGES.pb3)} className={style.link}>
+                    <div className={style.trening}></div>
+                    <p>
+                        Trening piłkarski
+                    </p>
+                    <span>
+                        Sprawdź &gt;
+                    </span>
+                </Link>
+                <Link to={getGameRoute(PAGES.pb4)} className={style.link}>
+
+                    <div className={style.lesson}></div>
+                    <p>
+                        Lekcja w szkole
+                    </p>
+                    <span>
+                        Sprawdź &gt;
+                    </span>
+                </Link>
+                <Link to={getGameRoute(PAGES.pb5)} className={style.link}>
+
+                    <div className={style.teacher}></div>
+                    <p>
+                        Kontakt z nauczycielem poza szkołą, online
+                    </p>
+                    <span>
+                        Sprawdź &gt;
+                    </span>
+                </Link>
+            </nav>
         </div>
     );
 }

@@ -1,10 +1,13 @@
 .mapComponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   canvas {
     /* outline: 1px red solid; */
     object-fit: contain;
 
     @media (orientation: landscape) {
-      max-width: 100%;
+      max-width: 75%;
       height: auto;
       max-height: 92%;
     }

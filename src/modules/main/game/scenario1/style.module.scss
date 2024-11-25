@@ -7,14 +7,6 @@ span{
 .clicked{
     cursor: text !important;
 }
-a{
-  position: relative;
-  top: 5em;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-}
 .textList {
   // background-color: aqua;
   width: fit-content;
@@ -32,4 +24,13 @@ section{
 .radioContainer{
   display: grid;
   grid-template-columns: 30vw 1fr;
+}
+
+.mapPage{
+  h3{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    color: var(--secondColor);
+  }
 }

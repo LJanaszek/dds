@@ -1,13 +1,11 @@
 :root{
     //base
     --baseColor: #b6e4f6;
-    --secondColor: #3b9bc0;
-    --thirdColor: #eb4a57;
+    --secondColor: #009DC5;
+    --thirdColor: #E83F4B;
 
     //text
-    --mainTextColor: #000;
-    --secondTextColor: #333;
-    --spanColor: var(--thirdColor);
+    --baseBackgroundColor: var(--thirdColor);
     
     
     //buttons
