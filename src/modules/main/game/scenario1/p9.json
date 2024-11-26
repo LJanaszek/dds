@@ -1,13 +1,11 @@
 {
-  "name": "P9",
-  "checkbox": {
-    "ipsum dolor2": {
+    "ipsum dolor": {
       "case1": {
         "name": "lorem",
         "isTrue": false
       },
       "case2": {
-        "name": "Informujesz rodziców o wnioskach z rozpoznania sprawy.",
+        "name": "Informujeszą rodziców o wnioskach z rozpoznania sprawy.",
         "isTrue": true
       },
       "case3": {
@@ -35,6 +33,29 @@
         "isTrue": true
       }
     },
-    "ipsum dolor": {}
+    
+      "dolor sit": {
+        "case1": {
+          "name": "Planujesz spotkanie z psychologiem sportu dla całej drużyny.",
+          "isTrue": true
+        },
+        "case2": {
+          "name": "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
+          "isTrue": true
+        },
+        "case3": {
+          "name": "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
+          "isTrue": true
+        },
+        "case4": {
+          "name": "Zawiadamiasz policją o moglności popełnienia przestępstwa.",
+          "isTrue": true
+        },
+        "case5": {
+          "name": "Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.",
+          "isTrue": true
+        }}
+    
+   
   }
-}
+
