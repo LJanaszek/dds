@@ -1,38 +1,40 @@
 {
   "name": "P9",
   "checkbox": {
-    "case1": {
-      "name": "lorem",
-      "isTrue": false
+    "ipsum dolor2": {
+      "case1": {
+        "name": "lorem",
+        "isTrue": false
+      },
+      "case2": {
+        "name": "Informujesz rodziców o wnioskach z rozpoznania sprawy.",
+        "isTrue": true
+      },
+      "case3": {
+        "name": "Planujesz spotkanie z psychologiem sportu dla całej drużyny.",
+        "isTrue": true
+      },
+      "case4": {
+        "name": "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
+        "isTrue": true
+      },
+      "case5": {
+        "name": "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
+        "isTrue": true
+      },
+      "case6": {
+        "name": "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+        "isTrue": true
+      },
+      "case7": {
+        "name": "Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.",
+        "isTrue": true
+      },
+      "case8": {
+        "name": "Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera i dajesz jasny sygnał, że nie jest dopuszczalne.",
+        "isTrue": true
+      }
     },
-    "case2": {
-      "name": "Informujesz rodziców o wnioskach z rozpoznania sprawy.",
-      "isTrue": true
-
-    },
-    "case3": {
-      "name": "Planujesz spotkanie z psychologiem sportu dla całej drużyny.",
-      "isTrue": true
-    },
-    "case4": {
-      "name": "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
-      "isTrue": true
-    },
-    "case5": {
-      "name": "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
-      "isTrue": true
-    },
-    "case6": {
-      "name": "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
-      "isTrue": true
-    },
-    "case7": {
-      "name": "Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.",
-      "isTrue": true
-    },
-    "case8": {
-      "name": "Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera i dajesz jasny sygnał, że nie jest dopuszczalne.",
-      "isTrue": true
-    }
+    "ipsum dolor": {}
   }
 }

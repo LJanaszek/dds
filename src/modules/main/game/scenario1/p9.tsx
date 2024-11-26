@@ -12,19 +12,7 @@ export default function P9() {
                 return (
                     <div key={key}>
                        
-                        <label>
-                            <input type="checkbox" 
-                            onClick={(e)=>{
-                                if(e.currentTarget.checked && values.isTrue){
-                                    setPoints(points+1)
-                                }
-                                else{
-                                    setPoints(points-1)
-                                }
-                            }}
-                            />
-                            {values.name}
-                        </label>
+                        
                     </div>
                 );
             })}
