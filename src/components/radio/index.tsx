@@ -1,31 +1,35 @@
 import style from "./style.module.scss";
+import pen from "../../assets/notepad/pen_blue.png"
 export type RadioProps = {
     name: string,
-    onOKClick: (e:any) => void,
+    onOKClick: (e: any) => void,
     children?: React.ReactNode
 }
 export default function Radio(
     { onOKClick, children, name }: RadioProps) {
     return <div className={style.radioContainer}>
+        <div className={style.image}>
+            <img src={pen} alt="" />
+        </div>
         <p>
             {children}
         </p>
         <form>
-            <label onClick={(e)=>{onOKClick(e)}}>
-                0
-                <input type="radio" name={name} value={0} />
+            <label onClick={(e) => { onOKClick(e) }}>
+                <span>0</span>
+                <input type="radio" name={name} value={0} disabled={true}/>
             </label>
-            <label onClick={(e)=>{onOKClick(e)}}>
-                1
-                <input type="radio" name={name} value={1} />
+            <label onClick={(e) => { onOKClick(e) }}>
+            <span>1</span>
+                <input type="radio" name={name} value={1} disabled={false}/>
             </label>
-            <label onClick={(e)=>{onOKClick(e)}}>
-                2
-                <input type="radio" name={name} value={2} />
+            <label onClick={(e) => { onOKClick(e) }}>
+            <span>2</span>
+                <input type="radio" name={name} value={2} disabled={false}/>
             </label>
-            <label onClick={(e)=>{onOKClick(e)}}>
-                3
-                <input type="radio" name={name} value={3} />
+            <label onClick={(e) => { onOKClick(e) }}>
+            <span>3</span>
+                <input type="radio" name={name} value={3} disabled={false}/>
             </label>
 
         </form>

@@ -1,21 +1,85 @@
-.radioContainer{
+.radioContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid var(--secondColor);
+  border-radius: 1em;
+  p {
+    margin: 0;
+    font-family: Oswald;
+    font-weight: 400;
+  }
+  .image {
+    width: -webkit-fill-available;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-top: 1em;
+    padding-right: 1em;
     align-items: center;
-    flex-direction: column;
-    border: 2px solid var(--secondColor);
-    border-radius: 1em;
-    width: 30vw;
-    p{
+    img {
+      width: 15%;
+    }
+  }
 
+  form {
+    display: flex;
+    margin: 2em 0;
+    justify-content: space-evenly;
+    height: 2em;
+    width: -webkit-fill-available;
+    * {
+      height: 2em;
     }
-    form{
+    label {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: inherit;
+      border: 3px solid var(--secondColor);
+      border-radius: 50%;
+      color: var(--secondColor);
+      span {
         display: flex;
-        label{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+        justify-content: center;
+        align-items: center;
+        width: 2em;
+        font-weight: 500;
+        font-family: Oswald;
+      }
+      input {
+        position: absolute;
+        margin: 0;
+        z-index: -1;
+        width: 2em;
+        height: 2em;
+        appearance: none;
+        // display: none;
+      }
+      //   input:checked  {
+      //     background: var(--secondColor);
+      //     border-radius: 1em;
+      //     color: white;
+      //   }
     }
+    label:has(input:checked) {
+      span {
+        color: white;
+      }
+      background: var(--secondColor);
+      color: white;
+    }
+    label:has(input:disabled) {
+      
+      *{
+        cursor: default;
+      }
+      span {
+      }
+      background: rgb(179, 179, 179);
+      color: white;
+    }
+  }
 }
