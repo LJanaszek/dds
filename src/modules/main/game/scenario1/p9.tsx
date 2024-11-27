@@ -1,41 +1,52 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import style from "./style.module.scss"
 import { getGameRoute, PAGES } from "../../../../routes";
 export default function P9() {
     //fetch data from p9.json file with utf-8 pl encoding
+    const [showButton, setShowButton] = useState(false);
+    const [number, setNumber] = useState(0);
+    const [caseList, setCaseList] = useState([]);
     const data = require('./p9.json');
-    let currentTable: { [key: string]: any } = {}
-    let keys: any[] = []
-    const [points, setPoints] = useState(0);
+    let keys = (Object.keys(data))
 
-    console.log(Object.keys(data));
-    Object.keys(data).forEach((key: any) => {
-        // console.log(key);
-        currentTable = ((data as { [key: string]: any })[key]);
-    })
-    Object.keys(currentTable).forEach((key: any) => {
-        keys.push(key)
-    })
-    let number = 0
-
-    if (localStorage.getItem('textList')) {
-
-    }
+    useEffect(() => {
+        setCaseList(Object.values(data[keys[number]]));
+        if (number === keys.length - 1) {
+            setShowButton(true);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [number]);
 
     return (
+        <div className={style.listDiv}>
+            <h1>
+                {keys[number]}
+            </h1>
+            <form className={style.checkboxForm}>
+                {caseList.map((item: any) => {
+                    return (
+                        <label>
+                            <input type="checkbox" key={item} />
+                            {item}
+                        </label>
+                    )
+                })}
 
-        <form>
-            {keys.map((key: any) => {
-                console.log(currentTable[key].name);
-                return <label key={key}>
-                    <input type="radio" key={key} />
-                    {currentTable[key].name}
-                </label>
-
-            })}
-        </form>
-
+            </form>
+            <div className={style.nav}>
+                {!showButton &&
+                    <button className={style.buttonNext} onClick={() => { setNumber(number + 1); console.log(number) }}>
+                        Dalej
+                    </button>
+                }
+                {showButton &&
+                    <Link to={getGameRoute(PAGES.pa11)} className={style.buttonNext}>
+                        Dalej2
+                    </Link>
+                }
+            </div>
+        </div>
 
     );
 }

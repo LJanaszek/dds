@@ -24,6 +24,8 @@ export default function P3() {
         dolor: 'dolor sit',
         sit: 'sit amet',
         12345678: '1234',
+        12: '12',
+        123: '123'
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -69,6 +71,14 @@ export default function P3() {
                     <span onClick={(e) =>
                         addTextToList(e.currentTarget.innerText)}>
                         12345678
+                    </span>
+                    <span onClick={(e) =>
+                        addTextToList(e.currentTarget.innerText)}>
+                        12
+                    </span>
+                    <span onClick={(e) =>
+                        addTextToList(e.currentTarget.innerText)}>
+                        123
                     </span>
                     Nobis sit aspernatur autem tempore!
                 </p>

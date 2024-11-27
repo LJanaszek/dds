@@ -68,6 +68,10 @@ span {
       &::after {
         content: " >";
       }
+      &:hover {
+        cursor: pointer;
+        color: var(--secondColor);
+      }
     }
   }
 }
@@ -78,14 +82,19 @@ span {
   bottom: 5vh;
   right: 25vw;
   transform: translateX(-50%);
-
+  background: none;
+  border: none;
   text-decoration: none;
-  color: var(--secondColor);
+  color: var(--thirdColor);
   font-family: Oswald;
   font-weight: 600;
   font-size: 1.4em;
   &::after {
     content: " >";
+  }
+  &:hover {
+    cursor: pointer;
+    color: var(--secondColor);
   }
 }
 
@@ -98,7 +107,6 @@ span {
   gap: 2em;
   width: 90vw;
 
-  
   .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,20 +118,19 @@ span {
   .container {
     display: grid;
     grid-template-rows: 20% 80%;
-    .progressBar{
+    .progressBar {
       display: flex;
       flex-direction: column;
       padding-bottom: 1em;
       height: 100%;
-      p{
+      p {
         font-size: 1em;
       }
-      .progress{
+      .progress {
         height: 3px;
         background-color: var(--secondColor);
-        ;
       }
-      .progressGray{
+      .progressGray {
         height: 3px;
         background-color: lightgray;
         position: relative;
@@ -136,23 +143,101 @@ span {
     padding: 2em;
     background-color: lightgray;
     border-radius: 1em;
-    h3{
+    h3 {
       margin: 0;
+    }
+  }
+}
+.link {
+  text-decoration: none;
+  color: var(--secondColor);
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: flex-end;
+  width: 90vw;
+  margin: 0 auto;
+  &::after {
+    content: " >";
+  }
+}
+.listDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .checkboxForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 60vh;
+    gap: 1em;
+    label {
+      // background-color: var(--secondColor);
+      border: 2px solid var(--secondColor);
+      height: 100%;
+      border-radius: 0.5em;
+      display: grid;
+      grid-template-columns: 10% 90%;
+      justify-content: flex-start;
+      align-items: center;
+      color: var(--secondColor);
+      padding: 0 1em;
+      gap: 1em;
+      &:hover{
+        cursor: pointer;
+      }
+      &:has(input:checked) {
+        background-color: var(--secondColor);
+        color: white;
+        input {
+          background-color: var(--thirdColor);
+          border-color: #fff;
+          border-width: 8px;
+        }
+      }
+      input {
+        width: 3.5em;
+        height: 3.5em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 2px solid var(--secondColor);
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+    
+  }
+  .nav{
+    width: 90vw;
+    margin: 2em 0;
+    display: flex;
+    justify-content: flex-end;
+    .buttonNext {
+      background: none;
+      border: none;
+      text-decoration: none;
+      color: var(--thirdColor);
+      font-family: Oswald;
+      font-weight: 600;
+      font-size: 1.6em;
+      &::after {
+        content: " >";
+      }
+      &:hover {
+        cursor: pointer;
+        color: var(--secondColor);
+      }
     }
   }
   
 }
-.link{
-    text-decoration: none;
-    color: var(--secondColor);
-    font-family: Oswald;
-    font-weight: 600;
-    font-size: 1.4em;
-    display: flex;
-    justify-content: flex-end;
-    width: 90vw;
-    margin: 0 auto;
-    &::after {
-      content: " >";
-    }
-  }

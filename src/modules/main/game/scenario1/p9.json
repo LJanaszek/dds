@@ -1,61 +1,24 @@
 {
-    "ipsum dolor": {
-      "case1": {
-        "name": "lorem",
-        "isTrue": false
-      },
-      "case2": {
-        "name": "Informujeszą rodziców o wnioskach z rozpoznania sprawy.",
-        "isTrue": true
-      },
-      "case3": {
-        "name": "Planujesz spotkanie z psychologiem sportu dla całej drużyny.",
-        "isTrue": true
-      },
-      "case4": {
-        "name": "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
-        "isTrue": true
-      },
-      "case5": {
-        "name": "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
-        "isTrue": true
-      },
-      "case6": {
-        "name": "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
-        "isTrue": true
-      },
-      "case7": {
-        "name": "Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.",
-        "isTrue": true
-      },
-      "case8": {
-        "name": "Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera i dajesz jasny sygnał, że nie jest dopuszczalne.",
-        "isTrue": true
-      }
-    },
-    
-      "dolor sit": {
-        "case1": {
-          "name": "Planujesz spotkanie z psychologiem sportu dla całej drużyny.",
-          "isTrue": true
-        },
-        "case2": {
-          "name": "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
-          "isTrue": true
-        },
-        "case3": {
-          "name": "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
-          "isTrue": true
-        },
-        "case4": {
-          "name": "Zawiadamiasz policją o moglności popełnienia przestępstwa.",
-          "isTrue": true
-        },
-        "case5": {
-          "name": "Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.",
-          "isTrue": true
-        }}
-    
-   
-  }
+  "ipsum dolor": {
+    "case1": ["lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 ", false],
+    "case2": ["lorem2", false],
+    "case3": ["lorem2", false],
+    "case4": ["lorem2", false],
+    "case5": ["lorem2", false],
+    "case6": ["lorem2", false],
+    "case7": ["lorem2", false],
+    "case8": ["lorem2", false]
+  },
 
+  "dolor sit": {
+    "case11": ["lorem", false],
+    "case2": ["lorem", false],
+    "case3": ["lorem", false],
+    "case4": ["lorem", false],
+    "case5": ["lorem", false],
+    "case6": ["lorem", false],
+    "case7": ["lorem", false],
+    "case9": ["lorem", false]
+    
+  }
+}
