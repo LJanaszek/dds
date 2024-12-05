@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-
+import styles from "../../../../components/radio/style.module.scss"
 import style from "./style.module.scss"
 import { Link } from "react-router-dom";
 import Radio from "../../../../components/radio";
@@ -95,6 +95,8 @@ export default function P8() {
                                         if (element.name === (e.currentTarget.children[1].name) && e.currentTarget.children[1].value > element.value) {
 
                                             element.setAttribute("disabled", "true");
+                                            e.currentTarget.className = styles.active
+                                           
                                         }
                                         if (element.name === (e.currentTarget.children[1].name) && points === 0) {
                                             element.setAttribute("disabled", "true");
@@ -113,7 +115,7 @@ export default function P8() {
                 <div className={style.container}>
                     <div className={style.progressBar}>
                         <p>Liczba godzin przydzielonych w celu uzyskania dodatkowych informacji {8 - points}/8</p>
-                        <div className={style.progress} style={{ width: `${(8 - points) * (100 / 8)}%` }}></div>
+                        <div className={style.progress} style={{ width: `${(8 - points) * (100 / 8)}%`, transition: ".5s" }}></div>
                         <div className={style.progressGray}></div>
                     </div>
                     <div className={style.content}>

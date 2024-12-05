@@ -17,6 +17,30 @@ export default function P9() {
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [number]);
+    interface AssociativeArray {
+        [key: string]: string
+    }
+    let test:AssociativeArray={};
+    function addSelectedInputs() {
+        if (!localStorage.getItem('userAnswers')) {
+            localStorage.setItem('userAnswers', JSON.stringify([]));
+        }
+        document.querySelectorAll("label").forEach((input: any) => {
+            if (input.firstChild!.checked) {
+                console.log(input.firstChild!.value);
+                //create associative array
+                
+                if (localStorage.getItem('userAnswers')) {
+                    let userAnswers = JSON.parse(localStorage.getItem('userAnswers')!);
+                    //add value to array with key keys[number]
+                    test[keys[number]] = input.firstChild!.value;
+                    userAnswers.push(test);
+                    localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+                    //  localStorage.setItem('userAnswers', JSON.stringify([input.firstChild!.value]));
+                }
+            }
+        })
+    }
 
     return (
         <div className={style.listDiv}>
@@ -27,7 +51,7 @@ export default function P9() {
                 {caseList.map((item: any) => {
                     return (
                         <label>
-                            <input type="checkbox" key={item} />
+                            <input type="checkbox" key={item} value={item} />
                             {item}
                         </label>
                     )
@@ -36,12 +60,17 @@ export default function P9() {
             </form>
             <div className={style.nav}>
                 {!showButton &&
-                    <button className={style.buttonNext} onClick={() => { setNumber(number + 1); console.log(number) }}>
+                    <button
+                        className={style.buttonNext}
+                        onClick={() => {
+                            setNumber(number + 1);
+                            addSelectedInputs();
+                        }}>
                         Dalej
                     </button>
                 }
                 {showButton &&
-                    <Link to={getGameRoute(PAGES.pa11)} className={style.buttonNext}>
+                    <Link to={getGameRoute(PAGES.pa11)} className={style.buttonNext} onClick={addSelectedInputs}>
                         Dalej2
                     </Link>
                 }

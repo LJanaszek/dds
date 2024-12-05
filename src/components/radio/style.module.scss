@@ -58,11 +58,18 @@
         appearance: none;
         // display: none;
       }
+      
       //   input:checked  {
       //     background: var(--secondColor);
       //     border-radius: 1em;
       //     color: white;
       //   }
+    }
+    .active, .selected{
+      background-color: var(--secondColor) !important;
+    }
+    #disabled{
+      background-color: rgb(179, 179, 179) !important;
     }
     label:has(input:checked) {
       span {

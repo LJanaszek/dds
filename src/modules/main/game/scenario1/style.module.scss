@@ -53,6 +53,10 @@ span {
       text-align: justify;
       margin-right: 1em;
     }
+    span{
+      color: var(--thirdColor);
+      font-weight: 600;
+    }
   }
   .back {
     max-width: 70vw;
@@ -136,6 +140,7 @@ span {
         position: relative;
         top: -3px;
         z-index: -1;
+        
       }
     }
   }
@@ -171,7 +176,7 @@ span {
   .checkboxForm {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50% 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -190,12 +195,14 @@ span {
       color: var(--secondColor);
       padding: 0 1em;
       gap: 1em;
+      transition: .5s;
       &:hover {
         cursor: pointer;
       }
       &:has(input:checked) {
         background-color: var(--secondColor);
         color: white;
+        transition: .5s;
         input {
           background-color: var(--thirdColor);
           border-color: #fff;
@@ -217,6 +224,7 @@ span {
     }
   }
   .nav {
+    position: relative;
     width: 90vw;
     margin: 2em 0;
     display: flex;
@@ -245,7 +253,7 @@ span {
   flex-direction: column;
 
   .main {
-    background-color: lightgray;
+    background-color: white;
     display: grid;
     grid-template-columns: 30% 70%;
     padding: 1em 2em;
@@ -311,14 +319,21 @@ span {
         }
       }
     }
+    .answers{
+      h2{
+        color: #000;
+      }
+    }
   }
   .video {
-    height: 40vh;
+    height: 90vh;
     background-color: lightgreen;
+    background-color: rgb(239, 239, 239);
+    box-shadow: 2px 0px 4px 2px rgb(190, 190, 190);
   }
   .moreInfo {
     height: 40vh;
-    background-color: lightblue;
+    background-color: white;
   }
 }
 
@@ -339,6 +354,7 @@ span {
     h3 {
       font-weight: 700;
       margin: 1em 0;
+      font-size: 2em;
     }
     p {
       margin: 2em 0;
@@ -358,12 +374,13 @@ span {
     background-color: var(--thirdColor);
     color: white;
     img {
-      width: 12em;
+      width: 20em;
       margin: 0 auto;
       display: block;
     }
     h2 {
       text-align: center;
+      font-size: 2.5em;
     }
     p {
       padding: 1em 0;

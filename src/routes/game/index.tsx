@@ -11,9 +11,6 @@ import P8a from "../../modules/main/game/scenario1/p8";
 import P9a from "../../modules/main/game/scenario1/p9";
 import P10a from "../../modules/main/game/scenario1/p10";
 import P11a from "../../modules/main/game/scenario1/p11";
-import P12a from "../../modules/main/game/scenario1/p12";
-import P13a from "../../modules/main/game/scenario1/p13";    
-import P14a from "../../modules/main/game/scenario1/p14";
 import { PAGES } from "..";
 import ScrollToMe from "@mborecki/react-scroll-to-me";
 
@@ -59,15 +56,6 @@ const Index: PageInfo[] = [{
 },{
     id  : PAGES.pa11,
     page: P11a
-},{
-    id  : PAGES.pa12,
-    page: P12a
-},{
-    id  : PAGES.pa13,
-    page: P13a
-},{
-    id  : PAGES.pa14,
-    page: P14a
 }
 ]
 export default function GamePage({ id }: Props) {
