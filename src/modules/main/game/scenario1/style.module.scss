@@ -37,7 +37,7 @@ span {
   .task {
     max-width: 70vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     align-items: stretch;
     justify-items: center;
 
@@ -100,7 +100,7 @@ span {
 
 .checkbox {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
   // margin: 1em 3em;
   margin: 1em auto;
@@ -109,8 +109,8 @@ span {
 
   .gridContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
     justify-items: center;
     align-items: center;
     gap: 1em;
@@ -170,8 +170,8 @@ span {
   height: 100vh;
   .checkboxForm {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50% 50% 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -190,7 +190,7 @@ span {
       color: var(--secondColor);
       padding: 0 1em;
       gap: 1em;
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
       &:has(input:checked) {
@@ -215,9 +215,8 @@ span {
         cursor: pointer;
       }
     }
-    
   }
-  .nav{
+  .nav {
     width: 90vw;
     margin: 2em 0;
     display: flex;
@@ -239,29 +238,27 @@ span {
       }
     }
   }
-  
 }
-
 
 .summary {
   display: flex;
   flex-direction: column;
-  
-  .main{
+
+  .main {
     background-color: lightgray;
     display: grid;
     grid-template-columns: 30% 70%;
     padding: 1em 2em;
     color: white;
-    gap: 2em ;
+    gap: 2em;
     height: 95vh;
-    .card{
+    .card {
       display: grid;
       grid-template-rows: 30% 20% 50%;
-      div{
+      div {
         padding: 1em;
       }
-      .top{
+      .top {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -269,20 +266,20 @@ span {
         background-color: var(--thirdColor);
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
-        img{
+        img {
           width: 20%;
           margin: 0;
         }
-        h2{
+        h2 {
           margin: 0;
         }
-        p{
+        p {
           color: #000;
           font-weight: 600;
           margin: 0;
         }
       }
-      .middle{
+      .middle {
         padding: 0;
         background-color: var(--secondColor);
         display: flex;
@@ -291,36 +288,187 @@ span {
         border-bottom: 2px solid #fff;
         border-top: 2px solid #fff;
         align-items: center;
-        h3{
+        h3 {
           margin: 0;
           font-size: 1.5em;
         }
-        p{
+        p {
           font-size: 2.5em;
           font-weight: 600;
           margin: 0;
           color: #000;
         }
       }
-      .bottom{
+      .bottom {
         background-color: var(--thirdColor);
         border-bottom-left-radius: 1em;
         border-bottom-right-radius: 1em;
-        h3{
-          
+        h3 {
         }
-        h3, p{
+        h3,
+        p {
           margin: 0;
         }
       }
     }
   }
-  .video{
+  .video {
     height: 40vh;
     background-color: lightgreen;
   }
-  .moreInfo{
+  .moreInfo {
     height: 40vh;
     background-color: lightblue;
+  }
+}
+
+.rules {
+  .top,
+  .firstDay,
+  .secondDay,
+  .thirdDay,
+  .bottom {
+    padding: 2em 5vw;
+    span {
+      cursor: default;
+      font-style: italic;
+      font-family: Noto Sans;
+      font-weight: 600;
+      color: var(--thirdColor);
+    }
+    h3 {
+      font-weight: 700;
+      margin: 1em 0;
+    }
+    p {
+      margin: 2em 0;
+    }
+    .imageContainer,
+    .imageContainerReverse {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+    }
+  }
+
+  * {
+    margin: 0;
+  }
+  .top {
+    background-color: var(--thirdColor);
+    color: white;
+    img {
+      width: 12em;
+      margin: 0 auto;
+      display: block;
+    }
+    h2 {
+      text-align: center;
+    }
+    p {
+      padding: 1em 0;
+      font-size: 1em;
+      font-weight: 400;
+    }
+  }
+  .firstDay {
+    h2 {
+      color: var(--secondColor);
+      text-align: center;
+    }
+
+    .imageContainer {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+      span {
+      }
+      img {
+        width: -webkit-fill-available;
+        border: 2px solid var(--thirdColor);
+      }
+    }
+    .imageContainerReverse {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 1em;
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        width: -webkit-fill-available;
+        border: 2px solid var(--thirdColor);
+      }
+    }
+    .attention {
+      margin-top: 3em;
+      display: grid;
+      grid-template-columns: 10% 90%;
+      border: 2px solid var(--thirdColor);
+      border-radius: 1em;
+      color: var(--thirdColor);
+    }
+  }
+  .secondDay {
+    background-color: rgb(239, 239, 239);
+    box-shadow: 2px 0px 4px 2px rgb(190, 190, 190);
+    h3 {
+      font-weight: 700;
+    }
+    p {
+    }
+    .imageContainer {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 1em;
+      div {
+        display: flex;
+        flex-direction: column;
+        span {
+          color: var(--thirdColor);
+        }
+      }
+      img {
+        width: -webkit-fill-available;
+        border: 2px solid var(--thirdColor);
+      }
+    }
+  }
+  .thirdDay {
+    h3 {
+    }
+    p {
+    }
+    .imageContainer {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 1em;
+      img {
+        width: -webkit-fill-available;
+      }
+      span {
+        color: var(--thirdColor);
+      }
+    }
+  }
+  .bottom {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--thirdColor);
+    a {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: -webkit-fill-available;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-family: oswald;
+      font-size: 2em;
+    }
   }
 }
