@@ -31,8 +31,11 @@ export default function P11() {
                     <div>
                         <DropList title='123' content={{
                             name: '123',
-                            isCorect: true
-                        }} />
+                            isCorect: true,
+
+                        }}
+                            id={0}
+                        />
                     </div>
                 </div>
 
