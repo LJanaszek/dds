@@ -1,6 +1,7 @@
 import DropList from '../../../../components/dropList';
 import style from './style.module.scss';
 import taskImg from '../../../../assets/scenarios/scen_sport.png'
+import allData from "./p9.json"
 export default function P11() {
     return (
         <div className={style.summary}>
@@ -35,6 +36,7 @@ export default function P11() {
 
                         }}
                             id={0}
+                            allData={allData}
                         />
                     </div>
                 </div>
