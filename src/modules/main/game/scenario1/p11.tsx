@@ -1,7 +1,7 @@
 import DropList from '../../../../components/dropList';
 import style from './style.module.scss';
 import taskImg from '../../../../assets/scenarios/scen_sport.png'
-import allData from "./p9.json"
+import data from "./p9.json"
 export default function P11() {
     return (
         <div className={style.summary}>
@@ -30,14 +30,8 @@ export default function P11() {
                 <div className={style.answers}>
                     <h2>twoje odpowiedzi</h2>
                     <div>
-                        <DropList title='123' content={{
-                            name: '123',
-                            isCorect: true,
-
-                        }}
-                            id={0}
-                            allData={allData}
-                        />
+                        <DropList 
+                        data={data}/>
                     </div>
                 </div>
 

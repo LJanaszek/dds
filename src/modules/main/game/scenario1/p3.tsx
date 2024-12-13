@@ -18,7 +18,7 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        Lorem: 'dupa dupa',
+        "widocznie niezadowolony": 'coś',
         ipsum: 'ipsum dolor',
         ipsum2: 'ipsum dolor2',
         dolor: 'dolor sit',
@@ -36,7 +36,7 @@ export default function P3() {
     }
     useEffect(() => {
         if (localStorage.getItem('textList') && textList.length === 0) {
-           setTextList(JSON.parse(localStorage.getItem('textList')!));
+            setTextList(JSON.parse(localStorage.getItem('textList')!));
         }
     }, [stateAdd])
     return (<div className={style.page}>
@@ -47,40 +47,19 @@ export default function P3() {
                 image={""}>
                 <h1>Bieznia</h1>
                 <p>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        Lorem
+                    Mija połowa treningu rolkarskiego. Drużyna Pawła ćwiczy slalom. On jednak ma za zadanie biegać – robi kolejne okrążenia wokół boiska. Takie jest polecenie trenera. Cała drużyna wie, że z decyzją trenera się nie dyskutuje. Podczas ostatniego wyścigu szkoleniowiec był
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
+                        widocznie niezadowolony
                     </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        ipsum2
+                    z jazdy Pawła. W szatni
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
+                        ośmieszał
                     </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        ipsum
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        dolor
-                    </span>
-                    ipsum dolor sit amet consectetur adipisicing elit. Maxime maiores, eum nesciunt aut autem nam. Nemo dolores inventore expedita sunt praesentium cupiditate ipsum a consectetur.
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        sit
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        12345678
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        12
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        123
-                    </span>
-                    Nobis sit aspernatur autem tempore!
+                    chłopców, mówiąc, że to, co widział, to rywalizacja na poziomie dzieci z zerówki, a nie prawie dorosłych 15-latków. Podczas przerwy w treningu Maciek, kolega Pawła, szepcze do niego: „On się na tobie 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
+                    wyżywa
+                    </span>.
+                     Wcale nie ma racji. Wszyscy to wiemy. Nie przejmuj się”.
                 </p>
             </PageText>
 

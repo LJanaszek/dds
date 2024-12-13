@@ -1,24 +1,177 @@
 {
-  "ipsum dolor": {
-    "case1": ["lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 lorem2 ", false],
-    "case2": ["lorem21", false],
-    "case3": ["lorem22", false],
-    "case4": ["lorem23", false],
-    "case5": ["lorem24", false],
-    "case6": ["lorem25", false],
-    "case7": ["lorem26", false],
-    "case8": ["lorem27", false]
+  "Trener ośmiesza zawodników, wyżywa się na Pawle": {
+    "case1": [
+      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.",
+      false
+    ],
+    "case2": ["Informujesz rodziców o wnioskach z rozpoznania sprawy.", false],
+    "case3": [
+      "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
+      false
+    ],
+    "case4": [
+      "Planujesz szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
+      false
+    ],
+    "case5": [
+      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+      false
+    ],
+    "case6": [
+      "Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.",
+      false
+    ],
+    "case7": [
+      "Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera, i dajesz jasny sygnał, że jest to niedopuszczalne.",
+      false
+    ],
+    "case8": [
+      "Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.",
+      false
+    ],
+    "case9": [
+      "Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.",
+      false
+    ],
+    "case10": [
+      "Przeprowadzasz spotkanie lub warsztaty z trenerami, przypominając o zasadach bezpiecznych relacji obowiązujących w klubie.",
+      false
+    ]
   },
 
-  "dolor sit": {
-    "case11": ["lorem", false],
-    "case2": ["lorem", false],
-    "case3": ["lorem", false],
-    "case4": ["lorem", false],
-    "case5": ["lorem", false],
-    "case6": ["lorem", false],
-    "case7": ["lorem", false],
-    "case9": ["lorem", false]
-    
+  "Trener regularnie krzyczy na zawodniczki.": {
+    "case1": [
+      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.",
+      false
+    ],
+    "case2": ["Informujesz rodziców o wnioskach z rozpoznania sprawy.", false],
+    "case3": [
+      "Planujesz spotkanie z psychologiem sportu dla całej drużyny.",
+      false
+    ],
+    "case4": [
+      "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
+      false
+    ],
+    "case5": [
+      "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
+      false
+    ],
+    "case6": [
+      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+      false
+    ],
+    "case7": [
+      "Nic nie robisz – trener miał dobre intencje, dziewczyny z drużyny nie są na niego złego źli.",
+      false
+    ],
+    "case9": [
+      "Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.",
+      false
+    ],
+    "case10": [
+      "Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.",
+      false
+    ],
+    "case11": [
+      "Zwracasz uwagę trenerowi, dając jasny sygnał, że nie zgadzasz się na takie zachowanie w Waszym klubie.",
+      false
+    ]
+  },
+  "Warunki lokalowe w szatniach.":{
+    "case1": [
+      "Rozmawiasz z władzami klubu o wydzieleniu przestrzeni dla dziewcząt.",
+      false
+    ],
+    "case2": ["Proponujesz opracowanie grafiku dyżurów pracowników klubu w szatni.", false],
+    "case3": [
+      "Opracowujesz regulamin szatni uwzględniający zasady przebywania w nich rodziców.",
+      false],
+    "case4": [
+      "Zwracasz uwagę mamie Łukasza, że nie powinna przebywać w szatni zawodników.",
+      false
+    ],
+    "case5": ["Wywieszasz informację, że przeklinanie w przestrzeni publicznej jest niekulturalne, a nawet grozi mandatem karnym.", false],
+    "case6": ["Zamykasz szatnię, aż zostanie odpowiednio zmodernizowana.", false],
+    "case7": ["Wywieszasz w szatni plakat dotyczący zasad bezpiecznych relacji między zawodnikami i zawodniczkami.", false]
+  },
+  "Rodzice obwiniają bramkarkę za porażkę drużyny.":{
+    "case1": [
+      "Wraz z trenerami wypracowujesz zasady przebywania rodziców na boisku.",
+      false
+    ],
+    "case2": ["Przesyłasz rodzicom poradnik, jak wspierać młodych zawodników.", false],
+    "case3": [
+      "Organizujesz spotkanie z rodzicami, na którym uświadamiasz ich, jakie konsekwencje wywołuje zastraszanie i poniżanie dzieci.",
+      false
+    ],
+    "case4": [
+      "Wprowadzasz zakaz przebywania rodziców wokół boiska.",
+      false
+    ],
+    "case5": [
+      "Nic nie robisz – przecież nic się nie stało, a na meczach zawsze włączają się emocje.",
+      false
+    ],
+    "case6": [
+      "Wyświetlasz na telebimach i wywieszasz w widocznym miejscu, w którym odbywają się zawody, plakat dotyczący bezpiecznych relacji podczas rozgrywek. Kilka najważniejszych zasad, jak kibicować, przedstawionych w przystępnej formie.",
+      false
+    ],
+    "case7": [    
+      "Wprowadzasz kary za niestosowanie się do zasad i stosowanie przemocy, np. wykluczenie rodziców z możliwości kibicowania na następnym meczu.",
+      false
+    ]
+  },
+  "Osoby z zewnątrz fotografują zawodników.":{
+    "case1": [
+      "Organizujesz spotkania dla pracowników klubu, na których przypominasz o konieczności posiadania zgód rodziców na wykorzystanie wizerunku ich dzieci. Przypominasz też o potrzebie przedstawienia zaświadczeń z KRK wszystkich osób, które w wyniku analizy ryzyka przeprowadzonej w klubie są do tego zobowiązane.",
+      false
+    ],
+    "case2": [
+      "Wysyłasz wiadomość do rodziców z informacją o obowiązku posiadania zgód na rejestrowanie i przetwarzanie wizerunku dziecka.",  
+      false
+    ],
+    "case3": [
+      "Wywieszasz plakaty wskazujące, jak zadbać o ochronę wizerunku młodych sportowców.",
+      false
+    ],
+    "case4": [
+      "Prosisz mamę Łukasza o usunięcie zdjęć zrobionych podczas oficjalnej sesji oraz tworzysz internetową przestrzeń o ograniczonym dostępie dla osób postronnych (np. grupa w mediach społecznościowych, wspólny dysk), na której będą znajdowały się pamiątkowe zdjęcia wykonane przez zatrudnionego przez klub fotografa.",
+      false
+    ],
+    "case5": [
+      "Tworzysz i udostępniasz zasady ochrony wizerunku dzieci w klubie.",
+      false
+    ]
+  },
+  "Ojciec stosuje przemoc wobec Ady.":{
+    "case1": [
+      "Informujesz o sytuacji Ady ośrodek pomocy społecznej, wskazując na możliwość wystąpienia przemocy w jej rodzinie.",
+      false
+    ],
+    "case2": [
+      "Składasz do sądu rodzinnego wniosek o wgląd w sytuację rodziny Ady.",
+      false
+    ],
+    "case3": [
+      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+      false
+    ],
+    "case4": [
+      "Rozmawiasz z tatą Ady o zaistniałej sytuacji. Oferujesz pomoc.",
+      false
+    ],
+    "case5": [
+      "Rozmawiasz z Adą i oferujesz jej wsparcie emocjonalne.",
+      false
+    ],
+    "case6": [
+      "Uruchamiasz plan wsparcia dla Ady.",
+      false
+    ],
+    "case7": [
+      "Organizujesz spotkanie z psychologiem dla dziewczyn, które domyślają się, że Ada jest krzywdzona (widziały jej siniaki).",
+      false
+    ]
   }
 }
