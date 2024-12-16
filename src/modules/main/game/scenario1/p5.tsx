@@ -18,14 +18,10 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        Lorem: 'dupa dupa',
-        ipsum: 'ipsum dolor',
-        dolor: 'dolor sit',
-        sit: 'sit amet',
-        12345678: '1234',
+        "Obwiniają bramkarkę": 'Rodzice obwiniają bramkarkę za porażkę drużyny.'
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 5) {
+        if (!textList.includes(words[text]) && textList.length < 6) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -33,7 +29,7 @@ export default function P3() {
     }
     useEffect(() => {
         if (localStorage.getItem('textList') && textList.length === 0) {
-           setTextList(JSON.parse(localStorage.getItem('textList')!));
+            setTextList(JSON.parse(localStorage.getItem('textList')!));
         }
     }, [stateAdd])
     return (<div className={style.page}>
@@ -44,28 +40,12 @@ export default function P3() {
                 image={""}>
                 <h1>Boisko2</h1>
                 <p>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        Lorem
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        ipsum
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        dolor
-                    </span>
-                    ipsum dolor sit amet consectetur adipisicing elit. Maxime maiores, eum nesciunt aut autem nam. Nemo dolores inventore expedita sunt praesentium cupiditate ipsum a consectetur.
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        sit
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        12345678
-                    </span>
-                    Nobis sit aspernatur autem tempore!
+                    Właśnie odbywa się mecz młodzieżowych składów piłkarek dwóch największych klubów w mieście – Topoli i Akacji. Rodzice zawodniczek obu drużyn zacięcie kibicują. Są w klubowych koszulkach, w rękach trzymają szaliki. Poziom gry jest wyrównany. Pada upragniona bramka dająca prowadzenie. Po stronie zawodniczek Topoli włączają się silne emocje. Wywołują faule na zawodniczkach Akacji, nawet dość brutalne. Zdaniem rodziców część tych zachowań jest ostentacyjnie niezauważana przez sędziego. W jego stronę płyną niewybredne komentarze. W końcu tata Marceliny - piłkarki Akacji- nazywa jedną z dziewczyn z przeciwnej drużyny „zerem”, podchodzi do niej i zaczyna na nią krzyczeć: „Czemu ją podcięłaś? Tak się nie gra w piłkę! Jesteś totalnym zerem!”. Dziewczyna zaczyna płakać. W tym czasie gospodarze tracą gola. Koniec meczu. Przegrana. Rodzice omawiają mecz między sobą.
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
+                        Obwiniają
+                    bramkarkę</span>
+                    {" "} za porażkę. Stwierdzają, że nie nadaje się do pierwszego składu i już dawno powinna zostać przesunięta do słabszej drużyny. Rozmawiają na tyle głośno, że wszystkie dziewczyny to słyszą.
                 </p>
             </PageText>
 

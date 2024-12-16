@@ -1,8 +1,36 @@
 import DropList from '../../../../components/dropList';
 import style from './style.module.scss';
 import taskImg from '../../../../assets/scenarios/scen_sport.png'
-import data from "./p9.json"
+import { popUpContent } from "./p8";
+import trueImg from "../../../../assets/icons/right.png"
+import falseImg from "../../../../assets/icons/wrong.png"
+import pdf from "../../../../assets/icons/pdf.png"
+import link from "../../../../assets/icons/link.png"
+const data = popUpContent;
 export default function P11() {
+    let userAnswers = [];
+
+    if (localStorage.getItem('userAnswers') && userAnswers.length === 0) {
+        userAnswers = JSON.parse(localStorage.getItem('userAnswers')!);
+    }
+
+    console.log(userAnswers);
+    const hideAndShow = (e: any) => {
+        e.preventDefault();
+        //display next div on block
+        let allListDivs = document.getElementsByClassName(style.list) as HTMLCollectionOf<HTMLDivElement>;
+        for (let i = 0; i < allListDivs.length; i++) {
+            allListDivs[i].style.display = "none";
+        }
+
+        let div = e.currentTarget.nextSibling as HTMLDivElement;
+        if (div.style.display !== "grid") {
+            div.style.display = "grid";
+        }
+        else if (div.style.display === "grid") {
+            div.style.display = "none";
+        }
+    }
     return (
         <div className={style.summary}>
             <div className={style.main}>
@@ -29,16 +57,279 @@ export default function P11() {
                 </div>
                 <div className={style.answers}>
                     <h2>twoje odpowiedzi</h2>
-                    <div>
-                        <DropList 
-                        data={data}/>
+                    <div className={style.dropList}>
+                        <p className={style.listTitle} onClick={(e) => {
+                            hideAndShow(e);
+                        }}>
+                            Trener ośmiesza zawodników, wyżywa się na Pawle.
+                        </p>
+
+                        <div className={style.list}>
+                            <p className={style.true}>
+                                Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Informujesz rodziców o wnioskach z rozpoznania sprawy.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Planujesz szkolenie dla trenerów klubu z komunikacji z nastolatkami.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Zawiadamiasz policję o możliwości popełnienia przestępstwa.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera, i dajesz jasny sygnał, że jest to niedopuszczalne.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true} >
+                                Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Przeprowadzasz spotkanie lub warsztaty z trenerami, przypominając o zasadach bezpiecznych relacji obowiązujących w klubie.
+                                <img src={falseImg} alt="" />
+                            </p>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div className={style.dropList}>
+                        <p className={style.listTitle} onClick={(e) => {
+                            hideAndShow(e);
+                        }}>
+                            Trener regularnie krzyczy na zawodniczki.
+                        </p>
+                        <div className={style.list}>
+                            <p className={style.true}>
+                                Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Informujesz rodziców o wnioskach z rozpoznania sprawy.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Planujesz spotkanie z psychologiem sportu dla całej drużyny.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Zawiadamiasz policję o możliwości popełnienia przestępstwa.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Nic nie robisz – trener miał dobre intencje, dziewczyny z drużyny nie są na niego złego źli.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true} >
+                                Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Zwracasz uwagę trenerowi, dając jasny sygnał, że nie zgadzasz się na takie zachowanie w Waszym klubie.
+                                <img src={falseImg} alt="" />
+                            </p>
+                        </div>
+                    </div>
+                    <div className={style.dropList}>
+                        <p className={style.listTitle} onClick={(e) => {
+                            hideAndShow(e);
+                        }}>
+                            Warunki lokalowe w szatniach.
+                        </p>
+                        <div className={style.list}>
+                            <p className={style.true}>
+                                Rozmawiasz z władzami klubu o wydzieleniu przestrzeni dla dziewcząt.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Proponujesz opracowanie grafiku dyżurów pracowników klubu w szatni.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Opracowujesz regulamin szatni uwzględniający zasady przebywania w nich rodziców.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Zwracasz uwagę mamie Łukasza, że nie powinna przebywać w szatni zawodników.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Wywieszasz informację, że przeklinanie w przestrzeni publicznej jest niekulturalne, a nawet grozi mandatem karnym.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Zamykasz szatnię, aż zostanie odpowiednio zmodernizowana.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Wywieszasz w szatni plakat dotyczący zasad bezpiecznych relacji między zawodnikami i zawodniczkami.
+                                <img src={falseImg} alt="" />
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={style.dropList}>
+                        <p className={style.listTitle} onClick={(e) => {
+                            hideAndShow(e);
+                        }}>
+                            Rodzice obwiniają bramkarkę za porażkę drużyny.
+                        </p>
+                        <div className={style.list}>
+                            <p className={style.true}>
+                                Wraz z trenerami wypracowujesz zasady przebywania rodziców na boisku.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Przesyłasz rodzicom poradnik, jak wspierać młodych zawodników.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Organizujesz spotkanie z rodzicami, na którym uświadamiasz ich, jakie konsekwencje wywołuje zastraszanie i poniżanie dzieci.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Wprowadzasz zakaz przebywania rodziców wokół boiska.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Nic nie robisz – przecież nic się nie stało, a na meczach zawsze włączają się emocje.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Wyświetlasz na telebimach i wywieszasz w widocznym miejscu, w którym odbywają się zawody, plakat dotyczący bezpiecznych relacji podczas rozgrywek. Kilka najważniejszych zasad, jak kibicować, przedstawionych w przystępnej formie.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Wprowadzasz kary za niestosowanie się do zasad i stosowanie przemocy, np. wykluczenie rodziców z możliwości kibicowania na następnym meczu.
+                                <img src={falseImg} alt="" />
+                            </p>
+                        </div>
+                    </div><div className={style.dropList}>
+                        <p className={style.listTitle} onClick={(e) => {
+                            hideAndShow(e);
+                        }}>
+                            Osoby z zewnątrz fotografują zawodników.
+                        </p>
+                        <div className={style.list}>
+                            <p className={style.true}>
+                                Organizujesz spotkania dla pracowników klubu, na których przypominasz o konieczności posiadania zgód rodziców na wykorzystanie wizerunku ich dzieci. Przypominasz też o potrzebie przedstawienia zaświadczeń z KRK wszystkich osób, które w wyniku analizy ryzyka przeprowadzonej w klubie są do tego zobowiązane.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Wysyłasz wiadomość do rodziców z informacją o obowiązku posiadania zgód na rejestrowanie i przetwarzanie wizerunku dziecka.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Wywieszasz plakaty wskazujące, jak zadbać o ochronę wizerunku młodych sportowców.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Prosisz mamę Łukasza o usunięcie zdjęć zrobionych podczas oficjalnej sesji oraz tworzysz internetową przestrzeń o ograniczonym dostępie dla osób postronnych (np. grupa w mediach społecznościowych, wspólny dysk), na której będą znajdowały się pamiątkowe zdjęcia wykonane przez zatrudnionego przez klub fotografa.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Tworzysz i udostępniasz zasady ochrony wizerunku dzieci w klubie.
+                                <img src={falseImg} alt="" />
+                            </p>
+                        </div>
+                    </div>
+                    <div className={style.dropList}>
+                        <p className={style.listTitle} onClick={(e) => {
+                            hideAndShow(e);
+                        }}>
+                            Ojciec stosuje przemoc wobec Ady.
+                        </p>
+                        <div className={style.list}>
+                            <p className={style.true}>
+                                Informujesz o sytuacji Ady ośrodek pomocy społecznej, wskazując na możliwość wystąpienia przemocy w jej rodzinie.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Składasz do sądu rodzinnego wniosek o wgląd w sytuację rodziny Ady.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Zawiadamiasz policję o możliwości popełnienia przestępstwa.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Rozmawiasz z tatą Ady o zaistniałej sytuacji. Oferujesz pomoc.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Rozmawiasz z Adą i oferujesz jej wsparcie emocjonalne.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Uruchamiasz plan wsparcia dla Ady.
+                                <img src={falseImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Organizujesz spotkanie z psychologiem dla dziewczyn, które domyślają się, że Ada jest krzywdzona (widziały jej siniaki).
+                                <img src={falseImg} alt="" />
+                            </p>
+                        </div>
                     </div>
                 </div>
 
 
             </div>
-            <div className={style.video}></div>
-            <div className={style.moreInfo}></div>
+            <div className={style.video}>
+                <h2>wideo z komentarzem</h2>
+                <iframe src="https://www.youtube.com/embed/XIMLoLxmTDw?si=XrJIwkBVXWxnVfhD" frameBorder={0} title='video'></iframe>
+            </div>
+            <div className={style.moreInfo}>
+                <h2>więcej wiedzy</h2>
+                <div className={style.links}>
+                    <a href="">
+                        <img src={pdf} alt="" />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                    <a href="">
+                        <img src={link} alt="" />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                    <a href="">
+                        <img src={pdf} alt="" />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                    <a href="">
+                        <img src={link} alt="" />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                    <a href="">
+                        <img src={pdf} alt="" />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                </div>
+
+            </div>
         </div>
     );
 }

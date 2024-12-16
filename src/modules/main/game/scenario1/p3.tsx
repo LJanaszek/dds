@@ -18,14 +18,9 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "widocznie niezadowolony": 'coś',
-        ipsum: 'ipsum dolor',
-        ipsum2: 'ipsum dolor2',
-        dolor: 'dolor sit',
-        sit: 'sit amet',
-        12345678: '1234',
-        12: '12',
-        123: '123'
+        "widocznie niezadowolony": 'Trener był widocznie niezadowolony z jazdy Pawła.',
+        "ośmieszał": 'Trener ośmiesza zawodników, wyżywa się na Pawle.',
+        "wyżywa" : 'Trener ośmiesza zawodników, wyżywa się na Pawle.'
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {

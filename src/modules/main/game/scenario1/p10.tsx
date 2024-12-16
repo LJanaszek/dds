@@ -18,14 +18,11 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        Lorem: 'dupa dupa',
-        ipsum: 'ipsum dolor',
-        dolor: 'dolor sit',
-        sit: 'sit amet',
-        12345678: '1234',
+        "krzyczał": "",
+        "uderzył w twarz": "Ojciec stosuje przemoc wobec Ady."
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 5) {
+        if (!textList.includes(words[text]) && textList.length < 6) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -44,28 +41,18 @@ export default function P3() {
                 image={""}>
                 <h1>Parking</h1>
                 <p>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        Lorem
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        ipsum
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        dolor
-                    </span>
-                    ipsum dolor sit amet consectetur adipisicing elit. Maxime maiores, eum nesciunt aut autem nam. Nemo dolores inventore expedita sunt praesentium cupiditate ipsum a consectetur.
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        sit
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        12345678
-                    </span>
-                    Nobis sit aspernatur autem tempore!
+                Skończył się trening tenisa. Ada bardzo się starała. Trener docenił jej zaangażowanie. Jednak ćwiczenia były trudne, o skomplikowanym układzie. Ada, podobnie jak inne zawodniczki, popełniała błędy. Miała problemy z serwisem i kontrolowaniem gry. Jej tata już to z nią ćwiczył w miniony weekend. Z tego powodu irytowała go niska jakość gry Ady. Kiedy byli już przy samochodzie, tata zaczął wymieniać błędy córki,
+                {" "} 
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
+                krzyczał
+                </span>
+                {""}, że zbyt mało się stara, że nie docenia tego, ile czasu i pieniędzy poświęca on na przygotowanie jej do bycia tenisistką. Ada próbowała się bronić, mówiąc, że trener ją pochwalił. Ta próba polemiki wywołała w ojcu jeszcze większe zdenerwowanie — 
+                {' '}
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
+                uderzył w twarz
+                </span> 
+                {' '}
+                Adę. Popchnął ją w kierunku samochodu, trzasnął drzwiami. Odjechali.
                 </p>
             </PageText>
 

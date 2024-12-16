@@ -18,14 +18,10 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        Lorem: 'dupa dupa',
-        ipsum: 'ipsum dolor',
-        dolor: 'dolor sit',
-        sit: 'sit amet',
-        12345678: '1234',
+        "warunki lokalowe": "Warunki lokalowe w szatniach."
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 5) {
+        if (!textList.includes(words[text]) && textList.length < 6) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -33,7 +29,7 @@ export default function P3() {
     }
     useEffect(() => {
         if (localStorage.getItem('textList') && textList.length === 0) {
-           setTextList(JSON.parse(localStorage.getItem('textList')!));
+            setTextList(JSON.parse(localStorage.getItem('textList')!));
         }
     }, [stateAdd])
     return (<div className={style.page}>
@@ -44,28 +40,12 @@ export default function P3() {
                 image={""}>
                 <h1>Szatnie</h1>
                 <p>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        Lorem
+                    Dostałeś pismo, w którym rodzice skarżą się na
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
+                        warunki lokalowe
                     </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        ipsum
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        dolor
-                    </span>
-                    ipsum dolor sit amet consectetur adipisicing elit. Maxime maiores, eum nesciunt aut autem nam. Nemo dolores inventore expedita sunt praesentium cupiditate ipsum a consectetur.
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        sit
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        12345678
-                    </span>
-                    Nobis sit aspernatur autem tempore!
+                    {" "}. Szatnia klubu składa się z kilku pomieszczeń. Zawodnikom udostępnione są dwie sale. Mogą się przebrać, zostawić swoje rzeczy na czas treningu. Zdarza się, że młodsze roczniki mają zajęcia w tym samym czasie co nastolatki. Ostatnio mama Maćka z U-8 weszła pomóc mu założyć korki. Akurat przebierała się drużyna U-15. Mamę bardzo zbulwersował język, jaki usłyszała w szatni. Było sporo przekleństw i obelg wobec ostatnich przeciwników. Na dodatek dziewczyny grające w drużynie Maćka muszą przebierać się w toalecie lub w domu, bo dla nich w ogóle nie ma oddzielnej przestrzeni.
                 </p>
             </PageText>
 

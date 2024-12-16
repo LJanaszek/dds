@@ -18,14 +18,10 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        Lorem: 'dupa dupa',
-        ipsum: 'ipsum dolor',
-        dolor: 'dolor sit',
-        sit: 'sit amet',
-        12345678: '1234',
+        "krzyczał": 'Trener regularnie krzyczy i zawstydza zawodniczki.',
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 5) {
+        if (!textList.includes(words[text]) && textList.length < 6) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -33,7 +29,7 @@ export default function P3() {
     }
     useEffect(() => {
         if (localStorage.getItem('textList') && textList.length === 0) {
-           setTextList(JSON.parse(localStorage.getItem('textList')!));
+            setTextList(JSON.parse(localStorage.getItem('textList')!));
         }
     }, [stateAdd])
     return (<div className={style.page}>
@@ -44,28 +40,10 @@ export default function P3() {
                 image={""}>
                 <h1>Boisko</h1>
                 <p>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        Lorem
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        ipsum
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        dolor
-                    </span>
-                    ipsum dolor sit amet consectetur adipisicing elit. Maxime maiores, eum nesciunt aut autem nam. Nemo dolores inventore expedita sunt praesentium cupiditate ipsum a consectetur.
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        sit
-                    </span>
-                    <span onClick={(e) =>
-                        addTextToList(e.currentTarget.innerText)}>
-                        12345678
-                    </span>
-                    Nobis sit aspernatur autem tempore!
+                    Kolejny w tym tygodniu trening. Jeszcze przed wejściem na murawę dziewczyny zastanawiają się, czy trener będzie bardzo {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
+                        krzyczał
+                    </span>. Po rozgrzewce trener wprowadza nowe ćwiczenie. Jest dość skomplikowane. Szkoleniowiec wymaga od nich maksimum skupienia. Tłumaczy tylko raz. Kiedy Marysia popełnia błąd, trener donośnym głosem tłumaczy raz jeszcze. Marysia ponownie źle wykonuje zadanie. Trener ostrzega, że przeniesie ją do drużyny B. Po pewnym czasie zaczyna się mecz. Marysia nie dobiega do piłki. Trener rzuca: „Nie biegaj jak ostatnia ofiara losu, walcz o tę piłkę”. Na koniec treningu wygłasza mowę: „Nikt w tej drużynie nie jest na siłę. Jeśli wam nie zależy, nie chcecie grać, to idźcie gdzie indziej”. Jak się później okazuje, część dziewcząt faktycznie chce zrezygnować z piłki, niektóre z nich mają po treningach trudności z zaśnięciem.
                 </p>
             </PageText>
 

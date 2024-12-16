@@ -15,9 +15,9 @@ export default function Radio(
             {children}
         </p>
         <form>
-            <label className={style.selected} onClick={(e) => { onOKClick(e) }}>
+            <label className={style.selected} onClick={(e) => { onOKClick(e) }} key={0}>
                 <span>0</span>
-                <input type="radio" name={name} value={0} disabled={true}/>
+                <input type="radio" name={name} value={0} disabled={true} key={0}/>
             </label>
             <label onClick={(e) => { onOKClick(e) }}>
             <span>1</span>

@@ -35,6 +35,7 @@ export default function P9() {
                     //add value to array with key keys[number]
                     test[keys[number]] = input.firstChild!.value;
                     userAnswers.push(test);
+                    console.log(userAnswers);
                     localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
                     //  localStorage.setItem('userAnswers', JSON.stringify([input.firstChild!.value]));
                 }
@@ -49,8 +50,9 @@ export default function P9() {
             </h1>
             <form className={style.checkboxForm}>
                 {caseList.map((item: any) => {
+                    console.log(Math.random());
                     return (
-                        <label>
+                        <label key={item+ Math.random()}>
                             <input type="checkbox" key={item} value={item} />
                             {item}
                         </label>

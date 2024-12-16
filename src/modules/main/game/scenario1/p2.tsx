@@ -13,6 +13,7 @@ export interface GameMapPoint extends PointData {
 }
 let textList: string[] = [];
 let inactivePoints: string[] = [];
+const warrnWords = ["Trener był widocznie niezadowolony z jazdy Pawła."]
 export default function P2() {
     if (!localStorage.getItem('inactivePoints')) {
         localStorage.setItem("inactivePoints", JSON.stringify([]));
@@ -29,7 +30,11 @@ export default function P2() {
 
     }
     useEffect(() => {
-        if (textList.length === 6) {
+        if (textList.length === 6 
+
+            &&
+            warrnWords.every(word => !textList.includes(word))
+        ) {
             setShowButton(true);
         }
     })

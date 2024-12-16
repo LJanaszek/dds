@@ -9,6 +9,11 @@
     margin: 0;
     font-family: Oswald;
     font-weight: 400;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
   }
   .image {
     width: -webkit-fill-available;
