@@ -8,7 +8,7 @@ export default function HomePage() {
         <div className={style.homePageView}>
             <h1>Wybierz scenariusz</h1>
             <nav className={style.nav}>
-                <Link to={getGameRoute(PAGES.pa1)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p1)} className={style.link}>
                     <div className={style.lekarz}></div>
                     <p>
                         Wizyta u lekarza w przychodni
@@ -17,7 +17,7 @@ export default function HomePage() {
                         Sprawdź &gt;
                     </span>
                 </Link>
-                <Link to={getGameRoute(PAGES.pb2)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p1)} className={style.link}>
                     <div className={style.oboz}></div>
                     <p>
                         Obóz wakacyjny
@@ -26,7 +26,7 @@ export default function HomePage() {
                         Sprawdź &gt;
                     </span>
                 </Link>
-                <Link to={getGameRoute(PAGES.pb3)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p1)} className={style.link}>
                     <div className={style.trening}></div>
                     <p>
                         Trening piłkarski
@@ -35,7 +35,7 @@ export default function HomePage() {
                         Sprawdź &gt;
                     </span>
                 </Link>
-                <Link to={getGameRoute(PAGES.pb4)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p1)} className={style.link}>
 
                     <div className={style.lesson}></div>
                     <p>
@@ -45,7 +45,7 @@ export default function HomePage() {
                         Sprawdź &gt;
                     </span>
                 </Link>
-                <Link to={getGameRoute(PAGES.pb5)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p1)} className={style.link}>
 
                     <div className={style.teacher}></div>
                     <p>

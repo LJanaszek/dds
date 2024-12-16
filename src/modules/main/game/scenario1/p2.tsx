@@ -42,7 +42,7 @@ export default function P2() {
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [
             {
-                id: 'pa3',
+                id: 'p3',
                 pointer: {
                     name: 'bieznia',
                     visited: 'biezniaVisited',
@@ -56,7 +56,7 @@ export default function P2() {
                 pointId: '8.1',
 
             }, {
-                id: 'pa4',
+                id: 'p4',
                 pointer: {
                     name: 'boisko1',
                     visited: 'boisko1Visited',
@@ -71,7 +71,7 @@ export default function P2() {
                 pointId: '8.1',
 
             }, {
-                id: 'pa5',
+                id: 'p5',
                 pointer: {
                     name: 'boisko2',
                     visited: 'boisko2Visited',
@@ -86,7 +86,7 @@ export default function P2() {
                 pointId: '8.1',
 
             }, {
-                id: 'pa6',
+                id: 'p6',
                 pointer: {
                     name: 'szkol',
                     visited: 'szkolVisited',
@@ -101,7 +101,7 @@ export default function P2() {
                 pointId: '8.1',
 
             }, {
-                id: 'pa7',
+                id: 'p7',
                 pointer: {
                     name: 'szatnie',
                     visited: 'szatnieVisited',
@@ -116,7 +116,7 @@ export default function P2() {
                 pointId: '8.1',
 
             }, {
-                id: 'pa10',
+                id: 'p10',
                 pointer: {
                     name: 'parking',
                     visited: 'parkingVisited',
@@ -137,7 +137,6 @@ export default function P2() {
 
     const onPointerClicked = useCallback((id: string) => {
 
-        console.log(`KTOS KLIKNAL ${id} `);
         if (!inactivePoints.includes(id)) {
             inactivePoints.push(id);
         }
@@ -146,8 +145,6 @@ export default function P2() {
         setSelectedPoint(id);
 
         localStorage.setItem("inactivePoints", JSON.stringify(inactivePoints));
-        console.log(selectedPoint);
-        console.log(typeof (PAGES[id]), "--------------")
         window.location.href = PAGES[id]
 
     }, []);
@@ -168,7 +165,7 @@ export default function P2() {
                     selectMap="klub"
                 />
                
-                {showButton && <Link to={getGameRoute(PAGES.pa8)} className={style.button}>Przejdź dalej</Link>}
+                {showButton && <Link to={getGameRoute(PAGES.p8)} className={style.button}>Przejdź dalej</Link>}
             </div>
              <Notepad wordsList={textList} />
         </div>

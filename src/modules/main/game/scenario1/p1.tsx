@@ -84,7 +84,7 @@ export default function P1() {
                 </div>
             </div>
             <div className={style.bottom}>
-                <Link to={getGameRoute(PAGES.pa2)}
+                <Link to={getGameRoute(PAGES.p2)}
                 onClick={()=>{localStorage.clear()}}
                 >Rozpocznij grę &gt;</Link>
             </div>

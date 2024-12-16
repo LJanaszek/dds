@@ -54,7 +54,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.pa2)}
+            <Link to={getGameRoute(PAGES.p2)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

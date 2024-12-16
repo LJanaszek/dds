@@ -24,18 +24,15 @@ export function getRide(){
 export const PAGES: { [key: string]: string } = (() => {
     const result: { [key: string]: string } = {};
 
-    for (let i = 1; i <= 30; i++) {
-        result['pa' + i] = `${i}`;
-    }
-    for (let i = 1; i <= 30; i++) {
-        result['pb' + i] = `${i}`;
+    for (let i = 1; i <= 95; i++) {
+        result['p' + i] = `${i}`;
     }
     return{
-        ...result,
+        ...result
     }
 })();
 
 
-export function getGameRoute(page = ':page') {
+export function getGameRoute(page: string) {
     return `/game/${page}`;
 }

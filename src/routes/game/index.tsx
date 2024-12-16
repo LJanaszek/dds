@@ -24,37 +24,37 @@ type PageInfo = {
 }
 
 const Index: PageInfo[] = [{
-    id: PAGES.pa1,
+    id: PAGES.p1,
     page: P1a
 }, {
-    id: PAGES.pa2,
+    id: PAGES.p2,
     page: P2a
 },{
-    id  : PAGES.pa3,
+    id  : PAGES.p3,
     page: P3a
 },{
-    id  : PAGES.pa4,
+    id  : PAGES.p4,
     page: P4a
 },{
-    id  : PAGES.pa5,
+    id  : PAGES.p5,
     page: P5a
 },{
-    id  : PAGES.pa6,
+    id  : PAGES.p6,
     page: P6a
 },{
-    id  : PAGES.pa7,
+    id  : PAGES.p7,
     page: P7a
 },{
-    id  : PAGES.pa8,
+    id  : PAGES.p8,
     page: P8a
 },{
-    id  : PAGES.pa9,
+    id  : PAGES.p9,
     page: P9a
 },{
-    id  : PAGES.pa10,
+    id  : PAGES.p10,
     page: P10a
 },{
-    id  : PAGES.pa11,
+    id  : PAGES.p11,
     page: P11a
 }
 ]

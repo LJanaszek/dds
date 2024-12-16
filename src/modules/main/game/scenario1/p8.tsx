@@ -159,7 +159,7 @@ export default function P8() {
                     onClick={() => {
                         localStorage.setItem('textList', JSON.stringify([...description, content]));
                     }}
-                    to={getGameRoute(PAGES.pa9)}
+                    to={getGameRoute(PAGES.p9)}
                 >Dalej</Link>
             }
 

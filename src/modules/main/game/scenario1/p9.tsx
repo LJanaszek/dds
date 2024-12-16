@@ -72,7 +72,7 @@ export default function P9() {
                     </button>
                 }
                 {showButton &&
-                    <Link to={getGameRoute(PAGES.pa11)} className={style.buttonNext} onClick={addSelectedInputs}>
+                    <Link to={getGameRoute(PAGES.p11)} className={style.buttonNext} onClick={addSelectedInputs}>
                         Dalej2
                     </Link>
                 }
