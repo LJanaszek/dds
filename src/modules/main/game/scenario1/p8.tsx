@@ -108,10 +108,7 @@ export default function P8() {
                         console.log(e)
                         let name = Object.keys(e)[0]
                         
-                        return <div className={style.radioContainer}>
-
-
-                            <Radio onOKClick={(e: any) => {
+                        return <Radio onOKClick={(e: any) => {
                                 if (!e.currentTarget.children[1].disabled) {
                                     
 
@@ -138,8 +135,6 @@ export default function P8() {
                                 name={name} >
                                 <p>{name}</p>
                             </Radio>
-                        </div>
-
                     })}
                 </div>
 

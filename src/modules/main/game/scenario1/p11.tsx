@@ -6,30 +6,38 @@ import trueImg from "../../../../assets/icons/right.png"
 import falseImg from "../../../../assets/icons/wrong.png"
 import pdf from "../../../../assets/icons/pdf.png"
 import link from "../../../../assets/icons/link.png"
+import { useEffect, useState } from 'react';
 const data = popUpContent;
 export default function P11() {
+    const [clickedElement, setClickedElement] = useState<HTMLParagraphElement | null>(null);
     let userAnswers = [];
-
+    let repeat = 0
     if (localStorage.getItem('userAnswers') && userAnswers.length === 0) {
         userAnswers = JSON.parse(localStorage.getItem('userAnswers')!);
     }
-
-    console.log(userAnswers);
-    const hideAndShow = (e: any) => {
-        e.preventDefault();
-        //display next div on block
+    useEffect(() => {
         let allListDivs = document.getElementsByClassName(style.list) as HTMLCollectionOf<HTMLDivElement>;
         for (let i = 0; i < allListDivs.length; i++) {
             allListDivs[i].style.display = "none";
         }
+        if (clickedElement) {
+            hideAndShow(clickedElement);
+        }
+    }, [repeat, clickedElement])
 
-        let div = e.currentTarget.nextSibling as HTMLDivElement;
-        if (div.style.display !== "grid") {
+    console.log(userAnswers);
+    const hideAndShow = (e: any) => {
+        //display next div on block
+
+
+        let div = e.nextSibling as HTMLDivElement;
+        if (div.style.display !== "grid !important") {
             div.style.display = "grid";
         }
-        else if (div.style.display === "grid") {
-            div.style.display = "none";
+        else if (div.style.display === "grid !important") {
+            div.style.display = "none !important";
         }
+
     }
     return (
         <div className={style.summary}>
@@ -59,7 +67,8 @@ export default function P11() {
                     <h2>twoje odpowiedzi</h2>
                     <div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
-                            hideAndShow(e);
+                            setClickedElement(e.currentTarget);
+                            // setClickedElement(e.currentTarget);
                         }}>
                             Trener ośmiesza zawodników, wyżywa się na Pawle.
                         </p>
@@ -114,7 +123,7 @@ export default function P11() {
                     </div>
                     <div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
-                            hideAndShow(e);
+                            setClickedElement(e.currentTarget);
                         }}>
                             Trener regularnie krzyczy na zawodniczki.
                         </p>
@@ -163,7 +172,7 @@ export default function P11() {
                     </div>
                     <div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
-                            hideAndShow(e);
+                            setClickedElement(e.currentTarget);
                         }}>
                             Warunki lokalowe w szatniach.
                         </p>
@@ -201,7 +210,7 @@ export default function P11() {
 
                     <div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
-                            hideAndShow(e);
+                            setClickedElement(e.currentTarget);
                         }}>
                             Rodzice obwiniają bramkarkę za porażkę drużyny.
                         </p>
@@ -237,7 +246,7 @@ export default function P11() {
                         </div>
                     </div><div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
-                            hideAndShow(e);
+                            setClickedElement(e.currentTarget);
                         }}>
                             Osoby z zewnątrz fotografują zawodników.
                         </p>
@@ -266,7 +275,7 @@ export default function P11() {
                     </div>
                     <div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
-                            hideAndShow(e);
+                            setClickedElement(e.currentTarget);
                         }}>
                             Ojciec stosuje przemoc wobec Ady.
                         </p>

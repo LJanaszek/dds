@@ -6,6 +6,7 @@ import dayOneTwo from "../../../../assets/rules/dzien1_2.png"
 import dayTwo from "../../../../assets/rules/dzien2_1.png"
 import dayThree from "../../../../assets/rules/dzien3_1.png"
 import logo from "../../../../assets/logos/reakcja_logo.png"
+import warn from "../../../../assets/icons/wykrzyk.png"
 export default function P1() {
     return (
         <div className={style.rules}>
@@ -15,35 +16,38 @@ export default function P1() {
                     Wprowadzenie:
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nesciunt vitae. Natus omnis odit saepe. Tempore asperiores animi, adipisci minima nesciunt veritatis fuga sint consequuntur aspernatur? Provident dolor repellendus cupiditate!
+                    Interaktywne narzędzie, które pomoże Ci zidentyfikować sytuacje, wskazujące na krzywdzenie dziecka. W każdej z nich możesz zdecydować  o rodzaju podjętej reAKCJI. To gra symulacyjna w której możesz w bezpieczny sposób przećwiczyć swoje wybory i decyzje dotyczące ochrony  dziecka przed krzywdzeniem,  żeby w rzeczywistych  sytuacjach Twoje działanie było skuteczne i pomogło zatrzymać krzywdzenie. W grze wcielisz się w rolę osoby odpowiedzialnej za wdrażanie polityki ochrony dzieci w wybranej instytucji. Twoim zadaniem będzie zarekomendowanie wprowadzenia zmian i podjęcia działań adekwatnych do sytuacji, które zaobserwujesz.
                 </p>
             </div>
             <div className={style.firstDay}>
                 <h2>Jak grać:</h2>
                 <h3>Dzień pierwszy - obserwacja</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, dolore ducimus fuga deleniti alias ea nulla ut vel voluptatem inventore rem, non dicta in. Vel nemo corporis tempore error!</p>
+                <p>Na tym etapie gry przyjrzysz się temu co wydarzyło się w klubie sportowym. Zapoznaj się uważnie z opisami wszystkich sytuacji.
+                </p>
                 <div className={style.imageContainer}>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius ad, quo possimus facilis et impedit voluptas dolorum. Numquam rerum quibusdam veritatis sit maiores impedit repellat dolores eum praesentium quisquam?</span>
+                    <span>Aby zapoznać się z historią danego miejsca kliknij w nie na mapie.
+                    </span>
                     <img src={dayOne} alt="" />
                 </div>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit libero in, modi animi reiciendis delectus tempore incidunt rerum placeat quibusdam recusandae voluptatem nulla, exercitationem fugiat consequuntur error illum dicta blanditiis?
+                    W trakcie zapoznawania się z historią wynotuj wszystkie sytuacje, które wzbudzają Twój niepokój i którym według Ciebie  należy się lepiej przyjrzeć.
                 </p>
                 <div className={style.imageContainerReverse}>
                     <img src={dayOneTwo} alt="" />
                     <div>
                         <span>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus commodi exercitationem, delectus eos odit, nesciunt nobis animi illo id minus itaque fugit deserunt quae ut ducimus ipsam rem dicta ipsum.
+                            Aby dodać sytuację do swoich notatek kliknij na aktywne słowo w tekście opisujące niepokojące Cię zdarzenie. Jego opis automatycznie pojawi się w notatniku z prawej strony ekranu.
+
                         </span>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum saepe sunt molestiae consequuntur obcaecati ullam minima neque nesciunt delectus facilis commodi ducimus accusamus veniam excepturi harum quisquam officiis, ab voluptatem?
+                            Gdy Twój notatnik będzie pełny wciśnij przycisk “dalej”.
                         </p>
                     </div>
                 </div>
                 <div className={style.attention}>
-                    <img src="" alt="" />
+                    <img src={warn} alt="" />
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsam unde sint laborum corrupti. Dolor aliquid doloremque modi, corrupti ut aliquam omnis laboriosam repellat nisi illo totam, iste accusantium perferendis.
+                        Uwaga! Nie wszystkie opisane sytuacje świadczą o krzywdzeniu (lub ryzyku krzywdzenia) dziecka. Przeanalizuj swoje notatki. Przycisk “dalej” pojawi się dopiero wtedy, gdy na Twojej liście znajdą się wyłącznie sytuacje ryzykowne lub mogące świadczyć o krzywdzeniu.
                     </p>
                 </div>
             </div>
@@ -52,15 +56,16 @@ export default function P1() {
                     Dzień drugi - zbieranie informacji
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sequi, debitis impedit consectetur voluptatibus, consequatur perspiciatis dignissimos minus saepe natus ab, culpa fuga vel dolores voluptates soluta! Omnis, sapiente laudantium.
+                    Przyjrzyj się swoim notatkom i przypomnij sobie jakich sytuacji dotyczą. Twoim zadaniem będzie zebranie więcej informacji na ich temat. Do dyspozycji masz 8 godzin, które możesz wykorzystać na rozmowy z zaangażowanymi w sytuację osobami lub obserwację danej kwestii.
+
                 </p>
                 <div className={style.imageContainer}>
                     <div>
                         <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt nesciunt dicta obcaecati exercitationem unde delectus nihil autem consequatur reprehenderit itaque, nemo quae amet dolor expedita molestias reiciendis voluptates ab?
+                            Aby zapoznać się z dodatkowymi informacjami wybierz sytuację, którą chcesz przeanalizować  i zaznacz pole wykorzystania godziny obok niej. Gdy to zrobisz na ekranie wyświetli się dodatkowa informacja.
                         </span>
                         <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nihil soluta sint adipisci, eos nam saepe iusto eum ratione illum. Optio suscipit minus alias veritatis asperiores commodi necessitatibus soluta sint.
+                            Każdej sytuacji możesz poświęcić maksymalnie 3 godziny. Pamiętaj jednak, że masz ich do dyspozycji tylko 8, najwięcej czasu poświęć tym kwestiom, które mogą stanowić największe zagrożenie dla bezpieczeństwa dzieci.
                         </span>
                     </div>
                     <img src={dayTwo} alt="" />
@@ -71,15 +76,17 @@ export default function P1() {
                     Dzień trzeci - rozwiązania
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, tempora! Distinctio accusantium quibusdam illum error quisquam ad nemo quas culpa beatae, laudantium porro, deleniti veritatis aut ipsum tempore minima cum.
+                Gdy uda Ci się dokładnie zapoznać z każdą sytuacją pora na rekomendację i wdrażanie rozwiązań.
                 </p>
                 <div className={style.imageContainer}>
                     <img src={dayThree} alt="" />
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, magni, quibusdam voluptates necessitatibus doloremque quis amet nemo est odit voluptas perferendis, culpa error? Temporibus distinctio deleniti repellat facere amet accusamus.</span>
+                    <span>Na wyświetlającej się liście zaznać te pozycje, które według Ciebie należy zastosować  w reakcji na zaistniałą sytuację.</span>
                 </div>
             </div>
             <div className={style.bottom}>
-                <Link to={getGameRoute(PAGES.pa2)}>Rozpocznij grę &gt;</Link>
+                <Link to={getGameRoute(PAGES.pa2)}
+                onClick={()=>{localStorage.clear()}}
+                >Rozpocznij grę &gt;</Link>
             </div>
         </div>
     );

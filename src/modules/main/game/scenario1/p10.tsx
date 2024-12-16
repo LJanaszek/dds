@@ -18,7 +18,7 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "krzyczał": "",
+        "krzyczał": "Ojciec stosuje przemoc wobec Ady.",
         "uderzył w twarz": "Ojciec stosuje przemoc wobec Ady."
     }
     const addTextToList = (text: string) => {
