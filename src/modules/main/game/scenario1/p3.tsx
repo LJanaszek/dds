@@ -35,22 +35,27 @@ export default function P3() {
         }
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><span>Nazwa gry  &gt; </span> klub sportowy <span> &gt; </span>bieznia</h3>
+        <h3><span>Nazwa gry  &gt; </span> klub sportowy <span> &gt; </span>bieżnia</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Bieznia</h1>
+                <h1>Bieżnia</h1>
                 <p>
                     Mija połowa treningu rolkarskiego. Drużyna Pawła ćwiczy slalom. On jednak ma za zadanie biegać – robi kolejne okrążenia wokół boiska. Takie jest polecenie trenera. Cała drużyna wie, że z decyzją trenera się nie dyskutuje. Podczas ostatniego wyścigu szkoleniowiec był
+                   {" "} 
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        widocznie niezadowolony
+                    widocznie niezadowolony 
                     </span>
+                    {" "}
                     z jazdy Pawła. W szatni
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        ośmieszał
+                     ośmieszał
                     </span>
+                    {" "}
                     chłopców, mówiąc, że to, co widział, to rywalizacja na poziomie dzieci z zerówki, a nie prawie dorosłych 15-latków. Podczas przerwy w treningu Maciek, kolega Pawła, szepcze do niego: „On się na tobie 
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
                     wyżywa
                     </span>.

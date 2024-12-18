@@ -11,7 +11,7 @@ export default function HomePage() {
                 <Link to={getGameRoute(PAGES.p1)} className={style.link}>
                     <div className={style.lekarz}></div>
                     <p>
-                        Wizyta u lekarza w przychodni
+                        Ochrona zdrowia
                     </p>
                     <span>
                         Sprawdź &gt;
@@ -20,7 +20,7 @@ export default function HomePage() {
                 <Link to={getGameRoute(PAGES.p1)} className={style.link}>
                     <div className={style.oboz}></div>
                     <p>
-                        Obóz wakacyjny
+                        Wakacyjny obóz
                     </p>
                     <span>
                         Sprawdź &gt;
@@ -29,7 +29,7 @@ export default function HomePage() {
                 <Link to={getGameRoute(PAGES.p1)} className={style.link}>
                     <div className={style.trening}></div>
                     <p>
-                        Trening piłkarski
+                        Klub sportowy
                     </p>
                     <span>
                         Sprawdź &gt;
@@ -39,7 +39,7 @@ export default function HomePage() {
 
                     <div className={style.lesson}></div>
                     <p>
-                        Lekcja w szkole
+                        Szkoła
                     </p>
                     <span>
                         Sprawdź &gt;
@@ -49,7 +49,7 @@ export default function HomePage() {
 
                     <div className={style.teacher}></div>
                     <p>
-                        Kontakt z nauczycielem poza szkołą, online
+                        Kontakty online
                     </p>
                     <span>
                         Sprawdź &gt;

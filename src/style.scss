@@ -37,3 +37,7 @@ section{
   display: grid;
   grid-template-columns: 80% 20%;
 }
+::-webkit-scrollbar{
+  width: none;
+  display: none;
+}

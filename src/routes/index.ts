@@ -5,14 +5,12 @@ export function getHomeRoute() {
 export function getRulesPageRoute() {
     return '/instrukcja';
 }
-
 export function getGamePageRoute() {
     return '/game';
 }
 export function getGameStartRoute() {
     return '/start';
 }
-
 export function getPolicyRoute() {
     return '/polityka';
 }

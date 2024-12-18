@@ -1,8 +1,8 @@
 {
   "Trener ośmiesza zawodników, wyżywa się na Pawle": {
     "case1": [
-      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.",
-      false
+      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy."
+      
     ],
     "case2": ["Informujesz rodziców o wnioskach z rozpoznania sprawy.", false],
     "case3": [
@@ -41,8 +41,7 @@
 
   "Trener regularnie krzyczy na zawodniczki.": {
     "case11": [
-      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.",
-      false
+      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy."
     ],
     "case12": ["Informujesz rodziców o wnioskach z rozpoznania sprawy.", false],
     "case13": [
@@ -80,8 +79,7 @@
   },
   "Warunki lokalowe w szatniach.":{
     "case21": [
-      "Rozmawiasz z władzami klubu o wydzieleniu przestrzeni dla dziewcząt.",
-      false
+      "Rozmawiasz z władzami klubu o wydzieleniu przestrzeni dla dziewcząt."
     ],
     "case22": ["Proponujesz opracowanie grafiku dyżurów pracowników klubu w szatni.", false],
     "case23": [
@@ -97,8 +95,7 @@
   },
   "Rodzice obwiniają bramkarkę za porażkę drużyny.":{
     "case31": [
-      "Wraz z trenerami wypracowujesz zasady przebywania rodziców na boisku.",
-      false
+      "Wraz z trenerami wypracowujesz zasady przebywania rodziców na boisku."
     ],
     "case32": ["Przesyłasz rodzicom poradnik, jak wspierać młodych zawodników.", false],
     "case33": [
@@ -124,8 +121,7 @@
   },
   "Osoby z zewnątrz fotografują zawodników.":{
     "case41": [
-      "Organizujesz spotkania dla pracowników klubu, na których przypominasz o konieczności posiadania zgód rodziców na wykorzystanie wizerunku ich dzieci. Przypominasz też o potrzebie przedstawienia zaświadczeń z KRK wszystkich osób, które w wyniku analizy ryzyka przeprowadzonej w klubie są do tego zobowiązane.",
-      false
+      "Organizujesz spotkania dla pracowników klubu, na których przypominasz o konieczności posiadania zgód rodziców na wykorzystanie wizerunku ich dzieci. Przypominasz też o potrzebie przedstawienia zaświadczeń z KRK wszystkich osób, które w wyniku analizy ryzyka przeprowadzonej w klubie są do tego zobowiązane."
     ],
     "case42": [
       "Wysyłasz wiadomość do rodziców z informacją o obowiązku posiadania zgód na rejestrowanie i przetwarzanie wizerunku dziecka.",  
@@ -146,8 +142,7 @@
   },
   "Ojciec stosuje przemoc wobec Ady.":{
     "case51": [
-      "Informujesz o sytuacji Ady ośrodek pomocy społecznej, wskazując na możliwość wystąpienia przemocy w jej rodzinie.",
-      false
+      "Informujesz o sytuacji Ady ośrodek pomocy społecznej, wskazując na możliwość wystąpienia przemocy w jej rodzinie."
     ],
     "case52": [
       "Składasz do sądu rodzinnego wniosek o wgląd w sytuację rodziny Ady.",

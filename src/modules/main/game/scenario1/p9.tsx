@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import style from "./style.module.scss"
 import { getGameRoute, PAGES } from "../../../../routes";
+import image from "../../../../assets/icons/pen.png"
 export default function P9() {
     //fetch data from p9.json file with utf-8 pl encoding
     const [showButton, setShowButton] = useState(false);
@@ -9,7 +10,14 @@ export default function P9() {
     const [caseList, setCaseList] = useState([]);
     const data = require('./p9.json');
     let keys = (Object.keys(data))
-
+    const warnWords = [
+        "ośmiesza zawodników",
+        "krzyczy",
+        "Warunki lokalowe",
+        "obwiniają bramkarkę",
+        "fotografują zawodników",
+        "stosuje przemoc"
+    ]
     useEffect(() => {
         setCaseList(Object.values(data[keys[number]]));
         if (number === keys.length - 1) {
@@ -20,24 +28,23 @@ export default function P9() {
     interface AssociativeArray {
         [key: string]: string
     }
-    let test:AssociativeArray={};
+    let test: AssociativeArray = {};
     function addSelectedInputs() {
+        if(number === 0){
+            localStorage.removeItem('userAnswers');
+        }
         if (!localStorage.getItem('userAnswers')) {
             localStorage.setItem('userAnswers', JSON.stringify([]));
         }
         document.querySelectorAll("label").forEach((input: any) => {
             if (input.firstChild!.checked) {
-                console.log(input.firstChild!.value);
-                //create associative array
-                
+
                 if (localStorage.getItem('userAnswers')) {
                     let userAnswers = JSON.parse(localStorage.getItem('userAnswers')!);
-                    //add value to array with key keys[number]
                     test[keys[number]] = input.firstChild!.value;
                     userAnswers.push(test);
-                    console.log(userAnswers);
                     localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
-                    //  localStorage.setItem('userAnswers', JSON.stringify([input.firstChild!.value]));
+
                 }
             }
         })
@@ -45,14 +52,21 @@ export default function P9() {
 
     return (
         <div className={style.listDiv}>
-            <h1>
-                {keys[number]}
-            </h1>
+            <div className={style.title}>
+                <img src={image} alt="" />
+                <h1>
+                    {/* if keys[number].includes(warnWords[number]) strip keys[number] by wrong words and paste first part of keys[number] with warnWords[index] inside h1 in span then add second part with red color */}
+                    {
+                        keys[number].includes(warnWords[number]) &&
+                        <span>{keys[number].split(warnWords[number])[0]}<span style={{ color: "red" }}>{warnWords[number]}</span>{keys[number].split(warnWords[number])[1]}</span>
+                    }
+
+                </h1>
+            </div>
             <form className={style.checkboxForm}>
                 {caseList.map((item: any) => {
-                    console.log(Math.random());
                     return (
-                        <label key={item+ Math.random()}>
+                        <label key={item + Math.random()}>
                             <input type="checkbox" key={item} value={item} />
                             {item}
                         </label>
@@ -73,7 +87,7 @@ export default function P9() {
                 }
                 {showButton &&
                     <Link to={getGameRoute(PAGES.p11)} className={style.buttonNext} onClick={addSelectedInputs}>
-                        Dalej2
+                        Dalej
                     </Link>
                 }
             </div>

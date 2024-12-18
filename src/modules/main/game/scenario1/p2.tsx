@@ -24,7 +24,6 @@ export default function P2() {
 
     const [showButton, setShowButton] = useState(false);
     const [selectedPoint, setSelectedPoint] = useState<string>();
-    console.log(inactivePoints);
     if (localStorage.getItem('textList')) {
         textList = (JSON.parse(localStorage.getItem('textList')!));
 

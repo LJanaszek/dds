@@ -39,7 +39,6 @@ export default class GameScreen extends Container implements IScreen {
         }
         else if (localStorage.getItem('inactivePoints') && this.inactivePoints.length === 0) {
             this.inactivePoints = JSON.parse(localStorage.getItem('inactivePoints')!);
-            console.log(this.inactivePoints, "------------------")
         }
         this.pointsMarkers.forEach(p => p.destroy());
         this.pointsMarkers.length = 0;
@@ -84,7 +83,6 @@ export default class GameScreen extends Container implements IScreen {
             .filter((p) => this.inactivePoints.includes(p.id))
             .forEach((p) => {
                 let point = Sprite.from(p.pointer.visited);
-                console.log(this.inactivePoints, "------------------")
                 point.anchor.set(.5, 1);
                 point.width = p.pointer.width;
                 point.height = p.pointer.height;

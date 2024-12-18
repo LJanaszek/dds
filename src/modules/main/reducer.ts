@@ -21,7 +21,6 @@ export default function UserReducer(state: MainModuleState, action: MainModuleAc
             }
 
         case MAIN_MODULE_ACTION.SAVE_ANSWER:
-            console.log(payload);
             if (payload.player === PLAYER.CHILD) {
 
                 const oldAnswers = state.gameState?.child.answers || [];

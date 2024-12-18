@@ -18,7 +18,7 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "Jest drużynową fotografką" : "Osoby z zewnątrz fotografują zawodników"
+        "Jest drużynową fotografką" : "Osoby z zewnątrz fotografują zawodników."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -33,19 +33,18 @@ export default function P3() {
         }
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><span>Nazwa gry  &gt; </span> klub sportowy <span> &gt; </span>szkola</h3>
+        <h3><span>Nazwa gry  &gt; </span> klub sportowy <span> &gt; </span>szkoła</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Szkola</h1>
+                <h1>Szkoła</h1>
                 <p>
                 Odbywa się sesja zdjęciowa. Zawodnicy ubrani są w stroje meczowe. Profesjonalny fotograf robi zdjęcia drużynom oraz indywidualne. Jest wesoła atmosfera. Chłopcom trudno zachować powagę, robią śmieszne miny. Jeden z nich, dla żartu, zdejmuje koszulkę. Pozostali szybko podłapują pomysł kolegi. Mama Łukasza również uwiecznia te momenty. 
                 {" "}
                 <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
                 Jest drużynową fotografką
                 </span>
-                {" "}
                 . Ma niezły aparat z wysokiej jakości obiektywem. Już od dwóch lat, w miarę możliwości, jeździ na mecze i pstryka chłopakom foty. 
                 </p>
             </PageText>

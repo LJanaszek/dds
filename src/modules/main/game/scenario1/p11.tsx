@@ -1,13 +1,11 @@
-import DropList from '../../../../components/dropList';
 import style from './style.module.scss';
 import taskImg from '../../../../assets/scenarios/scen_sport.png'
-import { popUpContent } from "./p8";
 import trueImg from "../../../../assets/icons/right.png"
 import falseImg from "../../../../assets/icons/wrong.png"
 import pdf from "../../../../assets/icons/pdf.png"
 import link from "../../../../assets/icons/link.png"
 import { useEffect, useState } from 'react';
-const data = popUpContent;
+
 export default function P11() {
     const [clickedElement, setClickedElement] = useState<HTMLParagraphElement | null>(null);
     let userAnswers = [];
@@ -25,7 +23,26 @@ export default function P11() {
         }
     }, [repeat, clickedElement])
 
-    console.log(userAnswers);
+    let points = 0
+    let values: string[][] = []
+    Object.keys(userAnswers).map((key, index) => {
+        values.push(Object.values(userAnswers[index])); 
+    });
+  
+    for (let i = 0; i < values.length; i++) {
+        for (let j = i + 1; j < values.length; j++) {
+            if (JSON.stringify(values[i]) === JSON.stringify(values[j])) {
+                values.splice(j, 1);
+                j--;
+            }
+        }
+    }
+    values.map((key, index) => {
+        if (key[key.length - 1].endsWith(",false")) {
+            points++
+        }
+    });
+
     const hideAndShow = (e: any) => {
         //display next div on block
 
@@ -53,7 +70,7 @@ export default function P11() {
                     <div className={style.middle}>
                         <h3>twój wynik</h3>
                         <p>
-                            n/28
+                            {points}/28
                         </p>
                     </div>
                     <div className={style.bottom}>
@@ -64,7 +81,7 @@ export default function P11() {
                     </div>
                 </div>
                 <div className={style.answers}>
-                    <h2>twoje odpowiedzi</h2>
+                    <h2>prawidłowe odpowiedzi</h2>
                     <div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
                             setClickedElement(e.currentTarget);
@@ -315,7 +332,7 @@ export default function P11() {
 
             </div>
             <div className={style.video}>
-                <h2>wideo z komentarzem</h2>
+                <h2>podsumowanie scenariusza</h2>
                 <iframe src="https://www.youtube.com/embed/XIMLoLxmTDw?si=XrJIwkBVXWxnVfhD" frameBorder={0} title='video'></iframe>
             </div>
             <div className={style.moreInfo}>

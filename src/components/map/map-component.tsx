@@ -42,7 +42,6 @@ export function MapComponent({ onPointerClicked, selectedPoint, mapPointsData, s
         appRef.current = app;
 
         app.events.on('ready', () => {
-            console.log('onReady.....');
             setAppReady(true);
         });
 
