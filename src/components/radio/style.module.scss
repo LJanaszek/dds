@@ -74,6 +74,7 @@
     }
     .active, .selected{
       background-color: var(--secondColor) !important;
+      color: white;
     }
     #disabled{
       background-color: rgb(179, 179, 179) !important;

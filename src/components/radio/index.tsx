@@ -17,19 +17,19 @@ export default function Radio(
         <form>
             <label className={style.selected} onClick={(e) => { onOKClick(e) }} key={0}>
                 <span>0</span>
-                <input type="radio" name={name} value={0} disabled={true} key={0}/>
+                <input type="radio" name={name} value={0} disabled={true} key={0} defaultChecked={false}/>
             </label>
             <label onClick={(e) => { onOKClick(e) }}>
             <span>1</span>
-                <input type="radio" name={name} value={1} disabled={false}/>
+                <input type="radio" name={name} value={1} disabled={false}defaultChecked={false}/>
             </label>
             <label onClick={(e) => { onOKClick(e) }}>
             <span>2</span>
-                <input type="radio" name={name} value={2} disabled={false}/>
+                <input type="radio" name={name} value={2} disabled={false}defaultChecked={false}/>
             </label>
             <label onClick={(e) => { onOKClick(e) }}>
             <span>3</span>
-                <input type="radio" name={name} value={3} disabled={false}/>
+                <input type="radio" name={name} value={3} disabled={false}defaultChecked={false}/>
             </label>
 
         </form>
