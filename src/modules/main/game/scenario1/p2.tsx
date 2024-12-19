@@ -37,7 +37,7 @@ export default function P2() {
         ) {
             setShowButton(true);
         }
-    })
+    },[])
 
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [

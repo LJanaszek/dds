@@ -63,7 +63,6 @@ export default function P8() {
     const [selectedPoint, setSelectedPoint] = useState(0);
     const [points, setPoints] = useState(8);
     const [content, setContent] = useState<string>("");
-    const [labelName, setLabelName] = useState()
     const warnWords = [
         "ośmiesza zawodników",
         "krzyczy",
@@ -83,8 +82,6 @@ export default function P8() {
         "points5": 0
     }), []);
     let description = [];
-    let titles = [];
-
 
     if (localStorage.getItem('textList')) {
         description = (JSON.parse(localStorage.getItem('textList')!));
@@ -178,6 +175,7 @@ export default function P8() {
                                         {selectedWord.split(e)[1]}
                                     </h3>
                                 }
+                                return<></>
                             })
                         }
                         <p>{content}</p>

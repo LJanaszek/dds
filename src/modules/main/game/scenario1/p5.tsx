@@ -31,6 +31,7 @@ export default function P3() {
         if (localStorage.getItem('textList') && textList.length === 0) {
             setTextList(JSON.parse(localStorage.getItem('textList')!));
         }
+        // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
         <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>boisko2</h3>
@@ -38,7 +39,7 @@ export default function P3() {
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Boisko2</h1>
+                <h1>Boisko do koszykówki</h1>
                 <p>
                     Właśnie odbywa się mecz młodzieżowych składów piłkarek dwóch największych klubów w mieście – Topoli i Akacji. Rodzice zawodniczek obu drużyn zacięcie kibicują. Są w klubowych koszulkach, w rękach trzymają szaliki. Poziom gry jest wyrównany. Pada upragniona bramka dająca prowadzenie. Po stronie zawodniczek Topoli włączają się silne emocje. Wywołują faule na zawodniczkach Akacji, nawet dość brutalne. Zdaniem rodziców część tych zachowań jest ostentacyjnie niezauważana przez sędziego. W jego stronę płyną niewybredne komentarze. W końcu tata Marceliny - piłkarki Akacji- nazywa jedną z dziewczyn z przeciwnej drużyny „zerem”, podchodzi do niej i zaczyna na nią krzyczeć: „Czemu ją podcięłaś? Tak się nie gra w piłkę! Jesteś totalnym zerem!”. Dziewczyna zaczyna płakać. W tym czasie gospodarze tracą gola. Koniec meczu. Przegrana. Rodzice omawiają mecz między sobą.
                     {" "}

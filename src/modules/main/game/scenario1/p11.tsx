@@ -5,6 +5,7 @@ import falseImg from "../../../../assets/icons/wrong.png"
 import pdf from "../../../../assets/icons/pdf.png"
 import link from "../../../../assets/icons/link.png"
 import { useEffect, useState } from 'react';
+import video from "../../../../assets/videos/sport.mp4"
 
 export default function P11() {
     const [clickedElement, setClickedElement] = useState<HTMLParagraphElement | null>(null);
@@ -27,6 +28,7 @@ export default function P11() {
     let values: string[][] = []
     Object.keys(userAnswers).map((key, index) => {
         values.push(Object.values(userAnswers[index])); 
+        return key
     });
   
     for (let i = 0; i < values.length; i++) {
@@ -41,6 +43,7 @@ export default function P11() {
         if (key[key.length - 1].endsWith(",false")) {
             points++
         }
+        return key
     });
 
     const hideAndShow = (e: any) => {
@@ -333,24 +336,24 @@ export default function P11() {
             </div>
             <div className={style.video}>
                 <h2>podsumowanie scenariusza</h2>
-                <iframe src="https://www.youtube.com/embed/XIMLoLxmTDw?si=XrJIwkBVXWxnVfhD" frameBorder={0} title='video'></iframe>
+                <video src={video} title='video' controls></video>
             </div>
             <div className={style.moreInfo}>
                 <h2>więcej wiedzy</h2>
                 <div className={style.links}>
-                    <a href="">
+                    <a href="https://google.com">
                         <img src={pdf} alt="" />
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="">
+                    <a href="https://google.com">
                         <img src={link} alt="" />
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="">
+                    <a href="https://google.com">
                         <img src={pdf} alt="" />
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="">
+                    <a href="https://google.com">
                         <img src={link} alt="" />
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="">
+                    <a href="https://google.com">
                         <img src={pdf} alt="" />
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                 </div>

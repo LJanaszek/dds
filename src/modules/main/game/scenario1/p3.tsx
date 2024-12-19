@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
 import taskImg from "../../../../assets/locations/klub/sport_wpis_bieznia.png"
@@ -33,6 +33,7 @@ export default function P3() {
         if (localStorage.getItem('textList') && textList.length === 0) {
             setTextList(JSON.parse(localStorage.getItem('textList')!));
         }
+        // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
         <h3><img src={reakcja} alt="" /> <span> &gt; </span> klub sportowy <span> &gt; </span>bieżnia</h3>

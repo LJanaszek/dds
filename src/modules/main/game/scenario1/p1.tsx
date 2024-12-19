@@ -20,6 +20,7 @@ export default function P1() {
                 </p>
             </div>
             <div className={style.firstDay}>
+                <p><b>Czas rozgrywki: do 60 minut</b></p>
                 <h2>Jak grać:</h2>
                 <h3>Dzień pierwszy - obserwacja</h3>
                 <p>Na tym etapie gry przyjrzysz się temu co wydarzyło się w klubie sportowym. Zapoznaj się uważnie z opisami wszystkich sytuacji.
