@@ -1,0 +1,23 @@
+Header set Content-Security-Policy "style-src-elem 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.gstatic.com"
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-Content-Type-Options "nosniff"
+Header set Feature-Policy "fullscreen *"
+Header set Referrer-Policy "no-referrer"
+Header always unset Server
+
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^api/(.*) /api/index.php [QSA,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule (.*) /index.html [QSA,L]
+
+#   RewriteCond %{HTTPS} !=on
+#   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</ifModule>
