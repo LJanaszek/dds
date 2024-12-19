@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
 import PageText from "../../../../components/pageText";
 import Notepad from "../../../../components/notepad";
-
+import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
 export interface GameMapPoint extends PointData {
     pointId: string
 }
@@ -34,7 +34,7 @@ export default function P3() {
         }
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><span>Nazwa gry  &gt; </span> klub sportowy <span> &gt; </span>Parking</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>Parking</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText

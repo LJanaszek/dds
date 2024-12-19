@@ -11,7 +11,7 @@
   .nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    max-width: 90vw;
+    width: 90vw;
     height: 40vh;
     gap: 2em;
     .link {
@@ -25,7 +25,6 @@
       flex-direction: column;
       border: 4px solid white;
       border-radius: 1em;
-      
       background-color: var(--baseBackgroundColor);
       &:hover {
         background-color: white;

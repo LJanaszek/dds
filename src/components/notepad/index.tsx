@@ -11,7 +11,7 @@ export default function Notepad({ wordsList }: Props) {
                 <p>Notatnik:</p>
             </div>
             <ul className={style.textList}>
-                {wordsList.map((text, index) => <li key={index}>{text}
+                {wordsList.map((text, index) => <li key={index}><p>{text}</p>
                     <button onClick={() => {
                         wordsList.splice(index, 1);
                         localStorage.setItem('textList', JSON.stringify(wordsList));

@@ -7,6 +7,7 @@ import { PointData } from "../../../../components/map/pixi-app/types";
 import { getGameRoute, PAGES } from "../../../../routes";
 import { MapComponent } from "../../../../components/map/map-component";
 import Notepad from "../../../../components/notepad";
+import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
 
 export interface GameMapPoint extends PointData {
     pointId: string
@@ -153,7 +154,7 @@ export default function P2() {
     return (
         <div className={style.mapPage}>
             <h3>
-                Nazwa gry &gt; klub sportowy
+            <img src={reakcja} alt="" /> &gt; klub sportowy
             </h3>
             <div className="mapPageInfo">
                 <MapComponent

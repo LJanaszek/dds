@@ -3,6 +3,7 @@ import styles from "../../../../components/radio/style.module.scss"
 import style from "./style.module.scss"
 import { Link } from "react-router-dom";
 import Radio from "../../../../components/radio";
+import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
 import { getGameRoute, PAGES } from "../../../../routes";
 
 export const popUpContent: any = [{
@@ -108,6 +109,13 @@ export default function P8() {
 
     return (
         <div>
+            <h3 className={style.linkWithLogo}>
+                <img src={reakcja} alt="" />
+                <span> &gt; </span>
+                klub sportowy
+                <span> &gt; </span>
+                zdobywanie informacji
+            </h3>
             <div className={style.checkbox}>
 
                 <div className={style.gridContainer}>
