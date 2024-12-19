@@ -79,6 +79,7 @@
       background-color: rgb(179, 179, 179) !important;
     }
     label:has(input:checked) {
+      color: white;
       span {
         color: white;
       }
@@ -86,7 +87,7 @@
       color: white;
     }
     label:has(input:disabled) {
-      
+      color: white;
       *{
         cursor: default;
       }

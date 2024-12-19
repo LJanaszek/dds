@@ -86,10 +86,23 @@ export default function P8() {
     if (localStorage.getItem('textList')) {
         description = (JSON.parse(localStorage.getItem('textList')!));
     }
+
+    document.querySelectorAll("label").forEach((element: any) => {
+        if (element.nextSibling) {
+            if (element.children[1].checked) {
+                element.nextSibling.children[1].value = 1
+            }
+            if (element.nextSibling.nextSibling) {
+                element.nextSibling.nextSibling.children[1].value = 2
+            }
+        }
+
+    })
     document.querySelectorAll("input").forEach((element: any) => {
         if (points - element.value < 0) {
             element.setAttribute("disabled", "true");
         }
+
 
     })
     useEffect(() => {
@@ -131,15 +144,17 @@ export default function P8() {
                                 document.querySelectorAll("input").forEach((element: any) => {
                                     if (element.disabled) {
                                         setContent(popUpContent[index][name][e.currentTarget.children[1].value]);
+                                     
                                     }
                                     if (element.name === (e.currentTarget.children[1].name) && e.currentTarget.children[1].value > element.value) {
 
                                         element.setAttribute("disabled", "true");
                                         e.currentTarget.className = styles.active
-
+                                      
                                     }
                                     if (element.name === (e.currentTarget.children[1].name) && points === 0) {
                                         element.setAttribute("disabled", "true");
+                                       
                                     }
                                 })
                             }
@@ -175,7 +190,7 @@ export default function P8() {
                                         {selectedWord.split(e)[1]}
                                     </h3>
                                 }
-                                return<></>
+                                return <></>
                             })
                         }
                         <p>{content}</p>
