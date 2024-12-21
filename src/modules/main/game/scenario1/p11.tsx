@@ -4,8 +4,10 @@ import trueImg from "../../../../assets/icons/right.png"
 import falseImg from "../../../../assets/icons/wrong.png"
 import pdf from "../../../../assets/icons/pdf.png"
 import link from "../../../../assets/icons/link.png"
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import video from "../../../../assets/videos/sport.mp4"
+import { getHomeRoute } from '../../../../routes';
+import { Link } from 'react-router-dom';
 
 export default function P11() {
     const [clickedElement, setClickedElement] = useState<HTMLParagraphElement | null>(null);
@@ -23,14 +25,18 @@ export default function P11() {
             hideAndShow(clickedElement);
         }
     }, [repeat, clickedElement])
+    useEffect(() => {
+        let allListDivs = document.getElementsByClassName(style.list) as HTMLCollectionOf<HTMLDivElement>;
+        allListDivs[0].style.display = "grid";
+    }, [])
 
     let points = 0
     let values: string[][] = []
     Object.keys(userAnswers).map((key, index) => {
-        values.push(Object.values(userAnswers[index])); 
+        values.push(Object.values(userAnswers[index]));
         return key
     });
-  
+    console.log(values)
     for (let i = 0; i < values.length; i++) {
         for (let j = i + 1; j < values.length; j++) {
             if (JSON.stringify(values[i]) === JSON.stringify(values[j])) {
@@ -40,24 +46,20 @@ export default function P11() {
         }
     }
     values.map((key, index) => {
-        if (key[key.length - 1].endsWith(",false")) {
+        if (!key[key.length - 1].endsWith(",false")) {
             points++
         }
         return key
     });
 
     const hideAndShow = (e: any) => {
-        //display next div on block
-
-
         let div = e.nextSibling as HTMLDivElement;
-        if (div.style.display !== "grid !important") {
+        if (div.style.display !== "grid") {
             div.style.display = "grid";
         }
-        else if (div.style.display === "grid !important") {
+        else {
             div.style.display = "none !important";
         }
-
     }
     return (
         <div className={style.summary}>
@@ -358,6 +360,9 @@ export default function P11() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                 </div>
 
+            </div>
+            <div className={style.back}>
+                <Link to={getHomeRoute()} className={style.backLink}>Wróć do wyboru scenariusza</Link>
             </div>
         </div>
     );

@@ -18,7 +18,6 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "krzyczał": "Ojciec stosuje przemoc wobec Ady.",
         "uderzył w twarz": "Ojciec stosuje przemoc wobec Ady."
     }
     const addTextToList = (text: string) => {
@@ -42,12 +41,7 @@ export default function P3() {
                 image={""}>
                 <h1>Parking</h1>
                 <p>
-                Skończył się trening tenisa. Ada bardzo się starała. Trener docenił jej zaangażowanie. Jednak ćwiczenia były trudne, o skomplikowanym układzie. Ada, podobnie jak inne zawodniczki, popełniała błędy. Miała problemy z serwisem i kontrolowaniem gry. Jej tata już to z nią ćwiczył w miniony weekend. Z tego powodu irytowała go niska jakość gry Ady. Kiedy byli już przy samochodzie, tata zaczął wymieniać błędy córki,
-                {" "} 
-                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                krzyczał
-                </span>
-                {""}, że zbyt mało się stara, że nie docenia tego, ile czasu i pieniędzy poświęca on na przygotowanie jej do bycia tenisistką. Ada próbowała się bronić, mówiąc, że trener ją pochwalił. Ta próba polemiki wywołała w ojcu jeszcze większe zdenerwowanie — 
+                Skończył się trening tenisa. Ada bardzo się starała. Trener docenił jej zaangażowanie. Jednak ćwiczenia były trudne, o skomplikowanym układzie. Ada, podobnie jak inne zawodniczki, popełniała błędy. Miała problemy z serwisem i kontrolowaniem gry. Jej tata już to z nią ćwiczył w miniony weekend. Z tego powodu irytowała go niska jakość gry Ady. Kiedy byli już przy samochodzie, tata zaczął wymieniać błędy córki, krzyczał, że zbyt mało się stara, że nie docenia tego, ile czasu i pieniędzy poświęca on na przygotowanie jej do bycia tenisistką. Ada próbowała się bronić, mówiąc, że trener ją pochwalił. Ta próba polemiki wywołała w ojcu jeszcze większe zdenerwowanie — 
                 {' '}
                 <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
                 uderzył w twarz

@@ -20,7 +20,6 @@ export default function P3() {
     const words: { [key: string]: string } = {
         "widocznie niezadowolony": 'Trener był widocznie niezadowolony z jazdy Pawła.',
         "ośmieszał": 'Trener ośmiesza zawodników, wyżywa się na Pawle.',
-        "wyżywa" : 'Trener ośmiesza zawodników, wyżywa się na Pawle.'
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -44,23 +43,19 @@ export default function P3() {
                 <h1>Bieżnia</h1>
                 <p>
                     Mija połowa treningu rolkarskiego. Drużyna Pawła ćwiczy slalom. On jednak ma za zadanie biegać – robi kolejne okrążenia wokół boiska. Takie jest polecenie trenera. Cała drużyna wie, że z decyzją trenera się nie dyskutuje. Podczas ostatniego wyścigu szkoleniowiec był
-                   {" "} 
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                    widocznie niezadowolony 
+                        widocznie niezadowolony
                     </span>
                     {" "}
                     z jazdy Pawła. W szatni
                     {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                     ośmieszał
+                        ośmieszał
                     </span>
                     {" "}
-                    chłopców, mówiąc, że to, co widział, to rywalizacja na poziomie dzieci z zerówki, a nie prawie dorosłych 15-latków. Podczas przerwy w treningu Maciek, kolega Pawła, szepcze do niego: „On się na tobie 
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                    wyżywa
-                    </span>.
-                     Wcale nie ma racji. Wszyscy to wiemy. Nie przejmuj się”.
+                    chłopców, mówiąc, że to, co widział, to rywalizacja na poziomie dzieci z zerówki, a nie prawie dorosłych 15-latków. Podczas przerwy w treningu Maciek, kolega Pawła, szepcze do niego: „On się na tobie wyżywa.
+                    Wcale nie ma racji. Wszyscy to wiemy. Nie przejmuj się”.
                 </p>
             </PageText>
 

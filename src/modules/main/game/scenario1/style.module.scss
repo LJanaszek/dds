@@ -373,6 +373,7 @@ span {
         align-items: center;
         margin: 5px 0;
         background-color: white;
+        cursor: pointer;
       }
       .dropList {
         background-color: rgb(207, 207, 214);
@@ -470,6 +471,27 @@ span {
         }
         text-decoration: none;
         color: #000;
+      }
+    }
+  }
+  .back{
+    margin: 0 auto;
+    margin-bottom: 2em;
+    a{
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--thirdColor);
+      padding: .8em 2em;
+      border-radius: 1em;
+      height: 5vh;
+      font-size: 1.5em;
+      transition: .5s;
+      &:hover{
+        transition: .5s;
+        background-color: var(--secondColor);
       }
     }
   }

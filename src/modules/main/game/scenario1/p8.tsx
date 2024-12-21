@@ -86,9 +86,10 @@ export default function P8() {
     if (localStorage.getItem('textList')) {
         description = (JSON.parse(localStorage.getItem('textList')!));
     }
+
     useEffect(() => {
         document.querySelectorAll("label").forEach((element: any) => {
-            if (element.nextSibling) {
+            if (element.nextSibling ) {
                 if (element.children[1].checked) {
                     element.nextSibling.children[1].value = 1
                 }
@@ -96,14 +97,20 @@ export default function P8() {
                     element.nextSibling.nextSibling.children[1].value = 2
                 }
             }
-            if(element.previousSibling){
-                if(element.children[1].checked){
+            if (element.previousSibling) {
+                if (element.children[1].checked) {
                     element.previousSibling.children[1].setAttribute("disabled", "true");
                 }
             }
 
         })
         document.querySelectorAll("input").forEach((element: any) => {
+            if (parseInt(element.value) !== 1) {
+                element.setAttribute("disabled", "true");
+            }
+            else{
+                element.removeAttribute("disabled");
+            }
             if (points - element.value < 0) {
                 element.setAttribute("disabled", "true");
             }
@@ -114,7 +121,7 @@ export default function P8() {
 
     useEffect(() => {
         document.querySelectorAll("input").forEach((element: any) => {
-            
+
         })
         let a: number = 0
         Object.values(radioPoints).forEach((key: any) => {
@@ -152,7 +159,7 @@ export default function P8() {
 
                                 document.querySelectorAll("input").forEach((element: any) => {
                                     if (element.disabled) {
-                                        setContent(popUpContent[index][name][e.currentTarget.children[1].value]);
+                                        setContent(popUpContent[index][name][parseInt(e.currentTarget.children[0].innerText)]);
 
                                     }
                                     if (element.name === (e.currentTarget.children[1].name) && e.currentTarget.children[1].value > element.value) {
