@@ -1,9 +1,9 @@
 export function getHomeRoute() {
-    return "/";
+    return "/scenariusz";
 }
 
 export function getRulesPageRoute() {
-    return '/instrukcja';
+    return '/';
 }
 export function getGamePageRoute() {
     return '/game';

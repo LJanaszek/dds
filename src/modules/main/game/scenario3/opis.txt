@@ -1,0 +1,6 @@
+p1 -> zasady
+p2 -> mapa
+p3-p7 -> plansze po kliknięciu
+p8 -> przydzielanie godzin
+p9 - > checkboxy
+p10 -> podsumowanie

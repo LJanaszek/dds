@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import { CHARACTER_GENDER, MAIN_MODULE_ACTION, useMainModuleDispatch } from "../../modules/main"
-import P1a from "../../modules/main/game/scenario1/p1"; 
 import P2a from "../../modules/main/game/scenario1/p2";
 import P3a from "../../modules/main/game/scenario1/p3";
 import P4a from "../../modules/main/game/scenario1/p4";
@@ -23,10 +22,7 @@ type PageInfo = {
     page: React.FC,
 }
 
-const Index: PageInfo[] = [{
-    id: PAGES.p1,
-    page: P1a
-}, {
+const Index: PageInfo[] = [ {
     id: PAGES.p2,
     page: P2a
 },{
