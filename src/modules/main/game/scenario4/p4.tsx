@@ -19,7 +19,9 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "krzyczał": 'Trener regularnie krzyczy i zawstydza zawodniczki.',
+        "dyskutują o polityce ze swoją wychowawczynią Małgorzatą": 'Uczniowie i uczennice przesyłają sobie zdjęcia.',
+        "wrzuciła mem ośmieszający jedno z ugrupowań politycznych.":"Uczniowie i uczennice mają nauczycielkę wśród znajomych w mediach społecznościowych.",
+        "Post nauczycielki polubiło wiele osób":"Post nauczycielki polubiło wiele osób."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -35,18 +37,17 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" />  <span>&gt;</span> klub sportowy <span> &gt; </span>boisko</h3>
+        <h3><img src={reakcja} alt="" />  <span>&gt;</span> kontakty online <span> &gt; </span>Media społecznościowe</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Boisko</h1>
+                <h1>Media społecznościowe</h1>
                 <p>
-                    Kolejny w tym tygodniu trening. Jeszcze przed wejściem na murawę dziewczyny zastanawiają się, czy trener będzie bardzo {" "}
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                    krzyczał
-                    </span>. Po rozgrzewce trener wprowadza nowe ćwiczenie. Jest dość skomplikowane. Szkoleniowiec wymaga od nich maksimum skupienia. Tłumaczy tylko raz. Kiedy Marysia popełnia błąd, trener donośnym głosem tłumaczy raz jeszcze. Marysia ponownie źle wykonuje zadanie. Trener ostrzega, że przeniesie ją do drużyny B. Po pewnym czasie zaczyna się mecz. Marysia nie dobiega do piłki. Trener rzuca: „Nie biegaj jak ostatnia ofiara losu, walcz o tę piłkę”. Na koniec treningu wygłasza mowę: „Nikt w tej drużynie nie jest na siłę. Jeśli wam nie zależy, nie chcecie grać, to idźcie gdzie indziej”. Jak się później okazuje, część dziewcząt faktycznie chce zrezygnować z piłki, niektóre z nich mają po treningach trudności z zaśnięciem.
+                2a to klasa z rozszerzonym WOS-em. Młodzi dużo
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>dyskutują o polityce ze swoją wychowawczynią Małgorzatą</span>. Mają z nią dobre relacje, lubią ją, a ona ich. Wszyscy z 2a wysłali jej zaproszenia do znajomych. Małgorzata z przyjemnością przyjmowała te zaproszenia. Dzięki temu mogła lepiej poznać zainteresowania młodych. Sama wrzuca treści pokazujące, jak ważne są demokracja i prawa człowieka. Zachęca do wspierania wielu organizacji pozarządowych. Ostatnio jednak  
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>wrzuciła mem ośmieszający jedno z ugrupowań politycznych.</span> W młodzieżówce tej partii aktywnie udziela się Janek.
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Post nauczycielki polubiło wiele osób</span>, niektórzy dawali serduszka, ktoś nawet napisał: „Trzeba się pozbyć tego zła”. Rozpoczęła się dyskusja z udziałem innych, nieznanych uczniom znajomych Małgorzaty.
                 </p>
             </PageText>
 
@@ -55,7 +56,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p32)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

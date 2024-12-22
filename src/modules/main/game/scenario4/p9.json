@@ -1,178 +1,126 @@
 {
-  "Trener ośmiesza zawodników, wyżywa się na Pawle": {
-    "case1": ["Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy."],
-    "case2": ["Informujesz rodziców o wnioskach z rozpoznania sprawy.", false],
+  "Nauczyciel wysyła głosówkę i pociesza Elę.": {
+    "case1": ["Przypominasz nauczycielowi o zasadach bezpiecznych relacji personel – dziecko dotyczących kontaktów online z uczniami. Jeśli uczennica szuka wsparcia, to należy kontaktować się z nią, zachowując jawność takich kontaktów i informując o tym innego dorosłego (uczennica musi o tym wiedzieć). Jeśli możliwości wsparcia się wyczerpią, należy skierować sprawę do profesjonalisty."],
+    "case2": ["Prosisz nauczyciela, żeby przeprowadził rozmowę z Elą, podczas której wytłumaczy jej, z zachowaniem jakich zasad są możliwe kontakty pomiędzy nauczycielami i uczniami, a także wskaże, jakie działania wspierające ją podejmie we współpracy ze specjalistami."],
     "case3": [
-      "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
-      false
+      "Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy."
     ],
     "case4": [
-      "Planujesz szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
-      false
+      "Sprawdzasz, czy Ela ma zapewnione profesjonalne wsparcie psychologiczne."
     ],
     "case5": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
-      false
+      "Jako bezpieczny i zaufany dorosły angażujesz się w tworzenie planu wsparcia Eli."
     ],
     "case6": [
-      "Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.",
+      "Nie reagujesz – nic wielkiego się nie stało.",
       false
     ],
     "case7": [
-      "Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera, i dajesz jasny sygnał, że jest to niedopuszczalne.",
-      false
-    ],
-    "case8": [
-      "Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.",
-      false
-    ],
-    "case9": [
-      "Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.",
-      false
-    ],
-    "case10": [
-      "Przeprowadzasz spotkanie lub warsztaty z trenerami, przypominając o zasadach bezpiecznych relacji obowiązujących w klubie.",
-      false
+      "Składasz wniosek do sądu o wgląd w sytuację rodziny i informujesz o tym Elę."
     ]
   },
 
-  "Trener regularnie krzyczy na zawodniczki.": {
+  "Nauczyciel zabrał Tymka własnym samochodem i mocno wyściskał..": {
     "case11": [
-      "Sporządzasz notatkę z przeprowadzonego rozpoznania powyższej sprawy."
+      "Przypominasz nauczycielowi, dlaczego nie jest wskazane przewożenie uczniów własnym"
     ],
     "case12": [
-      "Informujesz rodziców o wnioskach z rozpoznania sprawy.", 
-      false
+      "samochodem, i pokazujesz alternatywne sposoby zachowania się w tej sytuacji (np. zamówienie taksówki)."
     ],
     "case13": [
-      "Planujesz spotkanie z psychologiem sportu dla całej drużyny.",
-      false
+      "Przypominasz nauczycielowi, w jakich sytuacjach dozwolony jest kontakt fizyczny z osobą uczącą się."
     ],
     "case14": [
-      "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
-      false
+      "Prosisz psychologa szkolnego o zwrócenie uwagi na relacje między Tymkiem a nauczycielem."
     ],
     "case15": [
-      "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
-      false
+      "Rozmawiasz z Tymkiem i przypominasz o procedurach interwencji i możliwości zgłoszenia przekroczenia granic."
     ],
     "case16": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
-      false
+      "Dyskretnie upewniasz się u innych osób uczących się, czy czują się bezpiecznie w relacji z Pawłem."
     ],
     "case17": [
-      "Nic nie robisz – trener miał dobre intencje, dziewczyny z drużyny nie są na niego złego źli.",
-      false
+      "Rozmawiasz indywidualnie lub grupowo z osobami, które śmiały się z sytuacji Tymka."
     ],
     "case18": [
-      "Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.",
-      false
+      "Starasz się pokazać im, jak mogą wesprzeć kolegę."
     ],
     "case19": [
-      "Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.",
+      "Zgłaszasz sprawę policji",
       false
     ],
     "case20": [
-      "Zwracasz uwagę trenerowi, dając jasny sygnał, że nie zgadzasz się na takie zachowanie w Waszym klubie.",
+      "Nie podejmujesz działań – nie chcesz, żeby nauczyciel zrezygnował z pracy.",
       false
+    ],
+    "case212": [
+      "Zgłaszasz potrzebę odizolowania nauczyciela od Tymka."
     ]
   },
-  "Warunki lokalowe w szatniach.": {
+  "Nauczycielka plotkowała o innych nauczycielkach i dzieciach.": {
     "case21": [
-      "Rozmawiasz z władzami klubu o wydzieleniu przestrzeni dla dziewcząt."
+      "Wyjaśniasz nauczycielce, czym jest mobbing."
     ],
     "case22": [
-      "Proponujesz opracowanie grafiku dyżurów pracowników klubu w szatni.",
-      false
+      "Odwołujesz się do etyki zawodowej nauczyciela."
     ],
     "case23": [
-      "Opracowujesz regulamin szatni uwzględniający zasady przebywania w nich rodziców.",
-      false
+      "Przypominasz nauczycielce zasady bezpiecznych relacji obejmujące kontakty z uczniami poza godzinami pracy, podkreślasz znaczenie poufności."
     ],
     "case24": [
-      "Zwracasz uwagę mamie Łukasza, że nie powinna przebywać w szatni zawodników.",
-      false
+      "Prosisz psycholożkę, aby przyjrzała się relacjom między osobami uczącymi się w obu klasach 5."
     ],
     "case25": [
-      "Wywieszasz informację, że przeklinanie w przestrzeni publicznej jest niekulturalne, a nawet grozi mandatem karnym.",
-      false
+      "Uświadamiasz nauczycielce, że jej decyzje z życia osobistego mogą wpływać na życie zawodowe, zwłaszcza w małym miasteczku."
     ],
     "case26": [
-      "Zamykasz szatnię, aż zostanie odpowiednio zmodernizowana.",
+      "Nie podejmujesz działań – w końcu nie zdarzyło się nic nadzwyczajnego. Organizujesz zajęcia integracyjne dla rady pedagogicznej.",
       false
     ],
     "case27": [
-      "Wywieszasz w szatni plakat dotyczący zasad bezpiecznych relacji między zawodnikami i zawodniczkami.",
+      "Wnioskujesz o odizolowanie nauczycielki od osób uczących się.",
+      false
+    ],
+    "case28": [
+      "Zakazujesz nauczycielce kontaktów prywatnych z rodzinami jej uczniów.",
       false
     ]
   },
-  "Rodzice obwiniają bramkarkę za porażkę drużyny.": {
+  "Nauczyciel komentuje zdjęcia uczniów i przesyła swoje zdjęcia.": {
     "case31": [
-      "Wraz z trenerami wypracowujesz zasady przebywania rodziców na boisku."
+      "Prosisz psychologa szkolnego o zwrócenie uwagi na relacje między osobami uczącymi się a nauczycielem.."
     ],
     "case32": [
-      "Przesyłasz rodzicom poradnik, jak wspierać młodych zawodników.",
-      false
+      "Wyjaśniasz nauczycielowi, jakimi kanałami oraz w jakim zakresie ma prawo kontaktować się z młodzieżą."
     ],
     "case33": [
-      "Organizujesz spotkanie z rodzicami, na którym uświadamiasz ich, jakie konsekwencje wywołuje zastraszanie i poniżanie dzieci.",
-      false
+      "Przypominasz nauczycielowi, że w zasadach bezpiecznych relacji są określone zachowania dotyczące kontaktów w mediach społecznościowych (nauczyciel może używać ich tylko w  celach służbowych, a na takiej grupie powinno znajdować się co najmniej dwóch dorosłych)."
     ],
-    "case34": ["Wprowadzasz zakaz przebywania rodziców wokół boiska.", false],
+    "case34": ["Zgłaszasz sprawę policji.", false],
     "case35": [
-      "Nic nie robisz – przecież nic się nie stało, a na meczach zawsze włączają się emocje.",
+      "Nie podejmujesz działań – nie chcesz, żeby nauczyciel zrezygnował z pracy. Zgłaszasz potrzebę odizolowania nauczyciela od osób uczących się.",
       false
     ],
     "case36": [
-      "Wyświetlasz na telebimach i wywieszasz w widocznym miejscu, w którym odbywają się zawody, plakat dotyczący bezpiecznych relacji podczas rozgrywek. Kilka najważniejszych zasad, jak kibicować, przedstawionych w przystępnej formie.",
-      false
-    ],
-    "case37": [
-      "Wprowadzasz kary za niestosowanie się do zasad i stosowanie przemocy, np. wykluczenie rodziców z możliwości kibicowania na następnym meczu.",
-      false
+      "Poruszasz z uczniami i uczennicami temat niebezpieczeństw związanych z wysyłaniem swoich zdjęć w internecie (szczególnie w strojach kąpielowych)."
     ]
   },
-  "Osoby z zewnątrz fotografują zawodników.": {
+  "Uczniowie i uczennice mają nauczycielkę wśród znajomych w mediach społecznościowych.": {
     "case41": [
-      "Organizujesz spotkania dla pracowników klubu, na których przypominasz o konieczności posiadania zgód rodziców na wykorzystanie wizerunku ich dzieci. Przypominasz też o potrzebie przedstawienia zaświadczeń z KRK wszystkich osób, które w wyniku analizy ryzyka przeprowadzonej w klubie są do tego zobowiązane."
+      "W rozmowie z nauczycielką odwołujesz się do apolityczności osoby wykonującej zawód zaufania publicznego."
     ],
     "case42": [
-      "Wysyłasz wiadomość do rodziców z informacją o obowiązku posiadania zgód na rejestrowanie i przetwarzanie wizerunku dziecka.",
-      false
+      "Organizujesz szkolenie dla rady pedagogicznej z przeciwdziałania mowie nienawiści. Wyjaśniasz nauczycielce, jakimi kanałami oraz w jakim zakresie ma prawo kontaktować się z młodzieżą."
     ],
     "case43": [
-      "Wywieszasz plakaty wskazujące, jak zadbać o ochronę wizerunku młodych sportowców.",
-      false
+      "Odwołujesz się do zasad bezpiecznych relacji dotyczących kontaktów personelu z dziećmi w mediach społecznościowych. Przypominasz na radzie pedagogicznej, z czego wynikają te zapisy."
     ],
     "case44": [
-      "Prosisz mamę Łukasza o usunięcie zdjęć zrobionych podczas oficjalnej sesji oraz tworzysz internetową przestrzeń o ograniczonym dostępie dla osób postronnych (np. grupa w mediach społecznościowych, wspólny dysk), na której będą znajdowały się pamiątkowe zdjęcia wykonane przez zatrudnionego przez klub fotografa.",
+      "Zgłaszasz sprawę policji.",
       false
     ],
     "case45": [
-      "Tworzysz i udostępniasz zasady ochrony wizerunku dzieci w klubie.",
-      false
-    ]
-  },
-  "Ojciec stosuje przemoc wobec Ady.": {
-    "case51": [
-      "Informujesz o sytuacji Ady ośrodek pomocy społecznej, wskazując na możliwość wystąpienia przemocy w jej rodzinie."
-    ],
-    "case52": [
-      "Składasz do sądu rodzinnego wniosek o wgląd w sytuację rodziny Ady.",
-      false
-    ],
-    "case53": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
-      false
-    ],
-    "case54": [
-      "Rozmawiasz z tatą Ady o zaistniałej sytuacji. Oferujesz pomoc.",
-      false
-    ],
-    "case55": ["Rozmawiasz z Adą i oferujesz jej wsparcie emocjonalne.", false],
-    "case56": ["Uruchamiasz plan wsparcia dla Ady.", false],
-    "case57": [
-      "Organizujesz spotkanie z psychologiem dla dziewczyn, które domyślają się, że Ada jest krzywdzona (widziały jej siniaki).",
+      "Nie podejmujesz działań – nie chcesz, żeby nauczycielka zrezygnowała z pracy. Zgłaszasz potrzebę odizolowania nauczycielki od osób uczących się.",
       false
     ]
   }

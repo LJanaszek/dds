@@ -7,54 +7,47 @@ import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
 import { getGameRoute, PAGES } from "../../../../routes";
 
 export const popUpContent: any = [{
-    "Trener ośmiesza zawodników, wyżywa się na Pawle.":
+    "Nauczyciel wysyła głosówkę i pociesza Elę.":
         ["",
-            "Rozmawiałeś z chłopcami. Uważają, że Paweł został potraktowany bardzo niesprawiedliwie. Trener jest zły, że ostatnio przegrywają wyścigi, i wyżywa się na nim. A to przecież całemu zespołowi słabo poszło. Chłopcy sugerują, że może trener ma jakieś własne problemy. Pawłowi jest smutno, że ostatnio nie ściga się z ekipą. Uważa, że to kara za słabe wyniki. Trener powiedział, że musi szybciej jeździć, nie może odpuszczać. No i że ma kiepską kondycję. Paweł często słyszy, że może powinien się zastanowić, czy rolki to faktycznie jego sport.",
-            "Rozmawiałeś z trenerem. Uważa, że nikogo nie ośmieszał. Stwierdził: „To duzi chłopcy. Nie ma potrzeby im słodzić. Jak dobrze jeżdżą, to chwalę, a jak nawalają, to mówię prosto z mostu. Chcę być wobec nich uczciwy. A Paweł to bardzo dobrze zapowiadający się zawodnik, ale musi popracować nad kondycją i techniką jazdy, dlatego kilka ostatnich treningów spędził na bieżni”.",
-            "Przypatrujesz się temu, jak inni trenerzy prowadzą swoje drużyny w klubie.",
+            "Rozmawiasz z Przemkiem. Wyjaśnia Ci, że chciał pomóc Eli – nie mógł nie zareagować na jej wiadomość. Tym bardziej że zna sytuację rodzinną dziewczyny. Jednak korespondencja trwała ponad godzinę. Musiał zająć się swoimi rodzinnymi sprawami. Dlatego gdy uznał, że Ela się uspokoiła, zakończył rozmowę. Dziewczynę, podobnie jak większość uczniów swojej klasy, ma wśród znajomych w mediach społecznościowych. Dzięki temu może lepiej budować relacje z młodymi.",
+            "Sprawdzasz wyniki dydaktyczne Eli oraz informacje o zachowaniu zawarte w dzienniku klasy. Uczy się średnio, nie ma żadnych uwag od nauczycieli.",
+            "Weryfikujesz uprawnienia Przemka do nauczania – dyplomy, ukończone szkolenia i studia. Wszystko jest w porządku.",
         ],
 },
 
 {
-    "Trener regularnie krzyczy na zawodniczki":
+    "Nauczyciel zabrał Tymka własnym samochodem i mocno wyściskał.":
         ["",
-            "Przychodzisz na koniec treningu i zapraszasz rodziców na rozmowę. Część jest zbulwersowana zachowaniem trenera. Ich dzieci boją się, że trener przeniesie je do drugiej drużyny „za karę” Z drugiej strony mówią, że jest świetnym szkoleniowcem i nie chcą, żeby zrezygnował z trenowania dziewczyn. Zawsze jest perfekcyjnie przygotowany. Dziewczyny zrobiły olbrzymie postępy. Paru rodziców zaznacza, że nie dziwią się trenerowi – ma dużą grupę i nie ma czasu na dyscyplinowanie zawodniczek. Jeśli chcą grać, to muszą słuchać i robić, co trzeba. Poza tym sport jest po to, żeby się hartować i kształtować charakter, więc jak czasem krzyknie, to nawet lepiej. Jeśli rodzice chcą kształtować w dzieciach delikatność, to niech zapiszą je lepiej na tańce, a nie piłkę nożną.",
-            "Przychodzisz na trening. Obserwujesz. Wszystko jest w porządku.",
-            "Szukasz w Internecie opinii na temat trenera. Znajdujesz jego biografię – zaskakuje Cię, że uprawiał szermierkę i pracował w cukierni.",
+            "Rozmawiasz z Pawłem. Tłumaczy Ci, dlaczego zdecydował się na jazdę autem. Kiedy wracali, nie było już miejsca na szkolnym parkingu, dlatego zaparkował dalej. Wyściskał chłopaka, bo ten był zawiedziony i mówił, że nie poszło mu dobrze. To była naturalna reakcja Pawła.",
+            "Tymon mówi Ci, że jest wdzięczny Pawłowi za wsparcie. Faktycznie, dziwnie się czuł, jadąc autem nauczyciela. Na dodatek nie spodziewał się takiej czułości ze strony Pawła. Koledzy potem się z niego śmiali z tego powodu. Podobno w klasie krąży plotka, że Paweł bardzo, bardzo lubi Tymka.",
+            "Próbujesz zweryfikować, ilu uczniów Pawła brało udział w konkursach wyższego etapu oraz czy podwoził ich autem. Udaje Ci się tylko ustalić, że było ich w ciągu ostatnich dwóch lat pięcioro.",
         ],
 },
 
 {
-    "Rodzice obwiniają bramkarkę za porażkę drużyny.": ["",
-        "Rozmawiasz z trenerem o sytuacji, która miała miejsce podczas meczu. Szkoleniowiec mówi, że takie sytuacje się zdarzają, w szczególności podczas turniejów. Stara się nie reagować, żeby nie wzmagać bojowych nastrojów, raczej odciąga drużynę z dala od rodziców. Podkreśla, że w czasie meczu koncentruje się na dziewczynach, a nie dorosłych. Wiadomo też, że ci najbardziej zaangażowani rodzice są też sponsorami klubu, więc czasem opłaca się przymknąć oko. Nie dzieje się przecież wielka krzywda. Sport to emocje. To zrozumiałe.",
-        "Oglądasz w Internecie filmik pt. „Najgorsze dopingi rodziców”. Stwierdzasz, że naprawdę z rodzicami Twojego klubu mogło być gorzej.",
-        "Rozmawiasz z kumplem z innego klubu. Opowiada Ci o swoich doświadczeniach z rodzicami podczas meczów. Stwierdzasz, że z tym społeczeństwem coś jest nie tak."
+    "Nauczyciel komentuje zdjęcia uczniów i przesyła swoje zdjęcia.": ["",
+        "Rozmawiasz z klasą. Uczniowie i uczennice są trochę zawstydzeni, śmieją się. Mówią, że nie spodziewali się, że Adam wyśle im swoje zdjęcie, i to jeszcze w samych kąpielówkach! Zaznaczają, że lubią swojego wychowawcę, jest spoko. Chociaż głupio wyszło, że nie zareagował na zdjęcie Kasi, Leny i Michała i nie dał im serduszka. Oni mają dużo kompleksów – zachowanie Adama je tylko pogłębiło.",
+        "Rozmawiasz z Adamem. Podkreśla swój świetny kontakt z uczniami. Mówi, że w tych czasach nie ma możliwości zbudowania relacji z młodymi bez mediów społecznościowych. Zwracasz mu uwagę, że zasady bezpiecznych relacji są również dla jego bezpieczeństwa i taka sytuacja może być odebrana dwuznacznie. Adam wzrusza ramionami i wraca do swoich zadań.",
+        "Przeglądasz media społecznościowe Adama. Widzisz, że lubi koty, jest fanem Legii Warszawa oraz interesuje się kulinariami."
     ],
 },
 
 {
-    "Osoby z zewnątrz fotografują zawodników.":
+    "Uczniowie i uczennice mają nauczycielkę wśród znajomych w mediach społecznościowych.":
         ["",
-            "Dowiedziałeś się od organizatora rozgrywek, że fotograf został zatrudniony przez klub. Został sprawdzony w rejestrze sprawców przestępstw na tle seksualnym, nie doniósł jednak zaświadczenia z Krajowego Rejestru Karnego i nie został zapoznany z zasadami bezpiecznych relacji. Podszedłeś do mamy Łukasza. Okazuje się, że nie miała zgody rodziców na robienie zdjęć. Nikt do tej pory się nie skarżył i nie informował jej o jakichkolwiek zastrzeżeniach. Wręcz przeciwnie – od części rodziców dostała podziękowania za uchwycenie pięknych momentów z życia zawodników. Zdjęcia wrzucała na grupę rodziców i przechowywała na swoim komputerze.",
-            "Przeglądasz stronę internetową klubu oraz grupy dla zawodników i ich rodziców w mediach społecznościowych. Widzisz, że są tam zdjęcia wielu autorów.",
-            "Wchodzisz na grupę swojej poprzedniej drużyny z innego klubu. Widzisz, że rodzice wrzucają cały czas zdjęcia dzieci. Zastanawiasz się, czy wszyscy z nich mają zgodę na takie działanie."
+            "Rozmawiasz z nauczycielką. Potwierdza, że wrzuciła mem. To jest jej prywatny profil i ma do tego prawo. W Polsce obowiązuje wolność słowa. Nie możesz jej nakazać myśleć inaczej albo zakneblować jej ust. Nauczycielka uważa, że media społecznościowe są też świetnym sposobem dotarcia do nastolatków. Budowania z nimi relacji i modelowania postaw. Świetne jest również to, że można łatwo prowadzić dyskusje z różnymi ludźmi. Jej uczniowie mieli szansę zobaczyć pod postem komentarze prawników, innych nauczycieli, lokalnych polityków. A faszystowskie poglądy trzeba ośmieszać i wyraźnie mówić „nie”. Na Twoje pytania dotyczące Janka szybko odpowiada, że jak ktoś chce działać w polityce, to musi mieć grubą skórę i umieć się bronić. Poza tym Janek nie poruszył z nią tej kwestii, a ją młodzi lubią i wcale się jej nie boją, więc nie ma tematu.",
+            "Rozmawiasz z Jankiem. Mówi, że było mu przykro – wszyscy w klasie śmieją się z jego działalności i partii, którą popiera. Teraz wie, że nawet wychowawczyni jest w tym gronie. A najbardziej zabolało go to, że nie zareagowała, kiedy jeden z uczniów nawoływał do przemocy, pisząc, że „trzeba się ich pozbyć”. Stracił zaufanie do Małgorzaty jako człowieka i nauczycielki. Nie chce być już jej znajomym, ale boi się jej reakcji, jeśli ją zablokuje lub usunie.",
+            "Wchodzisz na stronę młodzieżówki, do której przynależy Janek. Czytasz o ich działalności. Nie uważasz, żeby były to aktywności związane z faszystowskimi poglądami."
         ],
 },
 
 {
-    "Warunki lokalowe w szatniach.":
+    "Nauczycielka plotkowała o innych nauczycielkach i dzieciach.":
         ["",
-            "Przeprowadzasz spacer badawczy w szatniach. Wszystko, co napisali rodzice, się zgadza. Są tam też starsi chłopcy, więc słyszysz kilka dosadnych komentarzy dotyczących rywali z poprzedniego meczu. Nie dodatek w oknie jest dziura, a na ścianach grzyb. Orientujesz się, że jest gorzej, niż słyszałeś.",
-            "Jedziesz do zaprzyjaźnionych klubów zobaczyć, jak u nich wyglądają szatnie. W jednym jest jeszcze gorzej, a w drugim – łazienka wygląda jak spa.",
-            "Sprawdzasz w archiwum, kiedy był ostatni remont szatni. Okazuje się, że około 15 lat temu…"
+            "Rozmawiałeś z Klaudią. Uważa, że to, co robi i z kim się spotyka w weekendy w swoim wolnym czasie, to jej sprawa. Spędziła miły czas z częścią uczennic. Nie ona je zapraszała, tylko mama Karoliny. Trudno, żeby miała ingerować w te decyzje. Nie pamięta dokładnie, o czym rozmawiała z przyjaciółką. Ale to raczej źle świadczy o dzieciach, że podsłuchują i potem coś przekazują, pewnie zresztą w przekręconej formie. Nie widzi sensu czegokolwiek wyjaśniać. A Twoje pytania traktuje jako formę mobbingu.",
+            "Próbujesz wybadać u innych nauczycielek i nauczycieli, czy uważają, że Klaudia jest plotkarką. Nikt z Tobą nie chce o tym rozmawiać.",
+            "Przeprowadzasz obserwację lekcji Klaudii, żeby zobaczyć, jakie relacje ma z uczniami i uczennicami."
         ],
-},
-{
-    "Ojciec stosuje przemoc wobec Ady.": ["",
-        "Rozmawiasz z tatą Ady. Mówi, że w młodości trenował tenis, ale musiał przerwać treningi ze względu na kontuzję kolana. Teraz bardzo chce, żeby jego córka została zawodową tenisistką. Dużo z nią ćwiczy, daje jej wskazówki. Nagrywa wszystkie mecze i je z nią omawia. Kilka razy zdarzyło się, że niezadowolony komentował jej grę.",
-        "Ostatnio dziewczyny pytały się Ady, co jej się stało. Gdy przebierały się na trening, zobaczyły na jej plecach siniaki. Ada nie chce rozmawiać o tym, co dzieje się w domu. Mówi, że bardzo chce zostać tenisistką, a tata bardzo się stara, żeby jej w tym pomóc.",
-        "Czytasz artykuł o Jelenie Dokić, serbskiej tenisistce. W biografii opisuje, jak po porażce w półfinale Wimbledonu w 2000 r. była przez ojca maltretowana i wyrzucona z pokoju hotelowego. Zastanawiasz się, czy tak musi wyglądać sport młodych ludzi."
-    ],
 }
 ]
 export default function P8() {
@@ -64,14 +57,11 @@ export default function P8() {
     const [points, setPoints] = useState(8);
     const [content, setContent] = useState<string>("");
     const warnWords = [
-        "ośmiesza zawodników",
-        "krzyczy",
-        "obwiniają bramkarkę",
-
-
-        "fotografują zawodników",
-        "Warunki lokalowe",
-        "stosuje przemoc"
+        "wysyła głosówkę",
+        "zabrał Tymka",
+        "komentuje zdjęcia uczniów i przesyła",
+        "mają nauczycielkę wśród znajomych",
+        "plotkowała o innych nauczycielkach i dzieciach",
     ]
     let radioPoints = useMemo(() => ({
         "points0": 0,
@@ -222,7 +212,7 @@ export default function P8() {
                     onClick={() => {
                         localStorage.setItem('textList', JSON.stringify([...description, content]));
                     }}
-                    to={getGameRoute(PAGES.p9)}
+                    to={getGameRoute(PAGES.p39)}
                 >Dalej</Link>
             }
 

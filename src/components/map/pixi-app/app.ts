@@ -43,7 +43,7 @@ export default class PixiApp extends PIXI.Application {
             ['przychodnia', `${config.assetsPath}przychodnia/przych_calosc.png`],
             ['szkola', `${config.assetsPath}szkola/szkola_calosc.png`],
             ['szkolaOnline', `${config.assetsPath}szkola_online/online_calosc.png`],
-
+            ['transparent', `${config.assetsPath}transparent.png`],
             //klub
             ['bieznia', `${config.assetsPath}klub/bieznia.png`],
             ['biezniaVisited', `${config.assetsPath}klub/bieznia_done.png`],

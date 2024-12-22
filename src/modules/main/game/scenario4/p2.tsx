@@ -42,95 +42,84 @@ export default function P2() {
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [
             {
-                id: 'p3',
+                id: 'p33',
                 pointer: {
-                    name: 'bieznia',
-                    visited: 'biezniaVisited',
-                    width: 665,
-                    height: 424,
+                    name: 'chat',
+                    visited: 'chatVisited',
+                    width: 797,
+                    height: 779,
                 },
                 position: {
-                    x: 1670,
-                    y: 730,
+                    x: 2317,
+                    y: 1960,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p4',
+            }, 
+            {
+                id: 'p34',
                 pointer: {
-                    name: 'boisko1',
-                    visited: 'boisko1Visited',
-                    width: 870,
-                    height: 474,
+                    name: 'gklasowa',
+                    visited: 'gklasowaVisited',
+                    width: 634,
+                    height: 404,
 
                 },
                 position: {
-                    x: 714,
-                    y: 770,
+                    x: 2050,
+                    y: 900,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p5',
+            }, 
+            {
+                id: 'p35',
                 pointer: {
-                    name: 'boisko2',
-                    visited: 'boisko2Visited',
-                    width: 421,
-                    height: 662,
+                    name: 'samochod',
+                    visited: 'samochodVisited',
+                    width: 323,
+                    height: 465,
 
                 },
                 position: {
-                    x: 2430,
-                    y: 850,
+                    x: 1460,
+                    y: 1890,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p6',
+            }, 
+            {
+                id: 'p36',
                 pointer: {
-                    name: 'szkol',
-                    visited: 'szkolVisited',
-                    width: 1636,
-                    height: 979,
+                    name: 'spotkanie',
+                    visited: 'spotkanieVisited',
+                    width: 714,
+                    height: 395,
 
                 },
                 position: {
-                    x: 1025,
-                    y: 1785,
+                    x: 490,
+                    y: 670,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p7',
+            }, 
+            {
+                id: 'p37',
                 pointer: {
-                    name: 'szatnie',
-                    visited: 'szatnieVisited',
-                    width: 570,
-                    height: 622,
+                    name: 'wakacje',
+                    visited: 'wakacjeVisited',
+                    width: 794,
+                    height: 1020,
 
                 },
                 position: {
-                    x: 2245,
-                    y: 1586,
+                    x: 610,
+                    y: 1980,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p10',
-                pointer: {
-                    name: 'parking',
-                    visited: 'parkingVisited',
-                    width: 1684,
-                    height: 221,
-
-                },
-                position: {
-                    x: 1065,
-                    y: 2069,
-                },
-                pointId: '8.1',
-
-            },
+            }, 
         ];
     }, []);
 
@@ -154,7 +143,7 @@ export default function P2() {
     return (
         <div className={style.mapPage}>
             <h3>
-            <img src={reakcja} alt="" /> &gt; klub sportowy
+            <img src={reakcja} alt="" /> &gt; Kontakty online
             </h3>
             <div className="mapPageInfo">
                 <MapComponent
@@ -162,10 +151,10 @@ export default function P2() {
                     mapPointsData={mapPointsData}
                     selectedPoint={selectedPoint}
                     inactivePointsId={inactivePoints}
-                    selectMap="klub"
+                    selectMap="szkolaOnline"
                 />
                
-                {showButton && <Link to={getGameRoute(PAGES.p8)} className={style.button}>Przejdź dalej</Link>}
+                {showButton && <Link to={getGameRoute(PAGES.p38)} className={style.button}>Przejdź dalej</Link>}
             </div>
              <Notepad wordsList={textList} />
         </div>

@@ -18,8 +18,9 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "widocznie niezadowolony": 'Trener był widocznie niezadowolony z jazdy Pawła.',
-        "ośmieszał": 'Trener ośmiesza zawodników, wyżywa się na Pawle.',
+        "późnym wieczorem przychodzi wiadomość od uczennicy": 'Późnym wieczorem przychodzi wiadomość od Eli.',
+        "Nauczyciel wysyła głosówkę przez Instagram – pociesza Elę": 'Nauczyciel wysyła głosówkę i pociesza Elę.',
+        "W poniedziałek nie odzywa się do niego":"Uczennica nie odzywa się do nauczyciela."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -35,27 +36,17 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /> <span> &gt; </span> klub sportowy <span> &gt; </span>bieżnia</h3>
+        <h3><img src={reakcja} alt="" /> <span> &gt; </span> szkoła online <span> &gt; </span>Indywidualny chat</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Bieżnia</h1>
+                <h1>Indywidualny chat</h1>
                 <p>
-                    Mija połowa treningu rolkarskiego. Drużyna Pawła ćwiczy slalom. On jednak ma za zadanie biegać – robi kolejne okrążenia wokół boiska. Takie jest polecenie trenera. Cała drużyna wie, że z decyzją trenera się nie dyskutuje. Podczas ostatniego wyścigu szkoleniowiec był
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        widocznie niezadowolony
-                    </span>
-                    {" "}
-                    z jazdy Pawła. W szatni
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        ośmieszał
-                    </span>
-                    {" "}
-                    chłopców, mówiąc, że to, co widział, to rywalizacja na poziomie dzieci z zerówki, a nie prawie dorosłych 15-latków. Podczas przerwy w treningu Maciek, kolega Pawła, szepcze do niego: „On się na tobie wyżywa.
-                    Wcale nie ma racji. Wszyscy to wiemy. Nie przejmuj się”.
+                    Do Przemka, wychowawcy Eli, w sobotę 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>późnym wieczorem przychodzi wiadomość od uczennicy</span>. Ela żali się w niej, że rodzice jej nie rozumieją i zabraniają jej spotykać się z koleżankami. Tata, po kilku piwach, właśnie zrobił awanturę. 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Nauczyciel wysyła głosówkę przez Instagram – pociesza Elę</span>. Próbuje pokazać perspektywę rodziców, jednak po godzinie 23.40 odpisuje, że musi kończyć. Ela nadal wysyła rozpaczliwe wiadomości. Przemek wyjaśnia, że będzie miał dla niej czas w szkole. Dziewczyna jednak kontynuuje. Nauczyciel wycisza powiadomienia z czatu z dziewczynką. Ta wpada w złość. 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>W poniedziałek nie odzywa się do niego</span> i opowiada koleżance, że zawiodła się na nauczycielu. Zawsze mogła się wygadać, a czasem nawet wypłakać w ramię.
                 </p>
             </PageText>
 
@@ -64,7 +55,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p32)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

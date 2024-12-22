@@ -18,7 +18,9 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "Jest drużynową fotografką" : "Osoby z zewnątrz fotografują zawodników."
+        "Została zaproszona na urodziny dziewczynki": "Nauczycielka została zaproszona na urodziny uczennicy.",
+        "poplotkowała o innych nauczycielkach i dzieciach":"Nauczycielka plotkowała na temat innych nauczycieli i dzieci.",
+        "Uczennice podsłuchały":"Uczennice podsłuchały rozmowę nauczycielki z mamą uczennicy."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -29,24 +31,22 @@ export default function P3() {
     }
     useEffect(() => {
         if (localStorage.getItem('textList') && textList.length === 0) {
-           setTextList(JSON.parse(localStorage.getItem('textList')!));
+            setTextList(JSON.parse(localStorage.getItem('textList')!));
         }
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>szkoła</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> kontakt online <span> &gt; </span>Spotkanie w weekend</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Szkoła</h1>
+                <h1>Spotkanie w weekend</h1>
                 <p>
-                Odbywa się sesja zdjęciowa. Zawodnicy ubrani są w stroje meczowe. Profesjonalny fotograf robi zdjęcia drużynom oraz indywidualne. Jest wesoła atmosfera. Chłopcom trudno zachować powagę, robią śmieszne miny. Jeden z nich, dla żartu, zdejmuje koszulkę. Pozostali szybko podłapują pomysł kolegi. Mama Łukasza również uwiecznia te momenty. 
-                {" "}
-                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                Jest drużynową fotografką
-                </span>
-                . Ma niezły aparat z wysokiej jakości obiektywem. Już od dwóch lat, w miarę możliwości, jeździ na mecze i pstryka chłopakom foty. 
+                    Klaudia jest przyjaciółką mamy Karoliny z 5b i jednocześnie jej wychowawczynią.
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Została zaproszona na urodziny dziewczynki</span>. Świętowanie się udało, było dużo dobrego jedzenia, zorganizowano zabawy w ogrodzie. Klaudia spotkała sporo dzieci, które uczy. W swobodnej atmosferze trochę
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>poplotkowała o innych nauczycielkach i dzieciach</span>. 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Uczennice podsłuchały</span>, jak żaliła się mamie Karoliny, że trudno pracuje jej się z jej grupą. O wszystkim napisały koleżance z tej klasy.
                 </p>
             </PageText>
 
