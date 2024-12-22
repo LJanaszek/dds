@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_boisko1.png"
+import taskImg from "../../../../assets/locations/szkola/szkola_wpis_sala.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -19,10 +19,11 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "krzyczał": 'Trener regularnie krzyczy i zawstydza zawodniczki.',
+        "chłopcy strzelają papierkami": 'Chłopcy strzelają papierkami.',
+        "wykrzykuje":"Nauczycielka krzyczy i poniża uczniów."
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 6) {
+        if (!textList.includes(words[text]) && textList.length < 5) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -35,18 +36,16 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" />  <span>&gt;</span> klub sportowy <span> &gt; </span>boisko</h3>
+        <h3><img src={reakcja} alt="" />  <span>&gt;</span> szkoła <span> &gt; </span>Sala lekcyjna</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Boisko</h1>
+                <h1>Sala lekcyjna</h1>
                 <p>
-                    Kolejny w tym tygodniu trening. Jeszcze przed wejściem na murawę dziewczyny zastanawiają się, czy trener będzie bardzo {" "}
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                    krzyczał
-                    </span>. Po rozgrzewce trener wprowadza nowe ćwiczenie. Jest dość skomplikowane. Szkoleniowiec wymaga od nich maksimum skupienia. Tłumaczy tylko raz. Kiedy Marysia popełnia błąd, trener donośnym głosem tłumaczy raz jeszcze. Marysia ponownie źle wykonuje zadanie. Trener ostrzega, że przeniesie ją do drużyny B. Po pewnym czasie zaczyna się mecz. Marysia nie dobiega do piłki. Trener rzuca: „Nie biegaj jak ostatnia ofiara losu, walcz o tę piłkę”. Na koniec treningu wygłasza mowę: „Nikt w tej drużynie nie jest na siłę. Jeśli wam nie zależy, nie chcecie grać, to idźcie gdzie indziej”. Jak się później okazuje, część dziewcząt faktycznie chce zrezygnować z piłki, niektóre z nich mają po treningach trudności z zaśnięciem.
+                    Kasia prowadzi lekcję matematyki. Klasa nie słucha – 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>chłopcy strzelają papierkami</span>, dziewczyny odwracają się i rozmawiają na inne tematy, Janek chodzi po klasie. Nauczycielka w końcu przerywa lekcję i 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>wykrzykuje</span>: „Widzę, że na niczym wam nie zależy. Chcecie być bandą przygłupów, to sobie bądźcie. Ja to mam w dupie i całą waszą klasę. A ty, Julia, co się śmiejesz? Zero punktów dostałaś z ostatniej kartkówki, nawet dodawać nie umiesz. Tyle z całej twojej nauki”. Michał stwierdza do Leona: „Kacha się rozkręca, zobaczysz, zaraz zacznie rzucać w nas kredą, tak jak w 4b”.
                 </p>
             </PageText>
 
@@ -55,7 +54,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p22)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

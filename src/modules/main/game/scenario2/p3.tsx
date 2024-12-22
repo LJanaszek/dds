@@ -22,7 +22,7 @@ export default function P3() {
         "Popycha Adama": 'Ojciec stosuje przemoc wobec Adama. Wyzywa i popycha syna.',
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 6) {
+        if (!textList.includes(words[text]) && textList.length < 5) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));

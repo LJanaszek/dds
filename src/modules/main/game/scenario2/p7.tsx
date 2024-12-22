@@ -22,7 +22,7 @@ export default function P3() {
         "Odsłaniają się regularne, cienkie blizny": "Dziecko ma ślady mogące świadczyć o samookaleczaniu."
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 6) {
+        if (!textList.includes(words[text]) && textList.length < 5) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));

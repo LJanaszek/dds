@@ -14,7 +14,13 @@ export interface GameMapPoint extends PointData {
 }
 let textList: string[] = [];
 let inactivePoints: string[] = [];
-const warrnWords = ["Trener był widocznie niezadowolony z jazdy Pawła."]
+const warrnWords = [
+    "Chłopcy strzelają papierkami.", 
+    "Ojciec robi się zniecierpliwiony.", 
+    "Nauczycielka i mama uczennicy rozmawiają w cztery oczy.", 
+    "Pan Piotr każe wyjść nastolatkom z toalety.",
+    "Pan Robert nie jest specjalnie wymagający."
+]
 export default function P2() {
     if (!localStorage.getItem('inactivePoints')) {
         localStorage.setItem("inactivePoints", JSON.stringify([]));
@@ -30,7 +36,7 @@ export default function P2() {
 
     }
     useEffect(() => {
-        if (textList.length === 6 
+        if (textList.length === 5
 
             &&
             warrnWords.every(word => !textList.includes(word))
@@ -42,95 +48,84 @@ export default function P2() {
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [
             {
-                id: 'p3',
+                id: 'p23',
                 pointer: {
-                    name: 'bieznia',
-                    visited: 'biezniaVisited',
-                    width: 665,
-                    height: 424,
+                    name: 'toalety',
+                    visited: 'toaletyVisited',
+                    width: 848,
+                    height: 623,
                 },
                 position: {
-                    x: 1670,
-                    y: 730,
-                },
-                pointId: '8.1',
-
-            }, {
-                id: 'p4',
-                pointer: {
-                    name: 'boisko1',
-                    visited: 'boisko1Visited',
-                    width: 870,
-                    height: 474,
-
-                },
-                position: {
-                    x: 714,
-                    y: 770,
-                },
-                pointId: '8.1',
-
-            }, {
-                id: 'p5',
-                pointer: {
-                    name: 'boisko2',
-                    visited: 'boisko2Visited',
-                    width: 421,
-                    height: 662,
-
-                },
-                position: {
-                    x: 2430,
-                    y: 850,
-                },
-                pointId: '8.1',
-
-            }, {
-                id: 'p6',
-                pointer: {
-                    name: 'szkol',
-                    visited: 'szkolVisited',
-                    width: 1636,
-                    height: 979,
-
-                },
-                position: {
-                    x: 1025,
-                    y: 1785,
-                },
-                pointId: '8.1',
-
-            }, {
-                id: 'p7',
-                pointer: {
-                    name: 'szatnie',
-                    visited: 'szatnieVisited',
-                    width: 570,
-                    height: 622,
-
-                },
-                position: {
-                    x: 2245,
-                    y: 1586,
-                },
-                pointId: '8.1',
-
-            }, {
-                id: 'p10',
-                pointer: {
-                    name: 'parking',
-                    visited: 'parkingVisited',
-                    width: 1684,
-                    height: 221,
-
-                },
-                position: {
-                    x: 1065,
-                    y: 2069,
+                    x: 2310,
+                    y: 690,
                 },
                 pointId: '8.1',
 
             },
+             {
+                id: 'p24',
+                pointer: {
+                    name: 'klasa',
+                    visited: 'klasaVisited',
+                    width: 1154,
+                    height: 618,
+
+                },
+                position: {
+                    x: 1320,
+                    y: 690,
+                },
+                pointId: '8.1',
+
+            }, 
+            {
+                id: 'p25',
+                pointer: {
+                    name: 'korytarzSzkola',
+                    visited: 'korytarzSzkolaVisited',
+                    width: 2593,
+                    height: 924,
+
+                },
+                position: {
+                    x: 1440,
+                    y: 1600,
+                },
+                pointId: '8.1',
+
+            }, 
+            {
+                id: 'p26',
+                pointer: {
+                    name: 'parkingSzkola',
+                    visited: 'parkingSzkolaVisited',
+                    width: 1763,
+                    height: 240,
+
+                },
+                position: {
+                    x: 1025,
+                    y: 1970,
+                },
+                pointId: '8.1',
+
+            }, 
+            {
+                id: 'p27',
+                pointer: {
+                    name: 'pedagog',
+                    visited: 'pedagogVisited',
+                    width: 620,
+                    height: 614,
+
+                },
+                position: {
+                    x: 455,
+                    y: 691,
+                },
+                pointId: '8.1',
+
+            }
         ];
     }, []);
 
@@ -162,10 +157,10 @@ export default function P2() {
                     mapPointsData={mapPointsData}
                     selectedPoint={selectedPoint}
                     inactivePointsId={inactivePoints}
-                    selectMap="klub"
+                    selectMap="szkola"
                 />
                
-                {showButton && <Link to={getGameRoute(PAGES.p8)} className={style.button}>Przejdź dalej</Link>}
+                {showButton && <Link to={getGameRoute(PAGES.p28)} className={style.button}>Przejdź dalej</Link>}
             </div>
              <Notepad wordsList={textList} />
         </div>

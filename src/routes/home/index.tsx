@@ -8,7 +8,7 @@ export default function HomePage() {
         <div className={style.homePageView}>
             <h1>Wybierz scenariusz</h1>
             <nav className={style.nav}>
-                <Link to={getGameRoute(PAGES.p12)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p12)} className={style.link} onClick={localStorage.clear}>
                     <div className={style.lekarz}></div>
                     <p>
                         Ochrona zdrowia
@@ -17,7 +17,7 @@ export default function HomePage() {
                         Sprawdź &gt;
                     </span>
                 </Link>
-                <Link to={getGameRoute(PAGES.p2)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p32)} className={style.link} onClick={localStorage.clear}>
                     <div className={style.oboz}></div>
                     <p>
                         Wakacyjny obóz
@@ -26,7 +26,7 @@ export default function HomePage() {
                         Sprawdź &gt;
                     </span>
                 </Link>
-                <Link to={getGameRoute(PAGES.p2)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p2)} className={style.link} onClick={localStorage.clear}>
                     <div className={style.trening}></div>
                     <p>
                         Klub sportowy
@@ -35,7 +35,7 @@ export default function HomePage() {
                         Sprawdź &gt;
                     </span>
                 </Link>
-                <Link to={getGameRoute(PAGES.p2)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p22)} className={style.link} onClick={localStorage.clear}>
 
                     <div className={style.lesson}></div>
                     <p>
@@ -45,7 +45,7 @@ export default function HomePage() {
                         Sprawdź &gt;
                     </span>
                 </Link>
-                <Link to={getGameRoute(PAGES.p2)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p42)} className={style.link} onClick={localStorage.clear}>
 
                     <div className={style.teacher}></div>
                     <p>

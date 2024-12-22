@@ -16,7 +16,7 @@ export default class GameScreen extends Container implements IScreen {
     pointsMarkers: Container[] = [];
     mapPoints: PointData[] = [];
     selectedPointId: string | null = null;
-    selectMap: string = 'klub';
+    selectMap: string = "szkola";
     events = new PIXI.utils.EventEmitter()
 
     constructor(private app: Application) {

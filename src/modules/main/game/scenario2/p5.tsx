@@ -22,7 +22,7 @@ export default function P3() {
         "W trakcie badania Marta zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie": "W trakcie badania Marta zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie."
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 6) {
+        if (!textList.includes(words[text]) && textList.length < 5) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));

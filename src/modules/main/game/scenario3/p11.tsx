@@ -92,103 +92,86 @@ export default function P11() {
                             setClickedElement(e.currentTarget);
                             // setClickedElement(e.currentTarget);
                         }}>
-                            Trener ośmiesza zawodników, wyżywa się na Pawle.
+                            Nauczycielka krzyczy i rzuca w uczniów kredą.
                         </p>
 
                         <div className={style.list}>
                             <p className={style.true}>
-                                Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.
+                                Zwołujesz zespół nauczycieli uczących w klasie z udziałem psychologa. Wspólnie dzielicie się doświadczeniem w pracy z klasą i zastanawiacie się, jak zadbać o dyscyplinę pracy na lekcji.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Informujesz rodziców o wnioskach z rozpoznania sprawy.
+                                Organizujesz szkolenie z radzenia sobie z trudnymi sytuacjami w klasie.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Zapraszasz nauczycielkę do indywidualnych rozmów z psychologiem szkolnym.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.
+                                Zgłaszasz sprawę policji.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Planujesz szkolenie dla trenerów klubu z komunikacji z nastolatkami.
+                                Podczas rady pedagogicznej przypominasz treść zasad bezpiecznych relacji personel – dziecko i zachęcasz nauczycieli do reagowania i udzielania sobie wzajemnie wsparcia w trudnych sytuacjach.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Zawiadamiasz policję o możliwości popełnienia przestępstwa.
-                                <img src={falseImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.
-                                <img src={falseImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera, i dajesz jasny sygnał, że jest to niedopuszczalne.
+                                Nie podejmujesz działań – nie chcesz, żeby nauczycielka zrezygnowała z pracy.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.
+                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.true} >
-                                Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.
+                            <p className={style.true}>
+                                Uruchamiasz ścieżkę interwencji w wypadku krzywdzenia ze strony personelu i sięgasz po pierwszy środek, jakim jest upomnienie nauczycielki.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
-                                Przeprowadzasz spotkanie lub warsztaty z trenerami, przypominając o zasadach bezpiecznych relacji obowiązujących w klubie.
-                                <img src={falseImg} alt="" />
-                            </p>
-
-
-
-
-
                         </div>
                     </div>
                     <div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
                             setClickedElement(e.currentTarget);
                         }}>
-                            Trener regularnie krzyczy na zawodniczki.
+                            Ojciec krzyczy na syna, poniża, wyzywa i stosuje przemoc fizyczną.
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.
+                                Zapraszasz matkę na rozmowę, upominasz ją i informujesz o uruchomieniu ścieżki interwencji oraz możliwościach wsparcia.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Informujesz rodziców o wnioskach z rozpoznania sprawy.
+                                Rozmawiasz z Łukaszem, opracowujesz i uruchamiasz plan wsparcia dla niego.
                                 <img src={trueImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Planujesz spotkanie z psychologiem sportu dla całej drużyny.
-                                <img src={falseImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.
+                                Organizujesz dla pracowników szkolenie z reagowania na przemoc.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Uruchamiasz procedurę interwencji zapisaną w polityce ochrony dzieci.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.
+                                Nie reagujesz – nic wielkiego się nie stało.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
                                 Zawiadamiasz policję o możliwości popełnienia przestępstwa.
                                 <img src={falseImg} alt="" />
                             </p>
-                            <p className={style.false}>
-                                Nic nie robisz – trener miał dobre intencje, dziewczyny z drużyny nie są na niego złego źli.
-                                <img src={falseImg} alt="" />
-                            </p>
                             <p className={style.true}>
-                                Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.
+                                Informujesz wychowawcę klasy o potrzebie wszczęcia procedury „Niebieskie Karty”, a wychowawca wypełnia stosowny formularz.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true} >
-                                Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.
+                                Składasz do sądu wniosek o wgląd w sytuację rodziny.
                                 <img src={trueImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Zwracasz uwagę trenerowi, dając jasny sygnał, że nie zgadzasz się na takie zachowanie w Waszym klubie.
-                                <img src={falseImg} alt="" />
                             </p>
                         </div>
                     </div>
@@ -196,36 +179,45 @@ export default function P11() {
                         <p className={style.listTitle} onClick={(e) => {
                             setClickedElement(e.currentTarget);
                         }}>
-                            Warunki lokalowe w szatniach.
+                            Zuzia jest smutna, nigdy nie ma ze sobą drugiego śniadania, a dodatkowo przejawia zachowania lękowe i ma trudności w nauce.
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Rozmawiasz z władzami klubu o wydzieleniu przestrzeni dla dziewcząt.
+                                Zgłaszasz sprawę do ośrodka pomocy rodzinie.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Proponujesz opracowanie grafiku dyżurów pracowników klubu w szatni.
+                                Składasz wniosek do sądu o wgląd w sytuację rodziny.
+
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Rozmawiasz z nauczycielką o funkcjach szkoły i zadaniach wychowawcy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Opracowujesz regulamin szatni uwzględniający zasady przebywania w nich rodziców.
+                                Informujesz policję o sytuacji rodzinnej uczennicy.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Zwracasz uwagę mamie Łukasza, że nie powinna przebywać w szatni zawodników.
+                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Prosisz psychologa szkolnego, żeby monitorował sytuację dziecka.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Rozmawiasz z Zuzią. Opracowujesz i uruchamiasz plan wsparcia dla niej.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Wywieszasz informację, że przeklinanie w przestrzeni publicznej jest niekulturalne, a nawet grozi mandatem karnym.
+                                Nie podejmujesz działań – chcesz uszanować ustalenia nauczycielki z mamą.
                                 <img src={falseImg} alt="" />
                             </p>
-                            <p className={style.false}>
-                                Zamykasz szatnię, aż zostanie odpowiednio zmodernizowana.
-                                <img src={falseImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Wywieszasz w szatni plakat dotyczący zasad bezpiecznych relacji między zawodnikami i zawodniczkami.
-                                <img src={falseImg} alt="" />
+                            <p className={style.true}>
+                                Korzystając z listy placówek współpracujących stworzonej w ramach polityki ochrony dzieci, przekazujesz mamie kontakty do organizacji wspierających osoby uzależnione.
+                                <img src={trueImg} alt="" />
                             </p>
                         </div>
                     </div>
@@ -234,35 +226,35 @@ export default function P11() {
                         <p className={style.listTitle} onClick={(e) => {
                             setClickedElement(e.currentTarget);
                         }}>
-                            Rodzice obwiniają bramkarkę za porażkę drużyny.
+                            Pan Robert wypytuje o chłopaków, łapie za biodra, opowiada seksistowskie dowcipy.
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Wraz z trenerami wypracowujesz zasady przebywania rodziców na boisku.
+                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Przesyłasz rodzicom poradnik, jak wspierać młodych zawodników.
+                                Upewniasz się, że zakład pracy ma wdrożone standardy ochrony małoletnich, a pracownicy dopuszczani do pracy z dziećmi są zweryfikowani w rejestrze sprawców przestępstw na tle seksualnym oraz mają zaświadczenie z KRK.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Uruchamiasz ścieżkę interwencji na wypadek podejrzenia wykorzystania seksualnego.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Organizujesz kampanię informacyjną wśród uczniów i uczennic na temat tego, gdzie mogą szukać pomocy, jeśli w czasie praktyk doświadczają przemocy, i czym jest przemoc.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Organizujesz spotkanie z rodzicami, na którym uświadamiasz ich, jakie konsekwencje wywołuje zastraszanie i poniżanie dzieci.
+                                Informujesz policję o podejrzeniu popełnienia przestępstwa.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Wprowadzasz zakaz przebywania rodziców wokół boiska.
+                                Informujesz pracodawcę pana Roberta o sytuacji i zrywasz współpracę z zakładem, w którym odbywają się praktyki.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Nic nie robisz – przecież nic się nie stało, a na meczach zawsze włączają się emocje.
-                                <img src={falseImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Wyświetlasz na telebimach i wywieszasz w widocznym miejscu, w którym odbywają się zawody, plakat dotyczący bezpiecznych relacji podczas rozgrywek. Kilka najważniejszych zasad, jak kibicować, przedstawionych w przystępnej formie.
-                                <img src={falseImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Wprowadzasz kary za niestosowanie się do zasad i stosowanie przemocy, np. wykluczenie rodziców z możliwości kibicowania na następnym meczu.
+                                Nic nie robisz – nic złego się nie stało, to normalne, że dziewczęta odbywają praktyki w miejscu, w którym przebywa wielu dorosłych mężczyzn, a w Twoim mieście trudno o nowe miejsce na praktyki.
                                 <img src={falseImg} alt="" />
                             </p>
                         </div>
@@ -270,64 +262,47 @@ export default function P11() {
                         <p className={style.listTitle} onClick={(e) => {
                             setClickedElement(e.currentTarget);
                         }}>
-                            Osoby z zewnątrz fotografują zawodników.
+                            Maciek prześladuje Adama.
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Organizujesz spotkania dla pracowników klubu, na których przypominasz o konieczności posiadania zgód rodziców na wykorzystanie wizerunku ich dzieci. Przypominasz też o potrzebie przedstawienia zaświadczeń z KRK wszystkich osób, które w wyniku analizy ryzyka przeprowadzonej w klubie są do tego zobowiązane.
+                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Wysyłasz wiadomość do rodziców z informacją o obowiązku posiadania zgód na rejestrowanie i przetwarzanie wizerunku dziecka.
-                                <img src={trueImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Wywieszasz plakaty wskazujące, jak zadbać o ochronę wizerunku młodych sportowców.
-                                <img src={falseImg} alt="" />
-                            </p>
-                            <p className={style.true}>
-                                Prosisz mamę Łukasza o usunięcie zdjęć zrobionych podczas oficjalnej sesji oraz tworzysz internetową przestrzeń o ograniczonym dostępie dla osób postronnych (np. grupa w mediach społecznościowych, wspólny dysk), na której będą znajdowały się pamiątkowe zdjęcia wykonane przez zatrudnionego przez klub fotografa.
-                                <img src={trueImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Tworzysz i udostępniasz zasady ochrony wizerunku dzieci w klubie.
-                                <img src={falseImg} alt="" />
-                            </p>
-                        </div>
-                    </div>
-                    <div className={style.dropList}>
-                        <p className={style.listTitle} onClick={(e) => {
-                            setClickedElement(e.currentTarget);
-                        }}>
-                            Ojciec stosuje przemoc wobec Ady.
-                        </p>
-                        <div className={style.list}>
-                            <p className={style.true}>
-                                Informujesz o sytuacji Ady ośrodek pomocy społecznej, wskazując na możliwość wystąpienia przemocy w jej rodzinie.
+                                Organizujesz kampanię informacyjną wśród uczniów i uczennic na temat tego, gdzie mogą szukać pomocy, jeśli doświadczają przemocy, i czym jest przemoc.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Składasz do sądu rodzinnego wniosek o wgląd w sytuację rodziny Ady.
+                                Uruchamiasz ścieżkę interwencji na wypadek przemocy rówieśniczej.
                                 <img src={trueImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Zawiadamiasz policję o możliwości popełnienia przestępstwa.
-                                <img src={falseImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Rozmawiasz z tatą Ady o zaistniałej sytuacji. Oferujesz pomoc.
+                                Rozmawiasz z Adamem i razem opracowujecie plan wsparcia dla niego.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Zawiadamiasz sąd rodzinny o przemocy rówieśniczej.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Rozmawiasz z Maćkiem – informujesz o podjętych krokach i opracowujesz plan naprawczy.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Przeprowadzasz wraz z samorządem uczniowskim spacer badawczy, żeby zdiagnozować niebezpieczne miejsca w szkole.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Informujesz rodziców Adama i Maćka o zaistniałej sytuacji.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Informujesz policję o podejrzeniu popełnienia przestępstwa – Maciek jest osobą dorosłą, a jego zachowanie wobec Adama może stanowić przestępstwo (rozbój).
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Rozmawiasz z Adą i oferujesz jej wsparcie emocjonalne.
-                                <img src={falseImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Uruchamiasz plan wsparcia dla Ady.
-                                <img src={falseImg} alt="" />
-                            </p>
-                            <p className={style.false}>
-                                Organizujesz spotkanie z psychologiem dla dziewczyn, które domyślają się, że Ada jest krzywdzona (widziały jej siniaki).
+                                Nic nie robisz – nic złego się nie stało.
                                 <img src={falseImg} alt="" />
                             </p>
                         </div>

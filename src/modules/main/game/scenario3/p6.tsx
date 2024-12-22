@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_bglow.png"
+import taskImg from "../../../../assets/locations/szkola/szkola_wpis_parking.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -18,10 +18,11 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "Jest drużynową fotografką" : "Osoby z zewnątrz fotografują zawodników."
+        "robi się zniecierpliwiony" : "Ojciec robi się zniecierpliwiony.",
+        "krzyczy na Łukasza":"Ojciec krzyczy na syna, poniża go, wyzywa i stosuje wobec niego przemoc fizyczną."
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 6) {
+        if (!textList.includes(words[text]) && textList.length < 5) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -34,19 +35,17 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>szkoła</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> szkola <span> &gt; </span>Parking przed szkołą</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Szkoła</h1>
+                <h1>Parking przed szkołą</h1>
                 <p>
-                Odbywa się sesja zdjęciowa. Zawodnicy ubrani są w stroje meczowe. Profesjonalny fotograf robi zdjęcia drużynom oraz indywidualne. Jest wesoła atmosfera. Chłopcom trudno zachować powagę, robią śmieszne miny. Jeden z nich, dla żartu, zdejmuje koszulkę. Pozostali szybko podłapują pomysł kolegi. Mama Łukasza również uwiecznia te momenty. 
-                {" "}
-                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                Jest drużynową fotografką
-                </span>
-                . Ma niezły aparat z wysokiej jakości obiektywem. Już od dwóch lat, w miarę możliwości, jeździ na mecze i pstryka chłopakom foty. 
+                Na szkolny parking pełen nauczycieli i uczniów wjechał Tomasz. Musi szybko zabrać syna Łukasza na zaplanowaną wizytę u lekarza. Jest zły na niego: właśnie dostał wiadomości z negatywnymi uwagami dotyczącymi zachowania syna, dodatkowo Łukasz nie zaliczył trzech sprawdzianów. Tomasz 
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>robi się zniecierpliwiony</span> – chłopak już dawno powinien przyjść. Skończył lekcje 7 minut temu. Dzwoni do niego, ale młody nie odbiera. W końcu Tomasz dostrzega syna idącego spokojnym krokiem w stronę parkingu. Ojciec jest zaniepokojony, 
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>krzyczy na Łukasza</span>: „Pierdoło ostatnia, nie możesz, k…, szybciej się ruszać. Ja pier… kur… Ja cię nauczę punktualności. Robisz mi same problemy i wstyd w szkole”. 
+                Popycha go, żeby szybciej wszedł do samochodu.
                 </p>
             </PageText>
 
@@ -55,7 +54,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p22)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

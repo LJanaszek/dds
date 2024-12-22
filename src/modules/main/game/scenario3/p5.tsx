@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_boisko2.png"
+import taskImg from "../../../../assets/locations/szkola/szkola_wpis_korytarz.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -18,10 +18,12 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "Obwiniają bramkarkę": 'Rodzice obwiniają bramkarkę za porażkę drużyny.'
+        
+        "seksistowskich dowcipów":"Pan Robert wypytuje uczennice o chłopaków, łapie za biodra, opowiada seksistowskie dowcipy.",
+        "nie jest specjalnie wymagający":"Pan Robert nie jest specjalnie wymagający.",
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 6) {
+        if (!textList.includes(words[text]) && textList.length < 5) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -34,19 +36,17 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>boisko2</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> szkoła <span> &gt; </span>Korytarz</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Boisko do koszykówki</h1>
+                <h1>Korytarz</h1>
                 <p>
-                    Właśnie odbywa się mecz młodzieżowych składów piłkarek dwóch największych klubów w mieście – Topoli i Akacji. Rodzice zawodniczek obu drużyn zacięcie kibicują. Są w klubowych koszulkach, w rękach trzymają szaliki. Poziom gry jest wyrównany. Pada upragniona bramka dająca prowadzenie. Po stronie zawodniczek Topoli włączają się silne emocje. Wywołują faule na zawodniczkach Akacji, nawet dość brutalne. Zdaniem rodziców część tych zachowań jest ostentacyjnie niezauważana przez sędziego. W jego stronę płyną niewybredne komentarze. W końcu tata Marceliny - piłkarki Akacji- nazywa jedną z dziewczyn z przeciwnej drużyny „zerem”, podchodzi do niej i zaczyna na nią krzyczeć: „Czemu ją podcięłaś? Tak się nie gra w piłkę! Jesteś totalnym zerem!”. Dziewczyna zaczyna płakać. W tym czasie gospodarze tracą gola. Koniec meczu. Przegrana. Rodzice omawiają mecz między sobą.
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        Obwiniają
-                    bramkarkę</span>
-                    {" "} za porażkę. Stwierdzają, że nie nadaje się do pierwszego składu i już dawno powinna zostać przesunięta do słabszej drużyny. Rozmawiają na tyle głośno, że wszystkie dziewczyny to słyszą.
+                    Podczas przerwy uczennice żywo dyskutują na korytarzu o panu Robercie, jednym z pracowników w zakładzie, w którym odbywają praktyki. Dzielą się swoimi doświadczeniami w relacjach z nim. Olę wypytywał o chłopaków, Agnieszkę cały czas 
+                    łapie za biodra – niby zawsze wtedy, kiedy chce przejść, a w korytarzu jest wąsko, ale jednak dziewczyna czuje, że to specjalnie. Z kolei Natalia mówi, że ciągle czuje na sobie jego wzrok. Dziewczyny mają też dość jego 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>seksistowskich dowcipów</span>. Z drugiej strony 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>nie jest specjalnie wymagający</span> i można u niego bez problemów zaliczyć praktyki. A egzamin zawodowy już za chwilę.
                 </p>
             </PageText>
 
@@ -55,7 +55,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p22)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_bieznia.png"
+import taskImg from "../../../../assets/locations/szkola/szkola_wpis_korytarz.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -18,11 +18,11 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "widocznie niezadowolony": 'Trener był widocznie niezadowolony z jazdy Pawła.',
-        "ośmieszał": 'Trener ośmiesza zawodników, wyżywa się na Pawle.',
+        "prześladowany": 'Maciek prześladuje Adama.',
+        "każe nastolatkom wyjść z toalety": 'Pan Piotr każe wyjść nastolatkom z toalety.',
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 6) {
+        if (!textList.includes(words[text]) && textList.length < 5) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -35,27 +35,16 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /> <span> &gt; </span> klub sportowy <span> &gt; </span>bieżnia</h3>
+        <h3><img src={reakcja} alt="" /> <span> &gt; </span> szkoła <span> &gt; </span>Toaleta męska</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Bieżnia</h1>
+                <h1>Toaleta męska</h1>
                 <p>
-                    Mija połowa treningu rolkarskiego. Drużyna Pawła ćwiczy slalom. On jednak ma za zadanie biegać – robi kolejne okrążenia wokół boiska. Takie jest polecenie trenera. Cała drużyna wie, że z decyzją trenera się nie dyskutuje. Podczas ostatniego wyścigu szkoleniowiec był
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        widocznie niezadowolony
-                    </span>
-                    {" "}
-                    z jazdy Pawła. W szatni
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        ośmieszał
-                    </span>
-                    {" "}
-                    chłopców, mówiąc, że to, co widział, to rywalizacja na poziomie dzieci z zerówki, a nie prawie dorosłych 15-latków. Podczas przerwy w treningu Maciek, kolega Pawła, szepcze do niego: „On się na tobie wyżywa.
-                    Wcale nie ma racji. Wszyscy to wiemy. Nie przejmuj się”.
+                    Jest październik. Mija drugi miesiąc, odkąd Adam, pierwszoklasista, jest 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>prześladowany</span> przez Maćka z 5 klasy technikum. Tym razem Maciek złapał Adama w toalecie – chce, żeby ten mu dał kasę i e-papierosa. Bije go i grozi, że wepchnie jego głowę do muszli klozetowej. Przerywa mu wejście nauczyciela dyżurującego – pan Piotr 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>każe nastolatkom wyjść z toalety</span>. To już kolejny raz, kiedy ich stamtąd wygania.
                 </p>
             </PageText>
 
@@ -64,7 +53,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p22)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

@@ -7,54 +7,47 @@ import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
 import { getGameRoute, PAGES } from "../../../../routes";
 
 export const popUpContent: any = [{
-    "Trener ośmiesza zawodników, wyżywa się na Pawle.":
+    "Nauczycielka krzyczy i rzuca w uczniów kredą.":
         ["",
-            "Rozmawiałeś z chłopcami. Uważają, że Paweł został potraktowany bardzo niesprawiedliwie. Trener jest zły, że ostatnio przegrywają wyścigi, i wyżywa się na nim. A to przecież całemu zespołowi słabo poszło. Chłopcy sugerują, że może trener ma jakieś własne problemy. Pawłowi jest smutno, że ostatnio nie ściga się z ekipą. Uważa, że to kara za słabe wyniki. Trener powiedział, że musi szybciej jeździć, nie może odpuszczać. No i że ma kiepską kondycję. Paweł często słyszy, że może powinien się zastanowić, czy rolki to faktycznie jego sport.",
-            "Rozmawiałeś z trenerem. Uważa, że nikogo nie ośmieszał. Stwierdził: „To duzi chłopcy. Nie ma potrzeby im słodzić. Jak dobrze jeżdżą, to chwalę, a jak nawalają, to mówię prosto z mostu. Chcę być wobec nich uczciwy. A Paweł to bardzo dobrze zapowiadający się zawodnik, ale musi popracować nad kondycją i techniką jazdy, dlatego kilka ostatnich treningów spędził na bieżni”.",
-            "Przypatrujesz się temu, jak inni trenerzy prowadzą swoje drużyny w klubie.",
+            "Rozmawiasz z uczniami i uczennicami o atmosferze na lekcjach matematyki. Twierdzą, że pani Kasia nie potrafi utrzymać dyscypliny i niepotrzebnie się na nich denerwuje. Zaczyna ich wtedy obrażać. W równoległej klasie podobno jest tak samo, dodatkowo zdarzyło się, że rzuciła w ucznia kredą.",
+            "Rozmawiasz z innymi nauczycielami i nauczycielkami, w tym wychowawczyniami. Wszyscy są zgodni, że Kasia jest w porządku. Stara się, jest dobrą matematyczką, w poprzedniej szkole miała wielu laureatów konkursów. Niestety dostała „najgorsze” klasy, więc nie jest łatwo, ale nie może ponosić odpowiedzialności za niewychowaną młodzież. Nikt by tego nie wytrzymał.",
+            "Sprawdzasz akta pracownicze Kasi. Nic nie wzbudza Twoich podejrzeń.",
         ],
 },
 
 {
-    "Trener regularnie krzyczy na zawodniczki":
+    "Ojciec krzyczy na syna, poniża, wyzywa i popycha go":
         ["",
-            "Przychodzisz na koniec treningu i zapraszasz rodziców na rozmowę. Część jest zbulwersowana zachowaniem trenera. Ich dzieci boją się, że trener przeniesie je do drugiej drużyny „za karę” Z drugiej strony mówią, że jest świetnym szkoleniowcem i nie chcą, żeby zrezygnował z trenowania dziewczyn. Zawsze jest perfekcyjnie przygotowany. Dziewczyny zrobiły olbrzymie postępy. Paru rodziców zaznacza, że nie dziwią się trenerowi – ma dużą grupę i nie ma czasu na dyscyplinowanie zawodniczek. Jeśli chcą grać, to muszą słuchać i robić, co trzeba. Poza tym sport jest po to, żeby się hartować i kształtować charakter, więc jak czasem krzyknie, to nawet lepiej. Jeśli rodzice chcą kształtować w dzieciach delikatność, to niech zapiszą je lepiej na tańce, a nie piłkę nożną.",
-            "Przychodzisz na trening. Obserwujesz. Wszystko jest w porządku.",
-            "Szukasz w Internecie opinii na temat trenera. Znajdujesz jego biografię – zaskakuje Cię, że uprawiał szermierkę i pracował w cukierni.",
+            "Rozmawiasz z wychowawczynią Łukasza. Dowiadujesz się, że Łukasz jest „trudnym uczniem”. Rodzice zapewniają mu niezbędną terapię, ściśle współpracują ze szkołą. Starają się, żeby chłopiec miał dobre warunki do rozwoju. Trzeba zrozumieć pana Tomasza. Poza tym to, że krzyczał i szarpnął chłopaka, o niczym nie świadczy.",
+            "Oglądasz nagranie z kamery ustawionej na parkingu. Widać na nim, jak tata popycha Łukasza.",
+            "Analizujesz oceny i uwagi o Łukaszu w dzienniku lekcyjnym. Niczego nie wnoszą do Twojej dotychczasowej wiedzy.",
         ],
 },
 
 {
-    "Rodzice obwiniają bramkarkę za porażkę drużyny.": ["",
-        "Rozmawiasz z trenerem o sytuacji, która miała miejsce podczas meczu. Szkoleniowiec mówi, że takie sytuacje się zdarzają, w szczególności podczas turniejów. Stara się nie reagować, żeby nie wzmagać bojowych nastrojów, raczej odciąga drużynę z dala od rodziców. Podkreśla, że w czasie meczu koncentruje się na dziewczynach, a nie dorosłych. Wiadomo też, że ci najbardziej zaangażowani rodzice są też sponsorami klubu, więc czasem opłaca się przymknąć oko. Nie dzieje się przecież wielka krzywda. Sport to emocje. To zrozumiałe.",
-        "Oglądasz w Internecie filmik pt. „Najgorsze dopingi rodziców”. Stwierdzasz, że naprawdę z rodzicami Twojego klubu mogło być gorzej.",
-        "Rozmawiasz z kumplem z innego klubu. Opowiada Ci o swoich doświadczeniach z rodzicami podczas meczów. Stwierdzasz, że z tym społeczeństwem coś jest nie tak."
+    "Zuzia jest smutna, nigdy nie ma ze sobą drugiego śniadania, a dodatkowo przejawia zachowania lękowe i ma trudności w nauce.": ["",
+        "Rozmawiasz z wychowawczynią Małgorzatą. Przyznaje, że wie, że mama Zuzi ma problem z alkoholem. Uważa, że trzeba dać szansę matce. Zuzi nic nie grozi. Jej wyniki faktycznie się pogorszyły, ale ostatnie sprawdziany zaliczyła. Nauczycielka stwierdza, że zrobiła to, co powinna – powiedziała rodzicowi o problemach uczennicy, wysłuchała matki. W końcu jest polonistką, a nie terapeutą z klubu AA.",
+        "Zapoznajesz się z wynikami dydaktycznymi Zuzi oraz informacjami o niej w dzienniku lekcyjnym. Wszystko jest zgodne z tym, co powiedziała Ci wychowawczyni.",
+        "Rozmawiasz z poprzednią wychowawczynią Zuzi. Potwierdza to, co zostało już ustalone."
     ],
 },
 
 {
-    "Osoby z zewnątrz fotografują zawodników.":
+    "Pan Robert wypytuje o chłopaków, łapie za biodra, opowiada seksistowskie dowcipy.":
         ["",
-            "Dowiedziałeś się od organizatora rozgrywek, że fotograf został zatrudniony przez klub. Został sprawdzony w rejestrze sprawców przestępstw na tle seksualnym, nie doniósł jednak zaświadczenia z Krajowego Rejestru Karnego i nie został zapoznany z zasadami bezpiecznych relacji. Podszedłeś do mamy Łukasza. Okazuje się, że nie miała zgody rodziców na robienie zdjęć. Nikt do tej pory się nie skarżył i nie informował jej o jakichkolwiek zastrzeżeniach. Wręcz przeciwnie – od części rodziców dostała podziękowania za uchwycenie pięknych momentów z życia zawodników. Zdjęcia wrzucała na grupę rodziców i przechowywała na swoim komputerze.",
-            "Przeglądasz stronę internetową klubu oraz grupy dla zawodników i ich rodziców w mediach społecznościowych. Widzisz, że są tam zdjęcia wielu autorów.",
-            "Wchodzisz na grupę swojej poprzedniej drużyny z innego klubu. Widzisz, że rodzice wrzucają cały czas zdjęcia dzieci. Zastanawiasz się, czy wszyscy z nich mają zgodę na takie działanie."
+            "Prosisz uczennice o rozmowę. Faktycznie potwierdzają to, o czym mówiły na korytarzu. Ale zaznaczają, że pan Robert jest spoko i nie chcą, żeby miał jakiekolwiek problemy. Dla nich wszystko jest w porządku.",
+            "Rozmawiasz z opiekunem praktyk. Mówi, że Robert to wesoły człowiek. Może faktycznie czasem coś chlapnie, ale od wielu lat szkoła kieruje do niego uczniów i uczennice i nikt nigdy nie zgłaszał problemów. Lepiej też nie kombinować, bo w mieście jest niewiele miejsc, w których uczniowie mogą zdobyć doświadczenie, więc warto dbać o dobre relacje. Tym bardziej że przecież nic groźnego się nie dzieje.",
+            "Sprawdzasz w Internecie opinie o zakładzie pracy. Są różne, ale w żaden sposób nie odwołują się do zachowań, o których mówiły uczennice."
         ],
 },
 
 {
-    "Warunki lokalowe w szatniach.":
+    "Maciek prześladuje Adama":
         ["",
-            "Przeprowadzasz spacer badawczy w szatniach. Wszystko, co napisali rodzice, się zgadza. Są tam też starsi chłopcy, więc słyszysz kilka dosadnych komentarzy dotyczących rywali z poprzedniego meczu. Nie dodatek w oknie jest dziura, a na ścianach grzyb. Orientujesz się, że jest gorzej, niż słyszałeś.",
-            "Jedziesz do zaprzyjaźnionych klubów zobaczyć, jak u nich wyglądają szatnie. W jednym jest jeszcze gorzej, a w drugim – łazienka wygląda jak spa.",
-            "Sprawdzasz w archiwum, kiedy był ostatni remont szatni. Okazuje się, że około 15 lat temu…"
+            "Rozmawiasz z panem Piotrem. Stwierdza, że to nic nowego – zwykłe kocenie pierwszaków. Należy to ukrócać, ale też nie ma co robić afery. Takie rzeczy zawsze się działy, a z Maćkiem trzeba się jeszcze jakoś te parę miesięcy przemęczyć.",
+            "Próbujesz porozmawiać z Adamem. Ten jednak nie jest rozmowny. Stwierdza, że nic się nie stało. Wie, że takie są zasady w szkole i pierwszaki muszą się z tym pogodzić.",
+            "Dzwonisz do kolegi z innej szkoły, żeby dowiedzieć się, jak wyglądają tam relacje pierwszoklasistów ze starszymi rocznikami."
         ],
-},
-{
-    "Ojciec stosuje przemoc wobec Ady.": ["",
-        "Rozmawiasz z tatą Ady. Mówi, że w młodości trenował tenis, ale musiał przerwać treningi ze względu na kontuzję kolana. Teraz bardzo chce, żeby jego córka została zawodową tenisistką. Dużo z nią ćwiczy, daje jej wskazówki. Nagrywa wszystkie mecze i je z nią omawia. Kilka razy zdarzyło się, że niezadowolony komentował jej grę.",
-        "Ostatnio dziewczyny pytały się Ady, co jej się stało. Gdy przebierały się na trening, zobaczyły na jej plecach siniaki. Ada nie chce rozmawiać o tym, co dzieje się w domu. Mówi, że bardzo chce zostać tenisistką, a tata bardzo się stara, żeby jej w tym pomóc.",
-        "Czytasz artykuł o Jelenie Dokić, serbskiej tenisistce. W biografii opisuje, jak po porażce w półfinale Wimbledonu w 2000 r. była przez ojca maltretowana i wyrzucona z pokoju hotelowego. Zastanawiasz się, czy tak musi wyglądać sport młodych ludzi."
-    ],
 }
 ]
 export default function P8() {
@@ -64,14 +57,11 @@ export default function P8() {
     const [points, setPoints] = useState(8);
     const [content, setContent] = useState<string>("");
     const warnWords = [
-        "ośmiesza zawodników",
-        "krzyczy",
-        "obwiniają bramkarkę",
-
-
-        "fotografują zawodników",
-        "Warunki lokalowe",
-        "stosuje przemoc"
+        "krzyczy i rzuca",
+        "krzyczy na syna, poniża, wyzywa",
+        "jest smutna, nigdy nie ma ze sobą drugiego śniadania",
+        "łapie za biodra, opowiada seksistowskie dowcipy.",
+        "prześladuje",
     ]
     let radioPoints = useMemo(() => ({
         "points0": 0,
@@ -138,7 +128,7 @@ export default function P8() {
             <h3 className={style.linkWithLogo}>
                 <img src={reakcja} alt="" />
                 <span> &gt; </span>
-                klub sportowy
+                szkoła
                 <span> &gt; </span>
                 zdobywanie informacji
             </h3>
@@ -222,7 +212,7 @@ export default function P8() {
                     onClick={() => {
                         localStorage.setItem('textList', JSON.stringify([...description, content]));
                     }}
-                    to={getGameRoute(PAGES.p9)}
+                    to={getGameRoute(PAGES.p29)}
                 >Dalej</Link>
             }
 

@@ -12,12 +12,11 @@ export default function P9() {
     const data = require('./p9.json');
     let keys = (Object.keys(data))
     const warnWords = [
-        "ośmiesza zawodników",
-        "krzyczy",
-        "Warunki lokalowe",
-        "obwiniają bramkarkę",
-        "fotografują zawodników",
-        "stosuje przemoc"
+       "krzyczy i rzuca",
+        "krzyczy na syna, poniża, wyzywa",
+        "jest smutna, nigdy nie ma ze sobą drugiego śniadania",
+        "łapie za biodra, opowiada seksistowskie dowcipy.",
+        "prześladuje",
     ]
     useEffect(() => {
         setCaseList(Object.values(data[keys[number]]));
@@ -88,7 +87,7 @@ export default function P9() {
                     </button>
                 }
                 {showButton &&
-                    <Link to={getGameRoute(PAGES.p11)} className={style.buttonNext} onClick={addSelectedInputs}>
+                    <Link to={getGameRoute(PAGES.p31)} className={style.buttonNext} onClick={addSelectedInputs}>
                         Dalej
                     </Link>
                 }

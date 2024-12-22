@@ -88,7 +88,7 @@ export default class PixiApp extends PIXI.Application {
             ['klasa', `${config.assetsPath}szkola/szkola_klasa.png`],
             ['klasaVisited', `${config.assetsPath}szkola/szkola_klasa_done.png`],
             ['korytarzSzkola', `${config.assetsPath}szkola/szkola_koryt.png`],
-            ['korytarzSzkolaVisited', `${config.assetsPath}szkola/szkoal_koryt_done.png`],
+            ['korytarzSzkolaVisited', `${config.assetsPath}szkola/szkola_koryt_done.png`],
             ['parkingSzkola', `${config.assetsPath}szkola/szkola_parking.png`],
             ['parkingSzkolaVisited', `${config.assetsPath}szkola/szkola_parking_done.png`],
             ['pedagog', `${config.assetsPath}szkola/szkola_pedagog.png`],

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_szatnie.png"
+import taskImg from "../../../../assets/locations/szkola/szkola_wpis_pedagog.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -18,10 +18,11 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "warunki lokalowe": "Warunki lokalowe w szatniach."
+        "Rozmawiają w cztery oczy": "Nauczycielka i mama uczennicy rozmawiają w cztery oczy.",
+        "jest smutna, nigdy nie ma ze sobą drugiego śniadania":"Zuzia jest smutna, nigdy nie ma ze sobą drugiego śniadania, a dodatkowo przejawia zachowania lękowe i ma trudności w nauce.",
     }
     const addTextToList = (text: string) => {
-        if (!textList.includes(words[text]) && textList.length < 6) {
+        if (!textList.includes(words[text]) && textList.length < 5) {
             setTextList([...textList, words[text]])
         }
         localStorage.setItem('textList', JSON.stringify(textList));
@@ -34,19 +35,17 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>szatnie</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> szkoła <span> &gt; </span>Gabinet pedagoga</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Szatnie</h1>
+                <h1>Gabinet pedagoga</h1>
                 <p>
-                    Dostałeś pismo, w którym rodzice skarżą się na
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        warunki lokalowe
-                    </span>
-                    {" "}. Szatnia klubu składa się z kilku pomieszczeń. Zawodnikom udostępnione są dwie sale. Mogą się przebrać, zostawić swoje rzeczy na czas treningu. Zdarza się, że młodsze roczniki mają zajęcia w tym samym czasie co nastolatki. Ostatnio mama Maćka z U-8 weszła pomóc mu założyć korki. Akurat przebierała się drużyna U-15. Mamę bardzo zbulwersował język, jaki usłyszała w szatni. Było sporo przekleństw i obelg wobec ostatnich przeciwników. Na dodatek dziewczyny grające w drużynie Maćka muszą przebierać się w toalecie lub w domu, bo dla nich w ogóle nie ma oddzielnej przestrzeni.
+                Małgorzata spotyka się z mamą Zuzi. 
+                <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>Rozmawiają w cztery oczy</span>. Nauczycielce zależy na komforcie rodzica i szczerej rozmowie. Widzi, że uczennica często 
+                <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>jest smutna, nigdy nie ma ze sobą drugiego śniadania</span>, a dodatkowo 
+                przejawia zachowania lękowe i ma trudności w nauce. Mama Zuzi przyznaje się do uzależnienia od alkoholu – wyzwaniem jest dla niej organizacja codziennych czynności. Ostatnio zaniedbała córkę, ale podkreśla, że w żadnym wypadku nie zrobiła jej krzywdy. Prosi, żeby Małgorzata zachowała te informacje dla siebie. Obiecuje, że wszystko naprawi.
                 </p>
             </PageText>
 
@@ -55,7 +54,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p22)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>
