@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_boisko1.png"
+import taskImg from "../../../../assets/locations/przychodnia/przych_wpis_lekarski.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -19,7 +19,8 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "krzyczał": 'Trener regularnie krzyczy i zawstydza zawodniczki.',
+        "„Pokaż gardło. Oj, ale brzydkie. Brzydka dziewczynka, źle to wygląda”": 'Lekarka oceniająco i bezosobowo zwraca się do dziecka.',
+        "Ania jednak nie chce współpracować": "Ania nie chce współpracować z lekarką."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -35,18 +36,16 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" />  <span>&gt;</span> klub sportowy <span> &gt; </span>boisko</h3>
+        <h3><img src={reakcja} alt="" />  <span>&gt;</span> przychodnia <span> &gt; </span>gabinet lekarski</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Boisko</h1>
+                <h1>Gabinet lekarski</h1>
                 <p>
-                    Kolejny w tym tygodniu trening. Jeszcze przed wejściem na murawę dziewczyny zastanawiają się, czy trener będzie bardzo {" "}
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                    krzyczał
-                    </span>. Po rozgrzewce trener wprowadza nowe ćwiczenie. Jest dość skomplikowane. Szkoleniowiec wymaga od nich maksimum skupienia. Tłumaczy tylko raz. Kiedy Marysia popełnia błąd, trener donośnym głosem tłumaczy raz jeszcze. Marysia ponownie źle wykonuje zadanie. Trener ostrzega, że przeniesie ją do drużyny B. Po pewnym czasie zaczyna się mecz. Marysia nie dobiega do piłki. Trener rzuca: „Nie biegaj jak ostatnia ofiara losu, walcz o tę piłkę”. Na koniec treningu wygłasza mowę: „Nikt w tej drużynie nie jest na siłę. Jeśli wam nie zależy, nie chcecie grać, to idźcie gdzie indziej”. Jak się później okazuje, część dziewcząt faktycznie chce zrezygnować z piłki, niektóre z nich mają po treningach trudności z zaśnięciem.
+                    Do gabinetu wchodzi tata z 3-letnią córką Anią. Czeka ich wizyta kontrolna po dość długiej infekcji. Lekarka instruuje: „Dziecko usiądzie tutaj” – wskazuje odpowiedni fotel. „Tata zdejmie dziecku koszulkę i sweter. Osłucham”. Kierując wzrok ku ojcu, informuje, że teraz sprawdzi gardło oraz uszy. Mówi:
+                    {" "}<span onClick={(e) => { addTextToList(e.currentTarget.innerText) }}>„Pokaż gardło. Oj, ale brzydkie. Brzydka dziewczynka, źle to wygląda”</span>. Gdy zaczyna badać uszy, Ania się wyrywa. Lekarka na swój sposób chce zachęcić dziecko do współpracy: „Jak nie będzie grzeczna, to nie dostanie naklejki!”.
+                    <span onClick={(e) => { addTextToList(e.currentTarget.innerText) }}>Ania jednak nie chce współpracować</span>. Pani doktor nie czeka, aż dziewczynka się wyciszy, i prosi tatę, aby przytrzymał jej mocno głowę, a ona zajrzy do uszu. W obu jest silne zapalenie.
                 </p>
             </PageText>
 
@@ -55,7 +54,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p12)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_szatnie.png"
+import taskImg from "../../../../assets/locations/przychodnia/przych_wpis_zabieg.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -18,7 +18,8 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "warunki lokalowe": "Warunki lokalowe w szatniach."
+        "Pielęgniarki się spieszą, proszą, żeby wszedł, a mama dołączy do niego, jak skończy rozmawiać": "Pielęgniarki się spieszą.",
+        "Odsłaniają się regularne, cienkie blizny": "Dziecko ma ślady mogące świadczyć o samookaleczaniu."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -34,19 +35,16 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>szatnie</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> przychodnia <span> &gt; </span>Gabinet zabiegowy</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Szatnie</h1>
+                <h1>Gabinet zabiegowy</h1>
                 <p>
-                    Dostałeś pismo, w którym rodzice skarżą się na
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        warunki lokalowe
-                    </span>
-                    {" "}. Szatnia klubu składa się z kilku pomieszczeń. Zawodnikom udostępnione są dwie sale. Mogą się przebrać, zostawić swoje rzeczy na czas treningu. Zdarza się, że młodsze roczniki mają zajęcia w tym samym czasie co nastolatki. Ostatnio mama Maćka z U-8 weszła pomóc mu założyć korki. Akurat przebierała się drużyna U-15. Mamę bardzo zbulwersował język, jaki usłyszała w szatni. Było sporo przekleństw i obelg wobec ostatnich przeciwników. Na dodatek dziewczyny grające w drużynie Maćka muszą przebierać się w toalecie lub w domu, bo dla nich w ogóle nie ma oddzielnej przestrzeni.
+                Natalia przyszła z nastoletnim synem na badania – Eryk ma zostać zważony i zmierzony. Czeka go też pobranie krwi. Jest sporo ludzi. Do Natalii dzwonią współpracownicy, więc odchodzi na bok, żeby nie przeszkadzać. W tym czasie pielęgniarka woła Eryka. Eryk informuje ją, że mama na chwilę wyszła. 
+                <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>Pielęgniarki się spieszą, proszą, żeby wszedł, a mama dołączy do niego, jak skończy rozmawiać</span>. Eryk wchodzi na wagę. Pielęgniarka stwierdza: „Oj, kawał chłopa z ciebie. Grubiutki jak mój wnusio”. Następnie prosi chłopaka o zdjęcie bluzy. Eryk się ociąga. Podaje lewą rękę, ale pielęgniarka stwierdza, że chce sprawdzić prawą – bo może lepiej będzie wbić igłę. Eryk nie chce. Pielęgniarka robi się poirytowana, na siłę podwija prawy rękaw. 
+                <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>Odsłaniają się regularne, cienkie blizny</span>, jak od cięcia. Pielęgniarka udaje, że nie widzi – decyduje się nakłuć lewą rękę. 
                 </p>
             </PageText>
 
@@ -55,7 +53,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p12)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

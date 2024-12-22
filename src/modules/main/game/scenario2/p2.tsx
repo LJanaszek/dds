@@ -14,7 +14,12 @@ export interface GameMapPoint extends PointData {
 }
 let textList: string[] = [];
 let inactivePoints: string[] = [];
-const warrnWords = ["Trener był widocznie niezadowolony z jazdy Pawła."]
+const warrnWords = [
+    "Pielęgniarki się spieszą.", 
+    "Chłopiec wpada w ataki płaczu.", 
+    "Ania nie chce współpracować z lekarką.", 
+    "Mąż stracił pracę i rodzina ma teraz trudny czas."
+]
 export default function P2() {
     if (!localStorage.getItem('inactivePoints')) {
         localStorage.setItem("inactivePoints", JSON.stringify([]));
@@ -30,7 +35,7 @@ export default function P2() {
 
     }
     useEffect(() => {
-        if (textList.length === 6 
+        if (textList.length === 5
 
             &&
             warrnWords.every(word => !textList.includes(word))
@@ -42,95 +47,80 @@ export default function P2() {
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [
             {
-                id: 'p3',
+                id: 'p13',
                 pointer: {
-                    name: 'bieznia',
-                    visited: 'biezniaVisited',
-                    width: 665,
-                    height: 424,
+                    name: 'korytarz',
+                    visited: 'korytarzVisited',
+                    width: 398,
+                    height: 1312,
                 },
                 position: {
-                    x: 1670,
-                    y: 730,
+                    x: 1455,
+                    y: 1443,
                 },
                 pointId: '8.1',
 
             }, {
-                id: 'p4',
+                id: 'p14',
                 pointer: {
-                    name: 'boisko1',
-                    visited: 'boisko1Visited',
-                    width: 870,
-                    height: 474,
+                    name: 'lekarski',
+                    visited: 'lekarskiVisited',
+                    width: 1165,
+                    height: 546,
 
                 },
                 position: {
-                    x: 714,
-                    y: 770,
+                    x: 754,
+                    y: 675,
                 },
                 pointId: '8.1',
 
             }, {
-                id: 'p5',
+                id: 'p15',
                 pointer: {
-                    name: 'boisko2',
-                    visited: 'boisko2Visited',
-                    width: 421,
-                    height: 662,
+                    name: 'pielegniarki',
+                    visited: 'pielegniarkiVisited',
+                    width: 1165,
+                    height: 466,
 
                 },
                 position: {
-                    x: 2430,
-                    y: 850,
+                    x: 755,
+                    y: 1130,
                 },
                 pointId: '8.1',
 
             }, {
-                id: 'p6',
+                id: 'p16',
                 pointer: {
-                    name: 'szkol',
-                    visited: 'szkolVisited',
-                    width: 1636,
-                    height: 979,
+                    name: 'rejestracja',
+                    visited: 'rejestracjaVisited',
+                    width: 2102,
+                    height: 948,
 
                 },
                 position: {
-                    x: 1025,
-                    y: 1785,
+                    x: 1220,
+                    y: 2070,
                 },
                 pointId: '8.1',
 
             }, {
-                id: 'p7',
+                id: 'p17',
                 pointer: {
-                    name: 'szatnie',
-                    visited: 'szatnieVisited',
-                    width: 570,
-                    height: 622,
+                    name: 'zabiegowy',
+                    visited: 'zabiegowyVisited',
+                    width: 1092,
+                    height: 929,
 
                 },
                 position: {
-                    x: 2245,
-                    y: 1586,
+                    x: 2105,
+                    y: 1059,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p10',
-                pointer: {
-                    name: 'parking',
-                    visited: 'parkingVisited',
-                    width: 1684,
-                    height: 221,
-
-                },
-                position: {
-                    x: 1065,
-                    y: 2069,
-                },
-                pointId: '8.1',
-
-            },
+            }
         ];
     }, []);
 
@@ -162,10 +152,10 @@ export default function P2() {
                     mapPointsData={mapPointsData}
                     selectedPoint={selectedPoint}
                     inactivePointsId={inactivePoints}
-                    selectMap="klub"
+                    selectMap="przychodnia"
                 />
                
-                {showButton && <Link to={getGameRoute(PAGES.p8)} className={style.button}>Przejdź dalej</Link>}
+                {showButton && <Link to={getGameRoute(PAGES.p18)} className={style.button}>Przejdź dalej</Link>}
             </div>
              <Notepad wordsList={textList} />
         </div>

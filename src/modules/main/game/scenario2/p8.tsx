@@ -7,54 +7,47 @@ import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
 import { getGameRoute, PAGES } from "../../../../routes";
 
 export const popUpContent: any = [{
-    "Trener ośmiesza zawodników, wyżywa się na Pawle.":
+    "Rejestratorka głośno komentuje zachowanie i diagnozę pacjenta.":
         ["",
-            "Rozmawiałeś z chłopcami. Uważają, że Paweł został potraktowany bardzo niesprawiedliwie. Trener jest zły, że ostatnio przegrywają wyścigi, i wyżywa się na nim. A to przecież całemu zespołowi słabo poszło. Chłopcy sugerują, że może trener ma jakieś własne problemy. Pawłowi jest smutno, że ostatnio nie ściga się z ekipą. Uważa, że to kara za słabe wyniki. Trener powiedział, że musi szybciej jeździć, nie może odpuszczać. No i że ma kiepską kondycję. Paweł często słyszy, że może powinien się zastanowić, czy rolki to faktycznie jego sport.",
-            "Rozmawiałeś z trenerem. Uważa, że nikogo nie ośmieszał. Stwierdził: „To duzi chłopcy. Nie ma potrzeby im słodzić. Jak dobrze jeżdżą, to chwalę, a jak nawalają, to mówię prosto z mostu. Chcę być wobec nich uczciwy. A Paweł to bardzo dobrze zapowiadający się zawodnik, ale musi popracować nad kondycją i techniką jazdy, dlatego kilka ostatnich treningów spędził na bieżni”.",
-            "Przypatrujesz się temu, jak inni trenerzy prowadzą swoje drużyny w klubie.",
+            "Rozmawiasz z rejestratorką. Uważa, że nie zrobiła niczego złego. Chciała jak najszybciej opanować sytuację na korytarzu. Było dużo ludzi, a Paweł płakał, więc głośno rozmawiała przez telefon. Inni pacjenci też zasługują na spokój. Poza tym i tak wszyscy widzieli, że z Pawłem jest coś nie tak. A mama Janka, który musiał przepuścić Pawła, nie miała nic przeciwko.",
+            "Upewniasz się, czy w przychodni jest kącik dla rodzica z dzieckiem. Zastawiasz się, czy nie dokupić jakichś zabawek.",
+            "Rozmawiasz ze znajomą nauczycielką o pracy z uczniami ze spektrum autyzmu. Uświadamiasz sobie, jak zróżnicowane potrzeby mają dzieci neuroatypowe.",
         ],
 },
 
 {
-    "Trener regularnie krzyczy na zawodniczki":
+    "Ojciec stosuje przemoc wobec Adama. Wyzywa i popycha syna.":
         ["",
-            "Przychodzisz na koniec treningu i zapraszasz rodziców na rozmowę. Część jest zbulwersowana zachowaniem trenera. Ich dzieci boją się, że trener przeniesie je do drugiej drużyny „za karę” Z drugiej strony mówią, że jest świetnym szkoleniowcem i nie chcą, żeby zrezygnował z trenowania dziewczyn. Zawsze jest perfekcyjnie przygotowany. Dziewczyny zrobiły olbrzymie postępy. Paru rodziców zaznacza, że nie dziwią się trenerowi – ma dużą grupę i nie ma czasu na dyscyplinowanie zawodniczek. Jeśli chcą grać, to muszą słuchać i robić, co trzeba. Poza tym sport jest po to, żeby się hartować i kształtować charakter, więc jak czasem krzyknie, to nawet lepiej. Jeśli rodzice chcą kształtować w dzieciach delikatność, to niech zapiszą je lepiej na tańce, a nie piłkę nożną.",
-            "Przychodzisz na trening. Obserwujesz. Wszystko jest w porządku.",
-            "Szukasz w Internecie opinii na temat trenera. Znajdujesz jego biografię – zaskakuje Cię, że uprawiał szermierkę i pracował w cukierni.",
+            "Rozmawiasz z pielęgniarkami. Wskazują, że od ojca Adama nie było czuć alkoholu. Był zdenerwowany, takie rzeczy się zdarzają. Dobrze, że wyszli, bo pozostali pacjenci czuli się niepewnie. Same chciały już wołać ochronę. Stanem Adama się nie przejmują, wyglądał jedynie na lekko osłabionego.",
+            "Wysłuchujesz narzekania osób pracujących w administracji przychodni, że pacjenci są niewdzięczni i roszczeniowi. Szczerze im współczujesz.",
+            "Rozmawiasz z koleżanką ze szpitala. Opowiada ci, co dzieje się w rejestracji na SOR. Stwierdzasz, że jednak u was nie jest najgorzej.",
         ],
 },
 
 {
-    "Rodzice obwiniają bramkarkę za porażkę drużyny.": ["",
-        "Rozmawiasz z trenerem o sytuacji, która miała miejsce podczas meczu. Szkoleniowiec mówi, że takie sytuacje się zdarzają, w szczególności podczas turniejów. Stara się nie reagować, żeby nie wzmagać bojowych nastrojów, raczej odciąga drużynę z dala od rodziców. Podkreśla, że w czasie meczu koncentruje się na dziewczynach, a nie dorosłych. Wiadomo też, że ci najbardziej zaangażowani rodzice są też sponsorami klubu, więc czasem opłaca się przymknąć oko. Nie dzieje się przecież wielka krzywda. Sport to emocje. To zrozumiałe.",
-        "Oglądasz w Internecie filmik pt. „Najgorsze dopingi rodziców”. Stwierdzasz, że naprawdę z rodzicami Twojego klubu mogło być gorzej.",
-        "Rozmawiasz z kumplem z innego klubu. Opowiada Ci o swoich doświadczeniach z rodzicami podczas meczów. Stwierdzasz, że z tym społeczeństwem coś jest nie tak."
+    "Lekarka oceniająco i bezosobowo zwraca się do dziecka.": ["",
+        "Rozmawiasz z lekarką. Czuje się urażona Twoimi pytaniami. Podkreśla, że jest profesjonalna, ma wielu pacjentów i mało czasu. Musi działać sprawnie. Robisz wywiad w rejestracji. Okazuje się, że rodzice starają się unikać tej lekarki, jednak wielu pracowników ostatnio odeszło z przychodni, więc faktycznie zapisywanych jest do niej wielu pacjentów.",
+        "Sprawdzasz akta pracownicze lekarki. Wszystko jest w porządku.",
+        "Czytasz opinie o lekarce i przychodni w Internecie. Nie są zbyt dobre, ale z drugiej strony inne placówki mają podobną liczbę gwiazdek."
     ],
 },
 
 {
-    "Osoby z zewnątrz fotografują zawodników.":
+    "Dziecko ma ślady mogące świadczyć o samookaleczaniu.":
         ["",
-            "Dowiedziałeś się od organizatora rozgrywek, że fotograf został zatrudniony przez klub. Został sprawdzony w rejestrze sprawców przestępstw na tle seksualnym, nie doniósł jednak zaświadczenia z Krajowego Rejestru Karnego i nie został zapoznany z zasadami bezpiecznych relacji. Podszedłeś do mamy Łukasza. Okazuje się, że nie miała zgody rodziców na robienie zdjęć. Nikt do tej pory się nie skarżył i nie informował jej o jakichkolwiek zastrzeżeniach. Wręcz przeciwnie – od części rodziców dostała podziękowania za uchwycenie pięknych momentów z życia zawodników. Zdjęcia wrzucała na grupę rodziców i przechowywała na swoim komputerze.",
-            "Przeglądasz stronę internetową klubu oraz grupy dla zawodników i ich rodziców w mediach społecznościowych. Widzisz, że są tam zdjęcia wielu autorów.",
-            "Wchodzisz na grupę swojej poprzedniej drużyny z innego klubu. Widzisz, że rodzice wrzucają cały czas zdjęcia dzieci. Zastanawiasz się, czy wszyscy z nich mają zgodę na takie działanie."
+            "Rozmawiasz z pielęgniarką. Tłumaczy Ci, że nie chciała urazić Eryka. Lubi bardziej tęgich chłopaków. Uważa, że wtedy widać, że to prawdziwi mężczyźni będą, a nie chuderlaki jakieś. Młody mężczyzna musi mieć masę, a nie same kości. Jeśli chodzi o blizny, to może coś tam było, ale to nie jest sprawa dla pielęgniarki, ona jest od pobierania krwi.",
+            "Rozmawiasz z lekarzem Eryka. Nie pamięta, żeby Eryk miał blizny wskazujące na samookaleczanie się. Z pewnością by zobaczył, bo kiedyś już zgłosił taki przypadek u gimnazjalistki. Potem dzwonili do niego ze szkoły i z poradni psychologicznej – dużo musiał wyjaśniać.",
+            "Zainteresował Cię temat samookaleczenia młodych. Czytasz o tym więcej w Internecie."
         ],
 },
 
 {
-    "Warunki lokalowe w szatniach.":
+    "W trakcie badania Marta zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie.":
         ["",
-            "Przeprowadzasz spacer badawczy w szatniach. Wszystko, co napisali rodzice, się zgadza. Są tam też starsi chłopcy, więc słyszysz kilka dosadnych komentarzy dotyczących rywali z poprzedniego meczu. Nie dodatek w oknie jest dziura, a na ścianach grzyb. Orientujesz się, że jest gorzej, niż słyszałeś.",
-            "Jedziesz do zaprzyjaźnionych klubów zobaczyć, jak u nich wyglądają szatnie. W jednym jest jeszcze gorzej, a w drugim – łazienka wygląda jak spa.",
-            "Sprawdzasz w archiwum, kiedy był ostatni remont szatni. Okazuje się, że około 15 lat temu…"
+            "Rozmawiasz z pielęgniarką. Podkreśla, że zna rodzinę Angeliki, pracowała z jej mamą. Chce dla nich jak najlepiej. Nie ma powodów, żeby nie wierzyć w wyjaśnienia mamy dotyczące siniaków.",
+            "Rozmawiasz z lekarką Angeliki, dowiadujesz się, że przy badaniu pediatrycznym zauważyła siniaki w różnych stadiach gojenia się i wyglądające tak, jakby ktoś bardzo mocno chwycił dziecko. Angelika jest częstą bywalczynią przychodni, a wyjaśnienia jej mamy o pochodzeniu urazów nie były spójne, co wzbudzało pewien niepokój, ale ostatecznie wszystkie wydawały się prawdopodobne. Dziewczynka jest mała i niewiele waży jak na swój wiek. W rozmowie z lekarką nie odpowiada lub nie reaguje na pytania, nie chce wskazać zabawki, którą chciałaby się pobawić, jest wycofana.",
+            "Rozmawiasz z mamą Angeliki. Informujesz, że objawy zauważone przez pracowników przychodni mogą wskazywać na krzywdzenie dziecka. Mama Angeliki zaczyna płakać, nie chce rozmawiać na ten temat. Podajesz jej kontakt do organizacji wspierającej osoby doświadczające przemocy domowej oraz ośrodka interwencji kryzysowej."
         ],
-},
-{
-    "Ojciec stosuje przemoc wobec Ady.": ["",
-        "Rozmawiasz z tatą Ady. Mówi, że w młodości trenował tenis, ale musiał przerwać treningi ze względu na kontuzję kolana. Teraz bardzo chce, żeby jego córka została zawodową tenisistką. Dużo z nią ćwiczy, daje jej wskazówki. Nagrywa wszystkie mecze i je z nią omawia. Kilka razy zdarzyło się, że niezadowolony komentował jej grę.",
-        "Ostatnio dziewczyny pytały się Ady, co jej się stało. Gdy przebierały się na trening, zobaczyły na jej plecach siniaki. Ada nie chce rozmawiać o tym, co dzieje się w domu. Mówi, że bardzo chce zostać tenisistką, a tata bardzo się stara, żeby jej w tym pomóc.",
-        "Czytasz artykuł o Jelenie Dokić, serbskiej tenisistce. W biografii opisuje, jak po porażce w półfinale Wimbledonu w 2000 r. była przez ojca maltretowana i wyrzucona z pokoju hotelowego. Zastanawiasz się, czy tak musi wyglądać sport młodych ludzi."
-    ],
 }
 ]
 export default function P8() {
@@ -64,14 +57,11 @@ export default function P8() {
     const [points, setPoints] = useState(8);
     const [content, setContent] = useState<string>("");
     const warnWords = [
-        "ośmiesza zawodników",
-        "krzyczy",
-        "obwiniają bramkarkę",
-
-
-        "fotografują zawodników",
-        "Warunki lokalowe",
-        "stosuje przemoc"
+        "głośno komentuje",
+        "stosuje przemoc wobec Adama.",
+        "oceniająco i bezosobowo",
+        "ślady mogące świadczyć o samookaleczaniu.",
+        "zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie."
     ]
     let radioPoints = useMemo(() => ({
         "points0": 0,
@@ -138,7 +128,7 @@ export default function P8() {
             <h3 className={style.linkWithLogo}>
                 <img src={reakcja} alt="" />
                 <span> &gt; </span>
-                klub sportowy
+                przychodnia
                 <span> &gt; </span>
                 zdobywanie informacji
             </h3>
@@ -222,7 +212,7 @@ export default function P8() {
                     onClick={() => {
                         localStorage.setItem('textList', JSON.stringify([...description, content]));
                     }}
-                    to={getGameRoute(PAGES.p9)}
+                    to={getGameRoute(PAGES.p19)}
                 >Dalej</Link>
             }
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_bglow.png"
+import taskImg from "../../../../assets/locations/przychodnia/przych_wpis_rejestr.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -18,7 +18,8 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "Jest drużynową fotografką" : "Osoby z zewnątrz fotografują zawodników."
+        "Wpada w ataki płaczu" : "Chłopiec wpada w ataki płaczu.",
+        "Mówi na tyle głośno": "Rejestratorka głośno komentuje zachowanie i diagnozę pacjenta."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -34,19 +35,17 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>szkoła</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> przychodnia <span> &gt; </span>Rejestracja</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Szkoła</h1>
+                <h1>Rejestracja</h1>
                 <p>
-                Odbywa się sesja zdjęciowa. Zawodnicy ubrani są w stroje meczowe. Profesjonalny fotograf robi zdjęcia drużynom oraz indywidualne. Jest wesoła atmosfera. Chłopcom trudno zachować powagę, robią śmieszne miny. Jeden z nich, dla żartu, zdejmuje koszulkę. Pozostali szybko podłapują pomysł kolegi. Mama Łukasza również uwiecznia te momenty. 
-                {" "}
-                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                Jest drużynową fotografką
-                </span>
-                . Ma niezły aparat z wysokiej jakości obiektywem. Już od dwóch lat, w miarę możliwości, jeździ na mecze i pstryka chłopakom foty. 
+                Do przychodni razem z mamą wszedł Pawełek. Ma 6 lat. Pracownicy dobrze go znają. Chłopiec ma orzeczoną niepełnosprawność ze względu na autyzm. Dodatkowo jest w trakcie diagnozy ADHD. Jego obecność nie pozostaje niezauważona. Paweł jest dość głośny. 
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Wpada w ataki płaczu</span>
+                , boi się badań i rozmów z lekarzem. Tym bardziej że dziś przyjmie go nowa pani doktor. Mama stara się go wyciszyć, przytula, mówi spokojnym głosem. Rejestratorka dzwoni do gabinetu. 
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Mówi na tyle głośno</span>, że wszyscy słyszą: „Pani doktor, przyszedł ten autystyk. Mamy z nim problem – niech go pani szybciej przyjmie”.
                 </p>
             </PageText>
 
@@ -55,7 +54,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p12)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

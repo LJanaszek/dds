@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_boisko2.png"
+import taskImg from "../../../../assets/locations/przychodnia/przych_wpis_lekarski.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -18,7 +18,8 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "Obwiniają bramkarkę": 'Rodzice obwiniają bramkarkę za porażkę drużyny.'
+        "mąż stracił pracę i mają teraz trudny czas": 'Mąż stracił pracę i rodzina ma teraz trudny czas.',
+        "W trakcie badania Marta zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie": "W trakcie badania Marta zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -34,19 +35,16 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>boisko2</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> przychodnia <span> &gt; </span>Gabinet pielęgniarek</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Boisko do koszykówki</h1>
+                <h1>Gabinet pielęgniarek</h1>
                 <p>
-                    Właśnie odbywa się mecz młodzieżowych składów piłkarek dwóch największych klubów w mieście – Topoli i Akacji. Rodzice zawodniczek obu drużyn zacięcie kibicują. Są w klubowych koszulkach, w rękach trzymają szaliki. Poziom gry jest wyrównany. Pada upragniona bramka dająca prowadzenie. Po stronie zawodniczek Topoli włączają się silne emocje. Wywołują faule na zawodniczkach Akacji, nawet dość brutalne. Zdaniem rodziców część tych zachowań jest ostentacyjnie niezauważana przez sędziego. W jego stronę płyną niewybredne komentarze. W końcu tata Marceliny - piłkarki Akacji- nazywa jedną z dziewczyn z przeciwnej drużyny „zerem”, podchodzi do niej i zaczyna na nią krzyczeć: „Czemu ją podcięłaś? Tak się nie gra w piłkę! Jesteś totalnym zerem!”. Dziewczyna zaczyna płakać. W tym czasie gospodarze tracą gola. Koniec meczu. Przegrana. Rodzice omawiają mecz między sobą.
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                        Obwiniają
-                    bramkarkę</span>
-                    {" "} za porażkę. Stwierdzają, że nie nadaje się do pierwszego składu i już dawno powinna zostać przesunięta do słabszej drużyny. Rozmawiają na tyle głośno, że wszystkie dziewczyny to słyszą.
+                Do gabinetu wchodzi wraz z mamą 2-letnia Angelika. Przed nimi obowiązkowy bilans. Gdy mama rozbiera dziewczynkę, pielęgniarka Marta rozmawia z mamą. Dobrze się znają – kiedyś razem pracowały. Marta zauważa, że dawna znajoma blado wygląda, jest bardzo szczupła i drżą jej ręce. Mama narzeka, że 
+                <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>mąż stracił pracę i mają teraz trudny czas</span>. Sama też boryka się z problemami zdrowotnymi, ale ma nadzieję, że wszystko się niedługo jakoś ułoży. Marta doskonale ją rozumie – firma, w której pracował jej partner, niedawno zbankrutowała. Pielęgniarka wraca do Angeliki. Dziewczynka jest spokojna, nie protestuje podczas ważenia i mierzenia, ale też nie wykazuje zainteresowania zabawkami w gabinecie ani śmieszną maskotką, która wygląda z kieszeni Marty. 
+                <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>W trakcie badania Marta zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie</span>. Pyta, co się stało – mama odpowiada, że dziecko jest bardzo aktywne i często się się przewraca podczas zabawy w domu czy na spacerze. Zapytana o ślady na głowie mówi, że to pewnie w żłobku dzieci się szarpią za włosy. 
                 </p>
             </PageText>
 
@@ -55,7 +53,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p12)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

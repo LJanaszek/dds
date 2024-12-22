@@ -8,7 +8,7 @@ export default function HomePage() {
         <div className={style.homePageView}>
             <h1>Wybierz scenariusz</h1>
             <nav className={style.nav}>
-                <Link to={getGameRoute(PAGES.p2)} className={style.link}>
+                <Link to={getGameRoute(PAGES.p12)} className={style.link}>
                     <div className={style.lekarz}></div>
                     <p>
                         Ochrona zdrowia

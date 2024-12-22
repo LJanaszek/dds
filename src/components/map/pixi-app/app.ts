@@ -76,7 +76,7 @@ export default class PixiApp extends PIXI.Application {
             ['lekarski', `${config.assetsPath}przychodnia/przych_lekarski.png`],
             ['lekarskiVisited', `${config.assetsPath}przychodnia/przych_lekarski_done.png`],
             ['pielegniarki', `${config.assetsPath}przychodnia/przych_pielegniarki.png`],
-            ['ppielegniarkiVisited', `${config.assetsPath}przychodnia/przych_pielegniarki_done.png`],
+            ['pielegniarkiVisited', `${config.assetsPath}przychodnia/przych_pielegniarki_done.png`],
             ['rejestracja', `${config.assetsPath}przychodnia/przych_rejestracja.png`],
             ['rejestracjaVisited', `${config.assetsPath}przychodnia/przych_rejestracja_done.png`],
             ['zabiegowy', `${config.assetsPath}przychodnia/przych_zabiegowy.png`],
