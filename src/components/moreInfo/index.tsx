@@ -18,7 +18,7 @@ export default function MoreInfo() {
     return <div className={styles.moreInfo} id="moreInfo">
         <div className={styles.content}>
             <button onClick={() => { 
-                setShowPopup(!showPopup)}}>i</button>
+                setShowPopup(!showPopup)}}>{showPopup ? "X" : "i"}</button>
             {showPopup &&
                 <div className={styles.rules}>
                     <RulesPage isButton={true} />

@@ -5,7 +5,7 @@ import falseImg from "../../../../assets/icons/wrong.png"
 import pdf from "../../../../assets/icons/pdf.png"
 import link from "../../../../assets/icons/link.png"
 import { useEffect, useState } from 'react';
-import video from "../../../../assets/videos/sport.mp4"
+import video from "../../../../assets/videos/szkoła.mp4"
 import { getHomeRoute } from '../../../../routes';
 import { Link } from 'react-router-dom';
 
@@ -81,7 +81,7 @@ export default function P11() {
                     <div className={style.bottom}>
                         <h3>wyjaśnienie</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloribus reprehenderit hic qui deleniti dolore eos quos numquam sed, quisquam consectetur voluptates placeat ipsa voluptatibus? Nemo cum placeat voluptate expedita!
+                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!  
                         </p>
                     </div>
                 </div>
@@ -234,7 +234,7 @@ export default function P11() {
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Upewniasz się, że zakład pracy ma wdrożone standardy ochrony małoletnich, a pracownicy dopuszczani do pracy z dziećmi są zweryfikowani w rejestrze sprawców przestępstw na tle seksualnym oraz mają zaświadczenie z KRK.
+                                Upewniasz się, że zakład pracy ma wdrożone standardy ochrony małoletnich, a pracownicy dopuszczani do pracy z dziećmi są zweryfikowani w Rejestrze Sprawców Przestępstw na Tle Seksualnym  oraz mają zaświadczenie z KRK.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>

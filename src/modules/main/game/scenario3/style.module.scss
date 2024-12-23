@@ -145,6 +145,7 @@ span {
       height: 100%;
       p {
         font-size: 1em;
+        font-weight: 700;
       }
       .progress {
         height: 3px;
@@ -474,29 +475,28 @@ span {
       }
     }
   }
-  .back{
+  .back {
     margin: 0 auto;
     margin-bottom: 2em;
-    a{
+    a {
       text-decoration: none;
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: var(--thirdColor);
-      padding: .8em 2em;
+      padding: 0.8em 2em;
       border-radius: 1em;
       height: 5vh;
       font-size: 1.5em;
-      transition: .5s;
-      &:hover{
-        transition: .5s;
+      transition: 0.5s;
+      &:hover {
+        transition: 0.5s;
         background-color: var(--secondColor);
       }
     }
   }
 }
-
 
 .linkWithLogo {
   display: flex;

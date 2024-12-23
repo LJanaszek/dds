@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Radio from "../../../../components/radio";
 import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
 import { getGameRoute, PAGES } from "../../../../routes";
+import MoreInfo from "../../../../components/moreInfo";
 
 export const popUpContent: any = [{
     "Trener ośmiesza zawodników, wyżywa się na Pawle.":
@@ -35,7 +36,7 @@ export const popUpContent: any = [{
 {
     "Osoby z zewnątrz fotografują zawodników.":
         ["",
-            "Dowiedziałeś się od organizatora rozgrywek, że fotograf został zatrudniony przez klub. Został sprawdzony w rejestrze sprawców przestępstw na tle seksualnym, nie doniósł jednak zaświadczenia z Krajowego Rejestru Karnego i nie został zapoznany z zasadami bezpiecznych relacji. Podszedłeś do mamy Łukasza. Okazuje się, że nie miała zgody rodziców na robienie zdjęć. Nikt do tej pory się nie skarżył i nie informował jej o jakichkolwiek zastrzeżeniach. Wręcz przeciwnie – od części rodziców dostała podziękowania za uchwycenie pięknych momentów z życia zawodników. Zdjęcia wrzucała na grupę rodziców i przechowywała na swoim komputerze.",
+            "Dowiedziałeś się od organizatora rozgrywek, że fotograf został zatrudniony przez klub. Został sprawdzony w Rejestrze Sprawców Przestępstw na Tle Seksualnym , nie doniósł jednak zaświadczenia z Krajowego Rejestru Karnego i nie został zapoznany z zasadami bezpiecznych relacji. Podszedłeś do mamy Łukasza. Okazuje się, że nie miała zgody rodziców na robienie zdjęć. Nikt do tej pory się nie skarżył i nie informował jej o jakichkolwiek zastrzeżeniach. Wręcz przeciwnie – od części rodziców dostała podziękowania za uchwycenie pięknych momentów z życia zawodników. Zdjęcia wrzucała na grupę rodziców i przechowywała na swoim komputerze.",
             "Przeglądasz stronę internetową klubu oraz grupy dla zawodników i ich rodziców w mediach społecznościowych. Widzisz, że są tam zdjęcia wielu autorów.",
             "Wchodzisz na grupę swojej poprzedniej drużyny z innego klubu. Widzisz, że rodzice wrzucają cały czas zdjęcia dzieci. Zastanawiasz się, czy wszyscy z nich mają zgodę na takie działanie."
         ],
@@ -135,6 +136,7 @@ export default function P8() {
 
     return (
         <div>
+            <MoreInfo />
             <h3 className={style.linkWithLogo}>
                 <img src={reakcja} alt="" />
                 <span> &gt; </span>

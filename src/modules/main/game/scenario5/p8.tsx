@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Radio from "../../../../components/radio";
 import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
 import { getGameRoute, PAGES } from "../../../../routes";
+import MoreInfo from "../../../../components/moreInfo";
 
 export const popUpContent: any = [{
     "Wychowawca kąpie się nago w jeziorze i zaprasza do tego wychowanki.":
@@ -125,6 +126,7 @@ export default function P8() {
 
     return (
         <div>
+            <MoreInfo />
             <h3 className={style.linkWithLogo}>
                 <img src={reakcja} alt="" />
                 <span> &gt; </span>

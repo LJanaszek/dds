@@ -1,6 +1,6 @@
 .moreInfo{
     .content{
-        // z-index: 5;
+        
         button{
             z-index: 3;
             position: absolute;
@@ -16,6 +16,8 @@
             font-weight: 700;
         }
         .rules{
+
+            z-index: 2;
             // height: -webkit-fill-available;
             position: absolute;
             top: 0;

@@ -18,7 +18,7 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "Jest drużynową fotografką" : "Osoby z zewnątrz fotografują zawodników."
+        "Mama Łukasza również uwiecznia": "Osoby z zewnątrz fotografują zawodników."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -29,7 +29,7 @@ export default function P3() {
     }
     useEffect(() => {
         if (localStorage.getItem('textList') && textList.length === 0) {
-           setTextList(JSON.parse(localStorage.getItem('textList')!));
+            setTextList(JSON.parse(localStorage.getItem('textList')!));
         }
         // eslint-disable-next-line
     }, [stateAdd])
@@ -41,12 +41,14 @@ export default function P3() {
                 image={""}>
                 <h1>Szkoła</h1>
                 <p>
-                Odbywa się sesja zdjęciowa. Zawodnicy ubrani są w stroje meczowe. Profesjonalny fotograf robi zdjęcia drużynom oraz indywidualne. Jest wesoła atmosfera. Chłopcom trudno zachować powagę, robią śmieszne miny. Jeden z nich, dla żartu, zdejmuje koszulkę. Pozostali szybko podłapują pomysł kolegi. Mama Łukasza również uwiecznia te momenty. 
-                {" "}
-                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                Jest drużynową fotografką
-                </span>
-                . Ma niezły aparat z wysokiej jakości obiektywem. Już od dwóch lat, w miarę możliwości, jeździ na mecze i pstryka chłopakom foty. 
+                    Odbywa się sesja zdjęciowa. Zawodnicy ubrani są w stroje meczowe. Profesjonalny fotograf robi zdjęcia drużynom oraz indywidualne. Jest wesoła atmosfera. Chłopcom trudno zachować powagę, robią śmieszne miny. Jeden z nich, dla żartu, zdejmuje koszulkę. Pozostali szybko podłapują pomysł kolegi.
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
+                        Mama Łukasza również uwiecznia 
+                    </span>
+                    te momenty.
+                    Jest drużynową fotografką
+                    . Ma niezły aparat z wysokiej jakości obiektywem. Już od dwóch lat, w miarę możliwości, jeździ na mecze i pstryka chłopakom foty.
                 </p>
             </PageText>
 

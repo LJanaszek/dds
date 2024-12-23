@@ -36,7 +36,7 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" />  <span>&gt;</span> szkoła online <span> &gt; </span>Grupa klasowa w wakacje</h3>
+        <h3><img src={reakcja} alt="" />  <span>&gt;</span> Kontakty online <span> &gt; </span>Grupa klasowa w wakacje</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText

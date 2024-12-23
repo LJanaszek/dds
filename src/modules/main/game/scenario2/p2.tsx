@@ -148,6 +148,9 @@ export default function P2() {
             <img src={reakcja} alt="" /> &gt; Ochrona zdrowia
             </h3>
             <div className="mapPageInfo">
+            <p className="mapPageInfoParagraph">
+                    Aby zapoznać się z historią danego miejsca kliknij w jeden z 5 czerwonych elementów na mapie
+                </p>
                 <MapComponent
                     onPointerClicked={onPointerClicked}
                     mapPointsData={mapPointsData}

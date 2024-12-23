@@ -39,14 +39,14 @@ export default function P2() {
 
     }
     useEffect(() => {
-        if (textList.length === 6 
+        if (textList.length === 6
 
             &&
             warrnWords.every(word => !textList.includes(word))
         ) {
             setShowButton(true);
         }
-    },[])
+    }, [])
 
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [
@@ -64,7 +64,7 @@ export default function P2() {
                 },
                 pointId: '8.1',
 
-            }, 
+            },
             {
                 id: 'p44',
                 pointer: {
@@ -80,7 +80,7 @@ export default function P2() {
                 },
                 pointId: '8.1',
 
-            }, 
+            },
             {
                 id: 'p45',
                 pointer: {
@@ -96,7 +96,7 @@ export default function P2() {
                 },
                 pointId: '8.1',
 
-            }, 
+            },
             {
                 id: 'p46',
                 pointer: {
@@ -112,7 +112,7 @@ export default function P2() {
                 },
                 pointId: '8.1',
 
-            }, 
+            },
             {
                 id: 'p47',
                 pointer: {
@@ -152,9 +152,12 @@ export default function P2() {
     return (
         <div className={style.mapPage}> <MoreInfo />
             <h3>
-            <img src={reakcja} alt="" /> &gt; klub sportowy
+                <img src={reakcja} alt="" /> &gt; klub sportowy
             </h3>
             <div className="mapPageInfo">
+                <p className="mapPageInfoParagraph">
+                    Aby zapoznać się z historią danego miejsca kliknij w jeden z 5 czerwonych elementów na mapie
+                </p>
                 <MapComponent
                     onPointerClicked={onPointerClicked}
                     mapPointsData={mapPointsData}
@@ -162,10 +165,10 @@ export default function P2() {
                     inactivePointsId={inactivePoints}
                     selectMap="oboz"
                 />
-               
+
                 {showButton && <Link to={getGameRoute(PAGES.p48)} className={style.button}>Przejdź dalej</Link>}
             </div>
-             <Notepad wordsList={textList} />
+            <Notepad wordsList={textList} />
         </div>
     );
 }

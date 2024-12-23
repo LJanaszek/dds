@@ -10,7 +10,8 @@ body {
   h3,
   h4,
   h5,
-  h6,a {
+  h6,
+  a {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
   }
@@ -21,23 +22,34 @@ body {
     font-size: 1.2em;
   }
 }
-section{
-  ul{
+section {
+  ul {
     li {
       font-family: "Oswald", sans-serif;
       font-weight: 500;
     }
-    li::marker{
+    li::marker {
       display: none;
     }
   }
 }
 
 .mapPageInfo {
+  p {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  position: relative;
+  left: 13vw;
+  width: 50%;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-rows: 20% 80%;
+  justify-content: start;
+  align-items: center;
+  justify-items: center;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: none;
   display: none;
 }

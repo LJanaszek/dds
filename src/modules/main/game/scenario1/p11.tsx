@@ -81,7 +81,7 @@ export default function P11() {
                     <div className={style.bottom}>
                         <h3>wyjaśnienie</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloribus reprehenderit hic qui deleniti dolore eos quos numquam sed, quisquam consectetur voluptates placeat ipsa voluptatibus? Nemo cum placeat voluptate expedita!
+                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!  
                         </p>
                     </div>
                 </div>

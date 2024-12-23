@@ -31,7 +31,10 @@ export default function RulesPage({ isButton }: Props) {
                 <p><b>Czas rozgrywki: do 60 minut</b></p>
                 <h2>Jak grać:</h2>
                 <h3>Dzień pierwszy - obserwacja</h3>
-                <p>Na tym etapie gry przyjrzysz się temu co wydarzyło się w klubie sportowym. Zapoznaj się uważnie z opisami wszystkich sytuacji.
+                <p>
+                    Na tym etapie gry przyjrzysz się temu co wydarzyło się w wybranej lokacji. Zapoznaj się uważnie z opisami wszystkich sytuacji.
+                    Aby zapoznać się z historią danego miejsca/przedmiotu kliknij w nie/niego na mapie.
+
                 </p>
                 <div className={style.imageContainer}>
                     <span>Aby zapoznać się z historią danego miejsca kliknij w nie na mapie.
@@ -95,7 +98,7 @@ export default function RulesPage({ isButton }: Props) {
             {!isButton &&
                 <div className={style.bottom}>
                     <Link to={getHomeRoute()}
-                        onClick={(e) => { localStorage.clear()}}
+                        onClick={(e) => { localStorage.clear() }}
                     >Rozpocznij grę &gt;</Link>
                 </div>
             }

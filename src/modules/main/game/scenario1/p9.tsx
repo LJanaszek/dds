@@ -4,6 +4,7 @@ import style from "./style.module.scss"
 import { getGameRoute, PAGES } from "../../../../routes";
 import image from "../../../../assets/icons/pen.png"
 import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
+import MoreInfo from "../../../../components/moreInfo";
 export default function P9() {
     //fetch data from p9.json file with utf-8 pl encoding
     const [showButton, setShowButton] = useState(false);
@@ -53,6 +54,7 @@ export default function P9() {
 
     return (
         <div className={style.listDiv}>
+            <MoreInfo />
              <h3 className={style.linkWithLogo}><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>rekomendacja rozwiązań</h3>
             <div className={style.title}>
                 <img src={image} alt="" />
