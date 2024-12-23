@@ -67,7 +67,7 @@ export default function P11() {
                 <div className={style.card}>
                     <div className={style.top}>
                         <img src={taskImg} alt="" />
-                        <h2>Wakacyjny obóz</h2>
+                        <h2>Obóz wakacyjny</h2>
                         <p>
                             podsumowanie
                         </p>
@@ -79,7 +79,7 @@ export default function P11() {
                         </p>
                     </div>
                     <div className={style.bottom}>
-                        <h3>wyjaśnienie</h3>
+                        
                         <p>
                             Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!  
                         </p>

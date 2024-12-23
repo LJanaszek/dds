@@ -15,7 +15,16 @@ export interface GameMapPoint extends PointData {
 }
 let textList: string[] = [];
 let inactivePoints: string[] = [];
-const warrnWords = ["Trener był widocznie niezadowolony z jazdy Pawła."]
+const warrnWords = [
+    "Późnym wieczorem przychodzi wiadomość od Eli.",
+    "Uczennica nie odzywa się do nauczyciela.",
+    "Nauczyciel ma zawieźć ucznia na miejsce konkursu.",
+    "Uczniowie i uczennice przesyłają sobie zdjęcia.",
+    "Uczniowie i uczennice dyskutują ze swoją wychowawczynią o polityce.",
+    "Post nauczycielki polubiło wiele osób.",
+    "Nauczycielka została zaproszona na urodziny uczennicy.",
+    "Uczennice podsłuchały rozmowę nauczycielki z mamą uczennicy."
+]
 export default function P2() {
     if (!localStorage.getItem('inactivePoints')) {
         localStorage.setItem("inactivePoints", JSON.stringify([]));
@@ -31,7 +40,7 @@ export default function P2() {
 
     }
     useEffect(() => {
-        if (textList.length === 6 
+        if (textList.length === 5
 
             &&
             warrnWords.every(word => !textList.includes(word))

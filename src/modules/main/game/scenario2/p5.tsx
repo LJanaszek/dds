@@ -43,7 +43,9 @@ export default function P3() {
                 <h1>Gabinet pielęgniarek</h1>
                 <p>
                 Do gabinetu wchodzi wraz z mamą 2-letnia Angelika. Przed nimi obowiązkowy bilans. Gdy mama rozbiera dziewczynkę, pielęgniarka Marta rozmawia z mamą. Dobrze się znają – kiedyś razem pracowały. Marta zauważa, że dawna znajoma blado wygląda, jest bardzo szczupła i drżą jej ręce. Mama narzeka, że 
+                {" "}
                 <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>mąż stracił pracę i mają teraz trudny czas</span>. Sama też boryka się z problemami zdrowotnymi, ale ma nadzieję, że wszystko się niedługo jakoś ułoży. Marta doskonale ją rozumie – firma, w której pracował jej partner, niedawno zbankrutowała. Pielęgniarka wraca do Angeliki. Dziewczynka jest spokojna, nie protestuje podczas ważenia i mierzenia, ale też nie wykazuje zainteresowania zabawkami w gabinecie ani śmieszną maskotką, która wygląda z kieszeni Marty. 
+                {" "}
                 <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>W trakcie badania Marta zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie</span>. Pyta, co się stało – mama odpowiada, że dziecko jest bardzo aktywne i często się się przewraca podczas zabawy w domu czy na spacerze. Zapytana o ślady na głowie mówi, że to pewnie w żłobku dzieci się szarpią za włosy. 
                 </p>
             </PageText>

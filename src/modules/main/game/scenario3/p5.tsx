@@ -45,8 +45,12 @@ export default function P3() {
                 <p>
                     Podczas przerwy uczennice żywo dyskutują na korytarzu o panu Robercie, jednym z pracowników w zakładzie, w którym odbywają praktyki. Dzielą się swoimi doświadczeniami w relacjach z nim. Olę wypytywał o chłopaków, Agnieszkę cały czas 
                     łapie za biodra – niby zawsze wtedy, kiedy chce przejść, a w korytarzu jest wąsko, ale jednak dziewczyna czuje, że to specjalnie. Z kolei Natalia mówi, że ciągle czuje na sobie jego wzrok. Dziewczyny mają też dość jego 
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>seksistowskich dowcipów</span>. Z drugiej strony 
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>nie jest specjalnie wymagający</span> i można u niego bez problemów zaliczyć praktyki. A egzamin zawodowy już za chwilę.
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>nie jest specjalnie wymagający</span>
+                    {" "}
+                    i można u niego bez problemów zaliczyć praktyki. A egzamin zawodowy już za chwilę.
                 </p>
             </PageText>
 

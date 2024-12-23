@@ -43,6 +43,7 @@ export default function P3() {
                 <h1>Korytarz</h1>
                 <p>
                 Jest czwartek po południu. Do przychodni wpada Krzysztof wraz z synem, 15-letnim Adamem. Zgłasza u chłopaka silny ból gardła i utratę głosu, podejrzewa anginę. Rejestratorka informuje, że lekarz nie ma już wolnych terminów tego dnia i że może zapisać chłopca na wizytę na następny dzień o godz. 8 rano. 
+                {" "}
                 <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>U ojca wywołuje to zdenerwowanie</span>. 
                 Pyta, czy może wejść do gabinetu i poprosić lekarza o pilne przyjęcie między zapisanymi pacjentami. Kiedy otrzymuje negatywną odpowiedź, zaczyna przeklinać, gwałtownie porusza się po przychodni. Podkreśla, że Adam jest muzykiem i jutro ma ważny egzamin do szkoły muzycznej II stopnia, koniecznie musi na nim zaśpiewać. Muszą natychmiast podać chłopcu leki, po których odzyska głos. W końcu szturcha Adama i mówi: „Pierdoło, musiałeś się właśnie teraz przeziębić! Idziemy, kur..., prywatnie nas od razu obsłużą”. <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>Popycha Adama</span>, żeby szedł szybciej. 
                 </p>

@@ -46,6 +46,7 @@ export default function P3() {
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
                         Mama Łukasza również uwiecznia 
                     </span>
+                    {" "}
                     te momenty.
                     Jest drużynową fotografką
                     . Ma niezły aparat z wysokiej jakości obiektywem. Już od dwóch lat, w miarę możliwości, jeździ na mecze i pstryka chłopakom foty.

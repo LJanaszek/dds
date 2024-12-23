@@ -39,7 +39,7 @@ export default function P2() {
 
     }
     useEffect(() => {
-        if (textList.length === 6
+        if (textList.length === 5
 
             &&
             warrnWords.every(word => !textList.includes(word))
@@ -152,7 +152,7 @@ export default function P2() {
     return (
         <div className={style.mapPage}> <MoreInfo />
             <h3>
-                <img src={reakcja} alt="" /> &gt; klub sportowy
+                <img src={reakcja} alt="" /> &gt; Obóz wakacyjny
             </h3>
             <div className="mapPageInfo">
                 <p className="mapPageInfoParagraph">

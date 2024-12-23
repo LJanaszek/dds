@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_bieznia.png"
+import taskImg from "../../../../assets/locations/szkola_online/online_wpis_chat.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -43,10 +43,15 @@ export default function P3() {
                 image={""}>
                 <h1>Indywidualny chat</h1>
                 <p>
-                    Do Przemka, wychowawcy Eli, w sobotę 
+                    Do Przemka, wychowawcy Eli, w sobotę
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>późnym wieczorem przychodzi wiadomość od uczennicy</span>. Ela żali się w niej, że rodzice jej nie rozumieją i zabraniają jej spotykać się z koleżankami. Tata, po kilku piwach, właśnie zrobił awanturę. 
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Nauczyciel wysyła głosówkę przez Instagram – pociesza Elę</span>. Próbuje pokazać perspektywę rodziców, jednak po godzinie 23.40 odpisuje, że musi kończyć. Ela nadal wysyła rozpaczliwe wiadomości. Przemek wyjaśnia, że będzie miał dla niej czas w szkole. Dziewczyna jednak kontynuuje. Nauczyciel wycisza powiadomienia z czatu z dziewczynką. Ta wpada w złość. 
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>W poniedziałek nie odzywa się do niego</span> i opowiada koleżance, że zawiodła się na nauczycielu. Zawsze mogła się wygadać, a czasem nawet wypłakać w ramię.
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Nauczyciel wysyła głosówkę przez Instagram – pociesza Elę</span>. Próbuje pokazać perspektywę rodziców, jednak po godzinie 23.40 odpisuje, że musi kończyć. Ela nadal wysyła rozpaczliwe wiadomości. Przemek wyjaśnia, że będzie miał dla niej czas w szkole. Dziewczyna jednak kontynuuje. Nauczyciel wycisza powiadomienia z czatu z dziewczynką. Ta wpada w złość.
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>W poniedziałek nie odzywa się do niego</span>
+                    {" "}
+                    i opowiada koleżance, że zawiodła się na nauczycielu. Zawsze mogła się wygadać, a czasem nawet wypłakać w ramię.
                 </p>
             </PageText>
 

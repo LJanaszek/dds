@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_boisko2.png"
+import taskImg from "../../../../assets/locations/szkola_online/online_wpis_samochod.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -43,8 +43,12 @@ export default function P3() {
                 image={""}>
                 <h1>Samochód</h1>
                 <p>
-                    Paweł jest nauczycielem historii, jego uczeń Tymon przeszedł do kolejnego etapu konkursu. Pedagog 
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>ma zawieźć chłopaka na miejsce</span> i sprawować nad nim opiekę. Paweł umówił się z rodzicami Tymka o godzinie 8 w szkole, skąd mają dalej pojechać komunikacją publiczną. Nauczyciel sprawdza jednak nawigację – okazuje się, że jest awaria i tramwaje nie jeżdżą. Na dodatek rozpadał się deszcz. Decyduje się więc zabrać Tymka własnym samochodem. Dojeżdżają na czas. Kiedy wracają z powrotem do szkoły, kilkoro uczniów widzi, jak Paweł 
+                    Paweł jest nauczycielem historii, jego uczeń Tymon przeszedł do kolejnego etapu konkursu. Pedagog
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>ma zawieźć chłopaka na miejsce</span>
+                    {" "}
+                    i sprawować nad nim opiekę. Paweł umówił się z rodzicami Tymka o godzinie 8 w szkole, skąd mają dalej pojechać komunikacją publiczną. Nauczyciel sprawdza jednak nawigację – okazuje się, że jest awaria i tramwaje nie jeżdżą. Na dodatek rozpadał się deszcz. Decyduje się więc zabrać Tymka własnym samochodem. Dojeżdżają na czas. Kiedy wracają z powrotem do szkoły, kilkoro uczniów widzi, jak Paweł
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>mocno ściska Tymka w aucie</span>.
                 </p>
             </PageText>

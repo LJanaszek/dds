@@ -35,16 +35,18 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /> <span> &gt; </span> Wakacyjny obóz <span> &gt; </span>Brama przed obozem</h3>
+        <h3><img src={reakcja} alt="" /> <span> &gt; </span> Obóz wakacyjny <span> &gt; </span>Brama przed obozem</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
                 <h1>Brama przed obozem</h1>
                 <p>
-                    Maciek i Paweł 
+                    Maciek i Paweł
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>wracają z grupą obozową z zakupów</span>. Dziś jest zielona noc. Opiekunowie 
-                    nie przyglądali się specjalnie temu, co kupują młodzi. W torbach znalazły się napoje energetyczne, dużo słonych i słodkich przekąsek. Stasiek niesie cztery ciężkie torby, Julek zwraca się do niego: „No, dobrze się spisałeś, może weźmiemy Cię do naszej drużyny na mecz finałowy. Idź i zanieś to do naszego pokoju”. Stasiek posłusznie wykonuje polecenie. Julek dodaje do dziewczyn: „Ale z tego grubasa frajer. Naprawdę myśli, że z nami zagra”. 
+                    nie przyglądali się specjalnie temu, co kupują młodzi. W torbach znalazły się napoje energetyczne, dużo słonych i słodkich przekąsek. Stasiek niesie cztery ciężkie torby, Julek zwraca się do niego: „No, dobrze się spisałeś, może weźmiemy Cię do naszej drużyny na mecz finałowy. Idź i zanieś to do naszego pokoju”. Stasiek posłusznie wykonuje polecenie. Julek dodaje do dziewczyn: „Ale z tego grubasa frajer. Naprawdę myśli, że z nami zagra”.
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Maciek i Paweł nie reagują</span>.
                 </p>
             </PageText>

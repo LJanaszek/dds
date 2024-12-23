@@ -55,7 +55,7 @@ export default function P9() {
     return (
         <div className={style.listDiv}>
             <MoreInfo />
-             <h3 className={style.linkWithLogo}><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>rekomendacja rozwiązań</h3>
+             <h3 className={style.linkWithLogo}><img src={reakcja} alt="" /><span> &gt; </span> Obóz wakacyjny <span> &gt; </span>rekomendacja rozwiązań</h3>
             <div className={style.title}>
                 <img src={image} alt="" />
                 <h1>

@@ -37,16 +37,21 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" />  <span>&gt;</span> Wakacyjny obóz <span> &gt; </span>Huśtawka</h3>
+        <h3><img src={reakcja} alt="" />  <span>&gt;</span> Obóz wakacyjny <span> &gt; </span>Huśtawka</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
                 <h1>Huśtawka</h1>
                 <p>
-                    Agnieszka jest wychowawczynią na obozie. Od pewnego czasu 
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>obserwuje Karolinę </span> ze swojej grupy dzieci. Dziewczyna wieczór zamiast przy ognisku ze wszystkimi spędza zamyślona na huśtawce. Agnieszka podchodzi porozmawiać z Karoliną. 
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Huśtają się razem</span>. Na początku rozmowa się nie klei. W końcu jednak nastolatka się otwiera i mówi o sobie.  Uważa, że materialnie niczego jej nie brakuje. Tata nagradza ją za dobre oceny i spełnia jej zachcianki. 
+                    Agnieszka jest wychowawczynią na obozie. Od pewnego czasu
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>obserwuje Karolinę </span>
+                    {" "}
+                    ze swojej grupy dzieci. Dziewczyna wieczór zamiast przy ognisku ze wszystkimi spędza zamyślona na huśtawce. Agnieszka podchodzi porozmawiać z Karoliną.
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Huśtają się razem</span>. Na początku rozmowa się nie klei. W końcu jednak nastolatka się otwiera i mówi o sobie.  Uważa, że materialnie niczego jej nie brakuje. Tata nagradza ją za dobre oceny i spełnia jej zachcianki.
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Warunki są jasne: zła ocena – lanie, dobra – nagroda</span>. Karolina nie chce wracać. Agnieszka pociesza ją: „Sama w domu miałam bardzo trudno, wiem, jak się czujesz. Jeśli będziesz chciała pogadać, to zawsze możesz do mnie napisać”.
                 </p>
             </PageText>

@@ -80,7 +80,7 @@ export default function P8() {
 
     useEffect(() => {
         document.querySelectorAll("label").forEach((element: any) => {
-            if (element.nextSibling ) {
+            if (element.nextSibling) {
                 if (element.children[1].checked) {
                     element.nextSibling.children[1].value = 1
                 }
@@ -99,7 +99,7 @@ export default function P8() {
             if (parseInt(element.value) !== 1) {
                 element.setAttribute("disabled", "true");
             }
-            else{
+            else {
                 element.removeAttribute("disabled");
             }
             if (points - element.value < 0) {
@@ -170,7 +170,6 @@ export default function P8() {
                             name={name} >
                             {/* if name.includes(warnWords[number]) strip name by wrong words and paste first part of name with warnWords[index] inside p in span then add second part with red color */}
                             <p>
-
                                 {
                                     name.toString().includes(warnWords[index]) &&
                                     <span>{name.split(warnWords[index])[0]}<span style={{ color: "red" }}>{warnWords[index]}</span>{name.split(warnWords[index])[1]}</span>

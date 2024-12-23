@@ -17,7 +17,7 @@ export const popUpContent: any = [{
 },
 
 {
-    "Ojciec krzyczy na syna, poniża, wyzywa i popycha go":
+    "Ojciec krzyczy na syna, poniża, wyzywa i popycha go.":
         ["",
             "Rozmawiasz z wychowawczynią Łukasza. Dowiadujesz się, że Łukasz jest „trudnym uczniem”. Rodzice zapewniają mu niezbędną terapię, ściśle współpracują ze szkołą. Starają się, żeby chłopiec miał dobre warunki do rozwoju. Trzeba zrozumieć pana Tomasza. Poza tym to, że krzyczał i szarpnął chłopaka, o niczym nie świadczy.",
             "Oglądasz nagranie z kamery ustawionej na parkingu. Widać na nim, jak tata popycha Łukasza.",

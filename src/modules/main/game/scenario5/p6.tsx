@@ -35,16 +35,20 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>szkoła</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> Obóz wakacyjny <span> &gt; </span>szkoła</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
                 <h1>Pokój</h1>
                 <p>                
-                Michał jest opiekunem najmłodszej grupy na obozie. Chłopcy nie mogą zasnąć. W końcu jeden z nich, Olek, decyduje się pójść po pomoc do Michała. 
-                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Ten już przysypia</span>, ale szybko reaguje na sygnał od Olka. Nie przebierając się, w samych bokserkach idzie do pokoju chłopców. Julek tęskniąc za rodzicami, szlocha w poduszkę. Michał 
-                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>leży obok niego</span> i czyta mu jego ulubione opowiadanie. Po parunastu minutach wszyscy zasypiają, Michał również. Dopiero rano budzi go kolega prowadzący obchód.
+                Michał jest opiekunem najmłodszej grupy na obozie. Chłopcy nie mogą zasnąć. W końcu jeden z nich, Olek, decyduje się pójść po pomoc do Michała.
+                {" "}
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Ten już przysypia</span>, ale szybko reaguje na sygnał od Olka. Nie przebierając się, w samych bokserkach idzie do pokoju chłopców. Julek tęskniąc za rodzicami, szlocha w poduszkę. Michał
+                {" "}
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>leży obok niego</span>
+                {" "}
+                i czyta mu jego ulubione opowiadanie. Po parunastu minutach wszyscy zasypiają, Michał również. Dopiero rano budzi go kolega prowadzący obchód.
                 </p>
             </PageText>
 

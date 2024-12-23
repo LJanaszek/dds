@@ -45,6 +45,7 @@ export default function P3() {
                 <p>
                     Do gabinetu wchodzi tata z 3-letnią córką Anią. Czeka ich wizyta kontrolna po dość długiej infekcji. Lekarka instruuje: „Dziecko usiądzie tutaj” – wskazuje odpowiedni fotel. „Tata zdejmie dziecku koszulkę i sweter. Osłucham”. Kierując wzrok ku ojcu, informuje, że teraz sprawdzi gardło oraz uszy. Mówi:
                     {" "}<span onClick={(e) => { addTextToList(e.currentTarget.innerText) }}>„Pokaż gardło. Oj, ale brzydkie. Brzydka dziewczynka, źle to wygląda”</span>. Gdy zaczyna badać uszy, Ania się wyrywa. Lekarka na swój sposób chce zachęcić dziecko do współpracy: „Jak nie będzie grzeczna, to nie dostanie naklejki!”.
+                    {" "}
                     <span onClick={(e) => { addTextToList(e.currentTarget.innerText) }}>Ania jednak nie chce współpracować</span>. Pani doktor nie czeka, aż dziewczynka się wyciszy, i prosi tatę, aby przytrzymał jej mocno głowę, a ona zajrzy do uszu. W obu jest silne zapalenie.
                 </p>
             </PageText>

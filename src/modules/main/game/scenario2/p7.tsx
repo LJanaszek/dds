@@ -43,7 +43,9 @@ export default function P3() {
                 <h1>Gabinet zabiegowy</h1>
                 <p>
                 Natalia przyszła z nastoletnim synem na badania – Eryk ma zostać zważony i zmierzony. Czeka go też pobranie krwi. Jest sporo ludzi. Do Natalii dzwonią współpracownicy, więc odchodzi na bok, żeby nie przeszkadzać. W tym czasie pielęgniarka woła Eryka. Eryk informuje ją, że mama na chwilę wyszła. 
+                {" "}
                 <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>Pielęgniarki się spieszą, proszą, żeby wszedł, a mama dołączy do niego, jak skończy rozmawiać</span>. Eryk wchodzi na wagę. Pielęgniarka stwierdza: „Oj, kawał chłopa z ciebie. Grubiutki jak mój wnusio”. Następnie prosi chłopaka o zdjęcie bluzy. Eryk się ociąga. Podaje lewą rękę, ale pielęgniarka stwierdza, że chce sprawdzić prawą – bo może lepiej będzie wbić igłę. Eryk nie chce. Pielęgniarka robi się poirytowana, na siłę podwija prawy rękaw. 
+                {" "}
                 <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>Odsłaniają się regularne, cienkie blizny</span>, jak od cięcia. Pielęgniarka udaje, że nie widzi – decyduje się nakłuć lewą rękę. 
                 </p>
             </PageText>

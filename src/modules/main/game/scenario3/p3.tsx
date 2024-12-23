@@ -42,8 +42,11 @@ export default function P3() {
                 image={""}>
                 <h1>Toaleta męska</h1>
                 <p>
-                    Jest październik. Mija drugi miesiąc, odkąd Adam, pierwszoklasista, jest 
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>prześladowany</span> przez Maćka z 5 klasy technikum. Tym razem Maciek złapał Adama w toalecie – chce, żeby ten mu dał kasę i e-papierosa. Bije go i grozi, że wepchnie jego głowę do muszli klozetowej. Przerywa mu wejście nauczyciela dyżurującego – pan Piotr 
+                    Jest październik. Mija drugi miesiąc, odkąd Adam, pierwszoklasista, jest
+                    {" "} 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>prześladowany</span>
+                    {" "}przez Maćka z 5 klasy technikum. Tym razem Maciek złapał Adama w toalecie – chce, żeby ten mu dał kasę i e-papierosa. Bije go i grozi, że wepchnie jego głowę do muszli klozetowej. Przerywa mu wejście nauczyciela dyżurującego – pan Piotr
+                    {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>każe nastolatkom wyjść z toalety</span>. To już kolejny raz, kiedy ich stamtąd wygania.
                 </p>
             </PageText>

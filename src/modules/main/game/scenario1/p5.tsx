@@ -34,7 +34,7 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>boisko2</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> klub sportowy <span> &gt; </span>boisko do koszykówki</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText

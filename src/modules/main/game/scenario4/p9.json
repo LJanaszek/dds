@@ -22,10 +22,7 @@
 
   "Nauczyciel zabrał Tymka własnym samochodem i mocno wyściskał..": {
     "case11": [
-      "Przypominasz nauczycielowi, dlaczego nie jest wskazane przewożenie uczniów własnym"
-    ],
-    "case12": [
-      "samochodem, i pokazujesz alternatywne sposoby zachowania się w tej sytuacji (np. zamówienie taksówki)."
+      "Przypominasz nauczycielowi, dlaczego nie jest wskazane przewożenie uczniów własnym samochodem, i pokazujesz alternatywne sposoby zachowania się w tej sytuacji (np. zamówienie taksówki)."
     ],
     "case13": [
       "Przypominasz nauczycielowi, w jakich sytuacjach dozwolony jest kontakt fizyczny z osobą uczącą się."
@@ -46,7 +43,7 @@
       "Starasz się pokazać im, jak mogą wesprzeć kolegę."
     ],
     "case19": [
-      "Zgłaszasz sprawę policji",
+      "Zgłaszasz sprawę policji.",
       false
     ],
     "case20": [
@@ -88,7 +85,7 @@
   },
   "Nauczyciel komentuje zdjęcia uczniów i przesyła swoje zdjęcia.": {
     "case31": [
-      "Prosisz psychologa szkolnego o zwrócenie uwagi na relacje między osobami uczącymi się a nauczycielem.."
+      "Prosisz psychologa szkolnego o zwrócenie uwagi na relacje między osobami uczącymi się a nauczycielem."
     ],
     "case32": [
       "Wyjaśniasz nauczycielowi, jakimi kanałami oraz w jakim zakresie ma prawo kontaktować się z młodzieżą."

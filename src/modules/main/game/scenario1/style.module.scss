@@ -93,8 +93,8 @@ span {
 .button {
   z-index: 4;
   position: absolute;
-  bottom: 5vh;
-  right: 25vw;
+  bottom: -10vh;
+  right: -15vw;
   transform: translateX(-50%);
   background: none;
   border: none;
@@ -125,6 +125,8 @@ span {
 
   .gridContainer {
     // width: 35vw;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-height: 86vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;

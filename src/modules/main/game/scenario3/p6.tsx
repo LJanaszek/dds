@@ -43,7 +43,11 @@ export default function P3() {
                 <h1>Parking przed szkołą</h1>
                 <p>
                 Na szkolny parking pełen nauczycieli i uczniów wjechał Tomasz. Musi szybko zabrać syna Łukasza na zaplanowaną wizytę u lekarza. Jest zły na niego: właśnie dostał wiadomości z negatywnymi uwagami dotyczącymi zachowania syna, dodatkowo Łukasz nie zaliczył trzech sprawdzianów. Tomasz 
-                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>robi się zniecierpliwiony</span> – chłopak już dawno powinien przyjść. Skończył lekcje 7 minut temu. Dzwoni do niego, ale młody nie odbiera. W końcu Tomasz dostrzega syna idącego spokojnym krokiem w stronę parkingu. Ojciec jest zaniepokojony, 
+                {" "}
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>robi się zniecierpliwiony</span>
+                {" "}
+                – chłopak już dawno powinien przyjść. Skończył lekcje 7 minut temu. Dzwoni do niego, ale młody nie odbiera. W końcu Tomasz dostrzega syna idącego spokojnym krokiem w stronę parkingu. Ojciec jest zaniepokojony, 
+                {" "}
                 <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>krzyczy na Łukasza</span>: „Pierdoło ostatnia, nie możesz, k…, szybciej się ruszać. Ja pier… kur… Ja cię nauczę punktualności. Robisz mi same problemy i wstyd w szkole”. 
                 Popycha go, żeby szybciej wszedł do samochodu.
                 </p>

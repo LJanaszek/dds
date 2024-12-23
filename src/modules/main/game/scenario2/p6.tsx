@@ -43,8 +43,10 @@ export default function P3() {
                 <h1>Rejestracja</h1>
                 <p>
                 Do przychodni razem z mamą wszedł Pawełek. Ma 6 lat. Pracownicy dobrze go znają. Chłopiec ma orzeczoną niepełnosprawność ze względu na autyzm. Dodatkowo jest w trakcie diagnozy ADHD. Jego obecność nie pozostaje niezauważona. Paweł jest dość głośny. 
+                {" "}
                 <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Wpada w ataki płaczu</span>
                 , boi się badań i rozmów z lekarzem. Tym bardziej że dziś przyjmie go nowa pani doktor. Mama stara się go wyciszyć, przytula, mówi spokojnym głosem. Rejestratorka dzwoni do gabinetu. 
+                {" "}
                 <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Mówi na tyle głośno</span>, że wszyscy słyszą: „Pani doktor, przyszedł ten autystyk. Mamy z nim problem – niech go pani szybciej przyjmie”.
                 </p>
             </PageText>

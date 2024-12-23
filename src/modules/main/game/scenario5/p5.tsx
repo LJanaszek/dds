@@ -35,15 +35,20 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" /><span> &gt; </span> Wakacyjny obóz <span> &gt; </span>Jezioro</h3>
+        <h3><img src={reakcja} alt="" /><span> &gt; </span> Obóz wakacyjny <span> &gt; </span>Jezioro</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
                 <h1>Jezioro</h1>
                 <p>
-                    Mateusz jest aktywistą klimatycznym, studiuje ochronę środowiska. W wakacje dorabia jako wychowawca kolonijny. Każdego dnia wieczorem, kiedy już wypełni wszystkie obowiązki, lubi chodzić nad pobliskie jezioro na terenie obozu, oglądać zachód słońca i 
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>kąpać się nago</span> w spokojnej, rześkiej wodzie. O jego sposobie spędzania wolnego czasu <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>krążyły różne plotki</span>. Wiedział o nich, więc nie był zaskoczony, kiedy zobaczył, że podglądają go uczestniczki obozu. Wyszedł z wody i zapytał: „Nie chcecie dołączyć? Woda jest wspaniała!”.
+                    Mateusz jest aktywistą klimatycznym, studiuje ochronę środowiska. W wakacje dorabia jako wychowawca kolonijny. Każdego dnia wieczorem, kiedy już wypełni wszystkie obowiązki, lubi chodzić nad pobliskie jezioro na terenie obozu, oglądać zachód słońca i
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>kąpać się nago</span>
+                    {" "}
+                    w spokojnej, rześkiej wodzie. O jego sposobie spędzania wolnego czasu
+                    {" "}
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>krążyły różne plotki</span>. Wiedział o nich, więc nie był zaskoczony, kiedy zobaczył, że podglądają go uczestniczki obozu. Wyszedł z wody i zapytał: „Nie chcecie dołączyć? Woda jest wspaniała!”.
                 </p>
             </PageText>
 

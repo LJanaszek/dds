@@ -42,8 +42,10 @@ export default function P3() {
                 image={""}>
                 <h1>Gabinet pedagoga</h1>
                 <p>
-                Małgorzata spotyka się z mamą Zuzi. 
-                <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>Rozmawiają w cztery oczy</span>. Nauczycielce zależy na komforcie rodzica i szczerej rozmowie. Widzi, że uczennica często 
+                Małgorzata spotyka się z mamą Zuzi.
+                {" "}
+                <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>Rozmawiają w cztery oczy</span>. Nauczycielce zależy na komforcie rodzica i szczerej rozmowie. Widzi, że uczennica często
+                {" "}
                 <span onClick={(e)=>{addTextToList(e.currentTarget.innerText)}}>jest smutna, nigdy nie ma ze sobą drugiego śniadania</span>, a dodatkowo 
                 przejawia zachowania lękowe i ma trudności w nauce. Mama Zuzi przyznaje się do uzależnienia od alkoholu – wyzwaniem jest dla niej organizacja codziennych czynności. Ostatnio zaniedbała córkę, ale podkreśla, że w żadnym wypadku nie zrobiła jej krzywdy. Prosi, żeby Małgorzata zachowała te informacje dla siebie. Obiecuje, że wszystko naprawi.
                 </p>
