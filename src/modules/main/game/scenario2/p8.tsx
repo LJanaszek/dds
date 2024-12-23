@@ -128,7 +128,7 @@ export default function P8() {
             <h3 className={style.linkWithLogo}>
                 <img src={reakcja} alt="" />
                 <span> &gt; </span>
-                przychodnia
+                Ochrona zdrowia
                 <span> &gt; </span>
                 zdobywanie informacji
             </h3>

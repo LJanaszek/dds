@@ -67,8 +67,8 @@ export default class PixiApp extends PIXI.Application {
             ['jezioroVisited', `${config.assetsPath}oboz/jezioro_done.png`],
             ['pokoj', `${config.assetsPath}oboz/pokoj.png`],
             ['pokojVisited', `${config.assetsPath}oboz/pokoj_done.png`],
-            ['toalety', `${config.assetsPath}oboz/toalety.png`],
-            ['toaletyVisited', `${config.assetsPath}oboz/toalety_done.png`],
+            ['toaletyOboz', `${config.assetsPath}oboz/toalety.png`],
+            ['toaletyObozVisited', `${config.assetsPath}oboz/toalety_done.png`],
 
             //przychodnia
             ['korytarz', `${config.assetsPath}przychodnia/przych_korytarz.png`],

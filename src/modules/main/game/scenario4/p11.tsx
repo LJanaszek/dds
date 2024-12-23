@@ -1,12 +1,12 @@
 import style from './style.module.scss';
-import taskImg from '../../../../assets/scenarios/scen_sport.png'
+import taskImg from '../../../../assets/scenarios/scen_online.png'
 import trueImg from "../../../../assets/icons/right.png"
 import falseImg from "../../../../assets/icons/wrong.png"
 import pdf from "../../../../assets/icons/pdf.png"
 import link from "../../../../assets/icons/link.png"
-import { useCallback, useEffect, useState } from 'react';
+import {useEffect, useState } from 'react';
 import video from "../../../../assets/videos/sport.mp4"
-import { getHomeRoute, getRulesPageRoute } from '../../../../routes';
+import { getHomeRoute } from '../../../../routes';
 import { Link } from 'react-router-dom';
 
 export default function P11() {
@@ -67,7 +67,7 @@ export default function P11() {
                 <div className={style.card}>
                     <div className={style.top}>
                         <img src={taskImg} alt="" />
-                        <h2>Trening piłkarski</h2>
+                        <h2>Kontakty online</h2>
                         <p>
                             podsumowanie
                         </p>

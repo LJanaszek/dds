@@ -7,54 +7,47 @@ import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
 import { getGameRoute, PAGES } from "../../../../routes";
 
 export const popUpContent: any = [{
-    "Trener ośmiesza zawodników, wyżywa się na Pawle.":
+    "Wychowawca kąpie się nago w jeziorze i zaprasza do tego wychowanki.":
         ["",
-            "Rozmawiałeś z chłopcami. Uważają, że Paweł został potraktowany bardzo niesprawiedliwie. Trener jest zły, że ostatnio przegrywają wyścigi, i wyżywa się na nim. A to przecież całemu zespołowi słabo poszło. Chłopcy sugerują, że może trener ma jakieś własne problemy. Pawłowi jest smutno, że ostatnio nie ściga się z ekipą. Uważa, że to kara za słabe wyniki. Trener powiedział, że musi szybciej jeździć, nie może odpuszczać. No i że ma kiepską kondycję. Paweł często słyszy, że może powinien się zastanowić, czy rolki to faktycznie jego sport.",
-            "Rozmawiałeś z trenerem. Uważa, że nikogo nie ośmieszał. Stwierdził: „To duzi chłopcy. Nie ma potrzeby im słodzić. Jak dobrze jeżdżą, to chwalę, a jak nawalają, to mówię prosto z mostu. Chcę być wobec nich uczciwy. A Paweł to bardzo dobrze zapowiadający się zawodnik, ale musi popracować nad kondycją i techniką jazdy, dlatego kilka ostatnich treningów spędził na bieżni”.",
-            "Przypatrujesz się temu, jak inni trenerzy prowadzą swoje drużyny w klubie.",
+            "Rozmawiasz z Mateuszem. Nie widzi niczego złego w zaistniałej sytuacji. Ludzie są częścią natury, a nasze ciała są piękne, nie można się ich wstydzić. Trzeba je podziwiać i uczyć się ich. Mateusz od dwóch lat jest naturystą i nikt nie może mu tego zabronić. W żadnym momencie jego działania nie miały podtekstu seksualnego. Dodatkowo miał przerwę w pracy i nie musiał dbać o to, żeby uczestniczki obozu były w pokojach. A od domków do jeziora jest bezpieczna droga. Mateusz podkreśla, że dziewczyny same przyszły nad jezioro i go podpatrywały. W żaden sposób ich do tego nie zachęcał.",
+            "Sprawdzasz, czy rzeczywiście od domków do jeziora jest bezpieczny dystans. Mateusz miał rację – idzie się 5 minut, to około 300 metrów niewygodną ścieżką. Z okien żadnego z domków nie widać jeziora.",
+            "Sprawdzasz informacje o naturystach. Starasz się upewnić, czy ruch naturystów nie jest związany z seksualizacją dzieci.",
         ],
 },
 
 {
-    "Trener regularnie krzyczy na zawodniczki":
+    "Wychowawczyni dowiedziała się, że tata stosuje przemoc fizyczną i emocjonalną wobec Karoliny.":
         ["",
-            "Przychodzisz na koniec treningu i zapraszasz rodziców na rozmowę. Część jest zbulwersowana zachowaniem trenera. Ich dzieci boją się, że trener przeniesie je do drugiej drużyny „za karę” Z drugiej strony mówią, że jest świetnym szkoleniowcem i nie chcą, żeby zrezygnował z trenowania dziewczyn. Zawsze jest perfekcyjnie przygotowany. Dziewczyny zrobiły olbrzymie postępy. Paru rodziców zaznacza, że nie dziwią się trenerowi – ma dużą grupę i nie ma czasu na dyscyplinowanie zawodniczek. Jeśli chcą grać, to muszą słuchać i robić, co trzeba. Poza tym sport jest po to, żeby się hartować i kształtować charakter, więc jak czasem krzyknie, to nawet lepiej. Jeśli rodzice chcą kształtować w dzieciach delikatność, to niech zapiszą je lepiej na tańce, a nie piłkę nożną.",
-            "Przychodzisz na trening. Obserwujesz. Wszystko jest w porządku.",
-            "Szukasz w Internecie opinii na temat trenera. Znajdujesz jego biografię – zaskakuje Cię, że uprawiał szermierkę i pracował w cukierni.",
+            "Rozmawiasz z Agnieszką. Wychowawczyni mówi, że zrobiła to, co powinna. Nie może ingerować w sposób wychowywania rodziców, ale zapewniła o swoim wsparciu dla Karoliny. Jest przekonana, że Karolina poczuła się lepiej. Nie chce też, żeby firma organizująca obóz dostała złe opinie od rodziców przez to, że wtrąca się w prywatne sprawy. Rodzice Karoliny to ważne osobistości w lokalnej społeczności – mama jest wykładowczynią na uczelni, a tata jest właścicielem zakładu szklarskiego, w którym zatrudnia wielu mieszkańców. Agnieszce zależy na pracy – jest wychowawczynią przez całe wakacje i zarobione pieniądze pozwalają jej utrzymać się przez pierwszy semestr studiów.",
+            "Rozmawiasz z Karoliną. Szczegółowo opowiada Ci o sytuacji w domu. Cierpi z powodu przemocy fizycznej i psychicznej oraz zaniedbań wychowawczych. Opowiedziała wychowawczyni o sytuacji. Przez chwilę poczuła się lepiej, bo mogła się wygadać, ale nie zmienia to jej sytuacji domowej i nadal nie wie, co ma zrobić, żeby było lepiej. Chciałaby, żeby ktoś dorosły wreszcie przyznał, że to, co ją spotyka, jest złe.",
+            "Wyszukujesz informacje o rodzicach Karoliny. Faktycznie, są bardzo uznanymi ludźmi w mieście.",
         ],
 },
 
 {
-    "Rodzice obwiniają bramkarkę za porażkę drużyny.": ["",
-        "Rozmawiasz z trenerem o sytuacji, która miała miejsce podczas meczu. Szkoleniowiec mówi, że takie sytuacje się zdarzają, w szczególności podczas turniejów. Stara się nie reagować, żeby nie wzmagać bojowych nastrojów, raczej odciąga drużynę z dala od rodziców. Podkreśla, że w czasie meczu koncentruje się na dziewczynach, a nie dorosłych. Wiadomo też, że ci najbardziej zaangażowani rodzice są też sponsorami klubu, więc czasem opłaca się przymknąć oko. Nie dzieje się przecież wielka krzywda. Sport to emocje. To zrozumiałe.",
-        "Oglądasz w Internecie filmik pt. „Najgorsze dopingi rodziców”. Stwierdzasz, że naprawdę z rodzicami Twojego klubu mogło być gorzej.",
-        "Rozmawiasz z kumplem z innego klubu. Opowiada Ci o swoich doświadczeniach z rodzicami podczas meczów. Stwierdzasz, że z tym społeczeństwem coś jest nie tak."
+    "Opiekunowie nie sprawdzają, co kupują młodzi, oraz nie reagują na przemocowe komentarze chłopców.": ["",
+        "Rozmawiasz z opiekunami. Stwierdzają, że to przecież zielona noc i młodzi mogą pozwolić sobie na nieco więcej – raz na tydzień chipsy, słodycze i energetyki nikomu nie zaszkodzą. A co do Staśka, to sam się zgodził nieść torby i na nic się nie skarżył. Zwracasz uwagę wychowawcom, że dzieci poniżej 18 r.ż. nie mogą kupować energetyków.",
+        "Sprawdzasz skład produktów, które kupili chłopcy – faktycznie wszystkie są bardzo niezdrowe.",
+        "Szukasz w Internecie informacji o tym, jak młodzi spędzają zielone noce."
     ],
 },
 
 {
-    "Osoby z zewnątrz fotografują zawodników.":
+    "Opiekunowie wymierzyli nadmiarową karę, niewynikającą z rzeczywistych konsekwencji działań chłopców.":
         ["",
-            "Dowiedziałeś się od organizatora rozgrywek, że fotograf został zatrudniony przez klub. Został sprawdzony w rejestrze sprawców przestępstw na tle seksualnym, nie doniósł jednak zaświadczenia z Krajowego Rejestru Karnego i nie został zapoznany z zasadami bezpiecznych relacji. Podszedłeś do mamy Łukasza. Okazuje się, że nie miała zgody rodziców na robienie zdjęć. Nikt do tej pory się nie skarżył i nie informował jej o jakichkolwiek zastrzeżeniach. Wręcz przeciwnie – od części rodziców dostała podziękowania za uchwycenie pięknych momentów z życia zawodników. Zdjęcia wrzucała na grupę rodziców i przechowywała na swoim komputerze.",
-            "Przeglądasz stronę internetową klubu oraz grupy dla zawodników i ich rodziców w mediach społecznościowych. Widzisz, że są tam zdjęcia wielu autorów.",
-            "Wchodzisz na grupę swojej poprzedniej drużyny z innego klubu. Widzisz, że rodzice wrzucają cały czas zdjęcia dzieci. Zastanawiasz się, czy wszyscy z nich mają zgodę na takie działanie."
+            "Rozmawiasz z wychowawcami. Stwierdzają, że z tymi chłopakami były kłopoty przez cały czas trwania obozu. Zasłużyli sobie na karę i widać, że dzieci też tak uważały. Reakcja pozostałych dzieci tylko wzmacnia słuszność wymierzonej kary i przyniesie lepszy skutek na przyszłość. Takie są konsekwencje – zniszczyli, nabrudzili, to niech naprawią. A jak wyczyszczą też pozostałe toalety, to zapamiętają raz na zawsze, jak z nich korzystać.",
+            "Rozmawiasz z chłopcami. Rozumieją, że muszą ponieść konsekwencje, ale razem z nimi powinien je ponieść Ignacy, który też rzucał papierem. Poza tym inni specjalnie nabrudzili, żeby się z nich pośmiać. A opiekunowie od początku się na nich uwzięli i właśnie dlatego chłopcy wybrudzili ich toaletę, bo ci wcale ich nie słuchali!",
+            "Sprawdzasz u właściciela ośrodka, czy istnieje szansa, aby na czas obozu wyjąć drzwi do toalet. Nie otrzymujesz na to zgody."
         ],
 },
 
 {
-    "Warunki lokalowe w szatniach.":
+    "Opiekun położył się w samych bokserkach obok chłopca.":
         ["",
-            "Przeprowadzasz spacer badawczy w szatniach. Wszystko, co napisali rodzice, się zgadza. Są tam też starsi chłopcy, więc słyszysz kilka dosadnych komentarzy dotyczących rywali z poprzedniego meczu. Nie dodatek w oknie jest dziura, a na ścianach grzyb. Orientujesz się, że jest gorzej, niż słyszałeś.",
-            "Jedziesz do zaprzyjaźnionych klubów zobaczyć, jak u nich wyglądają szatnie. W jednym jest jeszcze gorzej, a w drugim – łazienka wygląda jak spa.",
-            "Sprawdzasz w archiwum, kiedy był ostatni remont szatni. Okazuje się, że około 15 lat temu…"
+            "Rozmawiasz z Michałem. Tłumaczy, że nic złego nie chciał zrobić. Wręcz przeciwnie, to była jego naturalna reakcja – przyszedł Olek, zgłosił problem, więc Michał chciał pomóc chłopcom zasnąć.",
+            "Rozmawiasz z kolegą Michała prowadzącym poranny obchód. Potwierdza, że bardzo się zdziwił, widząc Michała śpiącego w pokoju chłopców. Z jego punktu widzenia ta sytuacja była bardzo dwuznaczna. Nie zauważył, żeby chłopcy czuli dyskomfort w obecności Michała.",
+            "Sporządzasz listę audiobooków, które można puszczać dzieciom do snu."
         ],
-},
-{
-    "Ojciec stosuje przemoc wobec Ady.": ["",
-        "Rozmawiasz z tatą Ady. Mówi, że w młodości trenował tenis, ale musiał przerwać treningi ze względu na kontuzję kolana. Teraz bardzo chce, żeby jego córka została zawodową tenisistką. Dużo z nią ćwiczy, daje jej wskazówki. Nagrywa wszystkie mecze i je z nią omawia. Kilka razy zdarzyło się, że niezadowolony komentował jej grę.",
-        "Ostatnio dziewczyny pytały się Ady, co jej się stało. Gdy przebierały się na trening, zobaczyły na jej plecach siniaki. Ada nie chce rozmawiać o tym, co dzieje się w domu. Mówi, że bardzo chce zostać tenisistką, a tata bardzo się stara, żeby jej w tym pomóc.",
-        "Czytasz artykuł o Jelenie Dokić, serbskiej tenisistce. W biografii opisuje, jak po porażce w półfinale Wimbledonu w 2000 r. była przez ojca maltretowana i wyrzucona z pokoju hotelowego. Zastanawiasz się, czy tak musi wyglądać sport młodych ludzi."
-    ],
 }
 ]
 export default function P8() {
@@ -64,14 +57,11 @@ export default function P8() {
     const [points, setPoints] = useState(8);
     const [content, setContent] = useState<string>("");
     const warnWords = [
-        "ośmiesza zawodników",
-        "krzyczy",
-        "obwiniają bramkarkę",
-
-
-        "fotografują zawodników",
-        "Warunki lokalowe",
-        "stosuje przemoc"
+        "kąpie się nago",
+        "stosuje przemoc fizyczną i emocjonalną",
+        "nie sprawdzają, co kupują młodzi, oraz nie reagują na przemocowe",
+        "wymierzyli nadmiarową karę",
+        "położył się",
     ]
     let radioPoints = useMemo(() => ({
         "points0": 0,
@@ -222,7 +212,7 @@ export default function P8() {
                     onClick={() => {
                         localStorage.setItem('textList', JSON.stringify([...description, content]));
                     }}
-                    to={getGameRoute(PAGES.p9)}
+                    to={getGameRoute(PAGES.p49)}
                 >Dalej</Link>
             }
 

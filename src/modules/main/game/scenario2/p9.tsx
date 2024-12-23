@@ -52,7 +52,7 @@ export default function P9() {
 
     return (
         <div className={style.listDiv}>
-             <h3 className={style.linkWithLogo}><img src={reakcja} alt="" /><span> &gt; </span> przychodnia <span> &gt; </span>rekomendacja rozwiązań</h3>
+             <h3 className={style.linkWithLogo}><img src={reakcja} alt="" /><span> &gt; </span> Ochrona zdrowia <span> &gt; </span>rekomendacja rozwiązań</h3>
             <div className={style.title}>
                 <img src={image} alt="" />
                 <h1>

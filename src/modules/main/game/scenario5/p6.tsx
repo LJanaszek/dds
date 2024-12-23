@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_bglow.png"
+import taskImg from "../../../../assets/locations/oboz/oboz_wpis_pokoj.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -18,7 +18,8 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "Jest drużynową fotografką" : "Osoby z zewnątrz fotografują zawodników."
+        "Ten już przysypia" : "Opiekun przysypiał.",
+        "leży obok niego":"Opiekun położył się w samych bokserkach obok chłopca."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -39,14 +40,11 @@ export default function P3() {
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Szkoła</h1>
-                <p>
-                Odbywa się sesja zdjęciowa. Zawodnicy ubrani są w stroje meczowe. Profesjonalny fotograf robi zdjęcia drużynom oraz indywidualne. Jest wesoła atmosfera. Chłopcom trudno zachować powagę, robią śmieszne miny. Jeden z nich, dla żartu, zdejmuje koszulkę. Pozostali szybko podłapują pomysł kolegi. Mama Łukasza również uwiecznia te momenty. 
-                {" "}
-                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                Jest drużynową fotografką
-                </span>
-                . Ma niezły aparat z wysokiej jakości obiektywem. Już od dwóch lat, w miarę możliwości, jeździ na mecze i pstryka chłopakom foty. 
+                <h1>Pokój</h1>
+                <p>                
+                Michał jest opiekunem najmłodszej grupy na obozie. Chłopcy nie mogą zasnąć. W końcu jeden z nich, Olek, decyduje się pójść po pomoc do Michała. 
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Ten już przysypia</span>, ale szybko reaguje na sygnał od Olka. Nie przebierając się, w samych bokserkach idzie do pokoju chłopców. Julek tęskniąc za rodzicami, szlocha w poduszkę. Michał 
+                <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>leży obok niego</span> i czyta mu jego ulubione opowiadanie. Po parunastu minutach wszyscy zasypiają, Michał również. Dopiero rano budzi go kolega prowadzący obchód.
                 </p>
             </PageText>
 
@@ -55,7 +53,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p42)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

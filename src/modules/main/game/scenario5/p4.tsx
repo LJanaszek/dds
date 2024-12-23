@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getGameRoute, PAGES } from "../../../../routes";
-import taskImg from "../../../../assets/locations/klub/sport_wpis_boisko1.png"
+import taskImg from "../../../../assets/locations/oboz/oboz_wpis_hustawka.png"
 import style from './style.module.scss'
 import { Link } from "react-router-dom";
 import { PointData } from "../../../../components/map/pixi-app/types";
@@ -19,7 +19,9 @@ export default function P3() {
     const [stateAdd, setStateAdd] = useState(0)
 
     const words: { [key: string]: string } = {
-        "krzyczał": 'Trener regularnie krzyczy i zawstydza zawodniczki.',
+        "obserwuje Karolinę": 'Wychowawczyni obserwuje dziewczynę.',
+        "Huśtają się razem":"Wychowawczyni huśta się razem z dziewczyną.",
+        "Warunki są jasne: zła ocena – lanie, dobra – nagroda":"Wychowawczyni dowiedziała się, że tata stosuje przemoc fizyczną i emocjonalną wobec Karoliny."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -35,18 +37,17 @@ export default function P3() {
         // eslint-disable-next-line
     }, [stateAdd])
     return (<div className={style.page}>
-        <h3><img src={reakcja} alt="" />  <span>&gt;</span> klub sportowy <span> &gt; </span>boisko</h3>
+        <h3><img src={reakcja} alt="" />  <span>&gt;</span> Wakacyjny obóz <span> &gt; </span>Huśtawka</h3>
         <section className={style.task}>
             <img src={taskImg} alt="" />
             <PageText
                 image={""}>
-                <h1>Boisko</h1>
+                <h1>Huśtawka</h1>
                 <p>
-                    Kolejny w tym tygodniu trening. Jeszcze przed wejściem na murawę dziewczyny zastanawiają się, czy trener będzie bardzo {" "}
-                    {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
-                    krzyczał
-                    </span>. Po rozgrzewce trener wprowadza nowe ćwiczenie. Jest dość skomplikowane. Szkoleniowiec wymaga od nich maksimum skupienia. Tłumaczy tylko raz. Kiedy Marysia popełnia błąd, trener donośnym głosem tłumaczy raz jeszcze. Marysia ponownie źle wykonuje zadanie. Trener ostrzega, że przeniesie ją do drużyny B. Po pewnym czasie zaczyna się mecz. Marysia nie dobiega do piłki. Trener rzuca: „Nie biegaj jak ostatnia ofiara losu, walcz o tę piłkę”. Na koniec treningu wygłasza mowę: „Nikt w tej drużynie nie jest na siłę. Jeśli wam nie zależy, nie chcecie grać, to idźcie gdzie indziej”. Jak się później okazuje, część dziewcząt faktycznie chce zrezygnować z piłki, niektóre z nich mają po treningach trudności z zaśnięciem.
+                    Agnieszka jest wychowawczynią na obozie. Od pewnego czasu 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>obserwuje Karolinę </span> ze swojej grupy dzieci. Dziewczyna wieczór zamiast przy ognisku ze wszystkimi spędza zamyślona na huśtawce. Agnieszka podchodzi porozmawiać z Karoliną. 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Huśtają się razem</span>. Na początku rozmowa się nie klei. W końcu jednak nastolatka się otwiera i mówi o sobie.  Uważa, że materialnie niczego jej nie brakuje. Tata nagradza ją za dobre oceny i spełnia jej zachcianki. 
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Warunki są jasne: zła ocena – lanie, dobra – nagroda</span>. Karolina nie chce wracać. Agnieszka pociesza ją: „Sama w domu miałam bardzo trudno, wiem, jak się czujesz. Jeśli będziesz chciała pogadać, to zawsze możesz do mnie napisać”.
                 </p>
             </PageText>
 
@@ -55,7 +56,7 @@ export default function P3() {
             wordsList={textList}
         />
         <nav className={style.back}>
-            <Link to={getGameRoute(PAGES.p2)}
+            <Link to={getGameRoute(PAGES.p42)}
                 onClick={() => localStorage.setItem('textList', JSON.stringify(textList))}
             >Wróć do mapy</Link>
         </nav>

@@ -14,7 +14,15 @@ export interface GameMapPoint extends PointData {
 }
 let textList: string[] = [];
 let inactivePoints: string[] = [];
-const warrnWords = ["Trener był widocznie niezadowolony z jazdy Pawła."]
+const warrnWords = [
+    "O wychowawcy krążą różne plotki.",
+    "Wychowawczyni obserwuje dziewczynę.",
+    "Wychowawczyni huśta się razem z dziewczyną.",
+    "Opiekunowie poszli na zakupy z młodzieżą.",
+    "Dzieci doprowadziły do zablokowania toalet w ośrodku.",
+    "Opiekun przysypiał."
+
+]
 export default function P2() {
     if (!localStorage.getItem('inactivePoints')) {
         localStorage.setItem("inactivePoints", JSON.stringify([]));
@@ -42,95 +50,84 @@ export default function P2() {
     const mapPointsData: GameMapPoint[] = useMemo(() => {
         return [
             {
-                id: 'p3',
+                id: 'p43',
                 pointer: {
-                    name: 'bieznia',
-                    visited: 'biezniaVisited',
-                    width: 665,
-                    height: 424,
+                    name: 'brama',
+                    visited: 'bramaVisited',
+                    width: 376,
+                    height: 376,
                 },
                 position: {
-                    x: 1670,
-                    y: 730,
+                    x: 1850,
+                    y: 1975,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p4',
+            }, 
+            {
+                id: 'p44',
                 pointer: {
-                    name: 'boisko1',
-                    visited: 'boisko1Visited',
-                    width: 870,
-                    height: 474,
+                    name: 'hustawka',
+                    visited: 'hustawkaVisited',
+                    width: 542,
+                    height: 297,
 
                 },
                 position: {
-                    x: 714,
-                    y: 770,
+                    x: 758,
+                    y: 1525,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p5',
+            }, 
+            {
+                id: 'p45',
                 pointer: {
-                    name: 'boisko2',
-                    visited: 'boisko2Visited',
-                    width: 421,
-                    height: 662,
+                    name: 'jezioro',
+                    visited: 'jezioroVisited',
+                    width: 1208,
+                    height: 565,
 
                 },
                 position: {
-                    x: 2430,
-                    y: 850,
+                    x: 738,
+                    y: 802,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p6',
+            }, 
+            {
+                id: 'p46',
                 pointer: {
-                    name: 'szkol',
-                    visited: 'szkolVisited',
-                    width: 1636,
-                    height: 979,
+                    name: 'pokoj',
+                    visited: 'pokojVisited',
+                    width: 1418,
+                    height: 968,
 
                 },
                 position: {
-                    x: 1025,
-                    y: 1785,
+                    x: 1890,
+                    y: 1595,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p7',
+            }, 
+            {
+                id: 'p47',
                 pointer: {
-                    name: 'szatnie',
-                    visited: 'szatnieVisited',
-                    width: 570,
-                    height: 622,
+                    name: 'toaletyOboz',
+                    visited: 'toaletyObozVisited',
+                    width: 455,
+                    height: 298,
 
                 },
                 position: {
-                    x: 2245,
-                    y: 1586,
+                    x: 1890,
+                    y: 470,
                 },
                 pointId: '8.1',
 
-            }, {
-                id: 'p10',
-                pointer: {
-                    name: 'parking',
-                    visited: 'parkingVisited',
-                    width: 1684,
-                    height: 221,
-
-                },
-                position: {
-                    x: 1065,
-                    y: 2069,
-                },
-                pointId: '8.1',
-
-            },
+            }
         ];
     }, []);
 
@@ -162,10 +159,10 @@ export default function P2() {
                     mapPointsData={mapPointsData}
                     selectedPoint={selectedPoint}
                     inactivePointsId={inactivePoints}
-                    selectMap="klub"
+                    selectMap="oboz"
                 />
                
-                {showButton && <Link to={getGameRoute(PAGES.p8)} className={style.button}>Przejdź dalej</Link>}
+                {showButton && <Link to={getGameRoute(PAGES.p48)} className={style.button}>Przejdź dalej</Link>}
             </div>
              <Notepad wordsList={textList} />
         </div>

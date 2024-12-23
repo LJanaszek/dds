@@ -149,7 +149,7 @@ export default function P2() {
     return (
         <div className={style.mapPage}>
             <h3>
-            <img src={reakcja} alt="" /> &gt; klub sportowy
+            <img src={reakcja} alt="" /> &gt; szkoła
             </h3>
             <div className="mapPageInfo">
                 <MapComponent

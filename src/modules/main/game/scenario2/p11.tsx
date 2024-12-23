@@ -1,5 +1,5 @@
 import style from './style.module.scss';
-import taskImg from '../../../../assets/scenarios/scen_sport.png'
+import taskImg from '../../../../assets/scenarios/scen_przych.png'
 import trueImg from "../../../../assets/icons/right.png"
 import falseImg from "../../../../assets/icons/wrong.png"
 import pdf from "../../../../assets/icons/pdf.png"
@@ -67,7 +67,7 @@ export default function P11() {
                 <div className={style.card}>
                     <div className={style.top}>
                         <img src={taskImg} alt="" />
-                        <h2>Trening piłkarski</h2>
+                        <h2>Ochrona zdrowia</h2>
                         <p>
                             podsumowanie
                         </p>

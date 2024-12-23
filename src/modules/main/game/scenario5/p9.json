@@ -1,179 +1,145 @@
 {
-  "Trener ośmiesza zawodników, wyżywa się na Pawle": {
-    "case1": ["Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy."],
-    "case2": ["Informujesz rodziców o wnioskach z rozpoznania sprawy.", false],
+  "Wychowawca kąpie się nago w jeziorze i zaprasza do tego wychowanki.": {
+    "case1": [
+      "Sporządzasz notatkę z rozmowy z Mateuszem."],
+    "case2": [
+      "Zmieniasz procedurę przygotowania kadry do rozpoczynającego się wypoczynku. Zawsze na pierwszej odprawie przed rozpoczęciem wypoczynku przypominasz zasady bezpiecznych relacji kadra – dziecko i zobowiązujesz kadrę do ich przestrzegania."],
     "case3": [
-      "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
-      false
+      "Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
     ],
     "case4": [
-      "Planujesz szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
-      false
+      "Zawiadamiasz policję."
     ],
     "case5": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
-      false
+      "Odsuwasz Mateusza od pracy z osobami uczestniczącymi w obozie."
     ],
     "case6": [
-      "Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.",
-      false
+      "Informujesz uczestniczki, dlaczego nie wolno im oddalać się od miejsca zakwaterowania  bez zgody wychowawcy."
     ],
     "case7": [
-      "Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera, i dajesz jasny sygnał, że jest to niedopuszczalne.",
-      false
-    ],
-    "case8": [
-      "Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.",
-      false
-    ],
-    "case9": [
-      "Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.",
-      false
-    ],
-    "case10": [
-      "Przeprowadzasz spotkanie lub warsztaty z trenerami, przypominając o zasadach bezpiecznych relacji obowiązujących w klubie.",
-      false
+      "Przeprowadzasz rozmowę z dziewczynami, podczas której informujesz o podjętych krokach wobec wychowawcy i zapewniasz o możliwości porozmawiania z Tobą na ten temat."
     ]
   },
 
-  "Trener regularnie krzyczy na zawodniczki.": {
+  "Wychowawczyni dowiedziała się, że tata stosuje przemoc fizyczną i emocjonalną wobec Karoliny..": {
     "case11": [
-      "Sporządzasz notatkę z przeprowadzonego rozpoznania powyższej sprawy."
+      "Sporządzasz notatkę z rozmowy z Agnieszką i Karoliną."
     ],
     "case12": [
-      "Informujesz rodziców o wnioskach z rozpoznania sprawy.", 
-      false
+      "Przypominasz wychowawcom procedury interwencji w sytuacji podejrzenia wystąpienia przemocy domowej wpisane w politykę ochrony dzieci. Procedury uwzględniają sytuację przemocy domowej."
     ],
     "case13": [
-      "Planujesz spotkanie z psychologiem sportu dla całej drużyny.",
-      false
+      "Ponownie rozmawiasz z Agnieszką o roli bezpiecznego dorosłego w sytuacji ujawnienia przez dziecko, że jest krzywdzone – informujesz, jakie możliwości skutecznego reagowania ma wychowawca."
     ],
     "case14": [
-      "Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.",
-      false
+      "Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej.Informujesz szkołę o uzyskanych informacjach."
     ],
     "case15": [
-      "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.",
-      false
+      "Składasz wniosek do sądu o wgląd w sytuację rodziny Karoliny."
     ],
     "case16": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
-      false
+      "Powiadamiasz Ośrodek Pomocy Społecznej właściwy dla miejsca zamieszkania Karoliny o stwierdzonej przemocy domowej."
     ],
     "case17": [
-      "Nic nie robisz – trener miał dobre intencje, dziewczyny z drużyny nie są na niego złego źli.",
+      "Zawiadamiasz policję.",
       false
     ],
     "case18": [
-      "Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.",
+      "Odsuwasz Agnieszkę od pracy z osobami uczestniczącymi w obozie.",
       false
     ],
     "case19": [
-      "Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.",
-      false
-    ],
-    "case20": [
-      "Zwracasz uwagę trenerowi, dając jasny sygnał, że nie zgadzasz się na takie zachowanie w Waszym klubie.",
+      "Nic nie robisz – organizator obozów nie może reagować na przemoc, która nie ma miejsca podczas wypoczynku.",
       false
     ]
   },
-  "Warunki lokalowe w szatniach.": {
+  "Opiekun położył się w samych bokserkach obok chłopca.": {
     "case21": [
-      "Rozmawiasz z władzami klubu o wydzieleniu przestrzeni dla dziewcząt."
+      "Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
     ],
     "case22": [
-      "Proponujesz opracowanie grafiku dyżurów pracowników klubu w szatni.",
-      false
+      "Przypominasz wychowawcom zasady utrzymywania kontaktu z osobami uczestniczącymi w obozie. Odwołujesz się do zasad bezpiecznych relacji kadra – wychowankowie, które określają taką sytuację. Prosisz wychowawców, aby w takich momentach nie kładli się z dzieckiem do łóżka, tylko siadali obok, zawsze byli odpowiednio ubrani i informowali innego wychowawcę o tym, że idą do pokoju wychowanków w takim celu, oraz zostawiali uchylone drzwi."
     ],
     "case23": [
-      "Opracowujesz regulamin szatni uwzględniający zasady przebywania w nich rodziców.",
+      "Zawiadamiasz policję.",
       false
     ],
     "case24": [
-      "Zwracasz uwagę mamie Łukasza, że nie powinna przebywać w szatni zawodników.",
+      "Odsuwasz Michała od pracy z osobami uczestniczącymi w obozie.",
       false
     ],
     "case25": [
-      "Wywieszasz informację, że przeklinanie w przestrzeni publicznej jest niekulturalne, a nawet grozi mandatem karnym.",
-      false
-    ],
-    "case26": [
-      "Zamykasz szatnię, aż zostanie odpowiednio zmodernizowana.",
-      false
-    ],
-    "case27": [
-      "Wywieszasz w szatni plakat dotyczący zasad bezpiecznych relacji między zawodnikami i zawodniczkami.",
+      "Nic nie robisz – Michał chciał dobrze, w sumie pomógł chłopcom.",
       false
     ]
   },
-  "Rodzice obwiniają bramkarkę za porażkę drużyny.": {
+  "Opiekunowie nie sprawdzają, co kupują młodzi, oraz nie reagują na przemocowe komentarze chłopców.": {
     "case31": [
-      "Wraz z trenerami wypracowujesz zasady przebywania rodziców na boisku."
+      "Sporządzasz notatkę z rozmowy z wychowawcami."
     ],
     "case32": [
-      "Przesyłasz rodzicom poradnik, jak wspierać młodych zawodników.",
-      false
+      "Podczas odprawy dla kadry odwołujesz się do zasad bezpiecznych relacji i procedur interwencji zawartych w polityce ochrony dzieci."
     ],
     "case33": [
-      "Organizujesz spotkanie z rodzicami, na którym uświadamiasz ich, jakie konsekwencje wywołuje zastraszanie i poniżanie dzieci.",
-      false
+      "Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
     ],
-    "case34": ["Wprowadzasz zakaz przebywania rodziców wokół boiska.", false],
+    "case34": ["Rozmawiasz z uczestnikami obozu na temat wzajemnego szacunku (odwołujesz się do zasad bezpiecznych relacji dziecko – dziecko)."],
     "case35": [
-      "Nic nie robisz – przecież nic się nie stało, a na meczach zawsze włączają się emocje.",
+      "Zawiadamiasz policję.",
       false
     ],
     "case36": [
-      "Wyświetlasz na telebimach i wywieszasz w widocznym miejscu, w którym odbywają się zawody, plakat dotyczący bezpiecznych relacji podczas rozgrywek. Kilka najważniejszych zasad, jak kibicować, przedstawionych w przystępnej formie.",
-      false
+      "Uruchamiasz ścieżkę interwencji na wypadek przemocy rówieśniczej."
     ],
     "case37": [
-      "Wprowadzasz kary za niestosowanie się do zasad i stosowanie przemocy, np. wykluczenie rodziców z możliwości kibicowania na następnym meczu.",
+      "Rozmawiasz ze Staśkiem – opracowujesz i uruchamiasz plan wsparcia."
+    ],
+    "case38": [
+      "Rozmawiasz z Julkiem, zwracając uwagę na to, czy sam nie doświadcza przemocy, oraz opracowujesz i uruchamiasz plan naprawczy."
+    ],
+    "case39": [
+      "Odsuwasz Maćka i Pawła od pracy z osobami uczestniczącymi w obozie.",
+      false
+    ],
+    "case40": [
+      "Umawiasz się z kierownikiem obozu, że porozmawiacie z rodzicami Stasia i Julka o zaistniałej sytuacji w czasie odbioru dzieci z parkingu."
+    ],
+    "case411": [
+      "Nic nie robisz – został już tylko jeden dzień, nie warto roztrząsać sprawy.",
       false
     ]
   },
-  "Osoby z zewnątrz fotografują zawodników.": {
+  "Opiekunowie wymierzyli nadmiarową karę, niewynikającą z rzeczywistych konsekwencji działań chłopców.": {
     "case41": [
-      "Organizujesz spotkania dla pracowników klubu, na których przypominasz o konieczności posiadania zgód rodziców na wykorzystanie wizerunku ich dzieci. Przypominasz też o potrzebie przedstawienia zaświadczeń z KRK wszystkich osób, które w wyniku analizy ryzyka przeprowadzonej w klubie są do tego zobowiązane."
+      "Sporządzasz notatkę z rozmowy z opiekunami."
     ],
     "case42": [
-      "Wysyłasz wiadomość do rodziców z informacją o obowiązku posiadania zgód na rejestrowanie i przetwarzanie wizerunku dziecka.",
-      false
+      "Odwołujesz się do zasad bezpiecznych relacji zawartych w polityce ochrony dzieci."
     ],
     "case43": [
-      "Wywieszasz plakaty wskazujące, jak zadbać o ochronę wizerunku młodych sportowców.",
-      false
+      "Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
     ],
     "case44": [
-      "Prosisz mamę Łukasza o usunięcie zdjęć zrobionych podczas oficjalnej sesji oraz tworzysz internetową przestrzeń o ograniczonym dostępie dla osób postronnych (np. grupa w mediach społecznościowych, wspólny dysk), na której będą znajdowały się pamiątkowe zdjęcia wykonane przez zatrudnionego przez klub fotografa.",
-      false
+      "Sprawdzasz w regulaminie zasady dotyczące nagradzania osób uczestniczących w obozie oraz wyciągania konsekwencji. Dokonujesz ich weryfikacji razem z wychowawcami, prowadząc krótką rozmowę edukacyjną na temat bezpiecznego egzekwowania zasad od dzieci."
     ],
     "case45": [
-      "Tworzysz i udostępniasz zasady ochrony wizerunku dzieci w klubie.",
-      false
-    ]
-  },
-  "Ojciec stosuje przemoc wobec Ady.": {
-    "case51": [
-      "Informujesz o sytuacji Ady ośrodek pomocy społecznej, wskazując na możliwość wystąpienia przemocy w jej rodzinie."
-    ],
-    "case52": [
-      "Składasz do sądu rodzinnego wniosek o wgląd w sytuację rodziny Ady.",
+      "Zawiadamiasz policję.",
       false
     ],
-    "case53": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+    "case46": [
+      "Odsuwasz opiekunów od pracy z osobami uczestniczącymi w obozie.",
       false
     ],
-    "case54": [
-      "Rozmawiasz z tatą Ady o zaistniałej sytuacji. Oferujesz pomoc.",
+    "case47": [
+      "Izolujesz dzieci od grupy, nie chcesz, żeby konflikt się zaostrzył.",
       false
     ],
-    "case55": ["Rozmawiasz z Adą i oferujesz jej wsparcie emocjonalne.", false],
-    "case56": ["Uruchamiasz plan wsparcia dla Ady.", false],
-    "case57": [
-      "Organizujesz spotkanie z psychologiem dla dziewczyn, które domyślają się, że Ada jest krzywdzona (widziały jej siniaki).",
+    "case48": [
+      "Nic nie robisz – nie warto roztrząsać sprawy.",
       false
+    ],
+    "case49": [
+      "Uruchamiasz procedury interwencji dotyczące podejrzenia przemocy rówieśniczej."
     ]
   }
 }

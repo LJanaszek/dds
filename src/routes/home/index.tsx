@@ -17,7 +17,7 @@ export default function HomePage() {
                         Sprawdź &gt;
                     </span>
                 </Link>
-                <Link to={getGameRoute(PAGES.p32)} className={style.link} onClick={()=>{localStorage.clear()}}>
+                <Link to={getGameRoute(PAGES.p42)} className={style.link} onClick={()=>{localStorage.clear()}}>
                     <div className={style.oboz}></div>
                     <p>
                         Wakacyjny obóz

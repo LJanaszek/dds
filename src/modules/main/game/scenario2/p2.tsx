@@ -144,7 +144,7 @@ export default function P2() {
     return (
         <div className={style.mapPage}>
             <h3>
-            <img src={reakcja} alt="" /> &gt; przychodnia
+            <img src={reakcja} alt="" /> &gt; Ochrona zdrowia
             </h3>
             <div className="mapPageInfo">
                 <MapComponent
@@ -152,7 +152,7 @@ export default function P2() {
                     mapPointsData={mapPointsData}
                     selectedPoint={selectedPoint}
                     inactivePointsId={inactivePoints}
-                    selectMap="przychodnia"
+                    selectMap="Ochrona zdrowia"
                 />
                
                 {showButton && <Link to={getGameRoute(PAGES.p18)} className={style.button}>Przejdź dalej</Link>}
