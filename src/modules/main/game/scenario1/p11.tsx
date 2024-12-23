@@ -4,9 +4,9 @@ import trueImg from "../../../../assets/icons/right.png"
 import falseImg from "../../../../assets/icons/wrong.png"
 import pdf from "../../../../assets/icons/pdf.png"
 import link from "../../../../assets/icons/link.png"
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import video from "../../../../assets/videos/sport.mp4"
-import { getHomeRoute, getRulesPageRoute } from '../../../../routes';
+import { getHomeRoute } from '../../../../routes';
 import { Link } from 'react-router-dom';
 
 export default function P11() {
@@ -120,9 +120,9 @@ export default function P11() {
                                 Nic nie robisz – trener miał dobre intencje, chłopcy z drużyny nie są na niego źli.
                                 <img src={falseImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Przeprowadzasz spotkanie z dziećmi, na którym rozmawiacie o zachowaniu trenera, i dajesz jasny sygnał, że jest to niedopuszczalne.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
                                 Informujesz dzieci, że mają możliwość zgłaszania takich sytuacji do koordynatora ds. standardów ochrony dzieci wyznaczonego przez ich klub.
@@ -132,9 +132,9 @@ export default function P11() {
                                 Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Przeprowadzasz spotkanie lub warsztaty z trenerami, przypominając o zasadach bezpiecznych relacji obowiązujących w klubie.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
 
 
@@ -158,17 +158,17 @@ export default function P11() {
                                 Informujesz rodziców o wnioskach z rozpoznania sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Planujesz spotkanie z psychologiem sportu dla całej drużyny.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
                                 Sugerujesz władzom klubu odsunięcie trenera od pracy z drużyną.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
                                 Zawiadamiasz policję o możliwości popełnienia przestępstwa.
@@ -186,9 +186,9 @@ export default function P11() {
                                 Uruchamiasz procedury interwencji przyjęte w klubie na wypadek krzywdzenia ze strony personelu.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Zwracasz uwagę trenerowi, dając jasny sygnał, że nie zgadzasz się na takie zachowanie w Waszym klubie.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                         </div>
                     </div>
@@ -207,9 +207,9 @@ export default function P11() {
                                 Proponujesz opracowanie grafiku dyżurów pracowników klubu w szatni.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Opracowujesz regulamin szatni uwzględniający zasady przebywania w nich rodziców.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
                                 Zwracasz uwagę mamie Łukasza, że nie powinna przebywać w szatni zawodników.
@@ -223,9 +223,9 @@ export default function P11() {
                                 Zamykasz szatnię, aż zostanie odpowiednio zmodernizowana.
                                 <img src={falseImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Wywieszasz w szatni plakat dotyczący zasad bezpiecznych relacji między zawodnikami i zawodniczkami.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                         </div>
                     </div>
@@ -245,25 +245,25 @@ export default function P11() {
                                 Przesyłasz rodzicom poradnik, jak wspierać młodych zawodników.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
-                                Organizujesz spotkanie z rodzicami, na którym uświadamiasz ich, jakie konsekwencje wywołuje zastraszanie i poniżanie dzieci.
-                                <img src={falseImg} alt="" />
-                            </p>
                             <p className={style.true}>
-                                Wprowadzasz zakaz przebywania rodziców wokół boiska.
+                                Organizujesz spotkanie z rodzicami, na którym uświadamiasz ich, jakie konsekwencje wywołuje zastraszanie i poniżanie dzieci.
                                 <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.false}>
+                                Wprowadzasz zakaz przebywania rodziców wokół boiska.
+                                <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
                                 Nic nie robisz – przecież nic się nie stało, a na meczach zawsze włączają się emocje.
                                 <img src={falseImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Wyświetlasz na telebimach i wywieszasz w widocznym miejscu, w którym odbywają się zawody, plakat dotyczący bezpiecznych relacji podczas rozgrywek. Kilka najważniejszych zasad, jak kibicować, przedstawionych w przystępnej formie.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Wprowadzasz kary za niestosowanie się do zasad i stosowanie przemocy, np. wykluczenie rodziców z możliwości kibicowania na następnym meczu.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                         </div>
                     </div><div className={style.dropList}>
@@ -281,17 +281,17 @@ export default function P11() {
                                 Wysyłasz wiadomość do rodziców z informacją o obowiązku posiadania zgód na rejestrowanie i przetwarzanie wizerunku dziecka.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Wywieszasz plakaty wskazujące, jak zadbać o ochronę wizerunku młodych sportowców.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
                                 Prosisz mamę Łukasza o usunięcie zdjęć zrobionych podczas oficjalnej sesji oraz tworzysz internetową przestrzeń o ograniczonym dostępie dla osób postronnych (np. grupa w mediach społecznościowych, wspólny dysk), na której będą znajdowały się pamiątkowe zdjęcia wykonane przez zatrudnionego przez klub fotografa.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Tworzysz i udostępniasz zasady ochrony wizerunku dzieci w klubie.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                         </div>
                     </div>
@@ -310,25 +310,25 @@ export default function P11() {
                                 Składasz do sądu rodzinnego wniosek o wgląd w sytuację rodziny Ady.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Zawiadamiasz policję o możliwości popełnienia przestępstwa.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
                                 Rozmawiasz z tatą Ady o zaistniałej sytuacji. Oferujesz pomoc.
                                 <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Rozmawiasz z Adą i oferujesz jej wsparcie emocjonalne.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Uruchamiasz plan wsparcia dla Ady.
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
-                            <p className={style.false}>
+                            <p className={style.true}>
                                 Organizujesz spotkanie z psychologiem dla dziewczyn, które domyślają się, że Ada jest krzywdzona (widziały jej siniaki).
-                                <img src={falseImg} alt="" />
+                                <img src={trueImg} alt="" />
                             </p>
                         </div>
                     </div>
