@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { getGamePageRoute, getHomeRoute, getPolicyRoute, getRulesPageRoute } from './routes';
 import { Loader } from './molecules/loader/loader';
 import GameRouter from './routes/game/router';
+import MoreInfo from './components/moreInfo';
 
 
 const HomePage = React.lazy(() => import('./routes/home'));

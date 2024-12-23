@@ -7,9 +7,15 @@ import dayThree from "../../assets/rules/dzien3_1.png"
 import logo from "../../assets/logos/reakcja_logo.png"
 import warn from "../../assets/icons/wykrzyk.png"
 import logos from "../../assets/logos/logosy.jpg"
-import { getGameRoute, getHomeRoute, PAGES } from "..";
+import { getHomeRoute } from "..";
+import { useCallback, useEffect } from "react";
+type Props = {
+    isButton?: boolean
+};
 
-export default function RulesPage() {
+
+
+export default function RulesPage({ isButton }: Props) {
     return (
         <div className={style.rules}>
             <div className={style.top}>
@@ -79,18 +85,20 @@ export default function RulesPage() {
                     Dzień trzeci - rozwiązania
                 </h3>
                 <p>
-                Gdy uda Ci się dokładnie zapoznać z każdą sytuacją pora na rekomendację i wdrażanie rozwiązań.
+                    Gdy uda Ci się dokładnie zapoznać z każdą sytuacją pora na rekomendację i wdrażanie rozwiązań.
                 </p>
                 <div className={style.imageContainer}>
                     <img src={dayThree} alt="" />
                     <span>Na wyświetlającej się liście zaznacz te pozycje, które według Ciebie należy zastosować  w reakcji na zaistniałą sytuację.</span>
                 </div>
             </div>
-            <div className={style.bottom}>
-                <Link to={getHomeRoute()}
-                onClick={()=>{localStorage.clear()}}
-                >Rozpocznij grę &gt;</Link>
-            </div>
+            {!isButton &&
+                <div className={style.bottom}>
+                    <Link to={getHomeRoute()}
+                        onClick={(e) => { localStorage.clear()}}
+                    >Rozpocznij grę &gt;</Link>
+                </div>
+            }
             <div className={style.logos}>
                 <img src={logos} alt="" />
             </div>

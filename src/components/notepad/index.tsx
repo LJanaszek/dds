@@ -6,7 +6,7 @@ export type Props = {
 }
 export default function Notepad({ wordsList }: Props) {
     return (
-        <div className={style.notepad}>
+        <div className={style.notepad} id="notepad">
             <div className={style.title}><img src={notepad} alt="" />
                 <p>Notatnik:</p>
             </div>

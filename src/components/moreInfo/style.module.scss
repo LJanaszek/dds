@@ -1,0 +1,27 @@
+.moreInfo{
+    .content{
+        // z-index: 5;
+        button{
+            z-index: 3;
+            position: absolute;
+            top: .2em;
+            left: .2em;
+            background-color: var(--secondColor);
+            border-radius: 50%;
+            font-size: 2em;
+            width: 2em;
+            height: 2em;
+            color: white;
+            border: unset;
+            font-weight: 700;
+        }
+        .rules{
+            // height: -webkit-fill-available;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+        }
+    }
+}

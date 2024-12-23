@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 
 import style from "./style.module.scss"
 import { getGameRoute, PAGES } from "..";
+import { useEffect } from "react";
+import MoreInfo from "../../components/moreInfo";
 
 export default function HomePage() {
     return (
         <div className={style.homePageView}>
+            <MoreInfo />
             <h1>Wybierz scenariusz</h1>
             <nav className={style.nav}>
                 <Link to={getGameRoute(PAGES.p12)} className={style.link} onClick={()=>{localStorage.clear()}}>

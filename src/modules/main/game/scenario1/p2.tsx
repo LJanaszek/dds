@@ -8,6 +8,7 @@ import { getGameRoute, PAGES } from "../../../../routes";
 import { MapComponent } from "../../../../components/map/map-component";
 import Notepad from "../../../../components/notepad";
 import reakcja from "../../../../assets/icons/reakcja_logo_blue.svg"
+import MoreInfo from "../../../../components/moreInfo";
 
 export interface GameMapPoint extends PointData {
     pointId: string
@@ -152,7 +153,7 @@ export default function P2() {
 
 
     return (
-        <div className={style.mapPage}>
+        <div className={style.mapPage}> <MoreInfo />
             <h3>
             <img src={reakcja} alt="" /> &gt; klub sportowy
             </h3>
