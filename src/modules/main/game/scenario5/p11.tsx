@@ -49,6 +49,9 @@ export default function P11() {
         if (!key[key.length - 1].endsWith(",false")) {
             points++
         }
+        else{
+            points--
+        }
         return key
     });
 

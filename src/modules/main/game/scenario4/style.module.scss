@@ -217,6 +217,7 @@ font-weight: 700
     height: 60vh;
     gap: 1em;
     label {
+      font-family: Oswald;
       // background-color: var(--secondColor);
       border: 2px solid var(--secondColor);
       height: 100%;
@@ -447,7 +448,8 @@ font-weight: 700
     }
   }
   .moreInfo {
-    height: 35vh;
+height: fit-content;
+    ;
     background-color: white;
     width: 100vw;
     h2 {

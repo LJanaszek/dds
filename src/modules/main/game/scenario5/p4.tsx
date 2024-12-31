@@ -46,7 +46,7 @@ export default function P3() {
                 <p>
                     Agnieszka jest wychowawczynią na obozie. Od pewnego czasu
                     {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>obserwuje Karolinę </span>
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>obserwuje Karolinę</span>
                     {" "}
                     ze swojej grupy dzieci. Dziewczyna wieczór zamiast przy ognisku ze wszystkimi spędza zamyślona na huśtawce. Agnieszka podchodzi porozmawiać z Karoliną.
                     {" "}

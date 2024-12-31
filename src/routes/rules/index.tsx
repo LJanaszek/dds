@@ -24,7 +24,7 @@ export default function RulesPage({ isButton }: Props) {
                     Wprowadzenie:
                 </h2>
                 <p>
-                    Interaktywne narzędzie, które pomoże Ci zidentyfikować sytuacje, wskazujące na krzywdzenie dziecka. W każdej z nich możesz zdecydować  o rodzaju podjętej reAKCJI. To gra symulacyjna, w której możesz w bezpieczny sposób przećwiczyć swoje wybory i decyzje dotyczące ochrony  dziecka przed krzywdzeniem,  żeby w rzeczywistych  sytuacjach Twoje działanie było skuteczne i pomogło zatrzymać krzywdzenie. W grze wcielisz się w rolę osoby odpowiedzialnej za wdrażanie polityki ochrony dzieci w wybranej instytucji. Twoim zadaniem będzie zarekomendowanie wprowadzenia zmian i podjęcia działań adekwatnych do sytuacji, które zaobserwujesz.
+                    Interaktywne narzędzie, które pomoże Ci zidentyfikować sytuacje wskazujące na krzywdzenie dziecka. W każdej z nich możesz zdecydować  o rodzaju podjętej reAKCJI. To gra symulacyjna, w której możesz w bezpieczny sposób przećwiczyć swoje wybory i decyzje dotyczące ochrony  dziecka przed krzywdzeniem,  żeby w rzeczywistych  sytuacjach Twoje działanie było skuteczne i pomogło zatrzymać krzywdzenie. W grze wcielisz się w rolę osoby odpowiedzialnej za wdrażanie polityki ochrony dzieci w wybranej instytucji. Twoim zadaniem będzie zarekomendowanie wprowadzenia zmian i podjęcia działań adekwatnych do sytuacji, które zaobserwujesz.
                 </p>
             </div>
             <div className={style.firstDay}>

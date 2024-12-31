@@ -1,7 +1,11 @@
 {
   "Nauczyciel wysyła głosówkę i pociesza Elę.": {
-    "case1": ["Przypominasz nauczycielowi o zasadach bezpiecznych relacji personel – dziecko dotyczących kontaktów online z uczniami. Jeśli uczennica szuka wsparcia, to należy kontaktować się z nią, zachowując jawność takich kontaktów i informując o tym innego dorosłego (uczennica musi o tym wiedzieć). Jeśli możliwości wsparcia się wyczerpią, należy skierować sprawę do profesjonalisty."],
-    "case2": ["Prosisz nauczyciela, żeby przeprowadził rozmowę z Elą, podczas której wytłumaczy jej, z zachowaniem jakich zasad są możliwe kontakty pomiędzy nauczycielami i uczniami, a także wskaże, jakie działania wspierające ją podejmie we współpracy ze specjalistami."],
+    "case1": [
+      "Przypominasz nauczycielowi o zasadach bezpiecznych relacji personel – dziecko dotyczących kontaktów online z uczniami. Jeśli uczennica szuka wsparcia, to należy kontaktować się z nią, zachowując jawność takich kontaktów i informując o tym innego dorosłego (uczennica musi o tym wiedzieć). Jeśli możliwości wsparcia się wyczerpią, należy skierować sprawę do profesjonalisty."
+    ],
+    "case2": [
+      "Prosisz nauczyciela, żeby przeprowadził rozmowę z Elą, podczas której wytłumaczy jej, z zachowaniem jakich zasad są możliwe kontakty pomiędzy nauczycielami i uczniami, a także wskaże, jakie działania wspierające ją podejmie we współpracy ze specjalistami."
+    ],
     "case3": [
       "Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy."
     ],
@@ -11,10 +15,7 @@
     "case5": [
       "Jako bezpieczny i zaufany dorosły angażujesz się w tworzenie planu wsparcia Eli."
     ],
-    "case6": [
-      "Nie reagujesz – nic wielkiego się nie stało.",
-      false
-    ],
+    "case6": ["Nie reagujesz – nic wielkiego się nie stało.", false],
     "case7": [
       "Składasz wniosek do sądu o wgląd w sytuację rodziny i informujesz o tym Elę."
     ]
@@ -37,30 +38,18 @@
       "Dyskretnie upewniasz się u innych osób uczących się, czy czują się bezpiecznie w relacji z Pawłem."
     ],
     "case17": [
-      "Rozmawiasz indywidualnie lub grupowo z osobami, które śmiały się z sytuacji Tymka."
+      "Rozmawiasz indywidualnie lub grupowo z osobami, które śmiały się z sytuacji Tymka. Starasz się pokazać im, jak mogą wesprzeć kolegę."
     ],
-    "case18": [
-      "Starasz się pokazać im, jak mogą wesprzeć kolegę."
-    ],
-    "case19": [
-      "Zgłaszasz sprawę policji.",
-      false
-    ],
+    "case19": ["Zgłaszasz sprawę policji.", false],
     "case20": [
       "Nie podejmujesz działań – nie chcesz, żeby nauczyciel zrezygnował z pracy.",
       false
     ],
-    "case212": [
-      "Zgłaszasz potrzebę odizolowania nauczyciela od Tymka."
-    ]
+    "case212": ["Zgłaszasz potrzebę odizolowania nauczyciela od Tymka."]
   },
   "Nauczycielka plotkowała o innych nauczycielkach i dzieciach.": {
-    "case21": [
-      "Wyjaśniasz nauczycielce, czym jest mobbing."
-    ],
-    "case22": [
-      "Odwołujesz się do etyki zawodowej nauczyciela."
-    ],
+    "case21": ["Wyjaśniasz nauczycielce, czym jest mobbing."],
+    "case22": ["Odwołujesz się do etyki zawodowej nauczyciela."],
     "case23": [
       "Przypominasz nauczycielce zasady bezpiecznych relacji obejmujące kontakty z uczniami poza godzinami pracy, podkreślasz znaczenie poufności."
     ],
@@ -95,11 +84,14 @@
     ],
     "case34": ["Zgłaszasz sprawę policji.", false],
     "case35": [
-      "Nie podejmujesz działań – nie chcesz, żeby nauczyciel zrezygnował z pracy. Zgłaszasz potrzebę odizolowania nauczyciela od osób uczących się.",
+      "Nie podejmujesz działań – nie chcesz, żeby nauczyciel zrezygnował z pracy. ",
       false
     ],
     "case36": [
       "Poruszasz z uczniami i uczennicami temat niebezpieczeństw związanych z wysyłaniem swoich zdjęć w internecie (szczególnie w strojach kąpielowych)."
+    ],
+    "case37": [
+      "Zgłaszasz potrzebę odizolowania nauczyciela od osób uczących się."
     ]
   },
   "Uczniowie i uczennice mają nauczycielkę wśród znajomych w mediach społecznościowych.": {
@@ -107,17 +99,21 @@
       "W rozmowie z nauczycielką odwołujesz się do apolityczności osoby wykonującej zawód zaufania publicznego."
     ],
     "case42": [
-      "Organizujesz szkolenie dla rady pedagogicznej z przeciwdziałania mowie nienawiści. Wyjaśniasz nauczycielce, jakimi kanałami oraz w jakim zakresie ma prawo kontaktować się z młodzieżą."
+      "Organizujesz szkolenie dla rady pedagogicznej z przeciwdziałania mowie nienawiści."
     ],
     "case43": [
       "Odwołujesz się do zasad bezpiecznych relacji dotyczących kontaktów personelu z dziećmi w mediach społecznościowych. Przypominasz na radzie pedagogicznej, z czego wynikają te zapisy."
     ],
-    "case44": [
-      "Zgłaszasz sprawę policji.",
+    "case44": ["Zgłaszasz sprawę policji.", false],
+    "case45": [
+      "Nie podejmujesz działań – nie chcesz, żeby nauczycielka zrezygnowała z pracy.",
       false
     ],
-    "case45": [
-      "Nie podejmujesz działań – nie chcesz, żeby nauczycielka zrezygnowała z pracy. Zgłaszasz potrzebę odizolowania nauczycielki od osób uczących się.",
+    "case46": [
+      "Wyjaśniasz nauczycielce, jakimi kanałami oraz w jakim zakresie ma prawo kontaktować się z młodzieżą."
+    ],
+    "case47": [
+      "Zgłaszasz potrzebę odizolowania nauczycielki od osób uczących się",
       false
     ]
   }

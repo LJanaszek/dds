@@ -91,6 +91,10 @@
     "case35": [
       "Nic nie robisz – przyjmujesz wyjaśnienia lekarza i pielęgniarki.",
       false
+    ],
+    "case36": [
+      "Zawiadamiasz policję o możliwości popełnienia przestępstwa",
+      false
     ]
   },
   "W trakcie badania Marta zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie.": {

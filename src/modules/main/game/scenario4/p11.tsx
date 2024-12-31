@@ -4,7 +4,7 @@ import trueImg from "../../../../assets/icons/right.png"
 import falseImg from "../../../../assets/icons/wrong.png"
 import pdf from "../../../../assets/icons/pdf.png"
 import link from "../../../../assets/icons/link.png"
-import {useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import video from "../../../../assets/videos/kontakty online.mp4"
 import { getHomeRoute } from '../../../../routes';
 import { Link } from 'react-router-dom';
@@ -49,6 +49,9 @@ export default function P11() {
         if (!key[key.length - 1].endsWith(",false")) {
             points++
         }
+        else {
+            points--
+        }
         return key
     });
 
@@ -79,9 +82,9 @@ export default function P11() {
                         </p>
                     </div>
                     <div className={style.bottom}>
-                        
+
                         <p>
-                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!  
+                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
                         </p>
                     </div>
                 </div>
@@ -226,31 +229,31 @@ export default function P11() {
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                            Prosisz psychologa szkolnego o zwrócenie uwagi na relacje między osobami uczącymi się a nauczycielem.
+                                Prosisz psychologa szkolnego o zwrócenie uwagi na relacje między osobami uczącymi się a nauczycielem.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                            Wyjaśniasz nauczycielowi, jakimi kanałami oraz w jakim zakresie ma prawo kontaktować się z młodzieżą.
+                                Wyjaśniasz nauczycielowi, jakimi kanałami oraz w jakim zakresie ma prawo kontaktować się z młodzieżą.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                            Przypominasz nauczycielowi, że w zasadach bezpiecznych relacji są określone zachowania dotyczące kontaktów w mediach społecznościowych (nauczyciel może używać ich tylko w  celach służbowych, a na takiej grupie powinno znajdować się co najmniej dwóch dorosłych).
+                                Przypominasz nauczycielowi, że w zasadach bezpiecznych relacji są określone zachowania dotyczące kontaktów w mediach społecznościowych (nauczyciel może używać ich tylko w  celach służbowych, a na takiej grupie powinno znajdować się co najmniej dwóch dorosłych).
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                            Zgłaszasz sprawę policji.
+                                Zgłaszasz sprawę policji.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
-                            Nie podejmujesz działań – nie chcesz, żeby nauczyciel zrezygnował z pracy.
+                                Nie podejmujesz działań – nie chcesz, żeby nauczyciel zrezygnował z pracy.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
-                            Zgłaszasz potrzebę odizolowania nauczyciela od osób uczących się.
+                                Zgłaszasz potrzebę odizolowania nauczyciela od osób uczących się.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.true}>
-                            Poruszasz z uczniami i uczennicami temat niebezpieczeństw związanych z wysyłaniem swoich zdjęć w internecie (szczególnie w strojach kąpielowych).
+                                Poruszasz z uczniami i uczennicami temat niebezpieczeństw związanych z wysyłaniem swoich zdjęć w internecie (szczególnie w strojach kąpielowych).
                                 <img src={trueImg} alt="" />
                             </p>
                         </div>
@@ -262,29 +265,32 @@ export default function P11() {
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                            W rozmowie z nauczycielką odwołujesz się do apolityczności osoby wykonującej zawód zaufania publicznego.
+                                W rozmowie z nauczycielką odwołujesz się do apolityczności osoby wykonującej zawód zaufania publicznego.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                            Organizujesz szkolenie dla rady pedagogicznej z przeciwdziałania mowie nienawiści.
-Wyjaśniasz nauczycielce, jakimi kanałami oraz w jakim zakresie ma prawo kontaktować się z młodzieżą.
+                                Organizujesz szkolenie dla rady pedagogicznej z przeciwdziałania mowie nienawiści.
+                                <img src={trueImg} alt="" />
+                            </p>
+                            <p className={style.true}>
+                                Wyjaśniasz nauczycielce, jakimi kanałami oraz w jakim zakresie ma prawo kontaktować się z młodzieżą.
 
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                            Odwołujesz się do zasad bezpiecznych relacji dotyczących kontaktów personelu z dziećmi w mediach społecznościowych. Przypominasz na radzie pedagogicznej, z czego wynikają te zapisy.
+                                Odwołujesz się do zasad bezpiecznych relacji dotyczących kontaktów personelu z dziećmi w mediach społecznościowych. Przypominasz na radzie pedagogicznej, z czego wynikają te zapisy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                            Zgłaszasz sprawę policji.
+                                Zgłaszasz sprawę policji.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
-                            Nie podejmujesz działań – nie chcesz, żeby nauczycielka zrezygnowała z pracy.
+                                Nie podejmujesz działań – nie chcesz, żeby nauczycielka zrezygnowała z pracy.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
-                            Zgłaszasz potrzebę odizolowania nauczycielki od osób uczących się.
+                                Zgłaszasz potrzebę odizolowania nauczycielki od osób uczących się.
                                 <img src={falseImg} alt="" />
                             </p>
                         </div>
