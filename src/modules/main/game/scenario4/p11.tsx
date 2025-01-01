@@ -306,21 +306,22 @@ export default function P11() {
             <div className={style.moreInfo}>
                 <h2>więcej wiedzy</h2>
                 <div className={style.links}>
-                    <a href="https://google.com">
-                        <img src={pdf} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
+                    <a href="https://standardy.fdds.pl/baza-wiedzy" target='blank'>
                         <img src={link} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
-                        <img src={pdf} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
+                        Baza wiedzy – broszury, ulotki, podręczniki o standardach ochrony dzieci
+                    </a>
+                    <a href="https://youtube.com/playlist?list=PLfRXTVmpnYfCKjlLzkB_jtawqI3-o0SE1&si=aaYA_e7kzItSWS6M" target='blank'>
                         <img src={link} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
-                        <img src={pdf} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                        Playlista Standardy ochrony dzieci:
+                    </a>
+                    <a href="https://www.gov.pl/web/sprawiedliwosc/zespol-do-spraw-ochrony-maloletnich" target='blank'>
+                        <img src={link} alt="" />
+                        Zespół ds. Ochrony Małoletnich
+                    </a>
+                    <a href="https://edukacja.fdds.pl/" target='blank'>
+                        <img src={link} alt="" />
+                        Platforma edukacyjna Fundacji Dajemy Dzieciom Siłę
+                    </a>
                 </div>
 
             </div>

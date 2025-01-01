@@ -49,7 +49,7 @@ export default function P11() {
         if (!key[key.length - 1].endsWith(",false")) {
             points++
         }
-        else{
+        else {
             points--
         }
         return key
@@ -82,9 +82,9 @@ export default function P11() {
                         </p>
                     </div>
                     <div className={style.bottom}>
-                        
+
                         <p>
-                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!  
+                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
                         </p>
                     </div>
                 </div>
@@ -309,21 +309,23 @@ export default function P11() {
             <div className={style.moreInfo}>
                 <h2>więcej wiedzy</h2>
                 <div className={style.links}>
-                    <a href="https://google.com">
-                        <img src={pdf} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
+                    <a href="https://standardy.fdds.pl/baza-wiedzy" target='blank'>
                         <img src={link} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
-                        <img src={pdf} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
+                        Baza wiedzy – broszury, ulotki, podręczniki o standardach ochrony dzieci
+                    </a>
+                    <a href="https://youtube.com/playlist?list=PLfRXTVmpnYfCKjlLzkB_jtawqI3-o0SE1&si=aaYA_e7kzItSWS6M" target='blank'>
                         <img src={link} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
-                        <img src={pdf} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                        Playlista Standardy ochrony dzieci:
+                    </a>
+                    <a href="https://www.gov.pl/web/sprawiedliwosc/zespol-do-spraw-ochrony-maloletnich" target='blank'>
+                        <img src={link} alt="" />
+                        Zespół ds. Ochrony Małoletnich
+                    </a>
+                    <a href="https://edukacja.fdds.pl/" target='blank'>
+                        <img src={link} alt="" />
+                        Platforma edukacyjna Fundacji Dajemy Dzieciom Siłę
+                    </a>
+
                 </div>
 
             </div>

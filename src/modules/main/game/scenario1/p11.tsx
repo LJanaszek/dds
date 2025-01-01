@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import video from "../../../../assets/videos/sport.mp4"
 import { getHomeRoute } from '../../../../routes';
 import { Link } from 'react-router-dom';
-
+import somePdf from "../../../../assets/pdfs/fdds-raport-przemoc-wobec-dzieci-w-sporcie -- 07 -- do-internetu.pdf"
 export default function P11() {
     const [clickedElement, setClickedElement] = useState<HTMLParagraphElement | null>(null);
     let userAnswers = [];
@@ -49,7 +49,7 @@ export default function P11() {
         if (!key[key.length - 1].endsWith(",false")) {
             points++
         }
-        else{
+        else {
             points--
         }
         return key
@@ -70,7 +70,7 @@ export default function P11() {
                 <div className={style.card}>
                     <div className={style.top}>
                         <img src={taskImg} alt="" />
-                        <h2>Trening piłkarski</h2>
+                        <h2>Klub sportowy</h2>
                         <p>
                             podsumowanie
                         </p>
@@ -82,9 +82,9 @@ export default function P11() {
                         </p>
                     </div>
                     <div className={style.bottom}>
-                        
+
                         <p>
-                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!  
+                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
                         </p>
                     </div>
                 </div>
@@ -346,21 +346,30 @@ export default function P11() {
             <div className={style.moreInfo}>
                 <h2>więcej wiedzy</h2>
                 <div className={style.links}>
-                    <a href="https://google.com">
-                        <img src={pdf} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
+                    <a href="https://standardy.fdds.pl/standardy-w-dzialaniu/kluby" target='blank'>
                         <img src={link} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
-                        <img src={pdf} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
+                        Standardy ochrony dzieci w klubach sportowych
+                    </a>
+                    <a href={somePdf} target='blank'>
                         <img src={link} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <a href="https://google.com">
-                        <img src={pdf} alt="" />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                        „Przemoc wobec dzieci w sporcie. Raport z badań ilościowych. Najważniejsze wyniki”
+                    </a>
+                    <a href="https://standardy.fdds.pl/baza-wiedzy" target='blank'>
+                        <img src={link} alt="" />
+                        Baza wiedzy – broszury, ulotki, podręczniki o standardach ochrony dzieci
+                    </a>
+                    <a href="https://youtube.com/playlist?list=PLfRXTVmpnYfCKjlLzkB_jtawqI3-o0SE1&si=aaYA_e7kzItSWS6M" target='blank'>
+                        <img src={link} alt="" />
+                        Playlista Standardy ochrony dzieci:
+                    </a>
+                    <a href="https://www.gov.pl/web/sprawiedliwosc/zespol-do-spraw-ochrony-maloletnich" target='blank'>
+                        <img src={link} alt="" />
+                        Zespół ds. Ochrony Małoletnich
+                    </a>
+                    <a href="https://edukacja.fdds.pl/" target='blank'>
+                        <img src={link} alt="" />
+                        Platforma edukacyjna Fundacji Dajemy Dzieciom Siłę
+                    </a>
                 </div>
 
             </div>
