@@ -13,7 +13,7 @@
       false
     ],
     "case6": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+      "Informujesz policję o możliwości popełnienia przestępstwa.",
       false
     ],
     "case7": [
@@ -24,7 +24,7 @@
 
   "Ojciec stosuje przemoc wobec Adama. Wyzywa i popycha syna.": {
     "case11": [
-      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy."
+      "Opracowujesz notatkę z przeprowadzonego rozpoznania sprawy."
     ],
     "case12": [
       "Organizujesz szkolenie z rozpoznawania przemocy wobec małoletnich."
@@ -63,7 +63,7 @@
       false
     ],
     "case26": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+      "Zawiadamiasz policję informując możliwości popełnienia przestępstwa.",
       false
     ],
     "case27": [
@@ -77,7 +77,7 @@
   },
   "Dziecko ma ślady mogące świadczyć o samookaleczaniu.": {
     "case31": [
-      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy."
+      "Sporządzasz notatkę z przeprowadzonego rozpoznania powyższej sprawy."
     ],
     "case32": [
       "Organizujesz obowiązkowe szkolenie z reagowania na podejrzenie zagrożenia zdrowia dziecka."
@@ -93,13 +93,13 @@
       false
     ],
     "case36": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa",
+      "W zaistniałej sytuacji, zawiadamiasz policję o możliwości popełnienia przestępstwa",
       false
     ]
   },
   "W trakcie badania Marta zauważa na ciele dziecka wiele siniaków, a także kilka łysych placków na głowie.": {
     "case41": [
-      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy."
+      "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy Marty."
     ],
     "case42": [
       "Organizujesz obowiązkowe szkolenie z reagowania na podejrzenie zagrożenia zdrowia dziecka."
@@ -109,7 +109,7 @@
       false
     ],
     "case44": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa."
+      "Zawiadamiasz policję z uwaggi na możliwości popełnienia przestępstwa."
     ],
     "case45": [
       "Nic nie robisz – przyjmujesz wyjaśnienia pielęgniarki.",

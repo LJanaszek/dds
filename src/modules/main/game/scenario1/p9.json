@@ -14,7 +14,7 @@
       "Planujesz szkolenie dla trenerów klubu z komunikacji z nastolatkami."
     ],
     "case5": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+      "Informujesz policję o możliwości popełnienia przestępstwa.",
       false
     ],
     "case6": [
@@ -40,7 +40,7 @@
       "Sporządzasz notatkę z przeprowadzonego rozpoznania powyższej sprawy."
     ],
     "case12": [
-      "Informujesz rodziców o wnioskach z rozpoznania sprawy."
+      "Informujesz rodziców o wnioskach z rozpoznania powyższej sprawy."
     ],
     "case13": [
       "Planujesz spotkanie z psychologiem sportu dla całej drużyny."
@@ -52,7 +52,7 @@
       "Planujesz obowiązkowe szkolenie dla trenerów klubu z komunikacji z nastolatkami."
     ],
     "case16": [
-      "Zawiadamiasz policję o możliwości popełnienia przestępstwa.",
+      "Zawiadamiasz policję z uwaggi na możliwości popełnienia przestępstwa.",
       false
     ],
     "case17": [

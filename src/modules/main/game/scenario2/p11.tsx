@@ -78,7 +78,7 @@ export default function P11() {
                     <div className={style.middle}>
                         <h3>twój wynik</h3>
                         <p>
-                            {points}/16
+                            {points}/17
                         </p>
                     </div>
                     <div className={style.bottom}>

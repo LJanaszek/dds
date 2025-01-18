@@ -55,13 +55,13 @@
   },
   "Opiekun położył się w samych bokserkach obok chłopca.": {
     "case21": [
-      "Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
+      "Upewniasz się, że wszyscy uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
     ],
     "case22": [
       "Przypominasz wychowawcom zasady utrzymywania kontaktu z osobami uczestniczącymi w obozie. Odwołujesz się do zasad bezpiecznych relacji kadra – wychowankowie, które określają taką sytuację. Prosisz wychowawców, aby w takich momentach nie kładli się z dzieckiem do łóżka, tylko siadali obok, zawsze byli odpowiednio ubrani i informowali innego wychowawcę o tym, że idą do pokoju wychowanków w takim celu, oraz zostawiali uchylone drzwi."
     ],
     "case23": [
-      "Zawiadamiasz policję.",
+      "Zawiadamiasz policję o zaistniałej sytuacji.",
       false
     ],
     "case24": [
@@ -81,11 +81,11 @@
       "Podczas odprawy dla kadry odwołujesz się do zasad bezpiecznych relacji i procedur interwencji zawartych w polityce ochrony dzieci."
     ],
     "case33": [
-      "Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
+      "Upewniasz się, że uczestnicy obozu dokładnie wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
     ],
     "case34": ["Rozmawiasz z uczestnikami obozu na temat wzajemnego szacunku (odwołujesz się do zasad bezpiecznych relacji dziecko – dziecko)."],
     "case35": [
-      "Zawiadamiasz policję.",
+      "Zawiadamiasz policję informując o zaistniałej sytuacji.",
       false
     ],
     "case36": [
@@ -117,13 +117,13 @@
       "Odwołujesz się do zasad bezpiecznych relacji zawartych w polityce ochrony dzieci."
     ],
     "case43": [
-      "Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
+      "Upewniasz się, że uczestnicy obozu wiedzą, jak i gdzie szukać pomocy w sytuacji kryzysowej."
     ],
     "case44": [
       "Sprawdzasz w regulaminie zasady dotyczące nagradzania osób uczestniczących w obozie oraz wyciągania konsekwencji. Dokonujesz ich weryfikacji razem z wychowawcami, prowadząc krótką rozmowę edukacyjną na temat bezpiecznego egzekwowania zasad od dzieci."
     ],
     "case45": [
-      "Zawiadamiasz policję.",
+      "Z racji na zaistniałą sytuację, zawiadamiasz policję.",
       false
     ],
     "case46": [
