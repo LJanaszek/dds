@@ -8,7 +8,7 @@ import { useCallback, useEffect, useState } from 'react';
 import video from "../../../../assets/videos/ochrona zdrowia.mp4"
 import { getHomeRoute, getRulesPageRoute } from '../../../../routes';
 import { Link } from 'react-router-dom';
-
+import miniaturka from "../../../../assets/miniatury/ochrona zdrowia.png"
 export default function P11() {
     const [clickedElement, setClickedElement] = useState<HTMLParagraphElement | null>(null);
     let userAnswers = [];
@@ -272,7 +272,7 @@ export default function P11() {
             </div>
             <div className={style.video}>
                 <h2>podsumowanie scenariusza</h2>
-                <video src={video} title='video' controls></video>
+                <video src={video} title='video' controls poster={miniaturka}></video>
             </div>
             <div className={style.moreInfo}>
                 <h2>więcej wiedzy</h2>

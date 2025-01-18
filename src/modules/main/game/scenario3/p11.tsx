@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import video from "../../../../assets/videos/szkoła.mp4"
 import { getHomeRoute } from '../../../../routes';
 import { Link } from 'react-router-dom';
+import miniaturka from "../../../../assets/miniatury/sport.png"
 
 export default function P11() {
     const [clickedElement, setClickedElement] = useState<HTMLParagraphElement | null>(null);
@@ -78,7 +79,7 @@ export default function P11() {
                     <div className={style.middle}>
                         <h3>twój wynik</h3>
                         <p>
-                            {points}/39
+                            {points}/34
                         </p>
                     </div>
                     <div className={style.bottom}>
@@ -157,7 +158,7 @@ export default function P11() {
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy.
+                                Sporządzasz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
@@ -233,7 +234,7 @@ export default function P11() {
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy.
+                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania powyższej sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -269,7 +270,7 @@ export default function P11() {
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy.
+                                Opracowujesz notatkę służbową z przeprowadzonych działań i rozpoznania sprawy Adama.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -316,7 +317,7 @@ export default function P11() {
             </div>
             <div className={style.video}>
                 <h2>podsumowanie scenariusza</h2>
-                <video src={video} title='video' controls></video>
+                <video src={video} title='video' controls poster={miniaturka}></video>
             </div>
             <div className={style.moreInfo}>
                 <h2>więcej wiedzy</h2>
