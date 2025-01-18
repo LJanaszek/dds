@@ -144,6 +144,11 @@ export default function P8() {
                 <span> &gt; </span>
                 zdobywanie informacji
             </h3>
+            <div style={{width:"90%", margin:"0 auto"}}>
+                <p style={{  }}>
+                Pamiętaj, że masz do wykorzystania tylko 8 godzin, wybierając nie masz możliwości cofnięcia
+                </p>
+            </div>
             <div className={style.checkbox}>
 
                 <div className={style.gridContainer}>

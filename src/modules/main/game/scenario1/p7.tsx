@@ -46,7 +46,7 @@ export default function P3() {
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>
                         warunki lokalowe
                     </span>
-                    {" "}. Szatnia klubu składa się z kilku pomieszczeń. Zawodnikom udostępnione są dwie sale. Mogą się przebrać, zostawić swoje rzeczy na czas treningu. Zdarza się, że młodsze roczniki mają zajęcia w tym samym czasie co nastolatki. Ostatnio mama Maćka z U-8 weszła pomóc mu założyć korki. Akurat przebierała się drużyna U-15. Mamę bardzo zbulwersował język, jaki usłyszała w szatni. Było sporo przekleństw i obelg wobec ostatnich przeciwników. Na dodatek dziewczyny grające w drużynie Maćka muszą przebierać się w toalecie lub w domu, bo dla nich w ogóle nie ma oddzielnej przestrzeni.
+                    . Szatnia klubu składa się z kilku pomieszczeń. Zawodnikom udostępnione są dwie sale. Mogą się przebrać, zostawić swoje rzeczy na czas treningu. Zdarza się, że młodsze roczniki mają zajęcia w tym samym czasie co nastolatki. Ostatnio mama Maćka z U-8 weszła pomóc mu założyć korki. Akurat przebierała się drużyna U-15. Mamę bardzo zbulwersował język, jaki usłyszała w szatni. Było sporo przekleństw i obelg wobec ostatnich przeciwników. Na dodatek dziewczyny grające w drużynie Maćka muszą przebierać się w toalecie lub w domu, bo dla nich w ogóle nie ma oddzielnej przestrzeni.
                 </p>
             </PageText>
 

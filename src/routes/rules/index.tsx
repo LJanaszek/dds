@@ -27,6 +27,16 @@ export default function RulesPage({ isButton }: Props) {
                     Interaktywne narzędzie, które pomoże Ci zidentyfikować sytuacje wskazujące na krzywdzenie dziecka. W każdej z nich możesz zdecydować  o rodzaju podjętej reAKCJI. To gra symulacyjna, w której możesz w bezpieczny sposób przećwiczyć swoje wybory i decyzje dotyczące ochrony  dziecka przed krzywdzeniem,  żeby w rzeczywistych  sytuacjach Twoje działanie było skuteczne i pomogło zatrzymać krzywdzenie. W grze wcielisz się w rolę osoby odpowiedzialnej za wdrażanie polityki ochrony dzieci w wybranej instytucji. Twoim zadaniem będzie zarekomendowanie wprowadzenia zmian i podjęcia działań adekwatnych do sytuacji, które zaobserwujesz.
                 </p>
             </div>
+            <div className={style.info}>
+                <p>
+                    Po przejściu gry będziesz rozumiał/a:
+                </p>
+                <ul>
+                    <li>co oznacza ochrona dzieci przed krzywdzeniem;</li>
+                    <li>swoją rolę w ochronie dzieci przed krzywdzeniem; </li>
+                    <li>działania, które należy podjąć, jeśli w trakcie Twojej pracy pojawi się problem związany z ochroną dzieci.</li>
+                </ul>
+            </div>
             <div className={style.firstDay}>
                 <p><b>Czas rozgrywki: do 60 minut</b></p>
                 <h2>Jak grać:</h2>

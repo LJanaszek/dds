@@ -19,8 +19,8 @@ export default function P3() {
 
     const words: { [key: string]: string } = {
         "Została zaproszona na urodziny dziewczynki": "Nauczycielka została zaproszona na urodziny uczennicy.",
-        "poplotkowała o innych nauczycielkach i dzieciach":"Nauczycielka plotkowała na temat innych nauczycieli i dzieci.",
-        "Uczennice podsłuchały":"Uczennice podsłuchały rozmowę nauczycielki z mamą uczennicy."
+        "poplotkowała o innych nauczycielkach i dzieciach": "Nauczycielka plotkowała na temat innych nauczycieli i dzieci.",
+        "Uczennice podsłuchały": "Uczennice podsłuchały rozmowę nauczycielki z mamą uczennicy."
     }
     const addTextToList = (text: string) => {
         if (!textList.includes(words[text]) && textList.length < 6) {
@@ -43,13 +43,13 @@ export default function P3() {
                 image={""}>
                 <h1>Spotkanie w weekend</h1>
                 <p>
-                    Klaudia jest przyjaciółką mamy Karoliny z 5b i jednocześnie jej wychowawczynią.
+                    Klaudia jest przyjaciółką mamy Karoliny z 5b i jednocześnie wychowawczynią Karoliny
                     {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Została zaproszona na urodziny dziewczynki</span>. Świętowanie się udało, było dużo dobrego jedzenia, zorganizowano zabawy w ogrodzie. Klaudia spotkała sporo dzieci, które uczy. W swobodnej atmosferze trochę
                     {" "}
                     <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>poplotkowała o innych nauczycielkach i dzieciach</span>.
                     {" "}
-                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Uczennice podsłuchały</span>, jak żaliła się mamie Karoliny, że trudno pracuje jej się z jej grupą. O wszystkim napisały koleżance z tej klasy.
+                    <span onClick={(e) => addTextToList(e.currentTarget.innerText)}>Uczennice podsłuchały</span>, jak żaliła się mamie Karoliny, że trudno pracuje jej się z jej grupą. O wszystkim napisały w grupie klasowej na whatsappie.
                 </p>
             </PageText>
 

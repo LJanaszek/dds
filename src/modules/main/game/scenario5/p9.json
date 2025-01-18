@@ -8,7 +8,7 @@
       "Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej."
     ],
     "case4": [
-      "Zawiadamiasz policję."
+      "Informujesz kierownika obozu o zaistniałej sytuacji i prosisz o zbadanie czy wystąpił w niej kontekst seksualny oraz o rozmowę z Mateuszem."
     ],
     "case5": [
       "Odsuwasz Mateusza od pracy z osobami uczestniczącymi w obozie."
@@ -21,7 +21,7 @@
     ]
   },
 
-  "Wychowawczyni dowiedziała się, że tata stosuje przemoc fizyczną i emocjonalną wobec Karoliny..": {
+  "Wychowawczyni dowiedziała się, że tata stosuje przemoc fizyczną i emocjonalną wobec Karoliny.": {
     "case11": [
       "Sporządzasz notatkę z rozmowy z Agnieszką i Karoliną."
     ],

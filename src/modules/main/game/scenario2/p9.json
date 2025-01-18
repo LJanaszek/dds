@@ -3,7 +3,7 @@
     "case1": ["Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy."],
     "case2": ["Informujesz rodziców o wnioskach z rozpoznania sprawy."],
     "case3": [
-      "Planujesz szkolenie dla personelu rejestracji z zakresu obsługi klienta z uwzględnieniem klientów niepełnoletnich."
+      "Planujesz szkolenie dla personelu rejestracji z zakresu obsługi klienta z uwzględnieniem klientów małoletnich."
     ],
     "case4": [
       "Na podstawie Karty Praw Pacjenta i przyjętych Standardów Ochrony Dzieci opracowujesz ściągawkę dla personelu. Zaznaczasz w niej najważniejsze kwestie związane z rejestracją i obsługą pacjentów."
@@ -27,7 +27,7 @@
       "Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy."
     ],
     "case12": [
-      "Organizujesz szkolenie z rozpoznawania przemocy wobec nieletnich."
+      "Organizujesz szkolenie z rozpoznawania przemocy wobec małoletnich."
     ],
     "case13": [
       "Przypominasz pracownikom zasady podejmowania interwencji w przypadkach podejrzenia lub zaobserwowania przemocy domowej."
@@ -41,7 +41,7 @@
       false
     ],
     "case16": [
-      "Nic nie robisz – takie sytuacje często mają miejsce na izbie przyjęć.",
+      "Nic nie robisz – takie sytuacje często mają miejsce w przychodni.",
       false
     ]
   },

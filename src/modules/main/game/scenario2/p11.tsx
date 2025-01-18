@@ -2,7 +2,7 @@ import style from './style.module.scss';
 import taskImg from '../../../../assets/scenarios/scen_przych.png'
 import trueImg from "../../../../assets/icons/right.png"
 import falseImg from "../../../../assets/icons/wrong.png"
-import pdf from "../../../../assets/icons/pdf.png"
+import pdf from "../../../../assets/pdfs/Komentarz do rozgrywki OCHRONA ZDROWIA.pdf"
 import link from "../../../../assets/icons/link.png"
 import { useCallback, useEffect, useState } from 'react';
 import video from "../../../../assets/videos/ochrona zdrowia.mp4"
@@ -84,12 +84,12 @@ export default function P11() {
                     <div className={style.bottom}>
 
                         <p>
-                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
+                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę (są oznaczone ikonką <img src={trueImg} alt="" style={{ width: "20px", display:"inline-block", verticalAlign:"middle" } }/>). Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
                         </p>
                     </div>
                 </div>
                 <div className={style.answers}>
-                    <h2>prawidłowe odpowiedzi</h2>
+                    <h2>prawidłowe odpowiedzi (żeby zobaczyć pozostałe odpowiedzi, kliknij na tytuł konkretnej sytuacji)</h2>
                     <div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
                             setClickedElement(e.currentTarget);
@@ -108,7 +108,7 @@ export default function P11() {
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Planujesz szkolenie dla personelu rejestracji z zakresu obsługi klienta z uwzględnieniem klientów niepełnoletnich.
+                                Planujesz szkolenie dla personelu rejestracji z zakresu obsługi klienta z uwzględnieniem klientów małoletnich.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -142,7 +142,7 @@ export default function P11() {
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Organizujesz szkolenie z rozpoznawania przemocy wobec nieletnich.
+                                Organizujesz szkolenie z rozpoznawania przemocy wobec małoletnich.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -158,7 +158,7 @@ export default function P11() {
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Nic nie robisz – takie sytuacje często mają miejsce na izbie przyjęć.
+                                Nic nie robisz – takie sytuacje często mają miejsce w przychodni.
                                 <img src={falseImg} alt="" />
                             </p>
                         </div>
@@ -232,6 +232,10 @@ export default function P11() {
                                 Nic nie robisz – przyjmujesz wyjaśnienia lekarza i pielęgniarki.
                                 <img src={falseImg} alt="" />
                             </p>
+                            <p className={style.false}>
+                            Zawiadamiasz policję o możliwości popełnienia przestępstwa
+                                <img src={falseImg} alt="" />
+                            </p>
                         </div>
                     </div><div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
@@ -293,10 +297,12 @@ export default function P11() {
                     <a href="https://edukacja.fdds.pl/" target='blank'>
                         <img src={link} alt="" />
                         Platforma edukacyjna Fundacji Dajemy Dzieciom Siłę
-
+                    </a>
+                    <a href={pdf} target='blank'>
+                        <img src={link} alt="" />
+                        Komentarz do rozgrywki Ochrona Zdrowia
                     </a>
                 </div>
-
             </div>
             <div className={style.back}>
                 <Link to={getHomeRoute()} className={style.backLink}>Wróć do wyboru scenariusza</Link>

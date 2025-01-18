@@ -2,7 +2,7 @@ import style from './style.module.scss';
 import taskImg from '../../../../assets/scenarios/scen_online.png'
 import trueImg from "../../../../assets/icons/right.png"
 import falseImg from "../../../../assets/icons/wrong.png"
-import pdf from "../../../../assets/icons/pdf.png"
+import pdf from "../../../../assets/pdfs/Komentarz do rozgrywki KONTAKTY ONLINE.pdf"
 import link from "../../../../assets/icons/link.png"
 import { useEffect, useState } from 'react';
 import video from "../../../../assets/videos/kontakty online.mp4"
@@ -84,12 +84,12 @@ export default function P11() {
                     <div className={style.bottom}>
 
                         <p>
-                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę. Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
+                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę (są oznaczone ikonką <img src={trueImg} alt="" style={{ width: "20px", display:"inline-block", verticalAlign:"middle" } }/>). Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
                         </p>
                     </div>
                 </div>
                 <div className={style.answers}>
-                    <h2>prawidłowe odpowiedzi</h2>
+                    <h2>prawidłowe odpowiedzi (żeby zobaczyć pozostałe odpowiedzi, kliknij na tytuł konkretnej sytuacji)</h2>
                     <div className={style.dropList}>
                         <p className={style.listTitle} onClick={(e) => {
                             setClickedElement(e.currentTarget);
@@ -100,7 +100,7 @@ export default function P11() {
 
                         <div className={style.list}>
                             <p className={style.true}>
-                                Przypominasz nauczycielowi o zasadach bezpiecznych relacji personel – dziecko dotyczących kontaktów online z uczniami. Jeśli uczennica szuka wsparcia, to należy kontaktować się z nią, zachowując jawność takich kontaktów i informując o tym innego dorosłego (uczennica musi o tym wiedzieć). Jeśli możliwości wsparcia się wyczerpią, należy skierować sprawę do profesjonalisty.
+                                Przypominasz nauczycielowi o zasadach bezpiecznych relacji personel – dziecko dotyczących kontaktów online z uczniami.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -133,7 +133,7 @@ export default function P11() {
                         <p className={style.listTitle} onClick={(e) => {
                             setClickedElement(e.currentTarget);
                         }}>
-                            Nauczyciel zabrał Tymka własnym samochodem i mocno wyściskał..
+                            Nauczyciel zabrał Tymka własnym samochodem i mocno wyściskał.
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
@@ -321,6 +321,10 @@ export default function P11() {
                     <a href="https://edukacja.fdds.pl/" target='blank'>
                         <img src={link} alt="" />
                         Platforma edukacyjna Fundacji Dajemy Dzieciom Siłę
+                    </a>
+                    <a href={pdf} target='blank'>
+                        <img src={link} alt="" />
+                        Komentarz do rozgrywki Kontakty Online
                     </a>
                 </div>
 
