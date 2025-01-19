@@ -85,7 +85,7 @@ export default function P11() {
                     <div className={style.bottom}>
 
                         <p>
-                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę (są oznaczone ikonką <img src={trueImg} alt="" style={{ width: "20px", display:"inline-block", verticalAlign:"middle" } }/>). Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
+                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę (są oznaczone ikonką <img src={trueImg} alt="" style={{ width: "20px", display: "inline-block", verticalAlign: "middle" }} />). Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
                         </p>
                     </div>
                 </div>
@@ -183,14 +183,14 @@ export default function P11() {
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej.
+                                Upewniasz się, że wszyscy uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
                                 Przypominasz wychowawcom zasady utrzymywania kontaktu z osobami uczestniczącymi w obozie. Odwołujesz się do zasad bezpiecznych relacji kadra – wychowankowie, które określają taką sytuację. Prosisz wychowawców, aby w takich momentach nie kładli się z dzieckiem do łóżka, tylko siadali obok, zawsze byli odpowiednio ubrani i informowali innego wychowawcę o tym, że idą do pokoju wychowanków w takim celu, oraz zostawiali uchylone drzwi.                                <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Zawiadamiasz policję.
+                                Zawiadamiasz policję o zaistniałej sytuacji.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
@@ -220,7 +220,7 @@ export default function P11() {
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej.
+                                Upewniasz się, że uczestnicy obozu dokładnie wiedzą, gdzie szukać pomocy w sytuacji kryzysowej.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -228,7 +228,7 @@ export default function P11() {
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Zawiadamiasz policję.
+                                Zawiadamiasz policję informując o zaistniałej sytuacji.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -272,7 +272,7 @@ export default function P11() {
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Upewniasz się, że uczestnicy obozu wiedzą, gdzie szukać pomocy w sytuacji kryzysowej.
+                                Upewniasz się, że uczestnicy obozu wiedzą, jak i gdzie szukać pomocy w sytuacji kryzysowej.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -280,7 +280,7 @@ export default function P11() {
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Zawiadamiasz policję.
+                                Z racji na zaistniałą sytuację, zawiadamiasz policję.
                                 <img src={falseImg} alt="" />
                             </p>
 
@@ -330,7 +330,7 @@ export default function P11() {
                         <img src={link} alt="" />
                         Komentarz do rozgrywki Obóz Wakacyjny
                     </a>
-                    
+
                 </div>
 
             </div>

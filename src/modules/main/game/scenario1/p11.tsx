@@ -155,11 +155,11 @@ export default function P11() {
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.
+                            Sporządzasz notatkę z przeprowadzonego rozpoznania powyższej sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Informujesz rodziców o wnioskach z rozpoznania sprawy.
+                            Informujesz rodziców o wnioskach z rozpoznania powyższej sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>

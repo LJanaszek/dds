@@ -84,7 +84,7 @@ export default function P11() {
                     <div className={style.bottom}>
 
                         <p>
-                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę (są oznaczone ikonką <img src={trueImg} alt="" style={{ width: "20px", display:"inline-block", verticalAlign:"middle" } }/>). Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
+                            Gratulacje, udało Ci się ukończyć rozgrywkę. Klikając w sformułowania po prawej stronie sprawdzisz, które rozwiązania dla danej sytuacji rekomenduje Fundacja Dajemy Dzieciom Siłę (są oznaczone ikonką <img src={trueImg} alt="" style={{ width: "20px", display: "inline-block", verticalAlign: "middle" }} />). Poniżej znajdziesz film z komentarzem do scenariusza oraz bazę wiedzy, dzięki której zdobędziesz jeszcze więcej informacji. Zachęcamy do zmierzenia się z kolejnym scenariuszem gry!
                         </p>
                     </div>
                 </div>
@@ -120,7 +120,7 @@ export default function P11() {
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Zawiadamiasz policję o możliwości popełnienia przestępstwa.
+                                Informujesz policję o możliwości popełnienia przestępstwa.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
@@ -138,7 +138,7 @@ export default function P11() {
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.
+                                Opracowujesz notatkę z przeprowadzonego rozpoznania sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -154,7 +154,7 @@ export default function P11() {
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
-                                Zawiadamiasz policję o możliwości popełnienia przestępstwa.
+                                Zawiadamiasz policję informując o możliwości popełnienia przestępstwa.
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
@@ -213,7 +213,7 @@ export default function P11() {
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.
+                                Sporządzasz notatkę z przeprowadzonego rozpoznania powyższej sprawy.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -233,7 +233,7 @@ export default function P11() {
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.false}>
-                            Zawiadamiasz policję o możliwości popełnienia przestępstwa
+                                W zaistniałej sytuacji, zawiadamiasz policję o możliwości popełnienia przestępstwa
                                 <img src={falseImg} alt="" />
                             </p>
                         </div>
@@ -245,7 +245,7 @@ export default function P11() {
                         </p>
                         <div className={style.list}>
                             <p className={style.true}>
-                                Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy.
+                                Sporządzasz notatkę z przeprowadzonego rozpoznania sprawy Marty.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.true}>
@@ -257,7 +257,7 @@ export default function P11() {
                                 <img src={falseImg} alt="" />
                             </p>
                             <p className={style.true}>
-                                Zawiadamiasz policję o możliwości popełnienia przestępstwa.
+                                Zawiadamiasz policję z uwagi na możliwości popełnienia przestępstwa.
                                 <img src={trueImg} alt="" />
                             </p>
                             <p className={style.false}>
