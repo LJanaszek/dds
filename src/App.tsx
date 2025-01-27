@@ -16,7 +16,7 @@ const PolicyPage = React.lazy(() => import('./routes/policy'));
 function App() {
   return (
    <>
-   <BrowserRouter>
+   <BrowserRouter basename={process.env.PUBLIC_URL}>
                 {/* <CookiesInfoComponent /> */}
                 <main aria-live="polite">
                     <Suspense fallback={<Loader />}>
