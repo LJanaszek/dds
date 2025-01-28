@@ -141,7 +141,7 @@ export default function P2() {
         setSelectedPoint(id);
 
         localStorage.setItem("inactivePoints", JSON.stringify(inactivePoints));
-        window.location.href = PAGES[id]
+        window.location.href = `game/${PAGES[id]}`
 
     }, []);
 

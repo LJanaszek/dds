@@ -35,7 +35,7 @@ export function MapComponent({ onPointerClicked, selectedPoint, mapPointsData, s
         if (appRef.current) return;
 
         const app = new PixiApp({
-            assetsPath: '/',
+            assetsPath: '/build/',
             onPointerClicked
         });
 

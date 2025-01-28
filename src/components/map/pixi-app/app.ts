@@ -36,7 +36,6 @@ export default class PixiApp extends PIXI.Application {
 
         loadSprites([
             ['przychodnia', `${config.assetsPath}przychodnia.png`],
-            ['pinezka', `${config.assetsPath}pinezka.png`],
             //mapy
             ['klub', `${config.assetsPath}klub/klub.png`],
             ['oboz', `${config.assetsPath}oboz/oboz_calosc.png`],
